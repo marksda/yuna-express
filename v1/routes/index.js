@@ -1,17 +1,9 @@
-const Router = (server) => {
-    server.get("/v1", (req, res) => {
-        try {
-            res.status(200).json({
-                status: "success",
-                data: [],
-                message: "Welcome to our API homepage!",
-            });
-        } catch (err) {
-            res.status(500).json({
-                status: "error",
-                message: "Internal Server Error",
-            });
-        }
-    });
-};
-export default Router;
+import { Router } from "express";
+
+const indexRouter = new Router();
+
+indexRouter.get('/', async (_req, res) => {
+    res.send('API is working properly');
+});
+
+export {indexRouter};
