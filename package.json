@@ -4,8 +4,8 @@
   "description": "hyper express nodejs project",
   "main": "server.js",
   "scripts": {
-    "start": "node v1/server.js",
-    "dev": "nodemon v1/server.js"
+    "start": "node server/v1/server.js",
+    "dev": "nodemon server/v1/server.js"
   },
   "keywords": [
     "hyper",
