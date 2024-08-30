@@ -1,0 +1,32 @@
+html {
+    overflow-y: auto
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+    position: relative
+}
+
+body {
+    line-height: 1;
+    background: #fff;
+    color: #333;
+    text-align: left;
+    font-size: 13px;
+    font-family: 'Open Sans',sans-serif,Arial;
+    font-weight: 400;
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    min-width: 962px;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}

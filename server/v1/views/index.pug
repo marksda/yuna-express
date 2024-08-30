@@ -4,13 +4,18 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
+    link(rel="stylesheet", href="css/reset.css")
     link(rel="stylesheet", href="css/index.css")
-  body
+  body(id="defaultpage")
     div(class="container")
-      div(class="header") header 
-      div(class="left-aside") left-aside 
-      div(class="banner") banner 
-      div(class="main") main 
-      div(class="low-content") low content 
-      div(class="right-aside") right-aside
-      div(class="footer") footer
+      - var pengumuman = false
+      if pengumuman
+        div(class="pengumuman")
+          a(href="/pengumuman")        
+            div(class="pengumuman-text")
+              p(style="color: white") pengumuman
+      header
+        div(class="logo") 
+          a(href="/")
+      div(class="main")
+        div(class="dp-first-screen") sdfsa dsfjsadkfjsaldkf
