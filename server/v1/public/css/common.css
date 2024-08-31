@@ -545,7 +545,7 @@ header.onscrolling {
 .logo {
     width: 152px;
     height: 71px;
-    background: url("/images/logo_new.svg") no-repeat 0 50%;
+    background: url("/static/images/logo_new.svg") no-repeat 0 50%;
     background-size: 152px 33px;
     margin-left: 24px;
     position: relative;
@@ -620,23 +620,23 @@ header.onscrolling {
 }
 
 .footer_apps .footer_apps_list .footer_apps_item.for_windows {
-    background-image: url(/images/for-windows.svg)
+    background-image: url(/static/images/for-windows.svg)
 }
 
 .footer_apps .footer_apps_list .footer_apps_item.for_linux {
-    background-image: url(/images/for-linux.svg)
+    background-image: url(/static/images/for-linux.svg)
 }
 
 .footer_apps .footer_apps_list .footer_apps_item.for_macos {
-    background-image: url(/images/for-macos.svg)
+    background-image: url(/static/images/for-macos.svg)
 }
 
 .footer_apps .footer_apps_list .footer_apps_item.for_android {
-    background-image: url(/images/for-android.svg)
+    background-image: url(/static/images/for-android.svg)
 }
 
 .footer_apps .footer_apps_list .footer_apps_item.for_ios {
-    background-image: url(/images/for-ios.svg)
+    background-image: url(/static/images/for-ios.svg)
 }
 
 .footer_menu {
@@ -680,7 +680,7 @@ header.onscrolling {
 }
 
 .footer-search-box .close-button {
-    background-image: url(/images/landing/market-place/close-button.svg);
+    background-image: url(/static/images/landing/market-place/close-button.svg);
     display: none;
     z-index: 1
 }
@@ -765,7 +765,7 @@ header.onscrolling {
 }
 
 .search-button {
-    background-image: url(/images/search-button.svg);
+    background-image: url(/static/images/search-button.svg);
     background-repeat: no-repeat;
     background-position: 50%;
     cursor: pointer;
@@ -1151,7 +1151,7 @@ span.underline {
 
 .ListSocLink li label {
     background-repeat: no-repeat;
-    background-image: url(/images/color_social_icons.svg?ver=168);
+    background-image: url(/static/images/color_social_icons.svg?ver=168);
     display: block;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -1221,7 +1221,7 @@ span.underline {
 }
 
 .ListSocLink li label.social_grey_wechat {
-    background-image: url(/images/logo_wechat.png);
+    background-image: url(/static/images/logo_wechat.png);
     background-position-x: center;
     background-size: contain
 }
@@ -1232,7 +1232,7 @@ span.underline {
 }
 
 .ListSocLink li label.social_grey_tiktok {
-    background-image: url(/images/tiktok_footer.svg);
+    background-image: url(/static/images/tiktok_footer.svg);
     background-position-x: center;
     background-size: contain
 }
@@ -1243,7 +1243,7 @@ span.underline {
 }
 
 .ListSocLink li label.social_grey_telegram {
-    background-image: url(/images/telegram_footer.svg);
+    background-image: url(/static/images/telegram_footer.svg);
     background-position-x: center;
     background-size: contain
 }
@@ -1254,7 +1254,7 @@ span.underline {
 }
 
 .ListSocLink li label.social_grey_line {
-    background-image: url(/images/line.svg);
+    background-image: url(/static/images/line.svg);
     background-position-x: center
 }
 
@@ -1310,13 +1310,13 @@ span.underline {
 }
 
 .ListSocLink li.wechat .wechat_qr_code {
-    background-image: url(/images/qrcode_for_wechat.jpg);
+    background-image: url(/static/images/qrcode_for_wechat.jpg);
     height: 218px;
     top: -300px
 }
 
 .ListSocLink li.line .line_qr_code {
-    background-image: url(/images/qr-code-line.png);
+    background-image: url(/static/images/qr-code-line.png);
     height: 160px;
     top: -242px
 }
@@ -1359,7 +1359,7 @@ span.underline {
 }
 
 body>div.loadingBanner {
-    background: url("/images/loaders/loader_32.gif") no-repeat scroll 13px 50% #FFFFFF;
+    background: url("/static/images/loaders/loader_32.gif") no-repeat scroll 13px 50% #FFFFFF;
     border: 1px solid #CACACA;
     font-size: 13px;
     color: #999999;
@@ -1533,7 +1533,7 @@ body#signuppage.desktop #launcher,body#signuppage.pid #launcher,body#signuppage.
     }
 
     .search-button {
-        background-image: url(/images/landing/market-place/search-button.svg);
+        background-image: url(/static/images/landing/market-place/search-button.svg);
         height: 48px;
         position: absolute;
         top: 0;
@@ -1673,7 +1673,7 @@ body#signuppage.desktop #launcher,body#signuppage.pid #launcher,body#signuppage.
 }
 
 .advent-announce .advent-announce-text:before {
-    background-image: url(/images/banner/docspace_2.6.svg);
+    background-image: url(/static/images/banner/docspace_2.6.svg);
     width: 82px;
     height: 82px;
     left: -4px;
@@ -1681,7 +1681,7 @@ body#signuppage.desktop #launcher,body#signuppage.pid #launcher,body#signuppage.
 }
 
 .advent-announce .advent-announce-text:after {
-    background-image: url(/images/banner/banner_icon.svg);
+    background-image: url(/static/images/banner/banner_icon.svg);
     width: 23px;
     height: 23px;
     right: -4px;
@@ -1904,7 +1904,7 @@ body#signuppage.desktop #launcher,body#signuppage.pid #launcher,body#signuppage.
         content: '';
         width: 10px;
         height: 10px;
-        background-image: url(/images/arrow-gray.svg);
+        background-image: url(/static/images/arrow-gray.svg);
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size: auto 100%;

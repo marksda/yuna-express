@@ -67,35 +67,35 @@
 }
 
 .choose_solution .s_block .sb_img.sb_docspace {
-    background-image: url(/images/office-suite/choose_solution/docspace.svg)
+    background-image: url(/static/images/office-suite/choose_solution/docspace.svg)
 }
 
 .choose_solution .s_block .sb_img.sb_cloud {
-    background-image: url(/images/docspace/docspace.svg)
+    background-image: url(/static/images/docspace/docspace.svg)
 }
 
 .choose_solution .s_block .sb_img.sb_connectors {
-    background-image: url(/images/office-suite/choose_solution/connectors.svg)
+    background-image: url(/static/images/office-suite/choose_solution/connectors.svg)
 }
 
 .choose_solution .s_block .sb_img.sb_platform {
-    background-image: url(/images/docspace/platform.svg)
+    background-image: url(/static/images/docspace/platform.svg)
 }
 
 .choose_solution .s_block .sb_img.sb_developers {
-    background-image: url(/images/office-suite/choose_solution/developers.svg)
+    background-image: url(/static/images/office-suite/choose_solution/developers.svg)
 }
 
 .choose_solution .s_block .sb_img.sb_build {
-    background-image: url(/images/docspace/build.svg)
+    background-image: url(/static/images/docspace/build.svg)
 }
 
 .choose_solution .s_block .sb_img.sb_from_pc {
-    background-image: url(/images/office-suite/choose_solution/from-pc.svg)
+    background-image: url(/static/images/office-suite/choose_solution/from-pc.svg)
 }
 
 .choose_solution .s_block .sb_img.sb_from_mobile {
-    background-image: url(/images/office-suite/choose_solution/from-mobile.svg)
+    background-image: url(/static/images/office-suite/choose_solution/from-mobile.svg)
 }
 
 .choose_solution .s_block h3 {
@@ -348,7 +348,7 @@
 }
 
 .date-text:before {
-    background-image: url(/images/mainpage/def-calendar.svg);
+    background-image: url(/static/images/mainpage/def-calendar.svg);
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -369,7 +369,7 @@
 }
 
 .dp-event-online:before {
-    background-image: url(/images/mainpage/location-icon-events.svg);
+    background-image: url(/static/images/mainpage/location-icon-events.svg);
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -548,7 +548,7 @@ body#defaultpage {
 }
 
 body#defaultpage article {
-    background-image: url(/images/mainpage/bg.svg);
+    background-image: url(/static/images/mainpage/bg.svg);
     background-repeat: no-repeat;
     background-position: 58% -900px
 }
@@ -633,67 +633,67 @@ body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img {
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.calar-alto {
-    background-image: url(/images/clients/customer-stories/calar_alto_observatory_implements_onlyoffice.jpg)
+    background-image: url(/static/images/clients/customer-stories/calar_alto_observatory_implements_onlyoffice.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.czech-tv {
-    background-image: url(/images/clients/customer-stories/czech-tv_onlyoffice.jpg)
+    background-image: url(/static/images/clients/customer-stories/czech-tv_onlyoffice.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.switch {
-    background-image: url(/images/clients/customer-stories/switch_onlyoffice.jpg)
+    background-image: url(/static/images/clients/customer-stories/switch_onlyoffice.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.hopewell-virginia {
-    background-image: url(/images/clients/customer-stories/onlyoffice-in-hopewell-virginia.png)
+    background-image: url(/static/images/clients/customer-stories/onlyoffice-in-hopewell-virginia.png)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.nanjing-university {
-    background-image: url(/images/clients/customer-stories/nanjing-university.jpg)
+    background-image: url(/static/images/clients/customer-stories/nanjing-university.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.o2oa {
-    background-image: url(/images/clients/customer-stories/o2oa_cover.jpg)
+    background-image: url(/static/images/clients/customer-stories/o2oa_cover.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.yamaha-motor-solutions {
-    background-image: url(/images/clients/customer-stories/onlyoffice_yamaha.jpg)
+    background-image: url(/static/images/clients/customer-stories/onlyoffice_yamaha.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.cnki {
-    background-image: url(/images/clients/customer-stories/cnki_success_story.jpg)
+    background-image: url(/static/images/clients/customer-stories/cnki_success_story.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.de-maritime {
-    background-image: url(/images/clients/customer-stories/marinom_and_onlyoffice.jpg)
+    background-image: url(/static/images/clients/customer-stories/marinom_and_onlyoffice.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.de-medizinische {
-    background-image: url(/images/clients/customer-stories/ibe-and-onlyoffice.png)
+    background-image: url(/static/images/clients/customer-stories/ibe-and-onlyoffice.png)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.de-stellfeld {
-    background-image: url(/images/clients/customer-stories/lwsystems_stellfeld-ernst.jpg)
+    background-image: url(/static/images/clients/customer-stories/lwsystems_stellfeld-ernst.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.de-korczak {
-    background-image: url(/images/clients/customer-stories/korczak_haus_freiburg_success_story.png)
+    background-image: url(/static/images/clients/customer-stories/korczak_haus_freiburg_success_story.png)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.murena-integre-onlyoffice {
-    background-image: url(/images/clients/customer-stories/murena_integrates_onlyoffice.jpg)
+    background-image: url(/static/images/clients/customer-stories/murena_integrates_onlyoffice.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.projet-internet-et-citoyennete {
-    background-image: url(/images/clients/customer-stories/le-pic.org-1-1024x516.jpg)
+    background-image: url(/static/images/clients/customer-stories/le-pic.org-1-1024x516.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.tgi-integre-onlyoffice {
-    background-image: url(/images/clients/customer-stories/tgi_fr-2-1024x516.png)
+    background-image: url(/static/images/clients/customer-stories/tgi_fr-2-1024x516.png)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case .dp-cn-img.le-nuage-francais-integre-onlyoffice {
-    background-image: url(/images/clients/customer-stories/blog_nuage_francais.jpg)
+    background-image: url(/static/images/clients/customer-stories/blog_nuage_francais.jpg)
 }
 
 body#defaultpage .customers_newdesign .dp-cn-cases .dp-cn-case h4 {
@@ -746,7 +746,7 @@ body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .m
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client {
-    background-image: url(/images/mainpage/def-logo-sprite.svg);
+    background-image: url(/static/images/mainpage/def-logo-sprite.svg);
     background-position-y: 50%;
     background-repeat: no-repeat;
     display: inline-block;
@@ -784,7 +784,7 @@ body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .m
 }
 
 /* body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client6 {
-    background-image: url(/images/mainpage/logo_egress_2x.png);
+    background-image: url(/static/images/mainpage/logo_egress_2x.png);
     background-position: 50% 50%;
     background-size: 130px;
     width: 130px
@@ -796,52 +796,52 @@ body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .m
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client8 {
-    background-image: url(/images/partners/logos/ymsl_com_cn_.png);
+    background-image: url(/static/images/partners/logos/ymsl_com_cn_.png);
     background-size: contain;
     width: 136px
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client9 {
-    background-image: url(/images/customers/nanjing-university.png);
+    background-image: url(/static/images/customers/nanjing-university.png);
     background-size: contain;
     width: 136px
 } 
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client10 {
-    background-image: url(/images/customers/citic_group.png);
+    background-image: url(/static/images/customers/citic_group.png);
     background-position: center 2px;
     background-size: 177px auto;
     width: 120px
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client11 {
-    background-image: url(/images/mainpage/cnki.png);
+    background-image: url(/static/images/mainpage/cnki.png);
     background-position: center;
     background-size: 151px auto;
     width: 136px
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client12 {
-    background-image: url(/images/customers/infomaniak.svg);
+    background-image: url(/static/images/customers/infomaniak.svg);
     background-size: contain;
     width: 136px
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client13 {
-    background-image: url(/images/customers/universite_paris_sud.svg);
+    background-image: url(/static/images/customers/universite_paris_sud.svg);
     background-size: auto 56px;
     width: 102px
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client14 {
-    background-image: url(/images/mainpage/ministere_de_l_interieur.svg);
+    background-image: url(/static/images/mainpage/ministere_de_l_interieur.svg);
     background-size: contain;
     height: 90px;
     width: 117px
 }
 
 body#defaultpage .customers_newdesign .main_customers.mc_newdesign .mc_blocks .mainpageclients .mp_client.mp_client15 {
-    background-image: url(/images/customers/netease.jpg);
+    background-image: url(/static/images/customers/netease.jpg);
     background-size: contain;
     width: 160px
 } */
@@ -929,7 +929,7 @@ body#defaultpage .dp-bfe .dp-b-content .dp-b-links .dp-bl-links h3 {
 }
 
 body#defaultpage .dp-bfe .dp-b-content .dp-b-links .dp-bl-links h3:before {
-    background-image: url(/images/mainpage/def-b-icons.svg);
+    background-image: url(/static/images/mainpage/def-b-icons.svg);
     background-position-y: -3px;
     content: '';
     display: block;
@@ -1146,24 +1146,24 @@ body#defaultpage .dp-designed .dp-d-icons .dp-icon:before {
 }
 
 body#defaultpage .dp-designed .dp-d-icons .dp-icon.dp-i-calendar:before {
-    background-image: url(/images/mainpage/icons/calendar.svg);
+    background-image: url(/static/images/mainpage/icons/calendar.svg);
     background-position: 55% 50%
 }
 
 body#defaultpage .dp-designed .dp-d-icons .dp-icon.dp-i-crm:before {
-    background-image: url(/images/mainpage/icons/crm.svg)
+    background-image: url(/static/images/mainpage/icons/crm.svg)
 }
 
 body#defaultpage .dp-designed .dp-d-icons .dp-icon.dp-i-docman:before {
-    background-image: url(/images/mainpage/icons/doc_management.svg)
+    background-image: url(/static/images/mainpage/icons/doc_management.svg)
 }
 
 body#defaultpage .dp-designed .dp-d-icons .dp-icon.dp-i-mail:before {
-    background-image: url(/images/mainpage/icons/mail.svg)
+    background-image: url(/static/images/mainpage/icons/mail.svg)
 }
 
 body#defaultpage .dp-designed .dp-d-icons .dp-icon.dp-i-projects:before {
-    background-image: url(/images/mainpage/icons/projects.svg)
+    background-image: url(/static/images/mainpage/icons/projects.svg)
 }
 
 body#defaultpage .dp-designed .dp-d-items {
@@ -1197,55 +1197,55 @@ body#defaultpage .dp-designed h4 {
 }
 
 body#defaultpage .dp-first-screen {
-    background-image: url(/images/mainpage/dp-main-pic.png?ver=190);
+    background-image: url(/static/images/mainpage/dp-main-pic.png?ver=190);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 1280px auto
 }
 
 body#defaultpage .dp-first-screen.de {
-    background-image: url(/images/mainpage/dp-main-pic-de.png?ver=190)
+    background-image: url(/static/images/mainpage/dp-main-pic-de.png?ver=190)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-first-screen.de {
-        background-image:url(/images/mainpage/dp-main-pic-de@2x.png?ver=190)
+        background-image:url(/static/images/mainpage/dp-main-pic-de@2x.png?ver=190)
     }
 }
 
 body#defaultpage .dp-first-screen.fr {
-    background-image: url(/images/mainpage/dp-main-pic-fr.png?ver=190)
+    background-image: url(/static/images/mainpage/dp-main-pic-fr.png?ver=190)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-first-screen.fr {
-        background-image:url(/images/mainpage/dp-main-pic-fr@2x.png?ver=190)
+        background-image:url(/static/images/mainpage/dp-main-pic-fr@2x.png?ver=190)
     }
 }
 
 body#defaultpage .dp-first-screen.ru {
-    background-image: url(/images/mainpage/dp-main-pic-ru.png?ver=190)
+    background-image: url(/static/images/mainpage/dp-main-pic-ru.png?ver=190)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-first-screen.ru {
-        background-image:url(/images/mainpage/dp-main-pic-ru@2x.png?ver=190)
+        background-image:url(/static/images/mainpage/dp-main-pic-ru@2x.png?ver=190)
     }
 }
 
 body#defaultpage .dp-first-screen.zh {
-    background-image: url(/images/mainpage/dp-main-pic-zh.png?ver=190)
+    background-image: url(/static/images/mainpage/dp-main-pic-zh.png?ver=190)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-first-screen.zh {
-        background-image:url(/images/mainpage/dp-main-pic-zh@2x.png?ver=190)
+        background-image:url(/static/images/mainpage/dp-main-pic-zh@2x.png?ver=190)
     }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-first-screen {
-        background-image:url(/images/mainpage/dp-main-pic@2x.png?ver=190)
+        background-image:url(/static/images/mainpage/dp-main-pic@2x.png?ver=190)
     }
 }
 
@@ -1351,284 +1351,284 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.right {
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate {
-    background-image: url(/images/mainpage/dp-collaborate.png?ver=170-0)
+    background-image: url(/static/images/mainpage/dp-collaborate.png?ver=170-0)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate {
-        background-image:url(/images/mainpage/dp-collaborate@2x.png?ver=170-0)
+        background-image:url(/static/images/mainpage/dp-collaborate@2x.png?ver=170-0)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.de {
-    background-image: url(/images/mainpage/dp-collaborate-de.png?ver=170-0)
+    background-image: url(/static/images/mainpage/dp-collaborate-de.png?ver=170-0)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.de {
-        background-image:url(/images/mainpage/dp-collaborate-de@2x.png?ver=170-0)
+        background-image:url(/static/images/mainpage/dp-collaborate-de@2x.png?ver=170-0)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.fr {
-    background-image: url(/images/mainpage/dp-collaborate-fr.png?ver=170-0)
+    background-image: url(/static/images/mainpage/dp-collaborate-fr.png?ver=170-0)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.fr {
-        background-image:url(/images/mainpage/dp-collaborate-fr@2x.png?ver=170-0)
+        background-image:url(/static/images/mainpage/dp-collaborate-fr@2x.png?ver=170-0)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.ru {
-    background-image: url(/images/mainpage/dp-collaborate-ru.png?ver=170-0)
+    background-image: url(/static/images/mainpage/dp-collaborate-ru.png?ver=170-0)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.ru {
-        background-image:url(/images/mainpage/dp-collaborate-ru@2x.png?ver=170-0)
+        background-image:url(/static/images/mainpage/dp-collaborate-ru@2x.png?ver=170-0)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.zh {
-    background-image: url(/images/mainpage/dp-collaborate-zh.png?ver=170-0)
+    background-image: url(/static/images/mainpage/dp-collaborate-zh.png?ver=170-0)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.collaborate.zh {
-        background-image:url(/images/mainpage/dp-collaborate-zh@2x.png?ver=170-0)
+        background-image:url(/static/images/mainpage/dp-collaborate-zh@2x.png?ver=170-0)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main {
-    background-image: url(/images/mainpage/dp-mp.png?ver=191.1)
+    background-image: url(/static/images/mainpage/dp-mp.png?ver=191.1)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main {
-        background-image:url(/images/mainpage/dp-mp@2x.png?ver=191.1)
+        background-image:url(/static/images/mainpage/dp-mp@2x.png?ver=191.1)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.de {
-    background-image: url(/images/mainpage/dp-mp-de.png?ver=191.1)
+    background-image: url(/static/images/mainpage/dp-mp-de.png?ver=191.1)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.de {
-        background-image:url(/images/mainpage/dp-mp-de@2x.png?ver=191.1)
+        background-image:url(/static/images/mainpage/dp-mp-de@2x.png?ver=191.1)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.fr {
-    background-image: url(/images/mainpage/dp-mp-fr.png?ver=191.1)
+    background-image: url(/static/images/mainpage/dp-mp-fr.png?ver=191.1)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.fr {
-        background-image:url(/images/mainpage/dp-mp-fr@2x.png?ver=191.1)
+        background-image:url(/static/images/mainpage/dp-mp-fr@2x.png?ver=191.1)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.ru {
-    background-image: url(/images/mainpage/dp-mp-ru.png?ver=170-0)
+    background-image: url(/static/images/mainpage/dp-mp-ru.png?ver=170-0)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.ru {
-        background-image:url(/images/mainpage/dp-mp-ru@2x.png?ver=170-0)
+        background-image:url(/static/images/mainpage/dp-mp-ru@2x.png?ver=170-0)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.zh {
-    background-image: url(/images/mainpage/dp-mp-zh.png?ver=170-0)
+    background-image: url(/static/images/mainpage/dp-mp-zh.png?ver=170-0)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.main.zh {
-        background-image:url(/images/mainpage/dp-mp-zh@2x.png?ver=170-0)
+        background-image:url(/static/images/mainpage/dp-mp-zh@2x.png?ver=170-0)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security {
-    background-image: url(/images/mainpage/dp-secure.png)
+    background-image: url(/static/images/mainpage/dp-secure.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security {
-        background-image:url(/images/mainpage/dp-secure@2x.png)
+        background-image:url(/static/images/mainpage/dp-secure@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.de {
-    background-image: url(/images/mainpage/dp-secure-de.png)
+    background-image: url(/static/images/mainpage/dp-secure-de.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.de {
-        background-image:url(/images/mainpage/dp-secure-de@2x.png)
+        background-image:url(/static/images/mainpage/dp-secure-de@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.fr {
-    background-image: url(/images/mainpage/dp-secure-fr.png)
+    background-image: url(/static/images/mainpage/dp-secure-fr.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.fr {
-        background-image:url(/images/mainpage/dp-secure-fr@2x.png)
+        background-image:url(/static/images/mainpage/dp-secure-fr@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.ru {
-    background-image: url(/images/mainpage/dp-secure-ru.png)
+    background-image: url(/static/images/mainpage/dp-secure-ru.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.ru {
-        background-image:url(/images/mainpage/dp-secure-ru@2x.png)
+        background-image:url(/static/images/mainpage/dp-secure-ru@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.zh {
-    background-image: url(/images/mainpage/dp-secure-zh.png)
+    background-image: url(/static/images/mainpage/dp-secure-zh.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.security.zh {
-        background-image:url(/images/mainpage/dp-secure-zh@2x.png)
+        background-image:url(/static/images/mainpage/dp-secure-zh@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace {
     aspect-ratio: 1.46;
-    background-image: url(/images/mainpage/workspace.png)
+    background-image: url(/static/images/mainpage/workspace.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace {
-        background-image:url(/images/mainpage/workspace@2x.png)
+        background-image:url(/static/images/mainpage/workspace@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.de {
-    background-image: url(/images/mainpage/workspace-de.png)
+    background-image: url(/static/images/mainpage/workspace-de.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.de {
-        background-image:url(/images/mainpage/workspace-de@2x.png)
+        background-image:url(/static/images/mainpage/workspace-de@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.fr {
-    background-image: url(/images/mainpage/workspace-fr.png)
+    background-image: url(/static/images/mainpage/workspace-fr.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.fr {
-        background-image:url(/images/mainpage/workspace-fr@2x.png)
+        background-image:url(/static/images/mainpage/workspace-fr@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.ru {
-    background-image: url(/images/mainpage/workspace-ru.png)
+    background-image: url(/static/images/mainpage/workspace-ru.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.ru {
-        background-image:url(/images/mainpage/workspace-ru@2x.png)
+        background-image:url(/static/images/mainpage/workspace-ru@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.zh {
-    background-image: url(/images/mainpage/workspace-zh.png)
+    background-image: url(/static/images/mainpage/workspace-zh.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.workspace.zh {
-        background-image:url(/images/mainpage/workspace-zh@2x.png)
+        background-image:url(/static/images/mainpage/workspace-zh@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs {
-    background-image: url(/images/mainpage/dp-mp.png)
+    background-image: url(/static/images/mainpage/dp-mp.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs {
-        background-image:url(/images/mainpage/dp-mp@2x.png)
+        background-image:url(/static/images/mainpage/dp-mp@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.de {
-    background-image: url(/images/mainpage/dp-mp-de.png)
+    background-image: url(/static/images/mainpage/dp-mp-de.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.de {
-        background-image:url(/images/mainpage/dp-mp-de@2x.png)
+        background-image:url(/static/images/mainpage/dp-mp-de@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.fr {
-    background-image: url(/images/mainpage/dp-mp-fr.png)
+    background-image: url(/static/images/mainpage/dp-mp-fr.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.fr {
-        background-image:url(/images/mainpage/dp-mp-fr@2x.png)
+        background-image:url(/static/images/mainpage/dp-mp-fr@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.ru {
-    background-image: url(/images/mainpage/dp-mp-ru.png)
+    background-image: url(/static/images/mainpage/dp-mp-ru.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.ru {
-        background-image:url(/images/mainpage/dp-mp-ru@2x.png)
+        background-image:url(/static/images/mainpage/dp-mp-ru@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.zh {
-    background-image: url(/images/mainpage/dp-mp-zh.png)
+    background-image: url(/static/images/mainpage/dp-mp-zh.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docs.zh {
-        background-image:url(/images/mainpage/dp-mp-zh@2x.png)
+        background-image:url(/static/images/mainpage/dp-mp-zh@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docspace {
-    background-image: url(/images/mainpage/docspace.png);
+    background-image: url(/static/images/mainpage/docspace.png);
     aspect-ratio: 1.5
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docspace {
-        background-image:url(/images/mainpage/docspace@2x.png)
+        background-image:url(/static/images/mainpage/docspace@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docspace.fr {
-    background-image: url(/images/mainpage/docspace-fr.png)
+    background-image: url(/static/images/mainpage/docspace-fr.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docspace.fr {
-        background-image:url(/images/mainpage/docspace-fr@2x.png)
+        background-image:url(/static/images/mainpage/docspace-fr@2x.png)
     }
 }
 
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docspace.ru {
-    background-image: url(/images/mainpage/docspace-ru.png)
+    background-image: url(/static/images/mainpage/docspace-ru.png)
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.docspace.ru {
-        background-image:url(/images/mainpage/docspace-ru@2x.png)
+        background-image:url(/static/images/mainpage/docspace-ru@2x.png)
     }
 }
 
@@ -1841,7 +1841,7 @@ body#defaultpage .dp-latest .dp-latest-content .dp-blog .dp-blog-slide .dp-blog-
 }
 
 body#defaultpage .dp-latest .dp-latest-content .dp-blog .dp-blog-slide .dp-blog-date:before {
-    background-image: url(/images/mainpage/def-calendar.svg);
+    background-image: url(/static/images/mainpage/def-calendar.svg);
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -1889,7 +1889,7 @@ body#defaultpage .dp-latest .dp-latest-content .dp-event-date {
 }
 
 body#defaultpage .dp-latest .dp-latest-content .dp-event-date:before {
-    background-image: url(/images/mainpage/date-icon-events.svg)
+    background-image: url(/static/images/mainpage/date-icon-events.svg)
 }
 
 body#defaultpage .dp-latest .dp-latest-content .dp-latest-subblock {
@@ -1997,7 +1997,7 @@ body#defaultpage .dp-latest .dp-latest-content #dp-youtube-slider .dp-youtube-sl
 }
 
 body#defaultpage .dp-latest .dp-latest-content #dp-youtube-slider .dp-youtube-slide .dp-youtube-date:before {
-    background-image: url(/images/mainpage/def-calendar.svg);
+    background-image: url(/static/images/mainpage/def-calendar.svg);
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -2009,7 +2009,7 @@ body#defaultpage .dp-latest .dp-latest-content #dp-youtube-slider .dp-youtube-sl
 }
 
 body#defaultpage .dp-latest .dp-latest-content #dp-youtube-slider .dp-youtube-slide .dp-youtube-date:before {
-    background-image: url(/images/mainpage/date-icon-events.svg);
+    background-image: url(/static/images/mainpage/date-icon-events.svg);
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -2030,7 +2030,7 @@ body#defaultpage .dp-latest .dp-latest-content #dp-youtube-slider .dp-youtube-sl
 }
 
 body#defaultpage .dp-latest .dp-latest-content #dp-youtube-slider .dp-youtube-slide .dp-youtube-type:before {
-    background-image: url(/images/mainpage/workshop.svg);
+    background-image: url(/static/images/mainpage/workshop.svg);
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -2098,15 +2098,15 @@ body#defaultpage .dp-latest .dp-latest-content #dp-webinars-slider .dp-webinar-s
 }
 
 body#defaultpage .dp-latest .dp-latest-content #dp-webinars-slider .dp-webinar-slide .dp-webinar-author.alina {
-    background-image: url(/images/webinars/manager6.png)
+    background-image: url(/static/images/webinars/manager6.png)
 }
 
 body#defaultpage .dp-latest .dp-latest-content #dp-webinars-slider .dp-webinar-slide .dp-webinar-author.ksenia {
-    background-image: url(/images/webinars/manager3.png)
+    background-image: url(/static/images/webinars/manager3.png)
 }
 
 body#defaultpage .dp-latest .dp-latest-content #dp-webinars-slider .dp-webinar-slide .dp-webinar-author.mikhail_nadya {
-    background-image: url(/images/webinars/manager2.png),url(/images/webinars/manager4.png);
+    background-image: url(/static/images/webinars/manager2.png),url(/static/images/webinars/manager4.png);
     background-position: 28px 32px,94px 32px;
     padding-left: 164px
 }
@@ -2237,7 +2237,7 @@ body#defaultpage .dp-latest .dp-latest-content .dp-wechat-block .wechat-message-
 }
 
 body#defaultpage .dp-latest .dp-latest-content .dp-wechat-block .wechat-message-date:before {
-    background-image: url(/images/mainpage/def-calendar.svg);
+    background-image: url(/static/images/mainpage/def-calendar.svg);
     background-repeat: no-repeat;
     content: '';
     display: block;
@@ -2293,7 +2293,7 @@ body#defaultpage .dp-latest .dp-latest-content h6 a {
 }
 
 body#defaultpage .dp-latest .dp-latest-content h6 a:before {
-    background-image: url(/images/arrow-red.svg);
+    background-image: url(/static/images/arrow-red.svg);
     background-repeat: no-repeat;
     background-size: contain;
     content: '';
@@ -2392,7 +2392,7 @@ body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal {
 }
 
 body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img {
-    background-image: url(/images/mainpage/medals_sprite_2x-01.png);
+    background-image: url(/static/images/mainpage/medals_sprite_2x-01.png);
     background-repeat: no-repeat;
     background-size: 847px 96px;
     height: 97px;
@@ -2401,25 +2401,25 @@ body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img {
 }
 
 body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img.slashdot {
-    background-image: url(/images/mainpage/slashdot_badge.svg);
+    background-image: url(/static/images/mainpage/slashdot_badge.svg);
     background-size: 86px auto;
     background-position-x: 18px
 }
 
 body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img.capterra {
-    background-image: url(/images/mainpage/capterra_badge.svg);
+    background-image: url(/static/images/mainpage/capterra_badge.svg);
     background-size: 116px auto;
     background-position: 4px -9px
 }
 
 body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img.highperformer {
-    background-image: url(/images/mainpage/officesuites_highperformer_highperformer.svg);
+    background-image: url(/static/images/mainpage/officesuites_highperformer_highperformer.svg);
     background-size: 87px auto;
     background-position: 18px -8px
 }
 
 body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img.cloudinsider {
-    background-image: url(/images/mainpage/cloudaward-2023.svg);
+    background-image: url(/static/images/mainpage/cloudaward-2023.svg);
     background-position-y: center;
     background-size: 180px auto;
     height: 96px;
@@ -2428,14 +2428,14 @@ body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img.cloudi
 }
 
 body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img.omr {
-    background-image: url(/images/mainpage/omr_badge.svg);
+    background-image: url(/static/images/mainpage/omr_badge.svg);
     background-size: contain;
     background-position: center;
     margin-top: 72px
 }
 
 body#defaultpage .dp-rated .dp-r-hm .dp-r-medals a .dp-r-medal .dp-rm-img.sourceforge {
-    background-image: url(/images/mainpage/sourceforge_badge.svg);
+    background-image: url(/static/images/mainpage/sourceforge_badge.svg);
     background-size: 92px auto;
     background-position-x: 16px;
     margin-top: 72px
@@ -2482,14 +2482,14 @@ body#defaultpage .dp-rated .dp-r-ls .dp-r-logostars {
 }
 
 body#defaultpage .dp-rated .dp-r-ls .dp-r-logostars .dp-rls-logo {
-    background-image: url(/images/mainpage/logo-stars.svg);
+    background-image: url(/static/images/mainpage/logo-stars.svg);
     background-repeat: no-repeat;
     height: 48px;
     width: 150px
 }
 
 body#defaultpage .dp-rated .dp-r-ls .dp-r-logostars .dp-rls-stars {
-    background-image: url(/images/mainpage/def-stars.svg);
+    background-image: url(/static/images/mainpage/def-stars.svg);
     background-position-y: -30px;
     background-repeat: no-repeat;
     height: 18px;
@@ -2497,7 +2497,7 @@ body#defaultpage .dp-rated .dp-r-ls .dp-r-logostars .dp-rls-stars {
 }
 
 body#defaultpage .dp-rated .dp-r-ls .dp-r-logostars .dp-rls-stars:before {
-    background-image: url(/images/mainpage/def-stars.svg);
+    background-image: url(/static/images/mainpage/def-stars.svg);
     background-position-y: 0;
     background-repeat: no-repeat;
     content: '';
@@ -2603,7 +2603,7 @@ body#defaultpage .dp-video-container .dp-video .dp-v-border:hover {
 }
 
 body#defaultpage .dp-video-container .dp-video .dp-v-border .dp-v-image {
-    background-image: url(/images/mainpage/def-video-bg.svg);
+    background-image: url(/static/images/mainpage/def-video-bg.svg);
     background-position: 50% 40%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2909,7 +2909,7 @@ body#defaultpage .orangetext {
 }
 
 @media screen and (min-width: 1024px) {
-    body#defaultpage #navitem_about,body#defaultpage #navitem_features,body#defaultpage #navitem_download,body#defaultpage #navitem_partners,body#defaultpage #navitem_forbusiness,body#defaultpage #navitem_fordevelopers,body#defaultpage #navitem_prices {
+    body#defaultpage #navitem_about,body#defaultpage #navitem_produk,body#defaultpage #navitem_download,body#defaultpage #navitem_partners,body#defaultpage #navitem_solusi,body#defaultpage #navitem_fordevelopers,body#defaultpage #navitem_prices {
         border-bottom-color:transparent
     }
 }

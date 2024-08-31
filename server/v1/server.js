@@ -19,9 +19,9 @@ app.use(express.json());
 // rest router
 app.use("/api/v1", restRouter);
 // view router
-app.use("/pug", viewRouter);
+app.use("/", viewRouter);
 // static file
-app.use('/', express.static(path.join(__dirname, 'public')))
+app.use('/static', express.static(path.join(__dirname, 'public')))
 
 //load view engine
 app.set('views', path.join(__dirname, 'views'));
