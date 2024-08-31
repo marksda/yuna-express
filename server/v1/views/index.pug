@@ -6,18 +6,35 @@ html(lang='en')
     link(rel="stylesheet", href="css/font.css") 
     title= title    
     link(rel="stylesheet", href="css/reset.css")
-    link(rel="stylesheet", href="css/default_page.css")
     link(rel="stylesheet", href="css/common.css")
-  body(id="defaultpage")
-    div(class="mainpart")
-      - var pengumuman = true
-      if pengumuman
-        div(class="advent-announce")
-          a(href="/pengumuman")        
-            div(class="advent-announce-text")
-              p(style="color: white") pengumuman
-      header
-        div(class="logo") 
-          a(href="/")
-      div(class="main")
-        div(class="dp-first-screen") sdfsa dsfjsadkfjsaldkf
+    link(rel="stylesheet", href="css/default_page.css")
+    link(rel="stylesheet", href="css/mobile.css")
+    link(rel="stylesheet", href="css/pushy.css")
+  body#defaultpage
+    .BaseSide.Com2
+      .mainpart(style="z-index:")
+        .site-overlay
+        - var pengumuman = true
+        if pengumuman
+          .advent-announce.push.advent-mobile-hide
+            a(href="/pengumuman")        
+              .advent-announce-text
+                p
+                  span FREE MeDical MEdic (MD-ME) 1.0.0 
+                  strong - Fitur: 
+                  .
+                    Registrasi, billing, rekam medis, farmasi, askep, dll
+                .arrow-space
+          .advent-announce.push.advent-desktop-hide
+            a(href="/pengumuman")        
+              .advent-announce-text
+                p
+                  span FREE MeDical MEdic/MD-ME 1.0.0 
+                  br 
+                  .
+                    Released
+        header
+          .narrowheader
+            .logo.push
+              a(href="/")
+        article#target
