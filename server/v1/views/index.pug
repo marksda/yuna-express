@@ -3,16 +3,18 @@ html(lang='en')
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title= title
+    link(rel="stylesheet", href="css/font.css") 
+    title= title    
     link(rel="stylesheet", href="css/reset.css")
-    link(rel="stylesheet", href="css/index.css")
+    link(rel="stylesheet", href="css/default_page.css")
+    link(rel="stylesheet", href="css/common.css")
   body(id="defaultpage")
-    div(class="container")
-      - var pengumuman = false
+    div(class="mainpart")
+      - var pengumuman = true
       if pengumuman
-        div(class="pengumuman")
+        div(class="advent-announce")
           a(href="/pengumuman")        
-            div(class="pengumuman-text")
+            div(class="advent-announce-text")
               p(style="color: white") pengumuman
       header
         div(class="logo") 
