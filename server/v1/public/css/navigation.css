@@ -518,8 +518,8 @@ nav>div>ul.all-menu-items {
     display: grid;
     display: -ms-grid;
     justify-content: center;
-    grid-template-columns: min-content min-content min-content min-content min-content min-content min-content;
-    -ms-grid-columns: auto 32px auto 32px auto 32px auto 32px auto 32px auto 32px auto;
+    grid-template-columns: min-content min-content min-content min-content min-content;
+    -ms-grid-columns: auto 32px auto 32px auto 32px auto 32px auto;
     grid-gap: 20px;
     width: 100%
 }
@@ -797,7 +797,7 @@ ul.zh #menu_blog_img {
     padding: 8px 0 32px
 }
 
-#navitem_download_docspace_ce,#navitem_download_workspace_ce {
+#navitem_media_docspace_ce,#navitem_media_workspace_ce {
     margin-bottom: 0
 }
 
@@ -805,7 +805,7 @@ ul.zh #menu_blog_img {
     left: -725px
 }
 
-#navitem_download_menu {
+#navitem_media_menu {
     left: -270px
 }
 
@@ -855,11 +855,11 @@ ul.zh #menu_blog_img {
     left: 137px
 }
 
-#navitem_fordevelopers_menu {
+#navitem_layanan_menu {
     left: calc(50% - 312px)
 }
 
-#navitem_prices_menu {
+#navitem_portofolio_menu {
     left: -260px
 }
 
@@ -867,7 +867,7 @@ ul.zh #menu_blog_img {
     left: -165px
 }
 
-.narrowheader.pt #navitem_download_menu {
+.narrowheader.pt #navitem_media_menu {
     left: -360px
 }
 
@@ -888,7 +888,7 @@ ul.zh #menu_blog_img {
 }
 
 @media screen and (min-width: 1024px) {
-    #navitem_produk_menu,#navitem_about_menu,#navitem_download_menu,#navitem_partnership_menu,#navitem_prices_menu,#navitem_fordevelopers_menu,#navitem_solusi_menu,#navitem_phone_menu,#navitem_signin_menu {
+    #navitem_produk_menu,#navitem_about_menu,#navitem_media_menu,#navitem_partnership_menu,#navitem_portofolio_menu,#navitem_layanan_menu,#navitem_solusi_menu,#navitem_phone_menu,#navitem_signin_menu {
         display:none;
         position: absolute;
         z-index: 1999;
@@ -901,7 +901,7 @@ ul.zh #menu_blog_img {
         -webkit-box-shadow: 0 20px 50px rgba(85,85,85,0.15)
     }
 
-    #navitem_produk_menu .dropdown-content,#navitem_about_menu .dropdown-content,#navitem_download_menu .dropdown-content,#navitem_partnership_menu .dropdown-content,#navitem_prices_menu .dropdown-content,#navitem_fordevelopers_menu .dropdown-content,#navitem_solusi_menu .dropdown-content,#navitem_phone_menu .dropdown-content,#navitem_signin_menu .dropdown-content {
+    #navitem_produk_menu .dropdown-content,#navitem_about_menu .dropdown-content,#navitem_media_menu .dropdown-content,#navitem_partnership_menu .dropdown-content,#navitem_portofolio_menu .dropdown-content,#navitem_layanan_menu .dropdown-content,#navitem_solusi_menu .dropdown-content,#navitem_phone_menu .dropdown-content,#navitem_signin_menu .dropdown-content {
         list-style-type: none;
         margin: 0;
         display: block;
@@ -910,22 +910,22 @@ ul.zh #menu_blog_img {
         text-align: left
     }
 
-    #navitem_produk_menu .dropdown-content>li,#navitem_about_menu .dropdown-content>li,#navitem_download_menu .dropdown-content>li,#navitem_partnership_menu .dropdown-content>li,#navitem_prices_menu .dropdown-content>li,#navitem_fordevelopers_menu .dropdown-content>li,#navitem_solusi_menu .dropdown-content>li,#navitem_phone_menu .dropdown-content>li,#navitem_signin_menu .dropdown-content>li {
+    #navitem_produk_menu .dropdown-content>li,#navitem_about_menu .dropdown-content>li,#navitem_media_menu .dropdown-content>li,#navitem_partnership_menu .dropdown-content>li,#navitem_portofolio_menu .dropdown-content>li,#navitem_layanan_menu .dropdown-content>li,#navitem_solusi_menu .dropdown-content>li,#navitem_phone_menu .dropdown-content>li,#navitem_signin_menu .dropdown-content>li {
         display: block;
         margin: 0;
         padding: 0;
         vertical-align: top
     }
 
-    #navitem_produk_menu .dropdown-content>li b,#navitem_about_menu .dropdown-content>li b,#navitem_download_menu .dropdown-content>li b,#navitem_partnership_menu .dropdown-content>li b,#navitem_prices_menu .dropdown-content>li b,#navitem_fordevelopers_menu .dropdown-content>li b,#navitem_solusi_menu .dropdown-content>li b,#navitem_phone_menu .dropdown-content>li b,#navitem_signin_menu .dropdown-content>li b {
+    #navitem_produk_menu .dropdown-content>li b,#navitem_about_menu .dropdown-content>li b,#navitem_media_menu .dropdown-content>li b,#navitem_partnership_menu .dropdown-content>li b,#navitem_portofolio_menu .dropdown-content>li b,#navitem_layanan_menu .dropdown-content>li b,#navitem_solusi_menu .dropdown-content>li b,#navitem_phone_menu .dropdown-content>li b,#navitem_signin_menu .dropdown-content>li b {
         color: #444444
     }
 
-    #navitem_produk_menu .dropdown-content>li .nowrap,#navitem_about_menu .dropdown-content>li .nowrap,#navitem_download_menu .dropdown-content>li .nowrap,#navitem_partnership_menu .dropdown-content>li .nowrap,#navitem_prices_menu .dropdown-content>li .nowrap,#navitem_fordevelopers_menu .dropdown-content>li .nowrap,#navitem_solusi_menu .dropdown-content>li .nowrap,#navitem_phone_menu .dropdown-content>li .nowrap,#navitem_signin_menu .dropdown-content>li .nowrap {
+    #navitem_produk_menu .dropdown-content>li .nowrap,#navitem_about_menu .dropdown-content>li .nowrap,#navitem_media_menu .dropdown-content>li .nowrap,#navitem_partnership_menu .dropdown-content>li .nowrap,#navitem_portofolio_menu .dropdown-content>li .nowrap,#navitem_layanan_menu .dropdown-content>li .nowrap,#navitem_solusi_menu .dropdown-content>li .nowrap,#navitem_phone_menu .dropdown-content>li .nowrap,#navitem_signin_menu .dropdown-content>li .nowrap {
         white-space: nowrap
     }
 
-    #navitem_produk_menu:before,#navitem_about_menu:before,#navitem_download_menu:before,#navitem_partnership_menu:before,#navitem_prices_menu:before,#navitem_fordevelopers_menu:before,#navitem_solusi_menu:before,#navitem_phone_menu:before,#navitem_signin_menu:before {
+    #navitem_produk_menu:before,#navitem_about_menu:before,#navitem_media_menu:before,#navitem_partnership_menu:before,#navitem_portofolio_menu:before,#navitem_layanan_menu:before,#navitem_solusi_menu:before,#navitem_phone_menu:before,#navitem_signin_menu:before {
         display: block;
         position: absolute;
         width: 0;
@@ -937,7 +937,7 @@ ul.zh #menu_blog_img {
         top: 0
     }
 
-    #navitem_produk_menu:after,#navitem_about_menu:after,#navitem_download_menu:after,#navitem_partnership_menu:after,#navitem_prices_menu:after,#navitem_fordevelopers_menu:after,#navitem_solusi_menu:after,#navitem_phone_menu:after,#navitem_signin_menu:after {
+    #navitem_produk_menu:after,#navitem_about_menu:after,#navitem_media_menu:after,#navitem_partnership_menu:after,#navitem_portofolio_menu:after,#navitem_layanan_menu:after,#navitem_solusi_menu:after,#navitem_phone_menu:after,#navitem_signin_menu:after {
         display: block;
         position: absolute;
         width: 0;
@@ -949,16 +949,16 @@ ul.zh #menu_blog_img {
         top: 0
     }
 
-    #navitem_produk_menu.top_border:before,#navitem_about_menu.top_border:before,#navitem_download_menu.top_border:before,#navitem_partnership_menu.top_border:before,#navitem_prices_menu.top_border:before,#navitem_fordevelopers_menu.top_border:before,#navitem_solusi_menu.top_border:before,#navitem_phone_menu.top_border:before,#navitem_signin_menu.top_border:before {
+    #navitem_produk_menu.top_border:before,#navitem_about_menu.top_border:before,#navitem_media_menu.top_border:before,#navitem_partnership_menu.top_border:before,#navitem_portofolio_menu.top_border:before,#navitem_layanan_menu.top_border:before,#navitem_solusi_menu.top_border:before,#navitem_phone_menu.top_border:before,#navitem_signin_menu.top_border:before {
         width: 50%;
         left: 0
     }
 
-    #navitem_produk_menu.top_border:after,#navitem_about_menu.top_border:after,#navitem_download_menu.top_border:after,#navitem_partnership_menu.top_border:after,#navitem_prices_menu.top_border:after,#navitem_fordevelopers_menu.top_border:after,#navitem_solusi_menu.top_border:after,#navitem_phone_menu.top_border:after,#navitem_signin_menu.top_border:after {
+    #navitem_produk_menu.top_border:after,#navitem_about_menu.top_border:after,#navitem_media_menu.top_border:after,#navitem_partnership_menu.top_border:after,#navitem_portofolio_menu.top_border:after,#navitem_layanan_menu.top_border:after,#navitem_solusi_menu.top_border:after,#navitem_phone_menu.top_border:after,#navitem_signin_menu.top_border:after {
         width: 50%
     }
 
-    #navitem_produk_menu .dropdown-content>li,#navitem_about_menu .dropdown-content>li,#navitem_download_menu .dropdown-content>li,#navitem_prices_menu .dropdown-content>li,#navitem_partnership_menu .dropdown-content>li,#navitem_solusi_menu .dropdown-content>li,#navitem_fordevelopers_menu .dropdown-content>li {
+    #navitem_produk_menu .dropdown-content>li,#navitem_about_menu .dropdown-content>li,#navitem_media_menu .dropdown-content>li,#navitem_portofolio_menu .dropdown-content>li,#navitem_partnership_menu .dropdown-content>li,#navitem_solusi_menu .dropdown-content>li,#navitem_layanan_menu .dropdown-content>li {
         display: table-cell;
         padding: 32px 0
     }
@@ -990,7 +990,7 @@ ul.zh #menu_blog_img {
         color: #FF6F3D
     }
 
-    #navitem_prices_menu .dropdown-content>li:last-of-type,#navitem_partnership_menu .dropdown-content>li:last-of-type,#navitem_fordevelopers_menu .dropdown-content>li:last-of-type,#navitem_about_menu .dropdown-content>li:last-of-type {
+    #navitem_portofolio_menu .dropdown-content>li:last-of-type,#navitem_partnership_menu .dropdown-content>li:last-of-type,#navitem_layanan_menu .dropdown-content>li:last-of-type,#navitem_about_menu .dropdown-content>li:last-of-type {
         max-width: 312px;
         padding: 32px 0
     }
@@ -1006,7 +1006,7 @@ ul.zh #menu_blog_img {
         left: 312px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li:first-of-type:before {
+    #navitem_layanan_menu .dropdown-content>li:first-of-type:before {
         content: "";
         display: block;
         height: calc(100% - 64px);
@@ -1017,27 +1017,27 @@ ul.zh #menu_blog_img {
         left: 312px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.fr>li:first-of-type:before {
+    #navitem_layanan_menu .dropdown-content.fr>li:first-of-type:before {
         left: 420px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.es>li:first-of-type:before {
+    #navitem_layanan_menu .dropdown-content.es>li:first-of-type:before {
         left: 415px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.pt>li:first-of-type:before {
+    #navitem_layanan_menu .dropdown-content.pt>li:first-of-type:before {
         left: 405px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.it>li:first-of-type:before {
+    #navitem_layanan_menu .dropdown-content.it>li:first-of-type:before {
         left: 351px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.ru>li:first-of-type:before {
+    #navitem_layanan_menu .dropdown-content.ru>li:first-of-type:before {
         left: 361px
     }
 
-    #navitem_about_menu .dropdown-content>li:first-of-type:before,#navitem_download_menu .dropdown-content>li:first-of-type:before {
+    #navitem_about_menu .dropdown-content>li:first-of-type:before,#navitem_media_menu .dropdown-content>li:first-of-type:before {
         content: "";
         display: block;
         height: calc(100% - 64px);
@@ -1048,7 +1048,7 @@ ul.zh #menu_blog_img {
         left: 312px
     }
 
-    #navitem_prices_menu .dropdown-content>li:first-of-type:before {
+    #navitem_portofolio_menu .dropdown-content>li:first-of-type:before {
         content: "";
         display: block;
         height: calc(100% - 105px);
@@ -1098,7 +1098,7 @@ ul.zh #menu_blog_img {
         margin-left: 24px
     }
 
-    #navitem_download_menu .dropdown-content {
+    #navitem_media_menu .dropdown-content {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1107,209 +1107,209 @@ ul.zh #menu_blog_img {
         width: 624px
     }
 
-    #navitem_download_menu .dropdown-content.de {
+    #navitem_media_menu .dropdown-content.de {
         width: 686px
     }
 
-    #navitem_download_menu .dropdown-content.fr {
+    #navitem_media_menu .dropdown-content.fr {
         width: 677px
     }
 
-    #navitem_download_menu .dropdown-content.es {
+    #navitem_media_menu .dropdown-content.es {
         width: 672px
     }
 
-    #navitem_download_menu .dropdown-content.pt {
+    #navitem_media_menu .dropdown-content.pt {
         width: 817px
     }
 
-    #navitem_download_menu .dropdown-content.cs {
+    #navitem_media_menu .dropdown-content.cs {
         width: 647px
     }
 
-    #navitem_download_menu .dropdown-content.ru {
+    #navitem_media_menu .dropdown-content.ru {
         width: 742px
     }
 
-    #navitem_download_menu .dropdown-content li:first-child {
+    #navitem_media_menu .dropdown-content li:first-child {
         min-width: 312px;
         max-width: 312px
     }
 
-    #navitem_download_menu .dropdown-content.pt li:first-child {
+    #navitem_media_menu .dropdown-content.pt li:first-child {
         min-width: 505px;
         max-width: 505px
     }
 
-    #navitem_download_menu .dropdown-content.pt .download-inner-list li {
+    #navitem_media_menu .dropdown-content.pt .download-inner-list li {
         min-width: 312px !important;
         max-width: 312px !important
     }
 
-    #navitem_download_menu .dropdown-content .download-last-area ul.download-inner-list>li:last-child {
+    #navitem_media_menu .dropdown-content .download-last-area ul.download-inner-list>li:last-child {
         padding: 0
     }
 
-    #navitem_download_menu .dropdown-content>li {
+    #navitem_media_menu .dropdown-content>li {
         padding: 24px 0
     }
 
-    #navitem_download_menu .dropdown-content>li .navitem_2nd_menu {
+    #navitem_media_menu .dropdown-content>li .navitem_2nd_menu {
         padding-bottom: 12px
     }
 
-    #navitem_download_menu .dropdown-content>li:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li:first-of-type:before {
         height: calc(100% - 122px);
         left: 312px;
         top: 32px
     }
 
-    #navitem_download_menu .dropdown-content>li a.dropdown-item {
+    #navitem_media_menu .dropdown-content>li a.dropdown-item {
         margin-left: 24px;
         margin-bottom: 0
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_download_connectors {
+    #navitem_media_menu .dropdown-content>li #navitem_media_connectors {
         margin-left: 0;
         padding-bottom: 0
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_download_docs_builder,#navitem_download_menu .dropdown-content>li #navitem_download_workspace_ce,#navitem_download_menu .dropdown-content>li #navitem_download_docspace_ce,#navitem_download_menu .dropdown-content>li #navitem_download_code_git {
+    #navitem_media_menu .dropdown-content>li #navitem_media_docs_builder,#navitem_media_menu .dropdown-content>li #navitem_media_workspace_ce,#navitem_media_menu .dropdown-content>li #navitem_media_docspace_ce,#navitem_media_menu .dropdown-content>li #navitem_media_code_git {
         margin-left: 0
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_download_code_git {
+    #navitem_media_menu .dropdown-content>li #navitem_media_code_git {
         padding-bottom: 0
     }
 
-    #navitem_download_menu .dropdown-content>li.cs:first-of-type {
+    #navitem_media_menu .dropdown-content>li.cs:first-of-type {
         min-width: 335px
     }
 
-    #navitem_download_menu .dropdown-content>li.cs:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li.cs:first-of-type:before {
         left: 342px
     }
 
-    #navitem_download_menu .dropdown-content>li.cs:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link {
+    #navitem_media_menu .dropdown-content>li.cs:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link {
         padding: 0px 0px 0px 72px
     }
 
-    #navitem_download_menu .dropdown-content>li.cs:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
+    #navitem_media_menu .dropdown-content>li.cs:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
         padding: 0px 0px
     }
 
-    #navitem_download_menu .dropdown-content>li.cs:first-of-type li {
+    #navitem_media_menu .dropdown-content>li.cs:first-of-type li {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li.de:first-of-type {
+    #navitem_media_menu .dropdown-content>li.de:first-of-type {
         min-width: 374px
     }
 
-    #navitem_download_menu .dropdown-content>li.de:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li.de:first-of-type:before {
         left: 374px
     }
 
-    #navitem_download_menu .dropdown-content>li.de:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
+    #navitem_media_menu .dropdown-content>li.de:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
         padding: 0px 24px 0px 8px
     }
 
-    #navitem_download_menu .dropdown-content>li.de:first-of-type li {
+    #navitem_media_menu .dropdown-content>li.de:first-of-type li {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li.es:first-of-type {
+    #navitem_media_menu .dropdown-content>li.es:first-of-type {
         min-width: 360px
     }
 
-    #navitem_download_menu .dropdown-content>li.es:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li.es:first-of-type:before {
         left: 364px
     }
 
-    #navitem_download_menu .dropdown-content>li.es:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
+    #navitem_media_menu .dropdown-content>li.es:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
         padding: 0px 24px 0px 8px
     }
 
-    #navitem_download_menu .dropdown-content>li.es:first-of-type li {
+    #navitem_media_menu .dropdown-content>li.es:first-of-type li {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li.fr:first-of-type {
+    #navitem_media_menu .dropdown-content>li.fr:first-of-type {
         min-width: 365px
     }
 
-    #navitem_download_menu .dropdown-content>li.fr:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li.fr:first-of-type:before {
         left: 372px
     }
 
-    #navitem_download_menu .dropdown-content>li.fr:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
+    #navitem_media_menu .dropdown-content>li.fr:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
         padding: 0px 24px 0px 8px
     }
 
-    #navitem_download_menu .dropdown-content>li.fr:first-of-type li {
+    #navitem_media_menu .dropdown-content>li.fr:first-of-type li {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li.ja:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li.ja:first-of-type:before {
         left: 325px
     }
 
-    #navitem_download_menu .dropdown-content>li.ja:first-of-type:before li {
+    #navitem_media_menu .dropdown-content>li.ja:first-of-type:before li {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li.nl:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
+    #navitem_media_menu .dropdown-content>li.nl:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
         padding: 0px 4px 0px 4px
     }
 
-    #navitem_download_menu .dropdown-content>li.nl:first-of-type li {
+    #navitem_media_menu .dropdown-content>li.nl:first-of-type li {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li.pt:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li.pt:first-of-type:before {
         left: 505px
     }
 
-    #navitem_download_menu .dropdown-content>li.pt:first-of-type:before ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
+    #navitem_media_menu .dropdown-content>li.pt:first-of-type:before ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
         padding: 0px 24px 0px 8px
     }
 
-    #navitem_download_menu .dropdown-content>li.pt a.dropdown-item {
+    #navitem_media_menu .dropdown-content>li.pt a.dropdown-item {
         white-space: pre-wrap
     }
 
-    #navitem_download_menu .dropdown-content>li.ru:first-of-type {
+    #navitem_media_menu .dropdown-content>li.ru:first-of-type {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li.ru:first-of-type:before {
+    #navitem_media_menu .dropdown-content>li.ru:first-of-type:before {
         left: 434px
     }
 
-    #navitem_download_menu .dropdown-content>li.ru:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
+    #navitem_media_menu .dropdown-content>li.ru:first-of-type ul.navitem_2nd_menu li a.nav_item_nowrap_link.second {
         padding: 0px 24px 0px 8px
     }
 
-    #navitem_download_menu .dropdown-content>li.ru:first-of-type li {
+    #navitem_media_menu .dropdown-content>li.ru:first-of-type li {
         min-width: 430px
     }
 
-    #navitem_download_menu .dropdown-content>li div ul li {
+    #navitem_media_menu .dropdown-content>li div ul li {
         white-space: nowrap
     }
 
-    #navitem_download_menu .dropdown-content>li:last-of-type {
+    #navitem_media_menu .dropdown-content>li:last-of-type {
         padding: 32px 0 0
     }
 
-    #navitem_download_menu .dropdown-content>li.last {
+    #navitem_media_menu .dropdown-content>li.last {
         border-top: 1px solid #e2e2e2;
         flex-basis: 100%;
         max-width: 100%;
         padding: 12px 32px
     }
 
-    #navitem_download_menu .dropdown-content>li.last>div {
+    #navitem_media_menu .dropdown-content>li.last>div {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1321,7 +1321,7 @@ ul.zh #menu_blog_img {
         justify-content: space-between
     }
 
-    #navitem_download_menu .dropdown-content>li.last>div>div {
+    #navitem_media_menu .dropdown-content>li.last>div>div {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1334,27 +1334,27 @@ ul.zh #menu_blog_img {
         margin-left: auto
     }
 
-    #navitem_download_menu .dropdown-content>li.last>div>div>a.dropdown-item {
+    #navitem_media_menu .dropdown-content>li.last>div>div>a.dropdown-item {
         font-size: 13px;
         font-weight: 600;
         padding: 0 0 0 32px;
         margin: 0
     }
 
-    #navitem_download_menu .dropdown-content>li.last>div>div>a.dropdown-item:before {
+    #navitem_media_menu .dropdown-content>li.last>div>div>a.dropdown-item:before {
         left: 0
     }
 
-    #navitem_download_menu .dropdown-content>li:nth-of-type(2)>div {
+    #navitem_media_menu .dropdown-content>li:nth-of-type(2)>div {
         display: flex
     }
 
-    #navitem_download_menu .dropdown-content>li:nth-of-type(2)>div>div {
+    #navitem_media_menu .dropdown-content>li:nth-of-type(2)>div>div {
         min-width: 312px;
         max-width: 312px
     }
 
-    #navitem_download_menu .dropdown-content>li .nav_item_link {
+    #navitem_media_menu .dropdown-content>li .nav_item_link {
         color: #444444;
         display: block;
         font-size: 13px;
@@ -1367,17 +1367,17 @@ ul.zh #menu_blog_img {
         text-decoration: none
     }
 
-    #navitem_download_menu .dropdown-content>li .nav_item_link:hover {
+    #navitem_media_menu .dropdown-content>li .nav_item_link:hover {
         color: #FF6F3D
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_produk_docs_overview,#navitem_download_menu .dropdown-content>li #navitem_produk_docspace,#navitem_download_menu .dropdown-content>li #navitem_produk_workspace {
+    #navitem_media_menu .dropdown-content>li #navitem_produk_docs_overview,#navitem_media_menu .dropdown-content>li #navitem_produk_docspace,#navitem_media_menu .dropdown-content>li #navitem_produk_workspace {
         margin: 0 0 12px 24px;
         padding: 12px 32px 12px 48px;
         border-radius: 6px
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_produk_docs_overview .features_info,#navitem_download_menu .dropdown-content>li #navitem_produk_docspace .features_info,#navitem_download_menu .dropdown-content>li #navitem_produk_workspace .features_info {
+    #navitem_media_menu .dropdown-content>li #navitem_produk_docs_overview .features_info,#navitem_media_menu .dropdown-content>li #navitem_produk_docspace .features_info,#navitem_media_menu .dropdown-content>li #navitem_produk_workspace .features_info {
         color: #333;
         font-size: 13px;
         line-height: 1.5em;
@@ -1385,12 +1385,12 @@ ul.zh #menu_blog_img {
         white-space: normal
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_produk_docs_overview:before,#navitem_download_menu .dropdown-content>li #navitem_produk_docspace:before,#navitem_download_menu .dropdown-content>li #navitem_produk_workspace:before {
+    #navitem_media_menu .dropdown-content>li #navitem_produk_docs_overview:before,#navitem_media_menu .dropdown-content>li #navitem_produk_docspace:before,#navitem_media_menu .dropdown-content>li #navitem_produk_workspace:before {
         top: 12px;
         left: 12px
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_produk_docs_overview:after,#navitem_download_menu .dropdown-content>li #navitem_produk_docspace:after,#navitem_download_menu .dropdown-content>li #navitem_produk_workspace:after {
+    #navitem_media_menu .dropdown-content>li #navitem_produk_docs_overview:after,#navitem_media_menu .dropdown-content>li #navitem_produk_docspace:after,#navitem_media_menu .dropdown-content>li #navitem_produk_workspace:after {
         content: "";
         display: block;
         height: 100%;
@@ -1403,33 +1403,33 @@ ul.zh #menu_blog_img {
         position: absolute
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_produk_docs_overview.selected,#navitem_download_menu .dropdown-content>li #navitem_produk_docspace.selected,#navitem_download_menu .dropdown-content>li #navitem_produk_workspace.selected {
+    #navitem_media_menu .dropdown-content>li #navitem_produk_docs_overview.selected,#navitem_media_menu .dropdown-content>li #navitem_produk_docspace.selected,#navitem_media_menu .dropdown-content>li #navitem_produk_workspace.selected {
         color: #FF6F3D;
         background-color: #F5F5F5
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_produk_docs_overview:hover:after,#navitem_download_menu .dropdown-content>li #navitem_produk_docspace:hover:after,#navitem_download_menu .dropdown-content>li #navitem_produk_workspace:hover:after {
+    #navitem_media_menu .dropdown-content>li #navitem_produk_docs_overview:hover:after,#navitem_media_menu .dropdown-content>li #navitem_produk_docspace:hover:after,#navitem_media_menu .dropdown-content>li #navitem_produk_workspace:hover:after {
         background-image: url(../images/arrow-red.svg)
     }
 
-    #navitem_download_menu .dropdown-content>li #navitem_produk_docs_overview_mobile,#navitem_download_menu .dropdown-content>li #navitem_produk_docspace_mobile,#navitem_download_menu .dropdown-content>li #navitem_produk_workspace_mobile,#navitem_download_menu .dropdown-content>li #navitem_produk_connectors_mobile,#navitem_download_menu .dropdown-content>li #navitem_produk_marketplace_mobile,#navitem_download_menu .dropdown-content>li #navitem_produk_online_services_mobile {
+    #navitem_media_menu .dropdown-content>li #navitem_produk_docs_overview_mobile,#navitem_media_menu .dropdown-content>li #navitem_produk_docspace_mobile,#navitem_media_menu .dropdown-content>li #navitem_produk_workspace_mobile,#navitem_media_menu .dropdown-content>li #navitem_produk_connectors_mobile,#navitem_media_menu .dropdown-content>li #navitem_produk_marketplace_mobile,#navitem_media_menu .dropdown-content>li #navitem_produk_online_services_mobile {
         display: none
     }
 
-    #navitem_download_menu a.dropdown-item {
+    #navitem_media_menu a.dropdown-item {
         padding-bottom: 12px
     }
 
-    #navitem_download_menu .download-last-area ul.download-inner-list {
+    #navitem_media_menu .download-last-area ul.download-inner-list {
         display: block
     }
 
-    #navitem_download_menu .download-last-area ul.download-inner-list>li {
+    #navitem_media_menu .download-last-area ul.download-inner-list>li {
         min-width: 312px;
         padding: 0 0 4px
     }
 
-    #navitem_download_menu .download-last-area ul.download-inner-list>li:last-child {
+    #navitem_media_menu .download-last-area ul.download-inner-list>li:last-child {
         position: relative;
         padding: 32px 0 8px
     }
@@ -1625,97 +1625,97 @@ ul.zh #menu_blog_img {
         font-weight: 400
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li {
+    #navitem_layanan_menu .dropdown-content>li {
         padding: 24px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li:first-of-type {
+    #navitem_layanan_menu .dropdown-content>li:first-of-type {
         min-width: 288px;
         padding-right: 0
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li:nth-of-type(2) {
+    #navitem_layanan_menu .dropdown-content>li:nth-of-type(2) {
         min-width: 264px
     }
 
-    #navitem_fordevelopers_menu ul.navitem_2nd_menu {
+    #navitem_layanan_menu ul.navitem_2nd_menu {
         padding: 0px 0 12px
     }
 
-    #navitem_fordevelopers_menu ul.navitem_2nd_menu a.dropdown-item {
+    #navitem_layanan_menu ul.navitem_2nd_menu a.dropdown-item {
         font-weight: 400;
         margin: 0 0 12px;
         padding: 0 64px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content {
+    #navitem_layanan_menu .dropdown-content {
         display: flex;
         flex-wrap: wrap;
         width: 624px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.de {
+    #navitem_layanan_menu .dropdown-content.de {
         width: 760px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.fr {
+    #navitem_layanan_menu .dropdown-content.fr {
         width: 790px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.es {
+    #navitem_layanan_menu .dropdown-content.es {
         width: 790px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.pt {
+    #navitem_layanan_menu .dropdown-content.pt {
         width: 775px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.it,#navitem_fordevelopers_menu .dropdown-content.cs {
+    #navitem_layanan_menu .dropdown-content.it,#navitem_layanan_menu .dropdown-content.cs {
         width: 712px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.nl {
+    #navitem_layanan_menu .dropdown-content.nl {
         width: 655px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.ja {
+    #navitem_layanan_menu .dropdown-content.ja {
         width: 760px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.zh {
+    #navitem_layanan_menu .dropdown-content.zh {
         width: 625px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content.ru {
+    #navitem_layanan_menu .dropdown-content.ru {
         width: 820px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content #navitem_fb_docs,#navitem_fordevelopers_menu .dropdown-content #navitem_fb_docspace {
+    #navitem_layanan_menu .dropdown-content #navitem_fb_docs,#navitem_layanan_menu .dropdown-content #navitem_fb_docspace {
         margin-left: 0;
         padding-left: 0
     }
 
-    #navitem_fordevelopers_menu .dropdown-content a.dropdown-item {
+    #navitem_layanan_menu .dropdown-content a.dropdown-item {
         padding-left: 36px;
         margin-bottom: 12px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content a:last-of-type {
+    #navitem_layanan_menu .dropdown-content a:last-of-type {
         margin-bottom: 0
     }
 
-    #navitem_fordevelopers_menu .dropdown-content a.dropdown-item::before {
+    #navitem_layanan_menu .dropdown-content a.dropdown-item::before {
         left: 0
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li.last {
+    #navitem_layanan_menu .dropdown-content>li.last {
         border-top: 1px solid #e2e2e2;
         flex-basis: 100%;
         max-width: 100%;
         padding: 16px 32px
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li.last>div {
+    #navitem_layanan_menu .dropdown-content>li.last>div {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1727,7 +1727,7 @@ ul.zh #menu_blog_img {
         justify-content: flex-end
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li.last>div>div {
+    #navitem_layanan_menu .dropdown-content>li.last>div>div {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1740,14 +1740,14 @@ ul.zh #menu_blog_img {
         justify-content: space-between
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li.last>div>div>a.dropdown-item {
+    #navitem_layanan_menu .dropdown-content>li.last>div>div>a.dropdown-item {
         font-size: 13px;
         font-weight: 600;
         padding: 0 0 0 32px;
         margin: 0
     }
 
-    #navitem_fordevelopers_menu .dropdown-content>li.last>div>div>a.dropdown-item:before {
+    #navitem_layanan_menu .dropdown-content>li.last>div>div>a.dropdown-item:before {
         left: 0
     }
 
@@ -1844,11 +1844,11 @@ ul.zh #menu_blog_img {
         max-width: 590px
     }
 
-    #navitem_prices_menu .dropdown-content>li {
+    #navitem_portofolio_menu .dropdown-content>li {
         min-width: 312px
     }
 
-    #navitem_prices_menu .dropdown-content {
+    #navitem_portofolio_menu .dropdown-content {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -1857,39 +1857,39 @@ ul.zh #menu_blog_img {
         width: 624px
     }
 
-    #navitem_prices_menu .dropdown-content li:first-child {
+    #navitem_portofolio_menu .dropdown-content li:first-child {
         min-width: 312px;
         max-width: 312px
     }
 
-    #navitem_prices_menu .dropdown-content>li {
+    #navitem_portofolio_menu .dropdown-content>li {
         flex-basis: 32%;
         box-sizing: border-box;
         padding: 24px 0
     }
 
-    #navitem_prices_menu .dropdown-content>li:first-of-type {
+    #navitem_portofolio_menu .dropdown-content>li:first-of-type {
         min-width: 312px;
         max-width: 312px
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_prices_for_business,#navitem_prices_menu .dropdown-content>li #navitem_prices_for_dev,#navitem_prices_menu .dropdown-content>li #navitem_prices_for_home_use {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_portofolio_for_business,#navitem_portofolio_menu .dropdown-content>li #navitem_portofolio_for_dev,#navitem_portofolio_menu .dropdown-content>li #navitem_portofolio_for_home_use {
         margin-left: 24px
     }
 
-    #navitem_prices_menu .dropdown-content>li>div .dropdown-item {
+    #navitem_portofolio_menu .dropdown-content>li>div .dropdown-item {
         margin-bottom: 12px
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_prices_home_server {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_portofolio_home_server {
         margin-bottom: 12px
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_prices_for_dev,#navitem_prices_menu .dropdown-content>li #navitem_prices_for_home_use {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_portofolio_for_dev,#navitem_portofolio_menu .dropdown-content>li #navitem_portofolio_for_home_use {
         margin-top: 16px
     }
 
-    #navitem_prices_menu .dropdown-content>li.last {
+    #navitem_portofolio_menu .dropdown-content>li.last {
         border-top: 1px solid #e2e2e2;
         flex-basis: 100%;
         max-width: 100%;
@@ -1899,7 +1899,7 @@ ul.zh #menu_blog_img {
         justify-content: end
     }
 
-    #navitem_prices_menu .dropdown-content>li.last>div {
+    #navitem_portofolio_menu .dropdown-content>li.last>div {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1911,7 +1911,7 @@ ul.zh #menu_blog_img {
         justify-content: space-between
     }
 
-    #navitem_prices_menu .dropdown-content>li.last>div>div {
+    #navitem_portofolio_menu .dropdown-content>li.last>div>div {
         -webkit-box-align: center;
         -webkit-align-items: center;
         -ms-flex-align: center;
@@ -1924,27 +1924,27 @@ ul.zh #menu_blog_img {
         justify-content: space-between
     }
 
-    #navitem_prices_menu .dropdown-content>li.last>div>div>a.dropdown-item {
+    #navitem_portofolio_menu .dropdown-content>li.last>div>div>a.dropdown-item {
         font-size: 13px;
         font-weight: 600;
         padding: 0 0 0 32px;
         margin: 0
     }
 
-    #navitem_prices_menu .dropdown-content>li.last>div>div>a.dropdown-item:before {
+    #navitem_portofolio_menu .dropdown-content>li.last>div>div>a.dropdown-item:before {
         left: 0
     }
 
-    #navitem_prices_menu .dropdown-content>li:nth-of-type(2)>div {
+    #navitem_portofolio_menu .dropdown-content>li:nth-of-type(2)>div {
         display: flex
     }
 
-    #navitem_prices_menu .dropdown-content>li:nth-of-type(2)>div>div {
+    #navitem_portofolio_menu .dropdown-content>li:nth-of-type(2)>div>div {
         min-width: 312px;
         max-width: 312px
     }
 
-    #navitem_prices_menu .dropdown-content>li .nav_item_link {
+    #navitem_portofolio_menu .dropdown-content>li .nav_item_link {
         color: #444444;
         display: block;
         font-size: 13px;
@@ -1957,17 +1957,17 @@ ul.zh #menu_blog_img {
         text-decoration: none
     }
 
-    #navitem_prices_menu .dropdown-content>li .nav_item_link:hover {
+    #navitem_portofolio_menu .dropdown-content>li .nav_item_link:hover {
         color: #FF6F3D
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_produk_docs_overview,#navitem_prices_menu .dropdown-content>li #navitem_produk_docspace,#navitem_prices_menu .dropdown-content>li #navitem_produk_workspace {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_produk_docs_overview,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_docspace,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_workspace {
         margin: 0 0 12px 24px;
         padding: 12px 32px 12px 48px;
         border-radius: 6px
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_produk_docs_overview .features_info,#navitem_prices_menu .dropdown-content>li #navitem_produk_docspace .features_info,#navitem_prices_menu .dropdown-content>li #navitem_produk_workspace .features_info {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_produk_docs_overview .features_info,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_docspace .features_info,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_workspace .features_info {
         color: #333;
         font-size: 13px;
         line-height: 1.5em;
@@ -1975,12 +1975,12 @@ ul.zh #menu_blog_img {
         white-space: normal
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_produk_docs_overview:before,#navitem_prices_menu .dropdown-content>li #navitem_produk_docspace:before,#navitem_prices_menu .dropdown-content>li #navitem_produk_workspace:before {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_produk_docs_overview:before,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_docspace:before,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_workspace:before {
         top: 12px;
         left: 12px
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_produk_docs_overview:after,#navitem_prices_menu .dropdown-content>li #navitem_produk_docspace:after,#navitem_prices_menu .dropdown-content>li #navitem_produk_workspace:after {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_produk_docs_overview:after,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_docspace:after,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_workspace:after {
         content: "";
         display: block;
         height: 100%;
@@ -1993,20 +1993,20 @@ ul.zh #menu_blog_img {
         position: absolute
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_produk_docs_overview.selected,#navitem_prices_menu .dropdown-content>li #navitem_produk_docspace.selected,#navitem_prices_menu .dropdown-content>li #navitem_produk_workspace.selected {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_produk_docs_overview.selected,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_docspace.selected,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_workspace.selected {
         color: #FF6F3D;
         background-color: #F5F5F5
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_produk_docs_overview:hover:after,#navitem_prices_menu .dropdown-content>li #navitem_produk_docspace:hover:after,#navitem_prices_menu .dropdown-content>li #navitem_produk_workspace:hover:after {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_produk_docs_overview:hover:after,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_docspace:hover:after,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_workspace:hover:after {
         background-image: url(../images/arrow-red.svg)
     }
 
-    #navitem_prices_menu .dropdown-content>li #navitem_produk_docs_overview_mobile,#navitem_prices_menu .dropdown-content>li #navitem_produk_docspace_mobile,#navitem_prices_menu .dropdown-content>li #navitem_produk_workspace_mobile,#navitem_prices_menu .dropdown-content>li #navitem_produk_connectors_mobile,#navitem_prices_menu .dropdown-content>li #navitem_produk_marketplace_mobile,#navitem_prices_menu .dropdown-content>li #navitem_produk_online_services_mobile {
+    #navitem_portofolio_menu .dropdown-content>li #navitem_produk_docs_overview_mobile,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_docspace_mobile,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_workspace_mobile,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_connectors_mobile,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_marketplace_mobile,#navitem_portofolio_menu .dropdown-content>li #navitem_produk_online_services_mobile {
         display: none
     }
 
-    #navitem_prices_menu #navitem_prices_reseller {
+    #navitem_portofolio_menu #navitem_portofolio_reseller {
         line-height: 1.33em;
         white-space: initial
     }
@@ -2037,7 +2037,7 @@ ul.zh #menu_blog_img {
         position: static
     }
 
-    #navitem_about,#navitem_produk,#navitem_download,#navitem_partners,#navitem_prices,#navitem_solusi,#navitem_fordevelopers {
+    #navitem_about,#navitem_produk,#navitem_media,#navitem_partners,#navitem_portofolio,#navitem_solusi,#navitem_layanan {
         border-bottom: 1px solid #d9d9d9
     }
 
@@ -2057,7 +2057,7 @@ ul.zh #menu_blog_img {
         content: ''
     }
 
-    #navitem_download_signin {
+    #navitem_media_signin {
         display: block;
         padding: 0 32px 0 72px
     }
@@ -2075,7 +2075,7 @@ ul.zh #menu_blog_img {
     color: #FF6F3D
 }
 
-#navitem_produk_menu,#navitem_about_menu,#navitem_download_menu,#navitem_partnership_menu,#navitem_prices_menu,#navitem_fordevelopers_menu,#navitem_solusi_menu {
+#navitem_produk_menu,#navitem_about_menu,#navitem_media_menu,#navitem_partnership_menu,#navitem_portofolio_menu,#navitem_layanan_menu,#navitem_solusi_menu {
     padding: 0
 }
 
@@ -2119,12 +2119,12 @@ header a.dropdown-item:before,div.dropdown-item:before {
     background-repeat: no-repeat
 }
 
-header a.dropdown-item#navitem_download_signin,div.dropdown-item#navitem_download_signin {
+header a.dropdown-item#navitem_media_signin,div.dropdown-item#navitem_media_signin {
     display: inline-block;
     padding-right: 4px
 }
 
-header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_download_signup {
+header a.dropdown-item#navitem_media_signup,div.dropdown-item#navitem_media_signup {
     display: inline-block;
     padding-left: 4px
 }
@@ -2309,11 +2309,11 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     background-position-y: -104px
 }
 
-#navitem_produk_docspace:before,#navitem_download_docspace:before,#navitem_prices_docspace:before,#navitem_prices_family_pack:before,#navitem_fb_docspace_ee:before,#navitem_sign_in_docspace::before,#navitem_sign_in_mob_docspace::before {
+#navitem_produk_docspace:before,#navitem_media_docspace:before,#navitem_portofolio_docspace:before,#navitem_portofolio_family_pack:before,#navitem_fb_docspace_ee:before,#navitem_sign_in_docspace::before,#navitem_sign_in_mob_docspace::before {
     background-position-y: -1170px
 }
 
-#navitem_download_connectors:before,#navitem_produk_connectors:before {
+#navitem_media_connectors:before,#navitem_produk_connectors:before {
     background-position-y: -1196px
 }
 
@@ -2361,7 +2361,7 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     background-position-y: -624px
 }
 
-#navitem_produk_workspace:before,#navitem_download_workspace:before,#navitem_prices_workspace:before,#navitem_sign_in_workspace::before,#navitem_sign_in_mob_workspace::before {
+#navitem_produk_workspace:before,#navitem_media_workspace:before,#navitem_portofolio_workspace:before,#navitem_sign_in_workspace::before,#navitem_sign_in_mob_workspace::before {
     background-position-y: -26px
 }
 
@@ -2509,31 +2509,31 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     background-position-y: -858px
 }
 
-#navitem_download_docs_ee:before,#navitem_prices_docs_enterprice:before,#navitem_sign_in_docs_cloud::before,#navitem_sign_in_mob_docs_cloud::before {
+#navitem_media_docs_ee:before,#navitem_portofolio_docs_enterprice:before,#navitem_sign_in_docs_cloud::before,#navitem_sign_in_mob_docs_cloud::before {
     background-position-y: -782px
 }
 
-#navitem_download_docs_de:before,#navitem_prices_docs_dev:before,#navitem_fd_docs_dev:before,#fd_navitem_why_docs_dp::before {
+#navitem_media_docs_de:before,#navitem_portofolio_docs_dev:before,#navitem_fd_docs_dev:before,#fd_navitem_why_docs_dp::before {
     background-position-y: -808px
 }
 
-#navitem_download_workspace_ce:before {
+#navitem_media_workspace_ce:before {
     background-position-y: -26px
 }
 
-#navitem_download_docspace_ce:before {
+#navitem_media_docspace_ce:before {
     background-position-y: -2704px
 }
 
-#navitem_download_code_git:before {
+#navitem_media_code_git:before {
     background-position-y: -936px
 }
 
-#navitem_download_docs_builder:before,#navitem_fd_doc_builder:before {
+#navitem_media_docs_builder:before,#navitem_fd_doc_builder:before {
     background-position-y: -834px
 }
 
-#navitem_download_desktop:before,#navitem_download_desktop_mob:before {
+#navitem_media_desktop:before,#navitem_media_desktop_mob:before {
     background-position-y: -155px
 }
 
@@ -2553,21 +2553,21 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     background-position-y: -1560px
 }
 
-#navitem_prices_home_server:before {
+#navitem_portofolio_home_server:before {
     background-position-y: -1639px
 }
 
-#navitem_solusi_menu .navitem_2nd_menu a.dropdown-item,#navitem_prices_reseller,#navitem_latest_events,#navitem_call,#navitem_about_blog,#navitem_about_competition,#navitem_produk_see_it {
+#navitem_solusi_menu .navitem_2nd_menu a.dropdown-item,#navitem_portofolio_reseller,#navitem_latest_events,#navitem_call,#navitem_about_blog,#navitem_about_competition,#navitem_produk_see_it {
     margin: 0 0 16px;
     padding: 0 32px
 }
 
-#navitem_solusi_menu .navitem_2nd_menu a.dropdown-item:before,#navitem_prices_reseller:before,#navitem_latest_events:before,#navitem_call:before,#navitem_about_blog:before,#navitem_about_competition:before,#navitem_produk_see_it:before {
+#navitem_solusi_menu .navitem_2nd_menu a.dropdown-item:before,#navitem_portofolio_reseller:before,#navitem_latest_events:before,#navitem_call:before,#navitem_about_blog:before,#navitem_about_competition:before,#navitem_produk_see_it:before {
     display: none
 }
 
 @media screen and (max-width: 1023px) {
-    #navitem_solusi_menu .navitem_2nd_menu a.dropdown-item,#navitem_prices_reseller,#navitem_latest_events,#navitem_call,#navitem_about_blog,#navitem_about_competition,#navitem_produk_see_it {
+    #navitem_solusi_menu .navitem_2nd_menu a.dropdown-item,#navitem_portofolio_reseller,#navitem_latest_events,#navitem_call,#navitem_about_blog,#navitem_about_competition,#navitem_produk_see_it {
         padding:0 32px
     }
 }
@@ -2629,16 +2629,16 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     color: #FF6F3D
 }
 
-.zh #navitem_prices_docs,.zh #navitem_fb_docs,.zh #navitem_fb_docspace,.zh #navitem_download_docs,.zh #navitem_produk_desktop_mob_apps,.zh #navitem_produk_connectors_docs,.zh #navitem_produk_connectors_docspace,.zh #feature_overview_docs,.zh #feature_overview_docspace,.zh #feature_overview_workspace,.zh #navitem_download_for_dev,.zh #navitem_download_for_community,.zh #navitem_prices_for_business,.zh #navitem_prices_for_dev,.zh #navitem_about_about_us,.zh #navitem_about_collaborate,.zh #navitem_about_get_help,.zh #navitem_prices_for_home_use,.zh #navitem_produk_perform_task,.zh #navitem_produk_templates,.zh #navitem_produk_convert,.zh #navitem_produk_editors,.zh #navitem_produk_editors_docspace,.zh #navitem_produk_rooms,.zh #navitem_produk_for_docs,.zh #navitem_produk_for_docspace,.zh #navitem_produk_translators,.zh #navitem_produk_ai_assistants,.zh #navitem_produk_communication,.zh #navitem_produk_apps,.zh #navitem_sign_in,.zh #navitem_call_ascensio {
+.zh #navitem_portofolio_docs,.zh #navitem_fb_docs,.zh #navitem_fb_docspace,.zh #navitem_media_docs,.zh #navitem_produk_desktop_mob_apps,.zh #navitem_produk_connectors_docs,.zh #navitem_produk_connectors_docspace,.zh #feature_overview_docs,.zh #feature_overview_docspace,.zh #feature_overview_workspace,.zh #navitem_media_for_dev,.zh #navitem_media_for_community,.zh #navitem_portofolio_for_business,.zh #navitem_portofolio_for_dev,.zh #navitem_about_about_us,.zh #navitem_about_collaborate,.zh #navitem_about_get_help,.zh #navitem_portofolio_for_home_use,.zh #navitem_produk_perform_task,.zh #navitem_produk_templates,.zh #navitem_produk_convert,.zh #navitem_produk_editors,.zh #navitem_produk_editors_docspace,.zh #navitem_produk_rooms,.zh #navitem_produk_for_docs,.zh #navitem_produk_for_docspace,.zh #navitem_produk_translators,.zh #navitem_produk_ai_assistants,.zh #navitem_produk_communication,.zh #navitem_produk_apps,.zh #navitem_sign_in,.zh #navitem_call_ascensio {
     font-size: 12px;
     letter-spacing: 0.04em
 }
 
-.zh #navitem_docspace_signin,.zh #navitem_docspace_signup,.zh #navitem_download_docspace_onpremises,.zh #navitem_docs_signin,.zh #navitem_docs_signup,.zh #navitem_docs_onpremises,.zh #navitem_download_onpremises,.zh #navitem_download_signin,.zh #navitem_docs_de_onpremises {
+.zh #navitem_docspace_signin,.zh #navitem_docspace_signup,.zh #navitem_media_docspace_onpremises,.zh #navitem_docs_signin,.zh #navitem_docs_signup,.zh #navitem_docs_onpremises,.zh #navitem_media_onpremises,.zh #navitem_media_signin,.zh #navitem_docs_de_onpremises {
     font-weight: 400
 }
 
-#navitem_prices_docs,#navitem_produk_connectors_docs,#navitem_produk_connectors_docspace,#feature_overview_docs,#feature_overview_docspace,#feature_overview_workspace,#navitem_download_docs,#navitem_fb_docs,#navitem_fb_docspace,#navitem_produk_desktop_mob_apps,#navitem_download_for_dev,#navitem_download_for_community,#navitem_prices_for_business,#navitem_prices_for_dev,#navitem_about_about_us,#navitem_about_collaborate,#navitem_about_get_help,#navitem_prices_for_home_use,#navitem_produk_perform_task,#navitem_produk_templates,#navitem_produk_convert,#navitem_produk_editors,#navitem_produk_editors_docspace,#navitem_produk_for_docs,#navitem_produk_for_docspace,#navitem_produk_translators,#navitem_produk_ai_assistants,#navitem_produk_communication,#navitem_produk_apps,#navitem_sign_in,#navitem_call_ascensio {
+#navitem_portofolio_docs,#navitem_produk_connectors_docs,#navitem_produk_connectors_docspace,#feature_overview_docs,#feature_overview_docspace,#feature_overview_workspace,#navitem_media_docs,#navitem_fb_docs,#navitem_fb_docspace,#navitem_produk_desktop_mob_apps,#navitem_media_for_dev,#navitem_media_for_community,#navitem_portofolio_for_business,#navitem_portofolio_for_dev,#navitem_about_about_us,#navitem_about_collaborate,#navitem_about_get_help,#navitem_portofolio_for_home_use,#navitem_produk_perform_task,#navitem_produk_templates,#navitem_produk_convert,#navitem_produk_editors,#navitem_produk_editors_docspace,#navitem_produk_for_docs,#navitem_produk_for_docspace,#navitem_produk_translators,#navitem_produk_ai_assistants,#navitem_produk_communication,#navitem_produk_apps,#navitem_sign_in,#navitem_call_ascensio {
     align-items: end;
     border-radius: 3px;
     box-sizing: border-box;
@@ -2658,16 +2658,16 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     text-transform: uppercase
 }
 
-#navitem_prices_docs:before,#navitem_produk_connectors_docs:before,#navitem_produk_connectors_docspace:before,#feature_overview_docs:before,#feature_overview_docspace:before,#feature_overview_workspace:before,#navitem_download_docs:before,#navitem_fb_docs:before,#navitem_fb_docspace:before,#navitem_produk_desktop_mob_apps:before,#navitem_download_for_dev:before,#navitem_download_for_community:before,#navitem_prices_for_business:before,#navitem_prices_for_dev:before,#navitem_about_about_us:before,#navitem_about_collaborate:before,#navitem_about_get_help:before,#navitem_prices_for_home_use:before,#navitem_produk_perform_task:before,#navitem_produk_templates:before,#navitem_produk_convert:before,#navitem_produk_editors:before,#navitem_produk_editors_docspace:before,#navitem_produk_for_docs:before,#navitem_produk_for_docspace:before,#navitem_produk_translators:before,#navitem_produk_ai_assistants:before,#navitem_produk_communication:before,#navitem_produk_apps:before,#navitem_sign_in:before,#navitem_call_ascensio:before {
+#navitem_portofolio_docs:before,#navitem_produk_connectors_docs:before,#navitem_produk_connectors_docspace:before,#feature_overview_docs:before,#feature_overview_docspace:before,#feature_overview_workspace:before,#navitem_media_docs:before,#navitem_fb_docs:before,#navitem_fb_docspace:before,#navitem_produk_desktop_mob_apps:before,#navitem_media_for_dev:before,#navitem_media_for_community:before,#navitem_portofolio_for_business:before,#navitem_portofolio_for_dev:before,#navitem_about_about_us:before,#navitem_about_collaborate:before,#navitem_about_get_help:before,#navitem_portofolio_for_home_use:before,#navitem_produk_perform_task:before,#navitem_produk_templates:before,#navitem_produk_convert:before,#navitem_produk_editors:before,#navitem_produk_editors_docspace:before,#navitem_produk_for_docs:before,#navitem_produk_for_docspace:before,#navitem_produk_translators:before,#navitem_produk_ai_assistants:before,#navitem_produk_communication:before,#navitem_produk_apps:before,#navitem_sign_in:before,#navitem_call_ascensio:before {
     display: none
 }
 
-#navitem_prices_docs:hover,#navitem_produk_connectors_docs:hover,#navitem_produk_connectors_docspace:hover,#feature_overview_docs:hover,#feature_overview_docspace:hover,#feature_overview_workspace:hover,#navitem_download_docs:hover,#navitem_fb_docs:hover,#navitem_fb_docspace:hover,#navitem_produk_desktop_mob_apps:hover,#navitem_download_for_dev:hover,#navitem_download_for_community:hover,#navitem_prices_for_business:hover,#navitem_prices_for_dev:hover,#navitem_about_about_us:hover,#navitem_about_collaborate:hover,#navitem_about_get_help:hover,#navitem_prices_for_home_use:hover,#navitem_produk_perform_task:hover,#navitem_produk_templates:hover,#navitem_produk_convert:hover,#navitem_produk_editors:hover,#navitem_produk_editors_docspace:hover,#navitem_produk_for_docs:hover,#navitem_produk_for_docspace:hover,#navitem_produk_translators:hover,#navitem_produk_ai_assistants:hover,#navitem_produk_communication:hover,#navitem_produk_apps:hover,#navitem_sign_in:hover,#navitem_call_ascensio:hover {
+#navitem_portofolio_docs:hover,#navitem_produk_connectors_docs:hover,#navitem_produk_connectors_docspace:hover,#feature_overview_docs:hover,#feature_overview_docspace:hover,#feature_overview_workspace:hover,#navitem_media_docs:hover,#navitem_fb_docs:hover,#navitem_fb_docspace:hover,#navitem_produk_desktop_mob_apps:hover,#navitem_media_for_dev:hover,#navitem_media_for_community:hover,#navitem_portofolio_for_business:hover,#navitem_portofolio_for_dev:hover,#navitem_about_about_us:hover,#navitem_about_collaborate:hover,#navitem_about_get_help:hover,#navitem_portofolio_for_home_use:hover,#navitem_produk_perform_task:hover,#navitem_produk_templates:hover,#navitem_produk_convert:hover,#navitem_produk_editors:hover,#navitem_produk_editors_docspace:hover,#navitem_produk_for_docs:hover,#navitem_produk_for_docspace:hover,#navitem_produk_translators:hover,#navitem_produk_ai_assistants:hover,#navitem_produk_communication:hover,#navitem_produk_apps:hover,#navitem_sign_in:hover,#navitem_call_ascensio:hover {
     cursor: default
 }
 
 @media screen and (max-width: 1023px) {
-    #navitem_prices_docs,#navitem_produk_connectors_docs,#navitem_produk_connectors_docspace,#feature_overview_docs,#feature_overview_docspace,#feature_overview_workspace,#navitem_download_docs,#navitem_fb_docs,#navitem_fb_docspace,#navitem_produk_desktop_mob_apps,#navitem_download_for_dev,#navitem_download_for_community,#navitem_prices_for_business,#navitem_prices_for_dev,#navitem_about_about_us,#navitem_about_collaborate,#navitem_about_get_help,#navitem_prices_for_home_use,#navitem_produk_perform_task,#navitem_produk_templates,#navitem_produk_convert,#navitem_produk_editors,#navitem_produk_editors_docspace,#navitem_produk_for_docs,#navitem_produk_for_docspace,#navitem_produk_translators,#navitem_produk_ai_assistants,#navitem_produk_communication,#navitem_produk_apps,#navitem_sign_in,#navitem_call_ascensio {
+    #navitem_portofolio_docs,#navitem_produk_connectors_docs,#navitem_produk_connectors_docspace,#feature_overview_docs,#feature_overview_docspace,#feature_overview_workspace,#navitem_media_docs,#navitem_fb_docs,#navitem_fb_docspace,#navitem_produk_desktop_mob_apps,#navitem_media_for_dev,#navitem_media_for_community,#navitem_portofolio_for_business,#navitem_portofolio_for_dev,#navitem_about_about_us,#navitem_about_collaborate,#navitem_about_get_help,#navitem_portofolio_for_home_use,#navitem_produk_perform_task,#navitem_produk_templates,#navitem_produk_convert,#navitem_produk_editors,#navitem_produk_editors_docspace,#navitem_produk_for_docs,#navitem_produk_for_docspace,#navitem_produk_translators,#navitem_produk_ai_assistants,#navitem_produk_communication,#navitem_produk_apps,#navitem_sign_in,#navitem_call_ascensio {
         font-size:11px;
         margin: 0 24px 16px
     }
@@ -2713,7 +2713,7 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     letter-spacing: 0.4em
 }
 
-#navitem_produk_for_docspace,#navitem_produk_translators,#navitem_produk_communication,#navitem_produk_editors_docspace,#navitem_prices_for_dev,#navitem_prices_for_home_use,#navitem_about_get_help {
+#navitem_produk_for_docspace,#navitem_produk_translators,#navitem_produk_communication,#navitem_produk_editors_docspace,#navitem_portofolio_for_dev,#navitem_portofolio_for_home_use,#navitem_about_get_help {
     margin-top: 24px
 }
 
@@ -2734,7 +2734,7 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     padding: 0px 10px 0px 8px
 }
 
-#navitem_produk_menu .icon_link,#navitem_download_menu .icon_link {
+#navitem_produk_menu .icon_link,#navitem_media_menu .icon_link {
     background-image: url(../images/platforms.svg);
     background-position: 0 -52px;
     background-repeat: no-repeat;
@@ -2744,27 +2744,27 @@ header a.dropdown-item#navitem_download_signup,div.dropdown-item#navitem_downloa
     width: 32px
 }
 
-#navitem_produk_menu .icon_link.mac,#navitem_download_menu .icon_link.mac {
+#navitem_produk_menu .icon_link.mac,#navitem_media_menu .icon_link.mac {
     background-position-x: -52px
 }
 
-#navitem_produk_menu .icon_link.linux,#navitem_download_menu .icon_link.linux {
+#navitem_produk_menu .icon_link.linux,#navitem_media_menu .icon_link.linux {
     background-position-x: -104px
 }
 
-#navitem_produk_menu .icon_link.ios,#navitem_download_menu .icon_link.ios {
+#navitem_produk_menu .icon_link.ios,#navitem_media_menu .icon_link.ios {
     background-position-x: -206px
 }
 
-#navitem_produk_menu .icon_link.android,#navitem_download_menu .icon_link.android {
+#navitem_produk_menu .icon_link.android,#navitem_media_menu .icon_link.android {
     background-position-x: -154px
 }
 
-#navitem_download_workspace,#navitem_download_docs_ee,#navitem_download_docs_de,#navitem_download_docspace,#navitem_sign_in_workspace,#navitem_sign_in_docspace,#navitem_sign_in_docs_cloud,#navitem_produk_online_services_desktop {
+#navitem_media_workspace,#navitem_media_docs_ee,#navitem_media_docs_de,#navitem_media_docspace,#navitem_sign_in_workspace,#navitem_sign_in_docspace,#navitem_sign_in_docs_cloud,#navitem_produk_online_services_desktop {
     margin: 0
 }
 
-#navitem_download_workspace:hover,#navitem_download_docs_ee:hover,#navitem_download_docs_de:hover,#navitem_download_docspace:hover,#navitem_sign_in_workspace:hover,#navitem_sign_in_docspace:hover,#navitem_sign_in_docs_cloud:hover,#navitem_produk_online_services_desktop:hover {
+#navitem_media_workspace:hover,#navitem_media_docs_ee:hover,#navitem_media_docs_de:hover,#navitem_media_docspace:hover,#navitem_sign_in_workspace:hover,#navitem_sign_in_docspace:hover,#navitem_sign_in_docs_cloud:hover,#navitem_produk_online_services_desktop:hover {
     color: #333;
     cursor: default
 }
@@ -2840,7 +2840,7 @@ ul.navitem_2nd_menu li.wth_bottom {
     padding-bottom: 4px
 }
 
-#navitem_about,#navitem_produk,#navitem_download,#navitem_partners,#navitem_prices,#navitem_fordevelopers,#navitem_solusi,#navitem_sign_in_mob_header {
+#navitem_about,#navitem_produk,#navitem_media,#navitem_partners,#navitem_portofolio,#navitem_layanan,#navitem_solusi,#navitem_sign_in_mob_header {
     color: #444444;
     text-decoration: none;
     font-size: 12px;
@@ -2850,16 +2850,16 @@ ul.navitem_2nd_menu li.wth_bottom {
     vertical-align: middle
 }
 
-#navitem_about:hover,#navitem_produk:hover,#navitem_download:hover,#navitem_partners:hover,#navitem_prices:hover,#navitem_fordevelopers:hover,#navitem_solusi:hover,#navitem_sign_in_mob_header:hover {
+#navitem_about:hover,#navitem_produk:hover,#navitem_media:hover,#navitem_partners:hover,#navitem_portofolio:hover,#navitem_layanan:hover,#navitem_solusi:hover,#navitem_sign_in_mob_header:hover {
     border-color: #FF6F3D
 }
 
-#navitem_about.active,#navitem_produk.active,#navitem_download.active,#navitem_partners.active,#navitem_prices.active,#navitem_fordevelopers.active,#navitem_solusi.active,#navitem_sign_in_mob_header.active {
+#navitem_about.active,#navitem_produk.active,#navitem_media.active,#navitem_partners.active,#navitem_portofolio.active,#navitem_layanan.active,#navitem_solusi.active,#navitem_sign_in_mob_header.active {
     border-color: #FF6F3D;
     color: #FF6F3D
 }
 
-#navitem_about.active:hover,#navitem_produk.active:hover,#navitem_download.active:hover,#navitem_partners.active:hover,#navitem_prices.active:hover,#navitem_fordevelopers.active:hover,#navitem_solusi.active:hover,#navitem_sign_in_mob_header.active:hover {
+#navitem_about.active:hover,#navitem_produk.active:hover,#navitem_media.active:hover,#navitem_partners.active:hover,#navitem_portofolio.active:hover,#navitem_layanan.active:hover,#navitem_solusi.active:hover,#navitem_sign_in_mob_header.active:hover {
     border-color: #FF6F3D;
     -webkit-transition: none;
     -moz-transition: none;
@@ -2872,12 +2872,12 @@ ul.navitem_2nd_menu li.wth_bottom {
     color: #FF6F3D
 }
 
-#officesuitemainpage #navitem_produk,#workspacepage #navitem_produk,#workspaceenterprisepage #navitem_produk,#connectorsthirdpartypage #navitem_produk,#desktopmobileappspage #navitem_produk,#officeforiospage #navitem_produk,#officeforandroidpage #navitem_produk,#docspaceenterprisepage #navitem_solusi,#forenterprises #navitem_solusi,#downloadworkspace #navitem_download,#downloaddocspage #navitem_download,#downloaddesktoppage #navitem_download,#signuppage #navitem_download,#integrationpricespage #navitem_prices,#docspacefamilypackpage #navitem_prices,#docshomeserverpage #navitem_prices,#resellerspage #navitem_partners,#findpartnerspage #navitem_partners,#partnershiprequestpage #navitem_partners,#affiliatespage #navitem_partners,#whowearepage #navitem_about,#contributepage #navitem_about,#casestudiespage #navitem_about,#customerspage #navitem_about,#influencerprogrampage #navitem_about,#eventspage #navitem_about,#pressdownloadspage #navitem_about,#contactuspage #navitem_about,#fordeveloperspage #navitem_fordevelopers,#integrationeditionpage #navitem_fordevelopers,#seeitinactionpage #navitem_produk_see_it,#seeitinactionpage #navitem_fordevelopers,#documentBuilderLanding #navitem_fordevelopers,#newwebinarspage #navitem_about,#newintegrationpricespage #navitem_prices,#docspaceprices #navitem_prices,#vacanciespage #navitem_about,#whitepaperspage #navitem_about,#downloadbuilderpage #navitem_download,#workspaceprices #navitem_prices,#conversionapipage #navitem_fordevelopers,#docspacepage #navitem_produk,#hostingproviderspage #navitem_partners,#formcreatorpage #navitem_produk,#collaborationpage #navitem_produk,#accessibilitypage #navitem_produk,#securitypage #navitem_produk,#collaborationroomspage #navitem_produk,#zoompage #navitem_produk,#zapierpage #navitem_produk,#zapierpage #navitem_produk_submenu_zapier,#formfillingroomspage #navitem_produk,#formfillingroomspage #navitem_produk_submenu_form_fill_rooms,#drupalpage #navitem_produk,#publicroomspage #navitem_produk,#customroomspage #navitem_produk,#collaborationdocmanagepage #navitem_produk,#collaborationcrmpage #navitem_produk,#collaborationprojectspage #navitem_produk,#collaborationmailpage #navitem_produk,#collaborationcalendarpage #navitem_produk,#boxpage #navitem_produk,#confluencepage #navitem_produk,#dropboxpage #navitem_produk,#moodlepage #navitem_produk,#nextcloudpage #navitem_produk,#odoopage #navitem_produk,#owncloudpage #navitem_produk,#wordpresspage #navitem_produk {
+#officesuitemainpage #navitem_produk,#workspacepage #navitem_produk,#workspaceenterprisepage #navitem_produk,#connectorsthirdpartypage #navitem_produk,#desktopmobileappspage #navitem_produk,#officeforiospage #navitem_produk,#officeforandroidpage #navitem_produk,#docspaceenterprisepage #navitem_solusi,#forenterprises #navitem_solusi,#downloadworkspace #navitem_media,#downloaddocspage #navitem_media,#downloaddesktoppage #navitem_media,#signuppage #navitem_media,#integrationpricespage #navitem_portofolio,#docspacefamilypackpage #navitem_portofolio,#docshomeserverpage #navitem_portofolio,#resellerspage #navitem_partners,#findpartnerspage #navitem_partners,#partnershiprequestpage #navitem_partners,#affiliatespage #navitem_partners,#whowearepage #navitem_about,#contributepage #navitem_about,#casestudiespage #navitem_about,#customerspage #navitem_about,#influencerprogrampage #navitem_about,#eventspage #navitem_about,#pressdownloadspage #navitem_about,#contactuspage #navitem_about,#fordeveloperspage #navitem_layanan,#integrationeditionpage #navitem_layanan,#seeitinactionpage #navitem_produk_see_it,#seeitinactionpage #navitem_layanan,#documentBuilderLanding #navitem_layanan,#newwebinarspage #navitem_about,#newintegrationpricespage #navitem_portofolio,#docspaceprices #navitem_portofolio,#vacanciespage #navitem_about,#whitepaperspage #navitem_about,#downloadbuilderpage #navitem_media,#workspaceprices #navitem_portofolio,#conversionapipage #navitem_layanan,#docspacepage #navitem_produk,#hostingproviderspage #navitem_partners,#formcreatorpage #navitem_produk,#collaborationpage #navitem_produk,#accessibilitypage #navitem_produk,#securitypage #navitem_produk,#collaborationroomspage #navitem_produk,#zoompage #navitem_produk,#zapierpage #navitem_produk,#zapierpage #navitem_produk_submenu_zapier,#formfillingroomspage #navitem_produk,#formfillingroomspage #navitem_produk_submenu_form_fill_rooms,#drupalpage #navitem_produk,#publicroomspage #navitem_produk,#customroomspage #navitem_produk,#collaborationdocmanagepage #navitem_produk,#collaborationcrmpage #navitem_produk,#collaborationprojectspage #navitem_produk,#collaborationmailpage #navitem_produk,#collaborationcalendarpage #navitem_produk,#boxpage #navitem_produk,#confluencepage #navitem_produk,#dropboxpage #navitem_produk,#moodlepage #navitem_produk,#nextcloudpage #navitem_produk,#odoopage #navitem_produk,#owncloudpage #navitem_produk,#wordpresspage #navitem_produk {
     color: #FF6F3D;
     border-color: #FF6F3D
 }
 
-#docsregistrationpage #navitem_download,#downloaddocspace #navitem_download,#newintegrationpricespage #navitem_prices,#workspacepricingpage #navitem_prices,#technologypartnerspage #navitem_partners,#certificatespage #navitem_about,#awardspage #navitem_about {
+#docsregistrationpage #navitem_media,#downloaddocspace #navitem_media,#newintegrationpricespage #navitem_portofolio,#workspacepricingpage #navitem_portofolio,#technologypartnerspage #navitem_partners,#certificatespage #navitem_about,#awardspage #navitem_about {
     color: #FF6F3D
 }
 
@@ -2885,7 +2885,7 @@ ul.navitem_2nd_menu li.wth_bottom {
     background-image: url(../images/arrow-light-orange.svg)
 }
 
-#officesuitemainpage #feature_overview_docs,#connectorsthirdpartypage #navitem_produk_connectors,#officeforiospage #navitem_produk_clients_mobile_ios,#officeforandroidpage #navitem_produk_clients_mobile_android,#convertpage.text-file-converter #navitem_produk_convert_text,#convertpage.spreadsheet-converter #navitem_produk_convert_speadsheets,#convertpage.presentation-converter #navitem_produk_convert_presentations,#convertpage.pdf-converter #navitem_produk_convert_pdf,#desktopmobileappspage #navitem_produk_clients_apps,#docspaceenterprisepage #navitem_fb_docspace_ee,#forenterprises #navitem_fb_docs_ee,#signinpage[data-bodyid="docspace-signin"] #navitem_download_docspace,#signuppage #navitem_download_docspace,#downloaddocspace #navitem_download_docspace,#signinpage[data-bodyid="docs-cloud-signin"] #navitem_download_docs_ee,#docsregistrationpage #navitem_download_docs_ee,#signinpage[data-bodyid="signin"] #navitem_download_workspace,#downloadworkspace #navitem_download_workspace,#downloaddesktoppage #navitem_download_desktop,#hostingproviderspage #navitem_download_get_oo,#technologypartnerspage #navitem_technology_partners,#findpartnerspage #navitem_find_partners,#partnershiprequestpage #navitem_submit_request,#resellerspage #navitem_resellers,#affiliatespage #navitem_hosters,#newintegrationpricespage #navitem_prices_docs_enterprice,#docspaceprices #navitem_prices_docspace,#integrationpricespage #navitem_prices_docs_dev,#docspacefamilypackpage #navitem_prices_family_pack,#docshomeserverpage #navitem_prices_home_server,#workspacepricingpage #navitem_prices_enterprise,#workspacepage #feature_overview_workspace,#whowearepage #navitem_about_about,#contributepage #navitem_about_contribute,#influencerprogrampage #navitem_about_for_influencers,#customerspage #navitem_about_customers,#awardspage #navitem_about_awards,#certificatespage #navitem_about_certificates,#eventspage #navitem_about_events,#newwebinarspage #navitem_about_webinars,#pressdownloadspage #navitem_about_pressdownloads,#contactuspage #navitem_about_contacts,#whitepaperspage #navitem_about_whitepapers,#integrationeditionpage #navitem_produk_docs_de,#docscloudpage #navitem_fb_docs_cloud,#workspaceenterprisepage #navitem_produk_workspace_ee,#fordeveloperspage #navitem_fd_dev_solutions,#integrationeditionpage #navitem_fd_docs_dev,#documentBuilderLanding #navitem_fd_doc_builder,#downloaddocspage:not(.docs-developer):not(.docs-community) #navitem_download_docs_ee,#downloaddocspage.docs-developer #navitem_download_docs_de,#downloaddocspage.docs-enterprise #navitem_download_docs_ee,#downloaddocspace #navitem_download_docspace_ce,#downloadworkspace #navitem_download_workspace_ce,#downloaddesktoppage #navitem_download_desktop_mob,#workspaceprices #navitem_prices_workspace,#vacanciespage #navitem_about_vacancies,#downloadbuilderpage #navitem_download_docs_builder,#conversionapipage #navitem_fd_conversion_api,#docspacepage #feature_overview_docspace,#hostingproviderspage #navitem_hosting_providers,#officesuitedoceditorpage.docs #navitem_produk_submenu_doced,#officesuitedoceditorpage.docspace #navitem_produk_submenu_doced_ds,#officesuitespeditorpage.docs #navitem_produk_submenu_spreaded,#officesuitespeditorpage.docspace #navitem_produk_submenu_spreaded_ds,#officesuitepreditorpage.docs #navitem_produk_submenu_presed,#officesuitepreditorpage.docspace #navitem_produk_submenu_presed_ds,#pdfreaderpage.docs #navitem_produk_submenu_pdfed,#pdfreaderpage.docspace #navitem_produk_submenu_pdfed_ds,#formcreatorpage.docs #navitem_produk_submenu_formed,#formcreatorpage.docspace #navitem_produk_submenu_formed_ds,#ebookpage.docs #navitem_produk_submenu_ebooked,#ebookpage.docspace #navitem_produk_submenu_ebooked_ds,#collaborationpage.docs #navitem_produk_submenu_collab,#collaborationpage.docspace #navitem_produk_submenu_collab_ds,#accessibilitypage #navitem_produk_accessibility,#securitypage #navitem_produk_security,#collaborationroomspage #navitem_produk_submenu_collab_rooms,#zoompage #navitem_produk_submenu_zoom_rooms,#zoompage #navitem_produk_submenu_zoom,#drupalpage #navitem_produk_submenu_drupal,#publicroomspage #navitem_produk_submenu_publ_rooms,#customroomspage #navitem_produk_submenu_cust_rooms,#collaborationdocmanagepage #navitem_produk_submenu_documents_wp,#collaborationcrmpage #navitem_produk_submenu_crm_wp,#collaborationprojectspage #navitem_produk_submenu_project_wp,#collaborationmailpage #navitem_produk_submenu_mail_wp,#collaborationcalendarpage #navitem_produk_submenu_calendar_wp,#boxpage #navitem_produk_submenu_box,#confluencepage #navitem_produk_submenu_conflunce,#dropboxpage #navitem_produk_submenu_dropbox,#moodlepage #navitem_produk_submenu_moodle,#nextcloudpage #navitem_produk_submenu_nextcloud,#odoopage #navitem_produk_submenu_odoo,#owncloudpage #navitem_produk_submenu_owncloud,#wordpresspage #navitem_produk_submenu_wordpress,#connectorsthirdpartypage #navitem_produk_connectors_docs,#connectorsthirdpartypage #navitem_produk_connectors_docspace,#connectorsthirdpartypage #navitem_produk_submenu_all_connectors,#connectorsthirdpartypage #navitem_produk_submenu_all_conn {
+#officesuitemainpage #feature_overview_docs,#connectorsthirdpartypage #navitem_produk_connectors,#officeforiospage #navitem_produk_clients_mobile_ios,#officeforandroidpage #navitem_produk_clients_mobile_android,#convertpage.text-file-converter #navitem_produk_convert_text,#convertpage.spreadsheet-converter #navitem_produk_convert_speadsheets,#convertpage.presentation-converter #navitem_produk_convert_presentations,#convertpage.pdf-converter #navitem_produk_convert_pdf,#desktopmobileappspage #navitem_produk_clients_apps,#docspaceenterprisepage #navitem_fb_docspace_ee,#forenterprises #navitem_fb_docs_ee,#signinpage[data-bodyid="docspace-signin"] #navitem_media_docspace,#signuppage #navitem_media_docspace,#downloaddocspace #navitem_media_docspace,#signinpage[data-bodyid="docs-cloud-signin"] #navitem_media_docs_ee,#docsregistrationpage #navitem_media_docs_ee,#signinpage[data-bodyid="signin"] #navitem_media_workspace,#downloadworkspace #navitem_media_workspace,#downloaddesktoppage #navitem_media_desktop,#hostingproviderspage #navitem_media_get_oo,#technologypartnerspage #navitem_technology_partners,#findpartnerspage #navitem_find_partners,#partnershiprequestpage #navitem_submit_request,#resellerspage #navitem_resellers,#affiliatespage #navitem_hosters,#newintegrationpricespage #navitem_portofolio_docs_enterprice,#docspaceprices #navitem_portofolio_docspace,#integrationpricespage #navitem_portofolio_docs_dev,#docspacefamilypackpage #navitem_portofolio_family_pack,#docshomeserverpage #navitem_portofolio_home_server,#workspacepricingpage #navitem_portofolio_enterprise,#workspacepage #feature_overview_workspace,#whowearepage #navitem_about_about,#contributepage #navitem_about_contribute,#influencerprogrampage #navitem_about_for_influencers,#customerspage #navitem_about_customers,#awardspage #navitem_about_awards,#certificatespage #navitem_about_certificates,#eventspage #navitem_about_events,#newwebinarspage #navitem_about_webinars,#pressdownloadspage #navitem_about_pressdownloads,#contactuspage #navitem_about_contacts,#whitepaperspage #navitem_about_whitepapers,#integrationeditionpage #navitem_produk_docs_de,#docscloudpage #navitem_fb_docs_cloud,#workspaceenterprisepage #navitem_produk_workspace_ee,#fordeveloperspage #navitem_fd_dev_solutions,#integrationeditionpage #navitem_fd_docs_dev,#documentBuilderLanding #navitem_fd_doc_builder,#downloaddocspage:not(.docs-developer):not(.docs-community) #navitem_media_docs_ee,#downloaddocspage.docs-developer #navitem_media_docs_de,#downloaddocspage.docs-enterprise #navitem_media_docs_ee,#downloaddocspace #navitem_media_docspace_ce,#downloadworkspace #navitem_media_workspace_ce,#downloaddesktoppage #navitem_media_desktop_mob,#workspaceprices #navitem_portofolio_workspace,#vacanciespage #navitem_about_vacancies,#downloadbuilderpage #navitem_media_docs_builder,#conversionapipage #navitem_fd_conversion_api,#docspacepage #feature_overview_docspace,#hostingproviderspage #navitem_hosting_providers,#officesuitedoceditorpage.docs #navitem_produk_submenu_doced,#officesuitedoceditorpage.docspace #navitem_produk_submenu_doced_ds,#officesuitespeditorpage.docs #navitem_produk_submenu_spreaded,#officesuitespeditorpage.docspace #navitem_produk_submenu_spreaded_ds,#officesuitepreditorpage.docs #navitem_produk_submenu_presed,#officesuitepreditorpage.docspace #navitem_produk_submenu_presed_ds,#pdfreaderpage.docs #navitem_produk_submenu_pdfed,#pdfreaderpage.docspace #navitem_produk_submenu_pdfed_ds,#formcreatorpage.docs #navitem_produk_submenu_formed,#formcreatorpage.docspace #navitem_produk_submenu_formed_ds,#ebookpage.docs #navitem_produk_submenu_ebooked,#ebookpage.docspace #navitem_produk_submenu_ebooked_ds,#collaborationpage.docs #navitem_produk_submenu_collab,#collaborationpage.docspace #navitem_produk_submenu_collab_ds,#accessibilitypage #navitem_produk_accessibility,#securitypage #navitem_produk_security,#collaborationroomspage #navitem_produk_submenu_collab_rooms,#zoompage #navitem_produk_submenu_zoom_rooms,#zoompage #navitem_produk_submenu_zoom,#drupalpage #navitem_produk_submenu_drupal,#publicroomspage #navitem_produk_submenu_publ_rooms,#customroomspage #navitem_produk_submenu_cust_rooms,#collaborationdocmanagepage #navitem_produk_submenu_documents_wp,#collaborationcrmpage #navitem_produk_submenu_crm_wp,#collaborationprojectspage #navitem_produk_submenu_project_wp,#collaborationmailpage #navitem_produk_submenu_mail_wp,#collaborationcalendarpage #navitem_produk_submenu_calendar_wp,#boxpage #navitem_produk_submenu_box,#confluencepage #navitem_produk_submenu_conflunce,#dropboxpage #navitem_produk_submenu_dropbox,#moodlepage #navitem_produk_submenu_moodle,#nextcloudpage #navitem_produk_submenu_nextcloud,#odoopage #navitem_produk_submenu_odoo,#owncloudpage #navitem_produk_submenu_owncloud,#wordpresspage #navitem_produk_submenu_wordpress,#connectorsthirdpartypage #navitem_produk_connectors_docs,#connectorsthirdpartypage #navitem_produk_connectors_docspace,#connectorsthirdpartypage #navitem_produk_submenu_all_connectors,#connectorsthirdpartypage #navitem_produk_submenu_all_conn {
     color: #FF6F3D
 }
 
@@ -2898,7 +2898,7 @@ ul.navitem_2nd_menu li.wth_bottom {
     border-bottom-color: transparent
 }
 
-#awardspage #navitem_about,#installcanceledpage #navitem_about,#awardspage #navitem_produk,#installcanceledpage #navitem_produk,#awardspage #navitem_download,#installcanceledpage #navitem_download,#awardspage #navitem_partners,#installcanceledpage #navitem_partners,#awardspage #navitem_solusi,#installcanceledpage #navitem_solusi,#awardspage #navitem_fordevelopers,#installcanceledpage #navitem_fordevelopers,#awardspage #navitem_prices,#installcanceledpage #navitem_prices {
+#awardspage #navitem_about,#installcanceledpage #navitem_about,#awardspage #navitem_produk,#installcanceledpage #navitem_produk,#awardspage #navitem_media,#installcanceledpage #navitem_media,#awardspage #navitem_partners,#installcanceledpage #navitem_partners,#awardspage #navitem_solusi,#installcanceledpage #navitem_solusi,#awardspage #navitem_layanan,#installcanceledpage #navitem_layanan,#awardspage #navitem_portofolio,#installcanceledpage #navitem_portofolio {
     border-bottom-color: transparent
 }
 
@@ -2911,7 +2911,7 @@ ul.navitem_2nd_menu li.wth_bottom {
     border-bottom-color: transparent
 }
 
-#collaborationmailpage #navitem_about,#collaborationcrmpage #navitem_about,#collaborationprojectspage #navitem_about,#collaborationcalendarpage #navitem_about,#collaborationcommunitypage #navitem_about,#collaborationmailpage #navitem_download,#collaborationcrmpage #navitem_download,#collaborationprojectspage #navitem_download,#collaborationcalendarpage #navitem_download,#collaborationcommunitypage #navitem_download,#collaborationmailpage #navitem_partners,#collaborationcrmpage #navitem_partners,#collaborationprojectspage #navitem_partners,#collaborationcalendarpage #navitem_partners,#collaborationcommunitypage #navitem_partners,#collaborationmailpage #navitem_solusi,#collaborationcrmpage #navitem_solusi,#collaborationprojectspage #navitem_solusi,#collaborationcalendarpage #navitem_solusi,#collaborationcommunitypage #navitem_solusi,#collaborationmailpage #navitem_fordevelopers,#collaborationcrmpage #navitem_fordevelopers,#collaborationprojectspage #navitem_fordevelopers,#collaborationcalendarpage #navitem_fordevelopers,#collaborationcommunitypage #navitem_fordevelopers,#collaborationmailpage #navitem_prices,#collaborationcrmpage #navitem_prices,#collaborationprojectspage #navitem_prices,#collaborationcalendarpage #navitem_prices,#collaborationcommunitypage #navitem_prices {
+#collaborationmailpage #navitem_about,#collaborationcrmpage #navitem_about,#collaborationprojectspage #navitem_about,#collaborationcalendarpage #navitem_about,#collaborationcommunitypage #navitem_about,#collaborationmailpage #navitem_media,#collaborationcrmpage #navitem_media,#collaborationprojectspage #navitem_media,#collaborationcalendarpage #navitem_media,#collaborationcommunitypage #navitem_media,#collaborationmailpage #navitem_partners,#collaborationcrmpage #navitem_partners,#collaborationprojectspage #navitem_partners,#collaborationcalendarpage #navitem_partners,#collaborationcommunitypage #navitem_partners,#collaborationmailpage #navitem_solusi,#collaborationcrmpage #navitem_solusi,#collaborationprojectspage #navitem_solusi,#collaborationcalendarpage #navitem_solusi,#collaborationcommunitypage #navitem_solusi,#collaborationmailpage #navitem_layanan,#collaborationcrmpage #navitem_layanan,#collaborationprojectspage #navitem_layanan,#collaborationcalendarpage #navitem_layanan,#collaborationcommunitypage #navitem_layanan,#collaborationmailpage #navitem_portofolio,#collaborationcrmpage #navitem_portofolio,#collaborationprojectspage #navitem_portofolio,#collaborationcalendarpage #navitem_portofolio,#collaborationcommunitypage #navitem_portofolio {
     border-bottom-color: transparent
 }
 
@@ -3016,21 +3016,21 @@ a#banners {
         font-size: 18px
     }
 
-    #navitem_download_signin {
+    #navitem_media_signin {
         display: block;
         padding: 6px 24px 6px 56px
     }
 
-    #navitem_prices_for_dev,#navitem_about_get_help,#navitem_about_collaborate {
+    #navitem_portofolio_for_dev,#navitem_about_get_help,#navitem_about_collaborate {
         margin-top: 40px
     }
 
-    #navitem_prices_menu .last {
+    #navitem_portofolio_menu .last {
         padding: 24px 0 10px;
         border-top: 1px solid #e2e2e2
     }
 
-    #navitem_download_docspace_ce,#navitem_download_workspace_ce {
+    #navitem_media_docspace_ce,#navitem_media_workspace_ce {
         margin-bottom: 16px
     }
 }

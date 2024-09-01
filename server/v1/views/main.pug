@@ -4,15 +4,14 @@ html(lang='en')
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
-    link(rel="stylesheet", href="css/main.css")
-  body(id="mainpage")
-    div(class="container")
-      div(class="header") 
-        div(class="logo") 
-          a(href="/")
-      div(class="left-aside") left-aside 
-      div(class="banner") banner 
-      div(class="main") main 
-      div(class="low-content") low content 
-      div(class="right-aside") right-aside
-      div(class="footer") footer
+    link(rel="stylesheet", href="/static/css/reset.css")
+    link(rel="stylesheet", href="/static/css/common_cso.css")
+    link(rel="stylesheet", href="/static/css/navigation_cso.css")
+    link(rel="stylesheet", href="/static/css/default_page.css")
+  body#defaultpage
+    .mainpart
+      header: .narrowheader
+        .logo.push: a(href="/main")
+        nav.pushy.pushy-left: .pushy-content: ul.all-menu-items
+          li.pushy-submenu
+      article 

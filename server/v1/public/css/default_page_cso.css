@@ -1,0 +1,9 @@
+body#defaultpage .mainpart {
+    padding-bottom: 0;
+}
+
+body#defaultpage article {
+    background-image: url(/static/images/mainpage/bg.svg);
+    background-repeat: no-repeat;
+    background-position: 58% -900px
+}

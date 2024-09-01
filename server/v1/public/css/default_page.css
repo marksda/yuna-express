@@ -2909,7 +2909,7 @@ body#defaultpage .orangetext {
 }
 
 @media screen and (min-width: 1024px) {
-    body#defaultpage #navitem_about,body#defaultpage #navitem_produk,body#defaultpage #navitem_download,body#defaultpage #navitem_partners,body#defaultpage #navitem_solusi,body#defaultpage #navitem_fordevelopers,body#defaultpage #navitem_prices {
+    body#defaultpage #navitem_about,body#defaultpage #navitem_produk,body#defaultpage #navitem_media,body#defaultpage #navitem_partners,body#defaultpage #navitem_solusi,body#defaultpage #navitem_layanan,body#defaultpage #navitem_portofolio {
         border-bottom-color:transparent
     }
 }
