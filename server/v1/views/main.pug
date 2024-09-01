@@ -4,10 +4,11 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
     title= title
     meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    meta(name="description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak yang optimal dengan biaya seminimal mungkin untuk memenuhi kebutuhan bisnis anda di era digitalisai, menghubungkan pemangku kepentingan bisnis dengan pelanggan secara langsung dan cepat merupakan salah satu kunci sukses dari bisnis.")
-    meta(property="og:title" content="CSO patner terpercaya untuk digitalisasi bisnis anda")
+    meta(name="description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak secara optimal dengan biaya seminimal mungkin untuk menunjang kebutuhan bisnis anda di era digital. Di era digital, Komunikasi antara pemangku kepentingan bisnis dengan pelanggan berlangsung cepat dan efisien merupakan salah satu kunci sukses dari bisnis anda.")
+    meta(property="og:title" content="CSO patner terpercaya untuk digitalisasi bisnis anda.")
     meta(property="og:url" content="https://cso.ddns.net")
-    meta(property="og:description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak yang optimal dengan biaya seminimal mungkin untuk memenuhi kebutuhan bisnis anda di era digitalisai, menghubungkan pemangku kepentingan bisnis dengan pelanggan secara langsung dan cepat merupakan salah satu kunci sukses dari bisnis.")
+    meta(property="og:description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak secara optimal dengan biaya seminimal mungkin untuk menunjang kebutuhan bisnis anda di era digital. Di era digital, Komunikasi antara pemangku kepentingan bisnis dengan pelanggan berlangsung cepat dan efisien merupakan salah satu kunci sukses dari bisnis anda.")
+    meta(property="og:title" content="CSO patner terpercaya untuk digitalisasi bisnis anda.")
     meta(property="og:image" content="https://cso.ddns.net/images/logo.svg")
     meta(property="og:type" content="website")    
     link(rel="stylesheet", href="/static/css/reset.css")
@@ -22,9 +23,16 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
       header: .narrowheader
         .logo.push: a(href="/main")
         nav.pushy.pushy-left: .pushy-content: ul.all-menu-items
-          li.pushy-submenu: a.menuitem produk
-          li.pushy-submenu: a.menuitem solusi
-          li.pushy-submenu: a.menuitem layanan
-          li.pushy-submenu: a.menuitem berbagi media
-          li.pushy-submenu: a.menuitem portofolio
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+            a.menuitem#navitem_produk produk
+            #navitem_produk_menu(style="display: none") fdsffafsdfsa
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_solusi solusi
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_layanan layanan
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_media berbagi media
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_portofolio portofolio
       article 
+    script(type="text/javascript" src="/static/js/jquery/jquery.core.js")
+    script(type="text/javascript" src="/static/js/core/jquery.dropdownToggle.js")
+    script(type="text/javascript" src="/static/js/core/main.cso.js")
+    script(type="text/javascript" src="/static/js/core/menu.cso.js")
+    script(type="text/javascript" src="/static/js/core/navigation.menu.cso.js")

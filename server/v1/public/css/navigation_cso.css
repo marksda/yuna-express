@@ -22,6 +22,21 @@ nav>div>ul {
     position: relative;
 }
 
+nav>div>ul>li {
+    padding: 0;
+    margin: 0;
+    height: 52px;
+}
+
+nav>div>ul>li>a {
+    padding: 17px 0;
+    display: inline-block;
+    height: 18px;
+    border-bottom-color: #FF6F3D;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
 nav>div>ul.all-menu-items {
     display: grid;
     display: -ms-grid;
@@ -32,8 +47,94 @@ nav>div>ul.all-menu-items {
     width: 100%;
 }
 
+nav>div>ul li:first-child {
+    -ms-grid-column: 1;
+}
+
+nav>div>ul li:nth-child(2) {
+    -ms-grid-column: 3;
+}
+
+nav>div>ul li:nth-child(3) {
+    -ms-grid-column: 5;
+}
+
+nav>div>ul li:nth-child(4) {
+    -ms-grid-column: 7;
+}
+
+nav>div>ul li:nth-child(5) {
+    -ms-grid-column: 9;
+}
+
+nav .pushy-content {
+    margin: 0 auto;
+    max-width: 920px;
+    width: 72vw;
+}
+
+.menuitem {
+    white-space: nowrap;
+}
+
+#navitem_produk, #navitem_solusi, #navitem_layanan, #navitem_media, #navitem_portofolio {
+    color: #444444;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 18px;
+    font-family: 'Open Sans', sans-serif, Arial;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+#navitem_produk:hover,#navitem_solusi:hover,#navitem_layanan:hover,#navitem_media:hover,#navitem_portofolio:hover {
+    border-color: #FF6F3D
+}
+
+#navitem_produk.active,#navitem_solusi.active,#navitem_layanan.active,#navitem_media.active,#navitem_portofolio.active {
+    border-color: #FF6F3D;
+    color: #FF6F3D
+}
+
+#navitem_produk.active:hover,#navitem_solusi.active:hover,#navitem_layanan.active:hover,#navitem_media.active:hover,#navitem_portofolio.active:hover {
+    border-color: #FF6F3D;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none
+}
+
 @media screen and (min-width: 1500px) {
+    nav .pushy-content {
+        max-width: 1120px;
+    }
+
     nav>div>ul.all-menu-items {
         grid-gap: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #navitem_produk, #navitem_solusi, #navitem_layanan, #navitem_media, #navitem_portofolio {
+        border-bottom: 1px solid #d9d9d9;
+    }
+
+    #navitem_produk_menu:after, #navitem_solusi_menu:after, #navitem_layanan_menu:after, #navitem_media_menu:after, #navitem_portofolio_menu:after {
+        display: block;
+        position: absolute;
+        width: 0;
+        content: "";
+        height: 1px;
+        background-color: #FF6F3D;
+        transition: width 0.2s ease-in-out;
+        left: 50%;
+        top: 0;
+    }
+
+    .all-menu-items>li:nth-of-type(1), .all-menu-items>li:nth-of-type(2), .all-menu-items>li:nth-of-type(3) {
+        position: static;
+    }
+    .all-menu-items>li:nth-of-type(4), .all-menu-items>li:nth-of-type(5) {
+        position: relative;
     }
 }

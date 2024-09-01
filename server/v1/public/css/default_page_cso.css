@@ -17,7 +17,16 @@ body#defaultpage header {
     border-bottom-color: transparent;
 }
 
-nav ul {
-    list-style: none;
+body#defaultpage a:hover {
+    color: #FF6F3D;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s
 }
 
+@media screen and (min-width: 1024px) {
+    body#defaultpage #navitem_produk, body#defaultpage #navitem_solusi, body#defaultpage #navitem_layanan, body#defaultpage #navitem_media, body#defaultpage #navitem_portofolio {
+        border-bottom-color: transparent;
+    }
+}
