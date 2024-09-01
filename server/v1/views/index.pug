@@ -1,83 +1,42 @@
 doctype html
-html(lang='en')
-  head    
-    link(rel="stylesheet", href="/static/css/font.css") 
-    title= title    
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    link(rel="stylesheet", href="/static/css/reset.css")
-    link(rel="stylesheet", href="/static/css/common.css")
-    link(rel="stylesheet", href="/static/css/navigation.css")
-    link(rel="stylesheet", href="/static/css/timlabcso.css")
-    link(rel="stylesheet", href="/static/css/default_page.css")
-    link(rel="stylesheet", href="/static/css/mobile.css")
-    link(rel="stylesheet", href="/static/css/pushy.css")
+html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="og: http://ogp.me/ns#")
+  head
+    title= title
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak secara optimal dengan biaya seminimal mungkin untuk menunjang kebutuhan bisnis anda di era digital. Di era digital, Komunikasi antara pemangku kepentingan bisnis dengan pelanggan berlangsung cepat dan efisien merupakan salah satu kunci sukses dari bisnis anda.")
+    meta(property="og:title" content="CSO patner terpercaya untuk digitalisasi bisnis anda.")
+    meta(property="og:url" content="https://cso.ddns.net")
+    meta(property="og:description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak secara optimal dengan biaya seminimal mungkin untuk menunjang kebutuhan bisnis anda di era digital. Di era digital, Komunikasi antara pemangku kepentingan bisnis dengan pelanggan berlangsung cepat dan efisien merupakan salah satu kunci sukses dari bisnis anda.")
+    meta(property="og:title" content="CSO patner terpercaya untuk digitalisasi bisnis anda.")
+    meta(property="og:image" content="https://cso.ddns.net/images/logo.svg")
+    meta(property="og:type" content="website")    
+    link(rel="stylesheet", href="/static/css/reset.cso.css")
+    link(rel="stylesheet", href="/static/css/font.cso.css")
+    link(rel="stylesheet", href="/static/css/common.cso.css")
+    link(rel="stylesheet", href="/static/css/navigation.cso.css")
+    link(rel="stylesheet", href="/static/css/timlab.cso.css")
+    link(rel="stylesheet", href="/static/css/default_page.cso.css")
   body#defaultpage
-    .BaseSide.Com2
-      input#browserType(type="hidden" value="")
-      .mainpart(style="z-index: 1")
-        .site-overlay
-        if pengumuman
-          .advent-announce.push.advent-mobile-hide
-            a(href="/pengumuman")        
-              .advent-announce-text
-                p
-                  span FREE MeDical MEdic (MD-ME) 1.0.0 
-                  strong - Fitur: 
-                  .
-                    Registrasi, billing, rekam medis, farmasi, askep, dll
-                .arrow-space
-          .advent-announce.push.advent-desktop-hide
-            a(href="/pengumuman")        
-              .advent-announce-text
-                p
-                  span FREE MeDical MEdic/MD-ME 1.0.0 
-                  br 
-                  .
-                    Released
-        header
-          .narrowheader
-            .logo.push
-              a(href="/pug")
-            .ham_menu.push.menu-btn.pushy-link
-              span 
-              span
-              span
-            nav.pushy.pushy-left
-              .pushy-content
-                ul.all-menu-items
-                  li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                    a.menuitem#navitem_produk produk
-                    #navitem_produk_menu(style="display: none;")
-                      ul.dropdown-content.akkordeon
-                  li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                    a.menuitem#navitem_solusi solusi
-                    #navitem_solusi_menu(style="display: none;")
-                  li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                    a.menuitem#navitem_layanan layanan
-                    #navitem_layanan_menu(style="display: none;")
-                  li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                    a.menuitem#navitem_media berbagi media
-                    #navitem_media_menu(style="display: none;")
-                  li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                    a.menuitem#navitem_portofolio portofolio
-                    #navitem_portofolio_menu(style="display: none;")
-                .signin_wrapper
-                  .pushy-submenu.signin.pushy-submenu-closed(style="display: inline-block;")
-                    a.menuitem#navitem_sign_in_header Login
-        article#target
-          .contentConteiner
+    .BaseSide.Com2: .mainpart(style="z-index:1")
+      .site-overlay
+      header: .narrowheader
+        .logo.push: a(href="/main")
+        nav.pushy.pushy-left: .pushy-content: ul.all-menu-items
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+            a.menuitem#navitem_produk produk
+            #navitem_produk_menu(style="display: none") 
+              span sdfsdfsdfsdf
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_solusi solusi
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_layanan layanan
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_media berbagi media
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_portofolio portofolio
+      article#target
+        .contentConteiner: .dp-first-screen: .dp-top-block
+          h1 your private office with the
+            span.orangetext COMMITECH SOLUSINDO
     script(type="text/javascript" src="/static/js/jquery/jquery.core.js")
-    script(type="text/javascript" src="/static/js/core/jquery.browser.js")
-    script(type="text/javascript" src="/static/js/jquery/jquery.blockUi.js")
-    script(type="text/javascript" src="/static/js/jquery/jquery.tmpl.js")
-    script(type="text/javascript" src="/static/js/jquery/jquery.cookies.js")
-    script(type="text/javascript" src="/static/js/jquery/jquery.ui.core.js")
-    script(type="text/javascript" src="/static/js/jquery/jquery.ui.widget.js")
-    script(type="text/javascript" src="/static/js/jquery/jquery.ui.mouse.js")
-    script(type="text/javascript" src="/static/js/jquery/jquery.ui.slider.js")
-    script(type="text/javascript" src="/static/js/core/main.js")
-    script(type="text/javascript" src="/static/js/core/menu.js")
     script(type="text/javascript" src="/static/js/core/jquery.dropdownToggle.js")
-    script(type="text/javascript" src="/static/js/core/navigation-menu.js")
-    script(type="text/javascript" src="/static/js/jquery/pushy.min.js")    
+    script(type="text/javascript" src="/static/js/core/main.cso.js")
+    script(type="text/javascript" src="/static/js/core/menu.cso.js")
+    script(type="text/javascript" src="/static/js/core/navigation.menu.cso.js")

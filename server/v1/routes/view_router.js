@@ -17,8 +17,4 @@ viewRouter.get('/', async (_req, res) => {
     res.render('index.pug', { title: 'CSO', pengumuman: true });
 });
 
-viewRouter.get('/main', async (_req, res) => {
-    res.render('main.pug', { title: 'CSO', pengumuman: true });
-});
-
 export {viewRouter};
