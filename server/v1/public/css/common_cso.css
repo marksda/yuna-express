@@ -33,6 +33,11 @@ article {
     margin-top: -72px;
 }
 
+.narrowheader, footer {
+    margin: 0 auto;
+    position: relative;
+}
+
 @media screen and (max-width: 1440px) {
     .logo {
         width: 32px;

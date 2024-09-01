@@ -14,9 +14,11 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
     link(rel="stylesheet", href="/static/css/font.css")
     link(rel="stylesheet", href="/static/css/common_cso.css")
     link(rel="stylesheet", href="/static/css/navigation_cso.css")
+    link(rel="stylesheet", href="/static/css/timlab_cso.css")
     link(rel="stylesheet", href="/static/css/default_page_cso.css")
   body#defaultpage
-    .BaseSide.Com2: .mainpart
+    .BaseSide.Com2: .mainpart(style="z-index:1")
+      .site-overlay
       header: .narrowheader
         .logo.push: a(href="/main")
         nav.pushy.pushy-left: .pushy-content: ul.all-menu-items

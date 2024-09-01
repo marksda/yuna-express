@@ -12,6 +12,12 @@ body#defaultpage article {
     background-position: 58% -900px
 }
 
+body#defaultpage header {
+    background: transparent;
+    border-bottom-color: transparent;
+}
+
 nav ul {
     list-style: none;
 }
+

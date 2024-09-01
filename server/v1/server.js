@@ -16,12 +16,13 @@ app.disable("x-powered-by");
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+// static file
+app.use('/static', express.static(path.join(__dirname, 'public')));
 // rest router
 app.use("/api/v1", restRouter);
 // view router
 app.use("/", viewRouter);
-// static file
-app.use('/static', express.static(path.join(__dirname, 'public')))
 
 //load view engine
 app.set('views', path.join(__dirname, 'views'));
