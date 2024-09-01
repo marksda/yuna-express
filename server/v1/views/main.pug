@@ -1,17 +1,28 @@
 doctype html
-html(lang='en')
+html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="og: http://ogp.me/ns#")
   head
-    meta(charset='UTF-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0')
     title= title
+    meta(http-equiv="Content-Type" content="text/html; charset=utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak yang optimal dengan biaya seminimal mungkin untuk memenuhi kebutuhan bisnis anda di era digitalisai, menghubungkan pemangku kepentingan bisnis dengan pelanggan secara langsung dan cepat merupakan salah satu kunci sukses dari bisnis.")
+    meta(property="og:title" content="CSO patner terpercaya untuk digitalisasi bisnis anda")
+    meta(property="og:url" content="https://cso.ddns.net")
+    meta(property="og:description" content="COMMMITECH SOLUSINDO menawarkan konsultasi IT dan pembuatan perangkat lunak yang optimal dengan biaya seminimal mungkin untuk memenuhi kebutuhan bisnis anda di era digitalisai, menghubungkan pemangku kepentingan bisnis dengan pelanggan secara langsung dan cepat merupakan salah satu kunci sukses dari bisnis.")
+    meta(property="og:image" content="https://cso.ddns.net/images/logo.svg")
+    meta(property="og:type" content="website")    
     link(rel="stylesheet", href="/static/css/reset.css")
+    link(rel="stylesheet", href="/static/css/font.css")
     link(rel="stylesheet", href="/static/css/common_cso.css")
     link(rel="stylesheet", href="/static/css/navigation_cso.css")
-    link(rel="stylesheet", href="/static/css/default_page.css")
+    link(rel="stylesheet", href="/static/css/default_page_cso.css")
   body#defaultpage
-    .mainpart
+    .BaseSide.Com2: .mainpart
       header: .narrowheader
         .logo.push: a(href="/main")
         nav.pushy.pushy-left: .pushy-content: ul.all-menu-items
-          li.pushy-submenu
+          li.pushy-submenu: a.menuitem produk
+          li.pushy-submenu: a.menuitem solusi
+          li.pushy-submenu: a.menuitem layanan
+          li.pushy-submenu: a.menuitem berbagi media
+          li.pushy-submenu: a.menuitem portofolio
       article 

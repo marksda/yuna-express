@@ -7,3 +7,33 @@ nav {
     top: 0;
     width: 100%;
 }
+
+nav>div>ul, nav>div>ul>li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav>div>ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 52px;
+    display: inline-block;
+    position: relative;
+}
+
+nav>div>ul.all-menu-items {
+    display: grid;
+    display: -ms-grid;
+    justify-content: center;
+    grid-template-columns: min-content min-content min-content min-content min-content;
+    -ms-grid-columns: auto 32px auto 32px auto 32px auto 32px auto 32px;
+    grid-gap: 20px;
+    width: 100%;
+}
+
+@media screen and (min-width: 1500px) {
+    nav>div>ul.all-menu-items {
+        grid-gap: 50px;
+    }
+}
