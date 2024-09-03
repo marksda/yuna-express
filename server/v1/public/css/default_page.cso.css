@@ -25,6 +25,44 @@ body#defaultpage a:hover {
     transition: 0.3s
 }
 
+body#defaultpage .dp-first-screen {
+    background-image: url(../images/mainpage/dp-main-pic.png?ver=190);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 1280px auto;
+}
+
+body#defaultpage .dp-first-screen .dp-top-block {
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 985px;
+    text-align: center;
+    width: 1200px;
+}
+
+body#defaultpage article h1, body#defaultpage article h2, body#defaultpage article h3, body#defaultpage article h4, body#defaultpage article h5, body#defaultpage article h6 {
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 90vw;
+}
+
+body#defaultpage .dp-first-screen .dp-top-block h1 {
+    font-size: 64px;
+    letter-spacing: -0.03em;
+    line-height: 1.2em;
+}
+
+body#defaultpage .dp-first-screen .dp-top-block h1 {
+    margin: 0 auto;
+    padding-top: 72px;
+    width: 948px
+}
+
+body#defaultpage .orangetext {
+    color: #FF6F3D;
+}
+
 @media screen and (min-width: 1024px) {
     body#defaultpage #navitem_produk, body#defaultpage #navitem_solusi, body#defaultpage #navitem_layanan, body#defaultpage #navitem_media, body#defaultpage #navitem_portofolio {
         border-bottom-color: transparent;

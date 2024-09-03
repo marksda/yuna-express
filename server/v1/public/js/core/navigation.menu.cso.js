@@ -2,7 +2,7 @@ $(function() {
     var menuBreakpoint = '1024';
     var headerShadowed = false;
 
-    var toggleSubMenuFeatures = function(element) {
+    var toggleSubMenuProduk = function(element) {
         var submenuId = $(element).attr('id') + '_submenu';
         var submenuIdLast = $(element).attr('id') + '_sub';
         $('.pushy-submenu > #navitem_produk_menu > ul > li:not(.last), [id$="_submenu"], #navitem_produk').hide();
@@ -14,10 +14,10 @@ $(function() {
         catchSubMenuHeight();
     };
 
-    var refreshSubMenuFeatures = function() {
+    var refreshSubMenuProduk = function() {
         if (window.innerWidth < menuBreakpoint) {
             $('[id$="_submenu"]').show();
-            $('#navitem_produk_docs_overview, #navitem_produk_docspace, #navitem_produk_workspace').removeClass('selected');
+            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').removeClass('selected');
         }
     };
 
@@ -63,7 +63,7 @@ $(function() {
             } else if (bodyId == "collaborationdocmanagepage" || bodyId == "collaborationcrmpage" || bodyId == "collaborationprojectspage" || bodyId == "collaborationmailpage" || bodyId == "collaborationcalendarpage" || bodyId == "workspacepage") {
                 $('#navitem_produk_workspace').trigger('click').addClass("selected");
             } else {
-                $('#navitem_produk_docs_overview').trigger('click').addClass("selected");
+                $('#navitem_produk_akuntansi').trigger('click').addClass("selected");
             }
         }
     };
@@ -307,27 +307,27 @@ $(function() {
     };
 
     var menuFunc = function() {
-        $('#navitem_produk_docs_overview, #navitem_produk_docspace, #navitem_produk_workspace').off("click touchstart touchend");
+        $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_kantor').off("click touchstart touchend");
         if (window.innerWidth > menuBreakpoint) {
-            $('#navitem_produk_docs_overview, #navitem_produk_docspace, #navitem_produk_workspace').on("click touchstart touchend", function(event) {
+            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').on("click touchstart touchend", function(event) {
                 var submenuId = $(this).attr('id') + '_submenu';
                 var submenuIdLast = $(this).attr('id') + '_sub';
                 event.stopPropagation();
                 event.preventDefault();
                 $('[id$="_submenu"]').hide();
                 $('[id$="_sub"]').hide();
-                $('#navitem_produk_docs_overview, #navitem_produk_docspace, #navitem_produk_workspace').removeClass('selected');
+                $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').removeClass('selected');
                 $(this).addClass("selected");
                 $('#' + submenuId).show();
                 $('#' + submenuIdLast).show();
             });
         } else {
-            $('#navitem_produk_docs_overview, #navitem_produk_docspace, #navitem_produk_workspace').on("click touchstart touchend", function(event) {
+            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').on("click touchstart touchend", function(event) {
                 event.stopPropagation();
                 event.preventDefault();
-                toggleSubMenuFeatures(this);
+                toggleSubMenuProduk(this);
             });
-            $("#navitem_produk_docs_overview_mobile, #navitem_produk_docspace_mobile, #navitem_produk_workspace_mobile").click(function(event) {
+            $("#navitem_produk_akuntansi_mobile, #navitem_produk_medis_mobile, #navitem_produk_kantor_mobile").click(function(event) {
                 event.stopPropagation();
                 event.preventDefault();
                 $('.pushy-submenu > #navitem_produk_menu > ul > li:not(:nth-child(3)), #navitem_produk').show();
@@ -366,7 +366,7 @@ $(function() {
             $('.phoneControlContainer').removeClass('focus');
         });
 
-        $('.features-sub-submenu').css('display', 'none!important');
+        $('.produk-sub-submenu').css('display', 'none!important');
     });
 
     $(".all-menu-items").on("mresize", function() {
@@ -381,7 +381,7 @@ $(function() {
         }
     });
     $(window).resize(function() {
-        refreshSubMenuFeatures();
+        refreshSubMenuProduk();
         menuFunc();
         if (window.innerWidth >= menuBreakpoint) {
             $('.pushy-submenu').css('display', 'inline-block');
@@ -404,21 +404,6 @@ $(function() {
     });
 
     $.dropdownToggle({
-        dropdownID: "navitem_portofolio_menu",
-        switcherSelector: "#navitem_portofolio",
-        simpleToggle: true,
-        showFunction: function(switcherObj, dropdownItem) {
-            if (dropdownItem.is(":hidden")) {
-                switcherObj.addClass("active");
-            } else {
-                switcherObj.removeClass("active");
-            }
-        },
-        hideFunction: function() {
-            $("#navitem_portofolio").removeClass("active");
-        }
-    });
-    $.dropdownToggle({
         dropdownID: "navitem_produk_menu",
         switcherSelector: "#navitem_produk",
         simpleToggle: true,
@@ -431,26 +416,11 @@ $(function() {
         },
         hideFunction: function() {
             $("#navitem_produk").removeClass("active");
-        },
-    });
-    $.dropdownToggle({
-        dropdownID: "navitem_partnership_menu",
-        switcherSelector: "#navitem_partners",
-        simpleToggle: true,
-        showFunction: function(switcherObj, dropdownItem) {
-            if (dropdownItem.is(":hidden")) {
-                switcherObj.addClass("active");
-            } else {
-                switcherObj.removeClass("active");
-            }
-        },
-        hideFunction: function() {
-            $("#navitem_partners").removeClass("active");
         }
     });
     $.dropdownToggle({
-        dropdownID: "navitem_about_menu",
-        switcherSelector: "#navitem_about",
+        dropdownID: "navitem_solusi_menu",
+        switcherSelector: "#navitem_solusi",
         simpleToggle: true,
         showFunction: function(switcherObj, dropdownItem) {
             if (dropdownItem.is(":hidden")) {
@@ -460,7 +430,22 @@ $(function() {
             }
         },
         hideFunction: function() {
-            $("#navitem_about").removeClass("active");
+            $("#navitem_solusi").removeClass("active");
+        },
+    });
+    $.dropdownToggle({
+        dropdownID: "navitem_layanan_menu",
+        switcherSelector: "#navitem_layanan",
+        simpleToggle: true,
+        showFunction: function(switcherObj, dropdownItem) {
+            if (dropdownItem.is(":hidden")) {
+                switcherObj.addClass("active");
+            } else {
+                switcherObj.removeClass("active");
+            }
+        },
+        hideFunction: function() {
+            $("#navitem_layanan").removeClass("active");
         }
     });
     $.dropdownToggle({
@@ -479,8 +464,8 @@ $(function() {
         }
     });
     $.dropdownToggle({
-        dropdownID: "navitem_solusi_menu",
-        switcherSelector: "#navitem_solusi",
+        dropdownID: "navitem_portofolio_menu",
+        switcherSelector: "#navitem_portofolio",
         simpleToggle: true,
         showFunction: function(switcherObj, dropdownItem) {
             if (dropdownItem.is(":hidden")) {
@@ -490,81 +475,21 @@ $(function() {
             }
         },
         hideFunction: function() {
-            $("#navitem_solusi").removeClass("active");
-        }
-    });
-    $.dropdownToggle({
-        dropdownID: "navitem_layanan_menu",
-        switcherSelector: "#navitem_layanan",
-        simpleToggle: true,
-        showFunction: function(switcherObj, dropdownItem) {
-            if (dropdownItem.is(":hidden")) {
-                switcherObj.addClass("active");
-            } else {
-                switcherObj.removeClass("active");
-            }
-        },
-        hideFunction: function() {
-            $("#navitem_layanan").removeClass("active");
-        }
-    });
-    $.dropdownToggle({
-        dropdownID: "navitem_phone_menu",
-        switcherSelector: "#navitem_call_phone",
-        simpleToggle: true,
-        showFunction: function(switcherObj, dropdownItem) {
-            if (dropdownItem.is(":hidden")) {
-                switcherObj.addClass("active");
-            } else {
-                switcherObj.removeClass("active");
-            }
-        },
-        hideFunction: function() {
-            $("#navitem_call_phone").removeClass("active");
-        }
-    });
-    $.dropdownToggle({
-        dropdownID: "navitem_signin_menu",
-        switcherSelector: "#navitem_sign_in_header",
-        simpleToggle: true,
-        showFunction: function(switcherObj, dropdownItem) {
-            if (dropdownItem.is(":hidden")) {
-                switcherObj.addClass("active");
-            } else {
-                switcherObj.removeClass("active");
-            }
-        },
-        hideFunction: function() {
-            $("#navitem_sign_in_header").removeClass("active");
-        }
-    });
-    $.dropdownToggle({
-        dropdownID: "LanguageOptions",
-        switcherSelector: "#LanguageItem",
-        simpleToggle: true,
-        showFunction: function(switcherObj, dropdownItem) {
-            if (dropdownItem.is(":hidden")) {
-                switcherObj.addClass("active");
-            } else {
-                switcherObj.removeClass("active");
-            }
-        },
-        hideFunction: function() {
-            $("#LanguageItem").removeClass("active");
+            $("#navitem_portofolio").removeClass("active");
         }
     });
     
     NavigationMenuManager.bindEvents();
 
-    $("#reseller_div").on("click", function() {
-        location.href = $("#navitem_portofolio_reseller").attr("href");
-    });
+    // $("#reseller_div").on("click", function() {
+    //     location.href = $("#navitem_portofolio_reseller").attr("href");
+    // });
 
-    $("#see_it_div").on("click", function() {
-        location.href = $("#navitem_produk_see_it").attr("href");
-    });
+    // $("#see_it_div").on("click", function() {
+    //     location.href = $("#navitem_produk_see_it").attr("href");
+    // });
 
-    $("#latest_events_div").on("click", function() {
-        location.href = $("#navitem_latest_events").attr("href");
-    });
+    // $("#latest_events_div").on("click", function() {
+    //     location.href = $("#navitem_latest_events").attr("href");
+    // });
 });

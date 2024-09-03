@@ -25,15 +25,18 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
         nav.pushy.pushy-left: .pushy-content: ul.all-menu-items
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
             a.menuitem#navitem_produk produk
-            #navitem_produk_menu(style="display: none") 
-              span sdfsdfsdfsdf
+            #navitem_produk_menu(style="display: none")              
+              ul.dropdown-content.akkordeon
+                li: #navitem_produk_akuntansi.dropdown-item
+                  | Akutansi
+                  p.produk_info Sofware akutansi yang mempermudah pengolahan keuangan bisnis anda
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_solusi solusi
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_layanan layanan
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_media berbagi media
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_portofolio portofolio
       article#target
         .contentConteiner: .dp-first-screen: .dp-top-block
-          h1 your private office with the
+          h1 Raih puncak bisnismu dengan 
             span.orangetext COMMITECH SOLUSINDO
     script(type="text/javascript" src="/static/js/jquery/jquery.core.js")
     script(type="text/javascript" src="/static/js/core/jquery.dropdownToggle.js")
