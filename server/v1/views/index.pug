@@ -25,11 +25,24 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
         nav.pushy.pushy-left: .pushy-content: ul.all-menu-items
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
             a.menuitem#navitem_produk produk
-            #navitem_produk_menu(style="display: none")              
+            #navitem_produk_menu(style="display: none;")              
               ul.dropdown-content.akkordeon
-                li: #navitem_produk_akuntansi.dropdown-item
-                  | Akutansi
-                  p.produk_info Sofware akutansi yang mempermudah pengolahan keuangan bisnis anda
+                li
+                  #navitem_produk_akuntansi.dropdown-item
+                    | Akuntansi
+                    p.produk_info Sofware akuntansi mempermudah pengolahan keuangan bisnis anda
+                  #navitem_produk_medis.dropdown-item
+                    | Medis 
+                    p.produk_info Sofware medis mempermudah mengelolah data rekam medis dan data keuangan bisnis layanan kesehatan
+                  #navitem_produk_kantor.dropdown-item
+                    | Kantor 
+                    p.produk_info Sofware perkantoran berupa surat menyurat dan pengarsipan dokumen
+                li
+                  .produk-sub-submenu#navitem_produk_akuntansi_submenu(style="display: flex;")
+                    div 
+                      #navitem_produk_akuntansi_mobile Akuntansi
+                      a.dropdown-item.mobile_no_link#produk_akuntansi(href="/akuntansi") Ringkasan Fitur 
+                    .produk-sub-submenu#navitem_produk_akuntansi_sub(style="display: block;")
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_solusi solusi
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_layanan layanan
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_media berbagi media

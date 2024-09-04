@@ -17,6 +17,14 @@ header a.dropdown-item:before, div.dropdown-item:before {
     background-repeat: no-repeat;
 }
 
+#navitem_produk_medis:before {
+    background-position-y: -1170px;
+}
+
+#navitem_produk_kantor:before {
+    background-position-y: -26px;
+}
+
 header a.dropdown-item, div.dropdown-item {
     display: block;
     border: 0;
@@ -242,6 +250,15 @@ nav .active {
         max-width: 312px;
     }
 
+    #navitem_produk_menu .dropdown-content>li:nth-of-type(2)>div {
+        display: flex;
+    }
+
+    #navitem_produk_menu .dropdown-content>li:nth-of-type(2)>div>div {
+        min-width: 312px;
+        max-width: 312px;
+    }
+
     #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor {
         margin: 0 0 12px 24px;
         padding: 12px 32px 12px 48px;
@@ -251,6 +268,18 @@ nav .active {
     #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi.selected, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis.selected, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor.selected {
         color: #FF6F3D;
         background-color: #F5F5F5;
+    }
+
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi .produk_info, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis .produk_info, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor .produk_info {
+        color: #333;
+        font-size: 13px;
+        line-height: 1.5em;
+        font-weight: 400;
+        white-space: normal;
+    }
+
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi_mobile, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis_mobile, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor_mobile {
+        display: none;
     }
 
     .all-menu-items>li:nth-of-type(1), .all-menu-items>li:nth-of-type(2), .all-menu-items>li:nth-of-type(3) {
