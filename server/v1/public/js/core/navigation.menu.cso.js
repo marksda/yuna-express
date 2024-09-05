@@ -17,7 +17,7 @@ $(function() {
     var refreshSubMenuProduk = function() {
         if (window.innerWidth < menuBreakpoint) {
             $('[id$="_submenu"]').show();
-            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').removeClass('selected');
+            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor, #navitem_produk_messageapi').removeClass('selected');
         }
     };
 
@@ -311,27 +311,27 @@ $(function() {
     };
 
     var menuFunc = function() {
-        $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_kantor').off("click touchstart touchend");
+        $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_kantor, #navitem_produk_messageapi').off("click touchstart touchend");
         if (window.innerWidth > menuBreakpoint) {
-            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').on("click touchstart touchend", function(event) {
+            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor, #navitem_produk_messageapi').on("click touchstart touchend", function(event) {
                 var submenuId = $(this).attr('id') + '_submenu';
                 var submenuIdLast = $(this).attr('id') + '_sub';
                 event.stopPropagation();
                 event.preventDefault();
                 $('[id$="_submenu"]').hide();
                 $('[id$="_sub"]').hide();
-                $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').removeClass('selected');
+                $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor, #navitem_produk_messageapi').removeClass('selected');
                 $(this).addClass("selected");
                 $('#' + submenuId).show();
                 $('#' + submenuIdLast).show();
             });
         } else {
-            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor').on("click touchstart touchend", function(event) {
+            $('#navitem_produk_akuntansi, #navitem_produk_medis, #navitem_produk_kantor, #navitem_produk_messageapi').on("click touchstart touchend", function(event) {
                 event.stopPropagation();
                 event.preventDefault();
                 toggleSubMenuProduk(this);
             });
-            $("#navitem_produk_akuntansi_mobile, #navitem_produk_medis_mobile, #navitem_produk_kantor_mobile").click(function(event) {
+            $("#navitem_produk_akuntansi_mobile, #navitem_produk_medis_mobile, #navitem_produk_kantor_mobile, #navitem_produk_messageapi_mobile").click(function(event) {
                 event.stopPropagation();
                 event.preventDefault();
                 $('.pushy-submenu > #navitem_produk_menu > ul > li:not(:nth-child(3)), #navitem_produk').show();
@@ -422,6 +422,7 @@ $(function() {
             $("#navitem_produk").removeClass("active");
         }
     });
+
     $.dropdownToggle({
         dropdownID: "navitem_solusi_menu",
         switcherSelector: "#navitem_solusi",
@@ -437,6 +438,7 @@ $(function() {
             $("#navitem_solusi").removeClass("active");
         },
     });
+
     $.dropdownToggle({
         dropdownID: "navitem_layanan_menu",
         switcherSelector: "#navitem_layanan",
@@ -452,6 +454,7 @@ $(function() {
             $("#navitem_layanan").removeClass("active");
         }
     });
+
     $.dropdownToggle({
         dropdownID: "navitem_media_menu",
         switcherSelector: "#navitem_media",
@@ -467,6 +470,7 @@ $(function() {
             $("#navitem_media").removeClass("active");
         }
     });
+
     $.dropdownToggle({
         dropdownID: "navitem_portofolio_menu",
         switcherSelector: "#navitem_portofolio",

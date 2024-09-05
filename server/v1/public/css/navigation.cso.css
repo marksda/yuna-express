@@ -1,5 +1,8 @@
 @media screen and (min-width: 1024px) {
-    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi:before, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis:before, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor:before {
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi:before, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_medis:before, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor:before,
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_messageapi:before {
         top: 12px;
         left: 12px;
     }
@@ -195,6 +198,74 @@ nav .active {
     left: calc(50% - 455px);
 }
 
+.nav_item_link:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 16px;
+    top: 0px;
+    background-image: url(../images/menu_icons.svg?ver=190);
+    background-repeat: no-repeat;
+}
+
+.nav_item_link {
+    position: relative;
+}
+
+#navitem_produk_submenu_part1:before, #navitem_produk_submenu_part1_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part2:before, #navitem_produk_submenu_part2_ds:before {
+    background-position-y: -1926px;
+}
+
+#navitem_produk_submenu_part3:before, #navitem_produk_submenu_part3_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part4:before, #navitem_produk_submenu_part4_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part5:before, #navitem_produk_submenu_part5_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part6:before, #navitem_produk_submenu_part6_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part7:before, #navitem_produk_submenu_part7_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part8:before, #navitem_produk_submenu_part8_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part9:before, #navitem_produk_submenu_part9_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part10:before, #navitem_produk_submenu_part10_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part11:before, #navitem_produk_submenu_part11_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part12:before, #navitem_produk_submenu_part12_ds:before {
+    background-position-y: -1769px;
+}
+
+#navitem_produk_submenu_part13:before, #navitem_produk_submenu_part13_ds:before {
+    background-position-y: -1769px;
+}
+
 @media screen and (min-width: 1500px) {
     nav .pushy-content {
         max-width: 1120px;
@@ -256,7 +327,11 @@ nav .active {
         -webkit-box-shadow: 0 20px 50px rgba(85, 85, 85, 0.15);
     }
 
-    #navitem_produk_menu .dropdown-content, #navitem_solusi_menu .dropdown-content, #navitem_layanan_menu .dropdown-content, #navitem_media_menu .dropdown-content, #navitem_portofolio_menu .dropdown-content {
+    #navitem_produk_menu .dropdown-content, 
+    #navitem_solusi_menu .dropdown-content, 
+    #navitem_layanan_menu .dropdown-content, 
+    #navitem_media_menu .dropdown-content, 
+    #navitem_portofolio_menu .dropdown-content {
         list-style-type: none;
         margin: 0;
         display: block;
@@ -286,7 +361,10 @@ nav .active {
         padding: 32px 0;
     }
 
-    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi:after, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis:after, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor:after {
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi:after, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_medis:after, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor:after,
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_messageapi:after {
         content: "";
         display: block;
         height: 100%;
@@ -323,18 +401,27 @@ nav .active {
         max-width: 312px;
     }
 
-    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor {
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_medis, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor,
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_messageapi {
         margin: 0 0 12px 24px;
         padding: 12px 32px 12px 48px;
         border-radius: 6px;
     }
 
-    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi.selected, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis.selected, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor.selected {
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi.selected, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_medis.selected, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor.selected,
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_messageapi.selected {
         color: #FF6F3D;
         background-color: #F5F5F5;
     }
 
-    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi .produk_info, #navitem_produk_menu .dropdown-content>li #navitem_produk_medis .produk_info, #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor .produk_info {
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_akuntansi .produk_info, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_medis .produk_info, 
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor .produk_info,
+    #navitem_produk_menu .dropdown-content>li #navitem_produk_messageapi .produk_info {
         color: #333;
         font-size: 13px;
         line-height: 1.5em;
@@ -352,6 +439,23 @@ nav .active {
     
     .all-menu-items>li:nth-of-type(4), .all-menu-items>li:nth-of-type(5) {
         position: relative;
+    }
+
+    #navitem_produk_menu .dropdown-content>li .nav_item_link {
+        color: #444444;
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.5em;
+        padding: 2px 16px 2px 52px;
+        margin: 0 0 8px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+    }
+
+    #navitem_produk_menu .dropdown-content>li .nav_item_link:hover {
+        color: #FF6F3D;
     }
 }
 

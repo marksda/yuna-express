@@ -30,27 +30,53 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
                 li
                   #navitem_produk_akuntansi.dropdown-item
                     | Akuntansi
-                    p.produk_info Sofware akuntansi yang mempermudah pengolahan keuangan bisnis anda
+                    p.produk_info Kelolah keuangan bisnis secara mudah, cepat dan akurat
                   #navitem_produk_medis.dropdown-item
                     | Medis 
-                    p.produk_info Sofware medis yang mempermudah pengolahan rekam medis dan keuangan bisnis layanan kesehatan
+                    p.produk_info Kelolah data medis dan biaya layanan secara terintegritas
                   #navitem_produk_kantor.dropdown-item
-                    | Kantor 
-                    p.produk_info Sofware perkantoran berupa surat menyurat, sharing file dan pengarsipan dokumen
+                    | Admin kantor
+                    p.produk_info Permudah surat menyurat dan kelolah dokumen
+                  #navitem_produk_messageapi.dropdown-item
+                    | MessageAPI
+                    p.produk_info API pertukaran pesan whatsapp dan telegram
                 li
-                  .produk-sub-submenu#navitem_produk_akuntansi_submenu(style="display: flex;")
+                  div.produk-sub-submenu#navitem_produk_akuntansi_submenu(style="display: flex;")
                     div 
-                      #navitem_produk_akuntansi_mobile Akuntansi
-                      a.dropdown-item.mobile_no_link#produk_akuntansi(href="/akuntansi") Ringkasan Fitur 
+                      div#navitem_produk_akuntansi_mobile Akuntansi
+                      a.dropdown-item.mobile_no_link#produk_akuntansi(href="/akuntansi") Fitur 
                       a.nav_item_link#navitem_produk_submenu_part1(href="") Kustomisasi akun buku besar, jurnal dan formulir
-                    .produk-sub-submenu#navitem_produk_akuntansi_sub(style="display: block;")
-          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_solusi solusi
-          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_layanan layanan
-          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_media berbagi media
-          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;"): a.menuitem#navitem_portofolio portofolio
+                      a.nav_item_link#navitem_produk_submenu_part2(href="") Sistem pengendalian intern
+                      a.nav_item_link#navitem_produk_submenu_part3(href="") Sistem penjualan kredit
+                      a.nav_item_link#navitem_produk_submenu_part4(href="") Sistem akuntansi piutang 
+                      a.nav_item_link#navitem_produk_submenu_part5(href="") Sistem akuntansi pembelian 
+                      a.nav_item_link#navitem_produk_submenu_part7(href="") Sistem akuntansi utang 
+                      a.nav_item_link#navitem_produk_submenu_part8(href="") Sistem akuntansi penggajian 
+                      a.nav_item_link#navitem_produk_submenu_part9(href="") Sistem akuntansi biaya
+                      a.nav_item_link#navitem_produk_submenu_part10(href="") Sistem akuntansi penerimaan kas
+                      a.nav_item_link#navitem_produk_submenu_part11(href="") Sistem akuntansi penggeluaran kas 
+                      a.nav_item_link#navitem_produk_submenu_part12(href="") Sistem akuntansi persediaan 
+                      a.nav_item_link#navitem_produk_submenu_part13(href="") Sistem akuntansi aktiva tetap
+                    div.produk-sub-submenu#navitem_produk_akuntansi_sub(style="display: block;")
+                      a#navitem_produk_modul_implementasi_akutansi.dropdown-item.mobile_no_link(href="") bidang aplikasi
+                      a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan dagang (toko mainan, toko kelontong, rumah makan, resto, dll)
+                      a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan jasa(travel, penginapan, transportasi, dll)
+                      a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan produksi(pabrik garmen, plastik, furnitur, dll)
+                  div.produk-sub-submenu#navitem_produk_medis_submenu(style="display: flex;")
+                  div.produk-sub-submenu#navitem_produk_kantor_submenu(style="display: flex;")
+                  div.produk-sub-submenu#navitem_produk_messageapi_submenu(style="display: flex;")
+                li.last
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+            a.menuitem#navitem_solusi solusi
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+            a.menuitem#navitem_layanan layanan
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+            a.menuitem#navitem_media berbagi media
+          li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+            a.menuitem#navitem_portofolio portofolio
       article#target
         .contentConteiner: .dp-first-screen: .dp-top-block
-          h1 Raih puncak bisnismu dengan 
+          h1 Akselerasi bisnis anda bersama    
             span.orangetext COMMITECH SOLUSINDO
     script(type="text/javascript" src="/static/js/jquery/jquery.core.js")
     script(type="text/javascript" src="/static/js/core/jquery.dropdownToggle.js")
