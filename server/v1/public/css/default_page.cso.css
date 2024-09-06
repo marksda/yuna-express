@@ -17,13 +17,13 @@ body#defaultpage header {
     border-bottom-color: transparent;
 }
 
-body#defaultpage a:hover {
+/* body#defaultpage a:hover {
     color: #FF6F3D;
     -webkit-transition: 0.3s;
     -moz-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s
-}
+} */
 
 body#defaultpage .dp-first-screen {
     background-image: url(../images/mainpage/dp-main-pic.png?ver=190);

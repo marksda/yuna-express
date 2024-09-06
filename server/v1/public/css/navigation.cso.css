@@ -58,7 +58,9 @@ div.dropdown-item:before {
 #produk_medis:before, 
 #produk_kantor:before,
 #produk_messageapi:before,
-#navitem_produk_aplikasi_akutansi:before {
+#navitem_produk_aplikasi_akutansi:before,
+#navitem_fb_perangkatlunak:before,
+#navitem_fb_perangkatkeras:before {
     display: none;
 }
 
@@ -91,7 +93,9 @@ div.dropdown-item:hover {
 #produk_akuntansi, 
 #produk_medis, 
 #produk_kantor,
-#navitem_produk_aplikasi_akutansi {
+#navitem_produk_aplikasi_akutansi,
+#navitem_fb_perangkatlunak,
+#navitem_fb_perangkatkeras {
     align-items: end;
     border-radius: 3px;
     box-sizing: border-box;
@@ -505,6 +509,15 @@ nav .active {
     #navitem_produk_menu .dropdown-content>li #navitem_produk_medis_mobile,
     #navitem_produk_menu .dropdown-content>li #navitem_produk_kantor_mobile {
         display: none;
+    }
+
+    #navitem_solusi_menu .dropdown-content .pushy-link a.dropdown-item {
+        margin-bottom: 12px;
+    }
+
+    #navitem_solusi_menu .dropdown-content #navitem_fb_perangkatlunak, 
+    #navitem_solusi_menu .dropdown-content #navitem_fb_perangkatkeras {
+        margin: 0 24px 12px;
     }
 
     .all-menu-items>li:nth-of-type(1), 
