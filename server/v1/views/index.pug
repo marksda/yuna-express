@@ -18,14 +18,14 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
     link(rel="stylesheet", href="/static/css/timlab.cso.css")
     link(rel="stylesheet", href="/static/css/default_page.cso.css")
   body#defaultpage
-    .BaseSide.Com2: .mainpart(style="z-index:1")
-      .site-overlay
+    div.BaseSide.Com2: .mainpart(style="z-index:1")
+      div.site-overlay
       header: .narrowheader
-        .logo.push: a(href="/main")
-        nav.pushy.pushy-left: .pushy-content: ul.all-menu-items
+        div.logo.push: a(href="/main")
+        nav.pushy.pushy-left: div.pushy-content: ul.all-menu-items
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
             a.menuitem#navitem_produk produk
-            #navitem_produk_menu(style="display: none;")              
+            div#navitem_produk_menu(style="display: none;")
               ul.dropdown-content.akkordeon
                 li
                   #navitem_produk_akuntansi.dropdown-item
@@ -58,7 +58,7 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
                       a.nav_item_link#navitem_produk_submenu_part12(href="") Sistem akuntansi persediaan 
                       a.nav_item_link#navitem_produk_submenu_part13(href="") Sistem akuntansi aktiva tetap
                     div.produk-sub-submenu#navitem_produk_akuntansi_sub(style="display: block;")
-                      a#navitem_produk_modul_implementasi_akutansi.dropdown-item.mobile_no_link(href="") bidang aplikasi
+                      a#navitem_produk_aplikasi_akutansi.dropdown-item.mobile_no_link(href="") aplikasi
                       a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan dagang (toko mainan, toko kelontong, rumah makan, resto, dll)
                       a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan jasa(travel, penginapan, transportasi, dll)
                       a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan produksi(pabrik garmen, plastik, furnitur, dll)
@@ -68,6 +68,8 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
                 li.last
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
             a.menuitem#navitem_solusi solusi
+            div#navitem_solusi_menu(style="display: none;")
+              ul.dropdown-content.akkordeon
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
             a.menuitem#navitem_layanan layanan
           li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
