@@ -29,6 +29,10 @@ div.dropdown-item:before {
     background-position-y: -26px;
 }
 
+#navitem_fb_kontak:before {
+    background-position-y: -1405px;
+}
+
 #produk_akuntansi:after, 
 #produk_medis:after, 
 #produk_kantor:after,
@@ -518,6 +522,63 @@ nav .active {
     #navitem_solusi_menu .dropdown-content #navitem_fb_perangkatlunak, 
     #navitem_solusi_menu .dropdown-content #navitem_fb_perangkatkeras {
         margin: 0 24px 12px;
+    }
+    
+    #navitem_solusi_menu .dropdown-content>li:first-of-type:before {
+        content: "";
+        display: block;
+        height: calc(100% - 102px);
+        width: 1px;
+        background-color: #ebebeb;
+        position: absolute;
+        top: 32px;
+        left: 312px;
+    }
+
+    #navitem_solusi_menu .dropdown-content .pushy-link {
+        width: 288px;
+        padding: 24px 0;
+    }
+
+    #navitem_solusi_menu .dropdown-content .pushy-link.perangkatkeras {
+        width: 264px;
+        padding-left: 24px;
+    }
+
+    #navitem_solusi_menu .dropdown-content .pushy-link a:last-of-type {
+        margin-bottom: 0;
+    }
+
+    #navitem_solusi_menu .dropdown-content>li.last {
+        border-top: 1px solid #e2e2e2;
+        flex-basis: 100%;
+        max-width: 100%;
+        padding: 16px 32px;
+    }
+
+    #navitem_solusi_menu .dropdown-content>li.last>div {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #navitem_solusi_menu .dropdown-content>li.last>div>div {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 32px;
+        justify-content: space-between;
     }
 
     .all-menu-items>li:nth-of-type(1), 
