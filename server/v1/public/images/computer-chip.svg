@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="23.543833"
+   height="24.341608"
+   viewBox="0 0 0.70631496 0.73024822"
+   id="Layer_1"
+   data-name="Layer 1"
+   fill="#000000"
+   version="1.1"
+   sodipodi:docname="computer-chip.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1853">
+    <defs
+       id="defs1819">
+      <style
+         id="style1817">.cls-1{fill:none;stroke:#ea6710;stroke-miterlimit:10;stroke-width:1.92px;}</style>
+    </defs>
+  </defs>
+  <sodipodi:namedview
+     id="namedview1851"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="9.2913831"
+     inkscape:cx="12.05418"
+     inkscape:cy="10.547407"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1" />
+  <g
+     id="g2443"
+     transform="matrix(0.04045205,0,0,0.04374466,-0.02265315,-0.02449701)">
+    <g
+       id="SVGRepo_bgCarrier"
+       stroke-width="0"
+       transform="matrix(0.76113984,0,0,0.72769942,0.13376169,0.15248833)" />
+    <g
+       id="SVGRepo_tracerCarrier"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       transform="matrix(0.76113984,0,0,0.72769942,0.13376169,0.15248833)" />
+    <rect
+       class="cls-1"
+       x="2.7064145"
+       y="2.6121125"
+       width="13.129663"
+       height="12.552815"
+       rx="1.6592849"
+       id="rect1821" />
+    <rect
+       class="cls-1"
+       x="5.6215801"
+       y="5.3992014"
+       width="7.2917194"
+       height="6.9713602"
+       rx="1.4613885"
+       id="rect1823" />
+    <line
+       class="cls-1"
+       x1="5.6215801"
+       y1="0.56"
+       x2="5.6215801"
+       y2="1.9571829"
+       id="line1825" />
+    <line
+       class="cls-1"
+       x1="9.2674398"
+       y1="0.56"
+       x2="9.2674398"
+       y2="1.9571829"
+       id="line1827" />
+    <line
+       class="cls-1"
+       x1="12.913301"
+       y1="0.56"
+       x2="12.913301"
+       y2="1.9571829"
+       id="line1829" />
+    <line
+       class="cls-1"
+       x1="5.6215801"
+       y1="15.856242"
+       x2="5.6215801"
+       y2="17.253426"
+       id="line1831"
+       style="fill:#ff6600" />
+    <line
+       class="cls-1"
+       x1="9.2674398"
+       y1="15.856242"
+       x2="9.2674398"
+       y2="17.253426"
+       id="line1833"
+       style="fill:#ff6600" />
+    <line
+       class="cls-1"
+       x1="12.913301"
+       y1="15.856242"
+       x2="12.913301"
+       y2="17.253426"
+       id="line1835"
+       style="fill:#ff6600" />
+    <line
+       class="cls-1"
+       x1="0.56"
+       y1="12.370563"
+       x2="2.0213885"
+       y2="12.370563"
+       id="line1837" />
+    <line
+       class="cls-1"
+       x1="0.56"
+       y1="8.884881"
+       x2="2.0213885"
+       y2="8.884881"
+       id="line1839" />
+    <line
+       class="cls-1"
+       x1="0.56"
+       y1="5.3992014"
+       x2="2.0213885"
+       y2="5.3992014"
+       id="line1841" />
+    <line
+       class="cls-1"
+       x1="16.55916"
+       y1="12.370563"
+       x2="18.020548"
+       y2="12.370563"
+       id="line1843"
+       style="fill:#ff6600" />
+    <line
+       class="cls-1"
+       x1="16.55916"
+       y1="8.884881"
+       x2="18.020548"
+       y2="8.884881"
+       id="line1845"
+       style="fill:#ff6600" />
+    <line
+       class="cls-1"
+       x1="16.55916"
+       y1="5.3992014"
+       x2="18.020548"
+       y2="5.3992014"
+       id="line1847"
+       style="fill:#ff6600" />
+  </g>
+</svg>

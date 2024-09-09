@@ -33,6 +33,18 @@ div.dropdown-item:before {
     background-position-y: -1405px;
 }
 
+#navitem_fb_sofware_development:before {
+    background-image: url(../images/development-cognitive.svg);
+}
+
+#navitem_fb_konsul:before {
+    background-image: url(../images/servers.svg);
+}
+
+#navitem_fb_iot:before {
+    background-image: url(../images/iot-platform.svg);
+}
+
 #produk_akuntansi:after, 
 #produk_medis:after, 
 #produk_kantor:after,
@@ -527,7 +539,7 @@ nav .active {
     #navitem_solusi_menu .dropdown-content>li:first-of-type:before {
         content: "";
         display: block;
-        height: calc(100% - 102px);
+        height: calc(100% - 128px);
         width: 1px;
         background-color: #ebebeb;
         position: absolute;
@@ -579,6 +591,28 @@ nav .active {
         display: flex;
         gap: 32px;
         justify-content: space-between;
+    }
+
+    #navitem_layanan_menu .dropdown-content>li:first-of-type {
+        min-width: 288px;
+        padding-right: 0;
+    }
+
+    #navitem_layanan_menu .dropdown-content>li {
+        padding: 24px;
+    }
+
+    #navitem_layanan_menu .dropdown-content a.dropdown-item::before {
+        left: 0;
+    }
+
+    #navitem_layanan_menu .dropdown-content a.dropdown-item {
+        padding-left: 36px;
+        margin-bottom: 12px;
+    }
+
+    #navitem_layanan_menu .dropdown-content a:last-of-type {
+        margin-bottom: 0;
     }
 
     .all-menu-items>li:nth-of-type(1), 

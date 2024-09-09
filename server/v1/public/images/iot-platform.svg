@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="23.523628"
+   height="24.815104"
+   viewBox="0 0 0.94094513 0.99260414"
+   id="icon"
+   version="1.1"
+   sodipodi:docname="iot-platform.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview288"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="9.291383"
+     inkscape:cx="26.153265"
+     inkscape:cy="16.359244"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="icon" />
+  <defs
+     id="defs274">
+    <style
+       id="style272">.cls-1{fill:none;}</style>
+  </defs>
+  <title
+     id="title276">iot--platform</title>
+  <path
+     d="M 0.8821361,0.58935867 H 0.76451794 V 0.46528318 H 0.70570883 V 0.74445311 H 0.23523628 V 0.24815104 L 0.4998771,0.24812311 V 0.18611327 H 0.38225895 V 0.06203776 h -0.0588091 v 0.12407551 h -0.0882136 a 0.05886789,0.06209979 0 0 0 -0.058809,0.0620378 v 0.0930566 H 0.05880907 v 0.0620378 h 0.11761814 v 0.1861132 H 0.05880907 v 0.0620378 h 0.11761814 v 0.0930567 a 0.0588767,0.0621091 0 0 0 0.0588091,0.0620378 h 0.0882136 v 0.12407549 h 0.058809 V 0.80649084 h 0.17642726 v 0.12407551 h 0.058809 V 0.80649084 h 0.0882136 a 0.05888846,0.06212151 0 0 0 0.0588091,-0.0620378 V 0.65139645 H 0.8821361 Z"
+     id="path278"
+     style="stroke-width:0.0302009;fill:#ff7f2a" />
+  <path
+     d="M 0.61749522,0.65139645 H 0.32344988 V 0.34120767 H 0.61749522 Z M 0.38225895,0.58935867 H 0.55868619 V 0.40324542 H 0.38225895 Z"
+     id="path280"
+     style="stroke-width:0.0302009;fill:#000000" />
+  <path
+     d="M 0.91154058,0.40324542 H 0.85273153 A 0.29438939,0.31055171 0 0 0 0.55868619,0.09305664 V 0.03101888 a 0.35323962,0.37263288 0 0 1 0.35285439,0.37222654 z"
+     id="path282"
+     style="stroke-width:0.0302009;fill:#000000" />
+  <path
+     d="M 0.76451794,0.40324542 H 0.70570883 A 0.14719617,0.15527741 0 0 0 0.55868619,0.24815104 v -0.0620378 a 0.20608169,0.2173958 0 0 1 0.20583175,0.21713218 z"
+     id="path284"
+     style="stroke-width:0.0302009;fill:#000000" />
+  <rect
+     id="_Transparent_Rectangle_"
+     data-name="&lt;Transparent Rectangle&gt;"
+     class="cls-1"
+     width="0.94094515"
+     height="0.99260414"
+     x="0"
+     y="0"
+     style="stroke-width:0.0302009" />
+  <metadata
+     id="metadata554">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>iot--platform</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
