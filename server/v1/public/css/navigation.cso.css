@@ -316,6 +316,39 @@ nav .active {
     background-position-y: -1769px;
 }
 
+.signin_wrapper {
+    position: absolute;
+    right: 55px;
+    top: 0;
+    left: auto;
+    bottom: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+.signin_wrapper .signin {
+    margin-right: 0;
+    padding: 0;
+}
+
+#navitem_sign_in_header {
+    display: inline-block;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url(../images/sign-in.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 24px auto;
+    line-height: 29px;
+    margin: 0;
+    padding: 14px 12px 13px;
+    position: initial;
+    font-size: 0;
+}
+
 @media screen and (min-width: 1500px) {
     nav .pushy-content {
         max-width: 1120px;
