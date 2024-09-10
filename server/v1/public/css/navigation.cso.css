@@ -38,7 +38,7 @@ div.dropdown-item:before {
 }
 
 #navitem_fb_konsul:before {
-    background-image: url(../images/servers.svg);
+    background-image: url(../images/networking-connector.svg);
 }
 
 #navitem_fb_iot:before {
