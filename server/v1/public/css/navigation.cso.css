@@ -372,7 +372,8 @@ nav .active {
     #navitem_solusi_menu:after, 
     #navitem_layanan_menu:after, 
     #navitem_media_menu:after, 
-    #navitem_portofolio_menu:after {
+    #navitem_portofolio_menu:after,
+    #navitem_signin_menu:after {
         display: block;
         position: absolute;
         width: 0;
@@ -396,7 +397,8 @@ nav .active {
     #navitem_solusi_menu:before, 
     #navitem_layanan_menu:before, 
     #navitem_media_menu:before, 
-    #navitem_portofolio_menu:before {
+    #navitem_portofolio_menu:before,
+    #navitem_signin_menu:before {
         display: block;
         position: absolute;
         width: 0;
@@ -421,7 +423,8 @@ nav .active {
     #navitem_solusi_menu, 
     #navitem_layanan_menu, 
     #navitem_media_menu, 
-    #navitem_portofolio_menu {
+    #navitem_portofolio_menu,
+    #navitem_signin_menu {
         display: none;
         position: absolute;
         z-index: 1999;
@@ -438,11 +441,17 @@ nav .active {
         min-width: 312px;
     }
 
+    #navitem_signin_menu {
+        right: 0;
+        left: unset;
+    }
+
     #navitem_produk_menu .dropdown-content, 
     #navitem_solusi_menu .dropdown-content, 
     #navitem_layanan_menu .dropdown-content, 
     #navitem_media_menu .dropdown-content, 
-    #navitem_portofolio_menu .dropdown-content {
+    #navitem_portofolio_menu .dropdown-content,
+    #navitem_signin_menu .dropdown-content {
         list-style-type: none;
         margin: 0;
         display: block;
@@ -470,7 +479,8 @@ nav .active {
     #navitem_solusi_menu .dropdown-content>li, 
     #navitem_layanan_menu .dropdown-content>li, 
     #navitem_media_menu .dropdown-content>li, 
-    #navitem_portofolio_menu .dropdown-content>li {
+    #navitem_portofolio_menu .dropdown-content>li,
+    #navitem_signin_menu .dropdown-content>li {
         display: block;
         margin: 0;
         padding: 0;
@@ -481,7 +491,8 @@ nav .active {
     #navitem_solusi_menu .dropdown-content>li, 
     #navitem_layanan_menu .dropdown-content>li, 
     #navitem_media_menu .dropdown-content>li, 
-    #navitem_portofolio_menu .dropdown-content>li {
+    #navitem_portofolio_menu .dropdown-content>li,
+    #navitem_signin_menu .dropdown-content>li {
         display: table-cell;
         padding: 32px 0;
     }

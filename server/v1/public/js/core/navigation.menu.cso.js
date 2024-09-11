@@ -378,12 +378,15 @@ $(function() {
             navHeight();
         }
     });
+    
     $(document.body).trigger("resize");
+
     $(document.body).on("click touchstart touchend", function() {
         if (window.innerWidth < menuBreakpoint) {
             checkmobOpen();
         }
     });
+
     $(window).resize(function() {
         refreshSubMenuProduk();
         menuFunc();
@@ -484,6 +487,22 @@ $(function() {
         },
         hideFunction: function() {
             $("#navitem_portofolio").removeClass("active");
+        }
+    });
+
+    $.dropdownToggle({
+        dropdownID: "navitem_signin_menu",
+        switcherSelector: "#navitem_sign_in_header",
+        simpleToggle: true,
+        showFunction: function(switcherObj, dropdownItem) {
+            if (dropdownItem.is(":hidden")) {
+                switcherObj.addClass("active");
+            } else {
+                switcherObj.removeClass("active");
+            }
+        },
+        hideFunction: function() {
+            $("#navitem_sign_in_header").removeClass("active");
         }
     });
     
