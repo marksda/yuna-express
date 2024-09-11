@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="24.035639"
+   height="23.548088"
+   viewBox="0 0 0.72106916 0.70644265"
+   id="Layer_1"
+   data-name="Layer 1"
+   version="1.1"
+   sodipodi:docname="account.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview336"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="true"
+     inkscape:zoom="18.582766"
+     inkscape:cx="25.911105"
+     inkscape:cy="13.184259"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid805" />
+  </sodipodi:namedview>
+  <defs
+     id="defs329">
+    <style
+       id="style327">.cls-1{fill:none;stroke:#020202;stroke-miterlimit:10;stroke-width:1.91px;}</style>
+  </defs>
+  <g
+     id="g457"
+     transform="matrix(0.02506107,0,0,0.02536939,0.06060899,0.04661971)">
+    <circle
+       class="cls-1"
+       cx="12"
+       cy="7.25"
+       r="5.73"
+       id="circle331" />
+    <path
+       class="cls-1"
+       d="M 1.5,23.48 1.87,21.43 A 10.3,10.3 0 0 1 12,13 v 0 a 10.3,10.3 0 0 1 10.13,8.45 l 0.37,2.05"
+       id="path333" />
+  </g>
+</svg>
