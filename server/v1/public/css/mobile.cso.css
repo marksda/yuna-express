@@ -1,4 +1,10 @@
 @media screen and (max-width: 1023px) {
+    html {
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        height: 100%;
+    }
+    
     body, .innerblue {
         width: auto;
     }

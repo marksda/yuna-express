@@ -2,6 +2,6 @@ import * as dotenv from "dotenv";
 
 dotenv.config();
 
-const { PORT, URI } = process.env;
+const { PORT, URI, HOSTNAME } = process.env;
 
-export { PORT, URI };
+export { PORT, URI, HOSTNAME };

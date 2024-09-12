@@ -5,7 +5,7 @@ import cors from "cors";
 import cookieParser from "cookie-parser";
 import { restRouter } from "./routes/rest_router.js";
 import { viewRouter } from "./routes/view_router.js";
-import { PORT } from "./config/index.js";
+import { PORT, HOSTNAME } from "./config/index.js";
 
 const __filename = fileURLToPath(import.meta.url); 
 const __dirname = path.dirname(__filename);
@@ -47,6 +47,6 @@ app.set('view engine', 'pug');
 
 //   await newUser.save();
 
-app.listen(PORT, () =>
-    console.log(`Server running on http://localhost:${PORT}`)
+app.listen(PORT, HOSTNAME, () =>
+    console.log(`Server running on http://${HOSTNAME}:${PORT}`)
 );
