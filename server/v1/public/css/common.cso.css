@@ -10,6 +10,11 @@ header {
     z-index: 1001
 }
 
+header.onscrolling {
+    position: fixed;
+    top: 0;
+}
+
 .logo {
     width: 152px;
     height: 52px;
@@ -40,6 +45,10 @@ article {
 
 @media screen and (max-width: 1440px) {
     .logo {
+        width: 32px;
+    }
+
+    .logo a {
         width: 32px;
     }
 }

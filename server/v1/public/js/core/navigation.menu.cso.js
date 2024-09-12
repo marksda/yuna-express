@@ -105,7 +105,7 @@ $(function() {
             headerShadowed = false;
         }
     });
-/*
+
     var onlyofficeCookie = $.cookies.get('onlyoffice_cookie');
     if (onlyofficeCookie == null || onlyofficeCookie == false) {
         if (!$('body').hasClass('desktop'))
@@ -119,7 +119,7 @@ $(function() {
             expiresAt: d
         });
     });
-*/
+
     $('header').mouseleave(function() {
         mouseleaveCloseMenu();
     });
@@ -135,7 +135,7 @@ $(function() {
     var doc = $(document), header = $('header');
     var $adventAnnounce = $('.advent-announce');
     var $header = $("header");
-    var top, bannerHeight;
+    var top, bannerHeight=0;
 
     $(window).on('scroll', function() {
         top = $(window).scrollTop();
@@ -160,22 +160,22 @@ $(function() {
             $header.next("article").css("marginBottom", "");
         }
 
-        // if (onlyofficeCookie == null || onlyofficeCookie == false) {
-        //     var docTop = doc.scrollTop()
-        //       , headerTop = $('.cookie_mess').height();
-        //     if (docTop > headerTop) {
-        //         if (!header.hasClass('fixed')) {
-        //             header.addClass('fixed');
-        //         }
-        //     } else {
-        //         if (header.hasClass('fixed')) {
-        //             header.removeClass('fixed');
-        //         }
-        //     }
-        // } 
-        // else {
-        //     header.addClass('fixed');
-        // }
+        if (onlyofficeCookie == null || onlyofficeCookie == false) {
+            var docTop = doc.scrollTop()
+              , headerTop = $('.cookie_mess').height();
+            if (docTop > headerTop) {
+                if (!header.hasClass('fixed')) {
+                    header.addClass('fixed');
+                }
+            } else {
+                if (header.hasClass('fixed')) {
+                    header.removeClass('fixed');
+                }
+            }
+        } 
+        else {
+            header.addClass('fixed');
+        }
     });
 
     $('body').on("click", "a.nav_2nd_menu_link", function() {

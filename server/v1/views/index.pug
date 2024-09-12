@@ -17,11 +17,17 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
     link(rel="stylesheet", href="/static/css/navigation.cso.css")
     link(rel="stylesheet", href="/static/css/timlab.cso.css")
     link(rel="stylesheet", href="/static/css/default_page.cso.css")
+    link(rel="stylesheet", href="/static/css/mobile.cso.css")
+    link(rel="stylesheet", href="/static/css/pushy.cso.css")
   body#defaultpage
     div.BaseSide.Com2: .mainpart(style="z-index:1")
       div.site-overlay
       header: .narrowheader
         div.logo.push: a(href="/main")
+        div.ham_menu.push.menu-btn.pushy-link
+          span
+          span
+          span
         nav.pushy.pushy-left 
           div.pushy-content
             ul.all-menu-items
@@ -131,7 +137,9 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
           h1 Akselerasi bisnis anda bersama    
             span.orangetext COMMITECH SOLUSINDO
     script(type="text/javascript" src="/static/js/jquery/jquery.core.js")
+    script(type="text/javascript" src="/static/js/jquery/jquery.cookies.js")
     script(type="text/javascript" src="/static/js/core/jquery.dropdownToggle.js")
+    script(type="text/javascript" src="/static/js/scrollflow/jquery.scrollme.min.js")
     script(type="text/javascript" src="/static/js/core/main.cso.js")
     script(type="text/javascript" src="/static/js/core/menu.cso.js")
     script(type="text/javascript" src="/static/js/core/navigation.menu.cso.js")

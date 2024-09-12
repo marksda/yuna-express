@@ -1,0 +1,33 @@
+@media screen and (max-width: 1023px) {
+    .pushy {
+        position: fixed;
+        height: 100%;
+        top: 0;
+        z-index: 9999;
+        background: #fff;
+        overflow: auto;
+        border-right: 1px solid #e5e5e5;
+        -webkit-overflow-scrolling: touch;
+        width: 429px;
+    }
+
+    .pushy-left {
+        -webkit-transform: translate3d(-430px, 0, 0);
+        -ms-transform: translate3d(-430px, 0, 0);
+        transform: translate3d(-430px, 0, 0);
+    }
+
+    #container, .pushy, .push {
+        transition: transform 0.2s cubic-bezier(0.16,0.68,0.43,0.99);
+    }
+
+    .pushy.pushy-left {
+        left: 0;
+    }
+
+    .pushy-open-left #container, .pushy-open-left .push {
+        -webkit-transform: translate3d(429px, 0, 0);
+        -ms-transform: translate3d(429px, 0, 0);
+        transform: translate3d(429px, 0, 0);
+    }
+}
