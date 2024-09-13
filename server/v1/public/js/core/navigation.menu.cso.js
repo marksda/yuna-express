@@ -93,7 +93,7 @@ $(function() {
         });
     }
 
-    $(".ham_menu").on("click", function() {
+    $(".ham_menu").on("click", function() {        
         $('.pushy-submenu.phone').hide();
         if (!headerShadowed) {
             $("header").addClass("overlayed");
@@ -301,7 +301,7 @@ $(function() {
                 document.body.addEventListener('touchmove', preventScroll, {
                     passive: false
                 });
-            } else {
+            } else {                
                 document.documentElement.classList.remove("noscroll");
                 document.body.removeEventListener('touchmove', preventScroll, {
                     passive: false
@@ -340,6 +340,31 @@ $(function() {
         }
     };
 
+    function getOS() {
+        var userAgent = window.navigator.userAgent.toLowerCase()
+          , macosPlatforms = /(macintosh|macintel|macppc|mac68k|macos)/i
+          , windowsPlatforms = /(win32|win64|windows|wince)/i
+          , iosPlatforms = /(iphone|ipad|ipod)/i
+          , os = null;
+        if (macosPlatforms.test(userAgent)) {
+            os = "macos";
+        } else if (iosPlatforms.test(userAgent)) {
+            os = "ios";
+        } else if (windowsPlatforms.test(userAgent)) {
+            os = "windows";
+        } else if (/android/.test(userAgent)) {
+            os = "android";
+        } else if (!os && /linux/.test(userAgent)) {
+            os = "linux";
+        }
+        return os;
+    }
+
+    $(".mobile_mess_cross").on("click", function() {
+        document.cookie = "onlyoffice_get_mobile_app";
+        $('.mobile_mess').hide();
+    });
+
     $(document).ready(function() {
         menuFunc();
         if (window.innerWidth >= menuBreakpoint) {
@@ -349,15 +374,38 @@ $(function() {
             navHeight();
             catchSubMenuHeight();
             catchSubMenuHeightPrices();
+
+            if (getOS() === "ios" || "android") {
+                $('.mobile_mess').show();
+            }
+            if (getOS() === "ios") {
+                $(".mobile_mess.zh").hide();
+                $('#mobile_mess_button').attr('href', "https://apps.apple.com/us/app/onlyoffice-documents/id944896972");
+            }
+            if (getOS() === "android") {
+                $('#mobile_mess_button').attr('href', "https://play.google.com/store/apps/details?id=com.onlyoffice.documents");
+                $('.mobile_mess.zh #mobile_mess_button').attr('href', "https://download.onlyoffice.com/install/mobile/android/onlyoffice-documents.apk");
+            }
+            if (document.cookie.indexOf('onlyoffice_get_mobile_app') !== -1) {
+                $('.mobile_mess').hide();
+            }
+
             $(".pushy-link, .site-overlay").on("click", function() {
-                var zopim = $(".zopim");
-                if ($("body").hasClass("pushy-open-left")) {
-                    zopim.hide()
-                } else {
-                    for (var i = 0; i < zopim.length; i++) {
-                        (zopim[i].getAttribute("data-test-id") == "ChatWidgetMobileButton" || zopim[i].getAttribute("data-test-id") == "ChatWidgetButton") && $(zopim[i]).show();
-                    }
+                if ($("body").hasClass('pushy-open-left')) {
+                    $("body").removeClass("pushy-open-left");
                 }
+                else {
+                    $("body").addClass("pushy-open-left");
+                }
+
+                // var zopim = $(".zopim");
+                // if ($("body").hasClass("pushy-open-left")) {
+                //     zopim.hide()
+                // } else {
+                //     for (var i = 0; i < zopim.length; i++) {
+                //         (zopim[i].getAttribute("data-test-id") == "ChatWidgetMobileButton" || zopim[i].getAttribute("data-test-id") == "ChatWidgetButton") && $(zopim[i]).show();
+                //     }
+                // }
             });
         }
         var desktopPhoneControlInput = $('body.desktop .signuppageform .dataForm.formSteps div.step .dataItem input.phoneControlInput');

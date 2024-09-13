@@ -382,6 +382,22 @@ nav .active {
     nav>div>ul.all-menu-items {
         grid-gap: 50px;
     }
+
+    nav>div>ul.all-menu-items {
+        grid-gap: 3vw;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    nav>div>ul.all-menu-items {
+        grid-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .signin_wrapper {
+        right: 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -709,6 +725,19 @@ nav .active {
 
     #navitem_produk_menu .dropdown-content>li .nav_item_link:hover {
         color: #FF6F3D;
+    }
+
+    nav .pushy-content {
+        margin: 0 auto;
+        max-width: 85%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    nav .pushy-content {
+        margin: 0 auto;
+        max-width: 864px;
     }
 }
 

@@ -13,9 +13,9 @@
         min-width: 320px;
     }
 
-    .site-overlay {
+    /* .site-overlay {
         display: none;
-    }
+    } */
 
     header {
         width: 100%;
@@ -74,5 +74,70 @@
         padding: 0;
         width: auto;
         text-align: left;
+    }
+
+    nav>div>ul {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    nav>div ul.all-menu-items {
+        display: block !important;
+        height: auto;
+        padding-top: 8px;
+        box-sizing: border-box;
+        min-height: calc(100% - 144px);
+    }
+
+    nav>div ul li {
+        display: block;
+        width: auto;
+        height: auto;
+        position: relative;
+        font-size: 15px;
+    }
+
+    nav>div ul.all-menu-items>li:nth-child(1) {
+        padding-left: 0;
+    }
+
+    .menuitem:before {
+        display: block;
+        content: '';
+        width: 10px;
+        height: 10px;
+        background-image: url(../images/arrow-gray.svg);
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        position: absolute;
+        right: 14px;
+        top: 22px;
+        -webkit-transition: 0.1s linear;
+        -moz-transition: 0.1s linear;
+        -o-transition: 0.1s linear;
+        transition: 0.1s linear;
+    }
+
+    .menuitem {
+        border-bottom: none;
+    }
+
+    #navitem_produk, 
+    #navitem_solusi, 
+    #navitem_layanan, 
+    #navitem_media, 
+    #navitem_portofolio {
+        font-weight: 700;
+        font-size: 18px;
+        letter-spacing: 0.04em;
+        line-height: 24px;
+        padding: 16px 40px 16px 24px;
+    }
+
+    .signin_wrapper {
+        width: 100%;
+        right: 0;
+        position: relative;
     }
 }
