@@ -1,0 +1,10 @@
+﻿;var $searchInput=$("#search-input");var $searchButton=$("#search-button");var $searchBox=$(".search-box-container .footer-search-box");var $closeButton=$("#close-button");var searchValue="";$searchInput.focus(function(){$searchInput.addClass("input-focus");})
+$searchInput.focusout(function(){inputFocusOut();})
+$searchButton.on("click",function(){if(window.innerWidth>='1024'){$searchBox.addClass("search-box-shown");$closeButton.addClass("has-value");$(".all-menu-items").fadeOut();$searchButton.fadeOut();$searchInput.trigger("focus").attr("placeholder",$searchInput.attr("data-placeholder"));}});$(document).mousedown(function(e){if(window.innerWidth>='1024'){if(!$searchInput.is(e.target)&&$searchInput.has(e.target).length===0&&!$searchButton.is(e.target)){$searchBox.removeClass("search-box-shown");$(".all-menu-items").fadeIn();$searchButton.fadeIn();}}});$closeButton.on("click",function(){$searchInput.val('');if(window.innerWidth>='1024'){$searchBox.removeClass("search-box-shown");$(".all-menu-items").fadeIn();$searchButton.fadeIn();}else{inputFocusOut();}})
+$searchInput.on("keyup",function(){updateSearch();})
+$searchInput.keyup(function(event){if(event.keyCode==13&&searchValue){startSearch();}});function inputFocusOut(){$searchInput.attr("placeholder","");if($searchInput[0].value.length<=0){$searchInput.removeClass("input-focus");$closeButton.removeClass("has-value");}else{$closeButton.addClass("has-value");}}
+function updateSearch(){var searchInputValue=$searchInput[0].value;searchInputValue=searchInputValue.trim();if(searchInputValue.length>0){$closeButton.addClass("has-value");searchValue=searchInputValue;}else{$closeButton.removeClass("has-value");}}
+function startSearch(){var locationPathname=location.pathname;var startPathname=location.href.indexOf(locationPathname);var newLocation=location.href.substring(0,startPathname+1);var lng=""
+if(locationPathname[3]=="/"){lng=locationPathname.substring(1,4);}
+searchValue=searchValue.replace(/<|>/g,"|");searchValue=encodeURIComponent(searchValue);location.href=newLocation+lng+"search.aspx?search="+searchValue;}
+window.onload=function(){if($searchInput){$searchInput.val("");}}
