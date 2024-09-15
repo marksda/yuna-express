@@ -73,13 +73,23 @@
         position: relative;
     }
 
-    nav>div ul li a.menuitem {
+    /* nav>div ul li a.menuitem {
         color: #666;
         display: block;
         height: auto;
         padding: 17px 25px 17px 40px;
         text-align: left;
         margin: 0;
+    } */
+
+    .pushy-submenu-open a::after, .pushy-submenu-open button::after {
+        -webkit-transform: translateY(-50%) rotate(90deg);
+        -ms-transform: translateY(-50%) rotate(90deg);
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .pushy-submenu-open>a {
+        border-bottom: 1px solid #F2F2F2;
     }
 }
 

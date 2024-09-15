@@ -188,6 +188,13 @@ nav {
     width: 100%;
 }
 
+nav .active:hover {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+
 nav>div>ul, 
 nav>div>ul>li {
     display: inline-block;

@@ -135,6 +135,59 @@
         padding: 16px 40px 16px 24px;
     }
 
+    #navitem_produk:hover, 
+    #navitem_solusi:hover, 
+    #navitem_layanan:hover, 
+    #navitem_media:hover, 
+    #navitem_portofolio:hover {
+        border-color: transparent;
+    }
+
+    #navitem_produk.active, 
+    #navitem_solusi.active, 
+    #navitem_layanan.active, 
+    #navitem_media.active, 
+    #navitem_portofolio.active,
+    #navitem_produk.active:hover,
+    #navitem_solusi.active:hover, 
+    #navitem_layanan.active:hover, 
+    #navitem_media.active:hover, 
+    #navitem_portofolio.active:hover {
+        background-color: unset;
+        border-bottom: 1px solid #F2F2F2;
+        color: #FF6F3D;
+        line-height: 24px;
+        padding: 10px 22px 18px 48px;
+    }
+
+    nav>div ul li a.menuitem {
+        color: #666;
+        display: block;
+        height: auto;
+        padding: 17px 25px 17px 40px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .menuitem.active:before {
+        background-image: url(../images/arrow-red.svg);
+        left: 19px;
+        top: 18px;
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transition: 0.1s linear;
+        -moz-transition: 0.1s linear;
+        -o-transition: 0.1s linear;
+        transition: 0.1s linear;
+    }
+
+    .menuitem.active {
+        text-align: center;
+    }
+
     .signin_wrapper {
         width: 100%;
         right: 0;

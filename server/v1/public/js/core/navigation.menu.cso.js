@@ -391,12 +391,12 @@ $(function() {
             }
 
             $(".pushy-link, .site-overlay").on("click", function() {
-                if ($("body").hasClass('pushy-open-left')) {
-                    $("body").removeClass("pushy-open-left");
-                }
-                else {
-                    $("body").addClass("pushy-open-left");
-                }
+                // if ($("body").hasClass('pushy-open-left')) {
+                //     $("body").removeClass("pushy-open-left");
+                // }
+                // else {
+                //     $("body").addClass("pushy-open-left");
+                // }
 
                 // var zopim = $(".zopim");
                 // if ($("body").hasClass("pushy-open-left")) {
