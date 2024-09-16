@@ -231,6 +231,24 @@
         text-transform: none;
     }
 
+    #navitem_sign_in_header {
+        display: none;
+        font-weight: 700;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        line-height: 1.33em;
+        padding: 20px 40px 16px 60px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #333333;
+        box-sizing: border-box;
+        background-position: 24px 56%;
+        bottom: 138px;
+        height: 56px;
+        position: absolute;
+        width: 100%;
+    }
+
     nav>div ul li ul {
         color: #666;
         margin: 0;
@@ -260,5 +278,13 @@
         width: 100%;
         right: 0;
         position: relative;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-height: 600px) {
+    .sign_in_menu_item:not(.pushy-submenu-open) {
+        bottom: 0;
+        position: absolute;
+        width: 100%;
     }
 }
