@@ -69,6 +69,15 @@
         width: 100%;
     }
 
+    .pushy-submenu ul {
+        transition: max-height 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    }
+
+    .pushy-submenu-open>div>ul {
+        padding: 24px 0;
+        visibility: visible;
+    }
+
     .pushy-submenu>a, .pushy-submenu>button {
         position: relative;
     }

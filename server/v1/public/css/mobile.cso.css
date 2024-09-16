@@ -97,6 +97,22 @@
         font-size: 15px;
     }
 
+    #navitem_produk_menu .dropdown-content>li:nth-child(1) {
+        overflow-y: scroll;
+    }
+
+    #navitem_produk_menu .dropdown-content>li:nth-child(2) {
+        display: none;
+        margin-top: -14px;
+        overflow-y: scroll;
+    }
+
+    nav a.dropdown-item, nav div.dropdown-item {
+        line-height: 1.5em;
+        margin: 0px 0 16px;
+        padding: 0px 24px 0px 56px;
+    }
+
     nav>div ul.all-menu-items>li:nth-child(1) {
         padding-left: 0;
     }
@@ -160,6 +176,27 @@
         padding: 10px 22px 18px 48px;
     }
 
+    #navitem_produk_akuntansi:after, 
+    #navitem_produk_medis:after, 
+    #navitem_produk_kantor:after,
+    #navitem_produk_messageapi:after {
+        content: "";
+        display: block;
+        height: 24px;
+        width: 24px;
+        background-image: url(../images/arrow-gray.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 16px;
+        position: absolute;
+    }
+
+    nav a.dropdown-item:before, 
+    nav div.dropdown-item:before {
+        left: 24px;
+    }
+
     nav>div ul li a.menuitem {
         color: #666;
         display: block;
@@ -167,6 +204,37 @@
         padding: 17px 25px 17px 40px;
         text-align: left;
         margin: 0;
+    }
+
+    nav .produk_info {
+        font-size: 13px;
+        line-height: 1.5em;
+        margin-top: 4px;
+        padding: 0 24px 16px 24px;
+    }
+
+    nav .produk_info:last-of-type {
+        margin-top: 0;
+    }
+
+    #navitem_produk_menu .dropdown-content>li:first-of-type .produk_info {
+        margin: 0;
+        font-weight: 400;
+        padding: 4px 0 0;
+        white-space: normal;
+    }
+
+    #navitem_produk_menu, 
+    #navitem_solusi_menu, 
+    #navitem_layanan_menu, 
+    #navitem_portofolio_menu {
+        text-transform: none;
+    }
+
+    nav>div ul li ul {
+        color: #666;
+        margin: 0;
+        width: auto;
     }
 
     .menuitem.active:before {
