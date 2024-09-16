@@ -45,11 +45,13 @@ div.dropdown-item:before {
     background-image: url(../images/iot-platform.svg);
 }
 
-#navitem_sign_in_masuk:before {
+#navitem_sign_in_masuk:before,
+#navitem_signin_mob_masuk:before {
     background-image: url(../images/sign-in.svg);
 }
 
-#navitem_sign_in_daftar:before {
+#navitem_sign_in_daftar:before,
+#navitem_signin_mob_daftar:before {
     background-image: url(../images/address-book.svg);
 }
 
@@ -739,7 +741,7 @@ nav .active {
         max-width: 85%;
         width: 80%;
     }
-    
+
     .sign_in_menu_item {
         display: none !important;
     }
@@ -756,7 +758,8 @@ nav .active {
 #navitem_solusi, 
 #navitem_layanan, 
 #navitem_media, 
-#navitem_portofolio {
+#navitem_portofolio,
+#navitem_sign_in_mob_header {
     color: #444444;
     text-decoration: none;
     font-size: 12px;

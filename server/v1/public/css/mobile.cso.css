@@ -117,6 +117,33 @@
         padding-left: 0;
     }
 
+    #navitem_sign_in_mob_header:after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 24px;
+        background-image: url(../images/login-circle.svg);
+        background-repeat: no-repeat;
+        transform: none;
+        position: absolute;
+        left: 24px;
+        top: 14px;
+    }
+
+    .pushy-submenu-open #navitem_sign_in_mob_header:after {
+        content: "";
+        display: block;
+        width: 170px;
+        height: 24px;
+        background-image: url(../images/login-circle-orange.svg);
+        background-repeat: no-repeat;
+        transform: none;
+        position: absolute;
+        background-position-x: calc(50% - 70px);
+        left: auto;
+        top: auto;
+    }
+
     .menuitem:before {
         display: block;
         content: '';
@@ -135,6 +162,21 @@
         transition: 0.1s linear;
     }
 
+    .pushy-submenu-open #navitem_sign_in_mob_header:before {
+        background-image: url(../images/arrow-red.svg);
+        left: 14px;
+        top: 14px;
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        -webkit-transition: 0.1s linear;
+        -moz-transition: 0.1s linear;
+        -o-transition: 0.1s linear;
+        transition: 0.1s linear;
+    }
+
     .menuitem {
         border-bottom: none;
     }
@@ -143,12 +185,17 @@
     #navitem_solusi, 
     #navitem_layanan, 
     #navitem_media, 
-    #navitem_portofolio {
+    #navitem_portofolio,
+    #navitem_sign_in_mob_header {
         font-weight: 700;
         font-size: 18px;
         letter-spacing: 0.04em;
         line-height: 24px;
         padding: 16px 40px 16px 24px;
+    }
+
+    #navitem_sign_in_mob_header {
+        padding: 16px 40px 16px 55px;
     }
 
     #navitem_produk:hover, 
