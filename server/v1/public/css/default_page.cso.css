@@ -26,7 +26,7 @@ body#defaultpage header {
 } */
 
 body#defaultpage .dp-first-screen {
-    background-image: url(../images/mainpage/dp-main-pic.png?ver=190);
+    background-image: url(../images/mainpage/dp-main-pic.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 1280px auto;
@@ -53,18 +53,129 @@ body#defaultpage .dp-first-screen .dp-top-block h1 {
     line-height: 1.2em;
 }
 
+body#defaultpage .orangetext {
+    color: #FF6F3D;
+}
+
+body#defaultpage .dp-d-btns {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 40px 0 96px;
+}
+
+body#defaultpage .dp-d-btns .button {
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0.08em;
+    line-height: 16px;
+    padding: 20px;
+}
+
+body#defaultpage .dp-d-btns .button.orange-button {
+    background: #FF6F3D;
+    min-width: 136px;
+}
+
+@media screen and (min-width: 1024px) {
+    body#defaultpage #navitem_produk, 
+    body#defaultpage #navitem_solusi, 
+    body#defaultpage #navitem_layanan, 
+    body#defaultpage #navitem_media, 
+    body#defaultpage #navitem_portofolio {
+        border-bottom-color: transparent;
+    }
+
+    body#defaultpage article {
+        background-position: 53% -780px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    body#defaultpage .dp-first-screen .dp-top-block {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body#defaultpage .dp-first-screen {
+        background-size: 100vw;
+        background-position-y: 90%;
+    }
+
+    body#defaultpage .dp-first-screen .dp-top-block {
+        min-height: 860px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body#defaultpage article {
+        background-position: 55% -700px;
+    }
+
+    body#defaultpage .dp-first-screen {
+        background-position-y: 90%;
+    }
+
+    body#defaultpage .dp-first-screen .dp-top-block {
+        min-height: 720px;
+    }
+
+    body#defaultpage .dp-first-screen .dp-top-block h1 {
+        font-size: 48px;
+    }
+
+    body#defaultpage .dp-d-btns {
+        padding: 40px 0 56px;
+    }
+}
+
 body#defaultpage .dp-first-screen .dp-top-block h1 {
     margin: 0 auto;
     padding-top: 72px;
     width: 948px
 }
 
-body#defaultpage .orangetext {
-    color: #FF6F3D;
+@media screen and (max-width: 1200px) {    
+    body#defaultpage .dp-first-screen .dp-top-block h1, 
+    body#defaultpage .dp-first-screen .dp-top-block h3 {
+        width: 90vw;
+    }
 }
 
-@media screen and (min-width: 1024px) {
-    body#defaultpage #navitem_produk, body#defaultpage #navitem_solusi, body#defaultpage #navitem_layanan, body#defaultpage #navitem_media, body#defaultpage #navitem_portofolio {
-        border-bottom-color: transparent;
+@media screen and (max-width: 592px) {
+    body#defaultpage article {
+        background-position: 42% -800px;
+    }
+
+    body#defaultpage .dp-first-screen .dp-top-block {
+        min-height: 595px;
+    }
+
+    body#defaultpage .dp-first-screen .dp-top-block h1 {
+        font-size: 30px;
+        letter-spacing: -0.02em;
+    }
+
+    body#defaultpage .dp-first-screen .dp-top-block h1 {
+        padding-top: 48px;
+    }
+
+    body#defaultpage .dp-d-btns {
+        padding: 32px 0;
     }
 }

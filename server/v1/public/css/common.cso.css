@@ -56,3 +56,11 @@ article {
         width: 32px;
     }
 }
+
+@media screen and (max-width: 1023px) {
+    article {
+        margin-top: -49px;
+        padding-top: 97px;
+        top: -49px;
+    }
+}

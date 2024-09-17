@@ -1,0 +1,86 @@
+.button {
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 22px 26px;
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-transition: background 0.3s, color 0.3s, border 0.3s;
+    -moz-transition: background 0.3s, color 0.3s, border 0.3s;
+    -o-transition: background 0.3s, color 0.3s, border 0.3s;
+    transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+@media screen and (max-width: 592px) {
+    .button {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 16px 26px;
+    }
+
+    .button:hover, 
+    .button:active, 
+    .button:visited {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 16px 26px;
+    }
+}
+
+.button:hover, 
+.button:active, 
+.button:visited {
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 22px 26px;
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+}
+
+.InnerPage a.button, 
+.InnerPage a.button:hover, 
+.InnerPage a.button:active, 
+.InnerPage a.button:visited, 
+a.button, a.button:hover, 
+a.button:active, a.button:visited {
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 22px 26px;
+    text-align: center;
+    text-decoration: none !important;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.04em;
+}
