@@ -91,6 +91,19 @@ body#defaultpage .dp-d-btns .button.orange-button {
     min-width: 136px;
 }
 
+body#defaultpage .dp-d-btns .button.orange-button:hover {
+    background: #FF865C;
+}
+
+body#defaultpage .dp-d-btns .button.gray-button {
+    background: #444444;
+    min-width: 174px;
+}
+
+body#defaultpage .dp-d-btns .button.gray-button:hover {
+    background: #666666;
+}
+
 @media screen and (min-width: 1024px) {
     body#defaultpage #navitem_produk, 
     body#defaultpage #navitem_solusi, 
@@ -114,7 +127,7 @@ body#defaultpage .dp-d-btns .button.orange-button {
 @media screen and (max-width: 1024px) {
     body#defaultpage .dp-first-screen {
         background-size: 100vw;
-        background-position-y: 90%;
+        background-position-y: 110%;
     }
 
     body#defaultpage .dp-first-screen .dp-top-block {
