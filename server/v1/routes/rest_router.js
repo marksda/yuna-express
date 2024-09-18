@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { check } from "express-validator";
 import Validate from "../middleware/validate.js";
-import { Register } from "../controllers/auth.js";
+import { Login, Register } from "../controllers/auth.js";
 
 const restRouter = new Router();
 
@@ -32,6 +32,18 @@ restRouter.post(
         .withMessage("panjang password minimal 3 karakter"),
     Validate,
     Register
+);
+
+restRouter.post(
+    '/auth/login',
+    check("email")
+        .isEmail()
+        .withMessage("Masukkan alamat email yang sesuai aturan penulisan email"),
+    check("password")
+        .not()
+        .isEmpty(),
+    Validate,
+    Login
 );
 
 export {restRouter};
