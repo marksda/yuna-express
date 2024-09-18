@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import { fileURLToPath } from 'url';
+import mongoose from "mongoose";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import { restRouter } from "./routes/rest_router.js";
@@ -29,13 +30,13 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 
-// mongoose.Promise = global.Promise;
-// mongoose.set("strictQuery", false);
-// mongoose.connect(URI)
-//   .then(
-//     () => console.log("Connected to database")
-//   )
-//   .catch((err) => console.log(err));
+mongoose.Promise = global.Promise;
+mongoose.set("strictQuery", false);
+mongoose.connect(URI)
+  .then(
+    () => console.log("Connected to database")
+  )
+  .catch((err) => console.log(err));
 
 //   const newUser = new User({
 //     first_name: 'syaiful',
