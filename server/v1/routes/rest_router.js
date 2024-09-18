@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import Validate from "../middleware/validate";
-import { Register } from "../controllers/auth";
+import Validate from "../middleware/validate.js";
+import { Register } from "../controllers/auth.js";
 
 const restRouter = new Router();
 
@@ -13,8 +13,7 @@ restRouter.post(
     '/auth/register',
     check("email")
         .isEmail()
-        .withMessage("Masukkan alamat email yang sesuai aturan penulisan email")
-        .normalizeEmail(),
+        .withMessage("Masukkan alamat email yang sesuai aturan penulisan email"),
     check("first_name")
         .not()
         .isEmpty()
