@@ -28,7 +28,7 @@ export async function Register(req, res) {
             });
         }
         const savedUser = await newUser.save();  // save new user into database
-        const { role, ...user_data } = savedUser._doc;
+        const { password: pwd, role, ...user_data } = savedUser._doc;
         res.status(200).json({
             status: "sukses",
             data: [user_data],
@@ -46,3 +46,4 @@ export async function Register(req, res) {
 
     res.end();
 }
+
