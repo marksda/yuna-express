@@ -1,4 +1,5 @@
 import User from "../models/User.js";
+import Blacklist from "../models/Blacklist.js";
 import jwt from "jsonwebtoken";
 import { SECRET_ACCESS_TOKEN } from '../config/index.js';
 
