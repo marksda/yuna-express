@@ -90,8 +90,10 @@ export async function Login(req, res) {
 
         const token = user.generateAccessJWT(); // generate session token for user
         res.cookie("SessionID", token, options); // set the token to response header, so that the client sends it back on each subsequent request
+        const { password, ...user_data } = user._doc;
         res.status(200).json({
             status: "sukses",
+            data: [user_data],
             message: "Anda berhasil logged in.",
         });
 

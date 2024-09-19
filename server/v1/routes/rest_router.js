@@ -2,7 +2,7 @@ import { Router } from "express";
 import { check } from "express-validator";
 import Validate from "../middleware/validate.js";
 import { Login, Register } from "../controllers/auth.js";
-import { Verify } from "../middleware/verify.js";
+import { Verify, VerifyRole } from "../middleware/verify.js";
 
 const restRouter = new Router();
 
@@ -10,6 +10,13 @@ restRouter.get('/', Verify, async (_req, res) => {
     res.status(200).json({
         status: "success",
         message: "API is working properly",
+    });
+});
+
+restRouter.get('/user', Verify, VerifyRole, async (_req, res) => {
+    res.status(200).json({
+        status: "success",
+        message: "Selamat dtang di portal admin.",
     });
 });
 
