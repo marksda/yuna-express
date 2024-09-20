@@ -1,10 +1,20 @@
 doctype html
 html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="og: http://ogp.me/ns#")
   include includes/head.pug
-  body#defaultpage
+  body#signinpage
     div.BaseSide.Com2
       input#browserType(type="hidden")
       div.mainpart(style="z-index:1")
         div.site-overlay
         include includes/nav.pug
+        article#target
+          div.contentConteiner: div.InnerPage.signinpage
+            div.innerblue: div.description
+              div.siginpageform: div.dataForm.SignInPanel
+                h3 Masuk ke sistem CSO
+                div.dataItem 
+                  div.input-wrapper
+                    input#txtSignInEmail(type="email" tabindex="1" name="txtSignInEmail" maxlength="255" required)
+                    label.dataLabel(for="txtSignInEmail") Email
+                  div#divSigninEmailError.dataFormError Error
     include includes/script.pug
