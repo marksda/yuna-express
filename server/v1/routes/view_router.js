@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Index } from "../controllers/view.js";
+import { Index, Masuk } from "../controllers/view.js";
 
 const viewRouter = new Router();
 
@@ -8,5 +8,6 @@ const viewRouter = new Router();
 // });
 
 viewRouter.get('/', Index);
+viewRouter.get('/masuk', Masuk);
 
 export {viewRouter};
