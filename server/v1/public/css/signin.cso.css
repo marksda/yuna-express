@@ -1,0 +1,35 @@
+#navitem_produk, 
+#navitem_solusi, 
+#navitem_layanan, 
+#navitem_media, 
+#navitem_portofolio,
+#navitem_sign_in_mob_header {
+    border-bottom-color: transparent;
+}
+#signinpage .SignInPanel {
+    margin: 0 auto 140px;
+    width: 448px;
+}
+#signinpage h3 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.33em;
+    letter-spacing: -0.02em;
+    padding: 90px 0 24px;
+    text-align: center;
+}
+#signinpage article .dataItem .input-wrapper {
+    background: #f9f9f9;
+    border: solid 1px #AAAAAA;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 56px;
+    line-height: 14px;
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+}

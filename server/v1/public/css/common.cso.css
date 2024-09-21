@@ -37,9 +37,9 @@ header.onscrolling {
 }
 
 article {
-    padding-top: 72px;
+    padding-top: 52px;
     position: relative;
-    margin-top: -72px;
+    margin-top: -52px;
 }
 
 .narrowheader, footer {

@@ -4,3 +4,23 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+.InnerPage {
+    width: 100%;
+}
+
+.innerblue {
+    margin: 0 auto;
+    position: relative;
+    width: 970px;
+}
+
+.InnerPage .description {
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 0;
+    color: #333;
+    font-size: 13px;
+    margin: 0;
+}
