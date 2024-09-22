@@ -132,3 +132,10 @@
     margin-top: -27px;
     position: absolute;
 }
+#signinpage .SignInPanel .button.red {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    line-height: 16px;
+    padding: 20px 0;
+    width: 100%;
+}

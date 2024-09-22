@@ -23,7 +23,6 @@
     -o-transition: background 0.3s, color 0.3s, border 0.3s;
     transition: background 0.3s, color 0.3s, border 0.3s;
 }
-
 @media screen and (max-width: 592px) {
     .button {
         font-size: 12px;
@@ -39,7 +38,6 @@
         padding: 16px 26px;
     }
 }
-
 .button:hover, 
 .button:active, 
 .button:visited {
@@ -60,7 +58,6 @@
     line-height: 12px;
     letter-spacing: 0.04em;
 }
-
 .InnerPage a.button, 
 .InnerPage a.button:hover, 
 .InnerPage a.button:active, 
@@ -83,4 +80,7 @@ a.button:active, a.button:visited {
     font-weight: 600;
     line-height: 12px;
     letter-spacing: 0.04em;
+}
+.button.red {
+    background: #FF6F3D;
 }

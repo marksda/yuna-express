@@ -104,3 +104,15 @@
     -webkit-box-shadow: inset 0 0 0 50px #fff7f7 !important;
     box-shadow: inset 0 0 0 50px #fff7f7 !important;
 }
+.divSignUpError, 
+.Progress {
+    display: none;
+    color: #999999;
+    height: 16px;
+    font-size: 13px;
+}
+.dataForm .divSignUpError, 
+.dataForm .Progress {
+    margin-bottom: 2px;
+    margin-top: -18px;
+}
