@@ -84,3 +84,6 @@ a.button:active, a.button:visited {
 .button.red {
     background: #FF6F3D;
 }
+.button.red:hover {
+    background: #ff7a4b;
+}

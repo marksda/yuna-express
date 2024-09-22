@@ -3,8 +3,55 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
   head
     title= title
     include includes/meta.pug
+    script(type="application/ld+json").
+      {
+        "@context":"https://schema.org",
+        "@graph":
+        [
+          {
+            "@type":"WebSite",
+            "@id":"https://cso.ddns.net"
+            "url":"https://cso.ddns.net"
+            "name":"CSO - Commitech Solusindo akselator bisnis anda", 
+            "description":"CSO adalah perusahaan kolaborasi antara tim konsultan dan enjiner berpengalaman dalam desain dan penerapan teknologi informasi terkini. Optimasi biaya dan hasil akselerasi investasi IT merupakan prioritas capaian perusahan buat client kami.",
+            "potentialAction":
+            {
+              "@type":"SearchAction",
+              "target": "https://cso.ddns.net",
+              "query-input":"required name=search_term_string"
+            }
+          },
+          {
+            "@type":"WebPage",
+            "@id":"https://cso.ddns.net/masuk",
+            "url":"https://cso.ddns.net/masuk",
+            "inLanguage":"en-US",
+            "name":"Sign in", 
+            "isPartOf":
+            {
+              "@id":"https://cso.ddns.net"
+            },     
+            "description":"Log in untuk masuk ke sistem CSO"
+          }
+        ]
+      }
     include includes/css.pug
-    link(rel="stylesheet", href="/static/css/signin.cso.css")
+    link(rel="stylesheet", href="/static/css/signin.cso.css")    
+    script. 
+      function PageTrack(key) {
+        try {
+          if(window.dataLayer) {
+            window.dataLayer.push({'event': key});
+          }
+          if(window.ga) {
+            window.ga('www.send', 'pageview', key);
+            window.ga('testTracker.send', 'pageview', key);
+          }
+        }
+        catch(err) {
+
+        }
+      }
   body#signinpage
     div.BaseSide.Com2
       input#browserType(type="hidden")
@@ -23,7 +70,13 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
                   div#divSigninEmailError.dataFormError Error
                 div.dataItem
                   div.input-wrapper
-                    input#txtSignPassword(type="password" tabindex="2" name="txtSignPassword" data-min="8" required)
+                    input#txtSignPassword(
+                      type="password" 
+                      tabindex="2" 
+                      name="txtSignPassword" 
+                      data-min="8" 
+                      data-hashsize="256" data-hashiterations="100000" data-hashsalt="1e912b1b2ce20b91bb9db717e214feb1771045bd9fea31727e59f514964b944f"
+                      required)
                     label.dataLabel(for="txtSignPassword") Password*
                 div.signinwithsocial
                   div.dataFormError#divSigninError Error
@@ -59,4 +112,5 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
     script(type="text/javascript" src="/static/js/scrollflow/jquery.scrollme.js")
     script(type="text/javascript" src="/static/js/core/navigation.menu.cso.js")    
     script(type="text/javascript" src="/static/js/jquery/pushy.min.js")
+    script(type="text/javascript" src="/static/js/sjcl.js")
     script(type="text/javascript" src="/static/js/pagescripts/signinpage.cso.js")
