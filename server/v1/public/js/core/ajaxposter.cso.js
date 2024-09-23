@@ -130,8 +130,11 @@
     this.PostSignin = function(oEM, oPVh, docspace, onComplete) {
         $.ajax({
             type: "POST",
-            url: "post.ashx",
-            data: "type=signin&email=" + encodeURIComponent(oEM) + "&passwordHash=" + encodeURIComponent(oPVh) + "&docspace=" + docspace,
+            url: "/api/v1/auth/login",
+            data: JSON.stringify({ email: oEM, password: oPVh }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            // data: "type=signin&email=" + encodeURIComponent(oEM) + "&passwordHash=" + encodeURIComponent(oPVh) + "&docspace=" + docspace,
             success: function(response) {
                 if (typeof (onComplete) == 'function') {
                     onComplete(response);

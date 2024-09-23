@@ -157,16 +157,22 @@ function SignIn() {
         _printErrors(result);
         return;
     }
-    var size = passwordInput.data("hashsize");
-    var iterations = passwordInput.data("hashiterations");
-    var salt = passwordInput.data("hashsalt");
-    var bits = sjcl.misc.pbkdf2(password, salt, iterations);
-    bits = bits.slice(0, size / 32);
-    var passwordHash = sjcl.codec.hex.fromBits(bits);
+    // var size = passwordInput.data("hashsize");
+    // var iterations = passwordInput.data("hashiterations");
+    // var salt = passwordInput.data("hashsalt");
+    // var bits = sjcl.misc.pbkdf2(password, salt, iterations);
+    // bits = bits.slice(0, size / 32);
+    // var passwordHash = sjcl.codec.hex.fromBits(bits);
+    // var docspace = $("body").data("bodyid") === "docspace-signin";
+    // Poster.PostSignin(email, passwordHash, docspace, _onComplete);
+    
+    // var bcrypt = dcodeIO.bcrypt;
+    // var salt = bcrypt.genSaltSync(10);
+    // var passwordHash = bcrypt.hashSync(password, salt);    
     var docspace = $("body").data("bodyid") === "docspace-signin";
-    Poster.PostSignin(email, passwordHash, docspace, _onComplete);
+    Poster.PostSignin(email, password, docspace, _onComplete);
 }
-;function DisplayPortalChooseController(p) {
+function DisplayPortalChooseController(p) {
     var portals = $.parseJSON(p)
       , portalsHtml = ''
       , portalContainer = $('#PortalChoosePortalsDiv');
@@ -182,12 +188,12 @@ function SignIn() {
     $("#PortalChooseContainer").show();
     $(".signinpage, #PasswordRestoreContainer").hide();
 }
-;function SignInPortalOnCompleteBySocial(response) {
+function SignInPortalOnCompleteBySocial(response) {
     _clearErrors();
     $("#divSigninProgress").show();
     _onComplete(response);
 }
-;function DisplayPasswordRestore() {
+function DisplayPasswordRestore() {
     $('#PasswordRestoreCheckingDiv').hide();
     $('#PasswordRestoreFinishButton').removeClass("disable");
     $('#PasswordRestoreErrorMessage').hide();
@@ -198,7 +204,7 @@ function SignIn() {
     $(".signinpage").hide();
     setTimeout("$('#passwordRestoreInput').focus();", 100);
 }
-;function SendRestorePasswordEmail() {
+function SendRestorePasswordEmail() {
     $("#PasswordRestoreContainer .input-wrapper").addClass("br-loading");
     PasswordRestoreProgressBarDisplay(true, '');
     var email = $.trim($('#passwordRestoreInput').val());
@@ -234,20 +240,20 @@ function SignIn() {
     }
     $("#PasswordRestoreContainer .input-wrapper").removeClass("br-loading");
 }
-;function PasswordRestoreKeyDownHandler(event) {
+function PasswordRestoreKeyDownHandler(event) {
     if (TeamLabPortal.IsEnterKey(event.keyCode)) {
         SendRestorePasswordEmail();
         return false;
     }
     return true;
 }
-;function ClosePasswordRestoreDialog() {
+function ClosePasswordRestoreDialog() {
     if ($('#PasswordRestoreContainer').is(':visible') && $('#PasswordRestoreSuccessMessage').is(':visible')) {
         $(".signinpage").show();
         $('#PasswordRestoreContainer').hide();
     }
 }
-;function PasswordRestoreProgressBarDisplay(displayFlag, err) {
+function PasswordRestoreProgressBarDisplay(displayFlag, err) {
     if (displayFlag) {
         $('#PasswordRestoreCheckingDiv').show();
         $('#PasswordRestoreFinishButton').addClass("disable");
@@ -270,13 +276,13 @@ function SignIn() {
         }
     }
 }
-;function inputFocus() {
+function inputFocus() {
     $(this).parent().removeClass("error").removeClass("error-middle").removeClass("valid").addClass("focus");
     $("#divSigninError").hide();
     $("#PasswordRestoreErrorMessage").hide();
     $signIn.removeClass("disabled");
 }
-;function inputFocusOut() {
+function inputFocusOut() {
     var currentInput = $(this);
     var currentInputId = currentInput[0].id;
     var currentInputWrapper = currentInput.parent();
@@ -375,4 +381,3 @@ function scrollTopIf(top) {
         });
     }
 }
-;

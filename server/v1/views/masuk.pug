@@ -74,8 +74,10 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
                       type="password" 
                       tabindex="2" 
                       name="txtSignPassword" 
-                      data-min="8" 
-                      data-hashsize="256" data-hashiterations="100000" data-hashsalt="1e912b1b2ce20b91bb9db717e214feb1771045bd9fea31727e59f514964b944f"
+                      data-min="3" 
+                      data-hashsize="256" 
+                      data-hashiterations="10" 
+                      data-hashsalt="wyAlkZTPZF5h0AXimmxgUu"
                       required)
                     label.dataLabel(for="txtSignPassword") Password*
                 div.signinwithsocial
@@ -112,5 +114,6 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
     script(type="text/javascript" src="/static/js/scrollflow/jquery.scrollme.js")
     script(type="text/javascript" src="/static/js/core/navigation.menu.cso.js")    
     script(type="text/javascript" src="/static/js/jquery/pushy.min.js")
-    script(type="text/javascript" src="/static/js/sjcl.js")
+    //- script(type="text/javascript" src="/static/js/sjcl.js")
+    //- script(type="text/javascript" src="/static/js/bcrypt.min.js")
     script(type="text/javascript" src="/static/js/pagescripts/signinpage.cso.js")
