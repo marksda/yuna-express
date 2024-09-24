@@ -35,25 +35,31 @@ $('.SignInPanel .accountLinks').delegate('.popup', 'click', function() {
     return false;
 });
 var _onComplete = function(response) {
-    if (response.status != '') {
-        $("#divSigninProgress").hide();
-        $signIn.removeClass("disabled");
-        var errors = new Array();
-        errors.push({
-            error: response.message,
-            message: errorMessage.GetMessageByType(response.message)
-        });
-        _printErrors(errors);
-        return;
-    } else {
-        if (response.rs1 == 'morethatone') {
-            $("#divSigninProgress").hide();
-            DisplayPortalChooseController(response.rs2);
-        } else {
-            $("#divSigninProgress").text(errorMessage.GetMessageByType("forwardingInfo"));
-            window.open(response.rs2, '_self');
-        }
+    if(response.status == 'sukses') {
+        window.location.replace("/");
     }
+    else {
+
+    }
+    // if (response.status != '') {
+    //     $("#divSigninProgress").hide();
+    //     $signIn.removeClass("disabled");
+    //     var errors = new Array();
+    //     errors.push({
+    //         error: response.message,
+    //         message: errorMessage.GetMessageByType(response.message)
+    //     });
+    //     _printErrors(errors);
+    //     return;
+    // } else {
+    //     if (response.rs1 == 'morethatone') {
+    //         $("#divSigninProgress").hide();
+    //         DisplayPortalChooseController(response.rs2);
+    //     } else {
+    //         $("#divSigninProgress").text(errorMessage.GetMessageByType("forwardingInfo"));
+    //         window.open(response.rs2, '_self');
+    //     }
+    // }
 };
 var _verify = function(email, pwd) {
     var results = new Array();
