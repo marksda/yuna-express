@@ -108,12 +108,12 @@ header: .narrowheader
                   a.dropdown-item#navitem_signin_mob_daftar(href="/daftar") Daftar  
         else
           li.pushy-submenu.profile_menu_item.pushy-submenu-closed
-            a.menuitem#navitem_profile_mob_header Izin Akses
+            a.menuitem#navitem_profile_mob_header Profile
             div#navitem_profile_mob_menu
               ul.dropdown-content
                 li.pushy-link
-                  a.dropdown-item#navitem_profile_mob_masuk(href="/masuk") Masuk 
-                  a.dropdown-item#navitem_profile_mob_daftar(href="/daftar") Daftar
+                  a.dropdown-item#navitem_profile_mob_masuk(href="/user") Berandaku 
+                  a.dropdown-item#navitem_profile_mob_daftar(href="/keluar") Keluar
     if isAuthenticated == false
       div.signin_wrapper
         div.pushy-submenu.signin.pushy-submenu-closed(style="display: inline-block;")
@@ -132,7 +132,7 @@ header: .narrowheader
           div#navitem_profile_menu.top_border
             ul.dropdown-content.akkordeon
               li.pushy-link
-                a#navitem_profile.dropdown-item.active Izin akses
+                a#navitem_profile.dropdown-item.active Profile
                 div
-                  a.dropdown-item#navitem_profile_beranda(href="/user") berandaku
-                  a.dropdown-item#navitem_profile_keluar(href="/keluar") keluar
+                  a.dropdown-item#navitem_profile_beranda(href="/user") Berandaku
+                  a.dropdown-item#navitem_profile_keluar(href="/keluar") Keluar

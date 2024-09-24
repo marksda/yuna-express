@@ -7,7 +7,6 @@
         left: 12px;
     }
 }
-
 header a.dropdown-item:before, 
 div.dropdown-item:before {
     content: "";
@@ -20,41 +19,38 @@ div.dropdown-item:before {
     background-image: url(../images/menu_icons.svg);
     background-repeat: no-repeat;
 }
-
 #navitem_produk_medis:before {
     background-position-y: -1170px;
 }
-
 #navitem_produk_kantor:before {
     background-position-y: -26px;
 }
-
 #navitem_fb_kontak:before {
     background-position-y: -1405px;
 }
-
 #navitem_fb_sofware_development:before {
     background-image: url(../images/development-cognitive.svg);
 }
-
 #navitem_fb_konsul:before {
     background-image: url(../images/networking-connector.svg);
 }
-
 #navitem_fb_iot:before {
     background-image: url(../images/iot-platform.svg);
 }
-
 #navitem_sign_in_masuk:before,
 #navitem_signin_mob_masuk:before {
     background-image: url(../images/sign-in.svg);
 }
-
 #navitem_sign_in_daftar:before,
 #navitem_signin_mob_daftar:before {
     background-image: url(../images/address-book.svg);
 }
-
+#navitem_profile_beranda:before {
+    background-image: url(../images/applications-tiles.svg);
+}
+#navitem_profile_keluar:before {
+    background-image: url(../images/sign-out.svg);
+}
 #produk_akuntansi:after, 
 #produk_medis:after, 
 #produk_kantor:after,
@@ -71,7 +67,6 @@ div.dropdown-item:before {
     margin-left: 8px;
     transform: none !important;
 }
-
 #produk_akuntansi:hover:after, 
 #produk_medis:hover:after, 
 #produk_kantor:hover:after,
@@ -79,7 +74,6 @@ div.dropdown-item:before {
 #navitem_produk_aplikasi_akutansi:hover:after {
     background-image: url(../images/arrow-light-orange.svg);
 }
-
 #produk_akuntansi:before, 
 #produk_medis:before, 
 #produk_kantor:before,
@@ -87,10 +81,10 @@ div.dropdown-item:before {
 #navitem_produk_aplikasi_akutansi:before,
 #navitem_fb_perangkatlunak:before,
 #navitem_fb_perangkatkeras:before,
-#navitem_sign_in:before {
+#navitem_sign_in:before,
+#navitem_profile:before {
     display: none;
 }
-
 header a.dropdown-item, 
 div.dropdown-item {
     display: block;
@@ -107,7 +101,6 @@ div.dropdown-item {
     white-space: nowrap;
     position: relative;
 }
-
 header a.dropdown-item:hover, 
 div.dropdown-item:hover {
     color: #FF6F3D;
@@ -116,19 +109,18 @@ div.dropdown-item:hover {
     -o-transition: none;
     transition: none;
 }
-
 header a.dropdown-item:last-of-type, 
 div.dropdown-item:last-of-type {
     margin-bottom: 0;
 }
-
 #produk_akuntansi, 
 #produk_medis, 
 #produk_kantor,
 #navitem_produk_aplikasi_akutansi,
 #navitem_fb_perangkatlunak,
 #navitem_fb_perangkatkeras,
-#navitem_sign_in {
+#navitem_sign_in,
+#navitem_profile {
     align-items: end;
     border-radius: 3px;
     box-sizing: border-box;
@@ -147,12 +139,11 @@ div.dropdown-item:last-of-type {
     padding: 0;
     text-transform: uppercase;
 }
-
-#navitem_sign_in {
+#navitem_sign_in,
+#navitem_profile {
     margin: 0px 32px 16px 32px;
     min-width: 190px;
 }
-
 #produk_akuntansi, 
 #produk_medis, 
 #produk_kantor,
@@ -161,7 +152,6 @@ div.dropdown-item:last-of-type {
     cursor: pointer;
     white-space: normal;
 }
-
 #produk_akuntansi:hover, 
 #produk_medis:hover, 
 #produk_kantor:hover, 
@@ -170,7 +160,6 @@ div.dropdown-item:last-of-type {
 #navitem_sign_in:hover {
     cursor: default;
 }
-
 #produk_akuntansi:hover, 
 #produk_medis:hover, 
 #produk_kantor:hover, 
@@ -179,7 +168,6 @@ div.dropdown-item:last-of-type {
     cursor: pointer;
     color: #FF6F3D;
 }
-
 nav {
     height: 52px;
     margin: 0;
@@ -189,20 +177,17 @@ nav {
     top: 0;
     width: 100%;
 }
-
 nav .active:hover {
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     transition: none;
 }
-
 nav>div>ul, 
 nav>div>ul>li {
     display: inline-block;
     list-style-type: none;
 }
-
 nav>div>ul {
     margin: 0;
     padding: 0;
@@ -211,13 +196,11 @@ nav>div>ul {
     display: inline-block;
     position: relative;
 }
-
 nav>div>ul>li {
     padding: 0;
     margin: 0;
     height: 52px;
 }
-
 nav>div>ul>li>a {
     padding: 17px 0;
     display: inline-block;
@@ -226,7 +209,6 @@ nav>div>ul>li>a {
     letter-spacing: 0.08em;
     text-transform: uppercase;
 }
-
 nav>div>ul.all-menu-items {
     display: grid;
     display: -ms-grid;
@@ -236,48 +218,38 @@ nav>div>ul.all-menu-items {
     grid-gap: 20px;
     width: 100%;
 }
-
 nav>div>ul li:first-child {
     -ms-grid-column: 1;
 }
-
 nav>div>ul li:nth-child(2) {
     -ms-grid-column: 3;
 }
-
 nav>div>ul li:nth-child(3) {
     -ms-grid-column: 5;
 }
-
 nav>div>ul li:nth-child(4) {
     -ms-grid-column: 7;
 }
-
 nav>div>ul li:nth-child(5) {
     -ms-grid-column: 9;
 }
-
 nav .pushy-content {
     margin: 0 auto;
     max-width: 920px;
     width: 72vw;
 }
-
 .menuitem {
     white-space: nowrap;
 }
-
 nav .active {
     -webkit-transition: none;
     -moz-transition: none;
     -o-transition: none;
     transition: none;
 }
-
 #navitem_produk_menu {
     left: calc(50% - 455px);
 }
-
 .nav_item_link:before {
     content: "";
     display: block;
@@ -289,64 +261,63 @@ nav .active {
     background-image: url(../images/menu_icons.svg?ver=190);
     background-repeat: no-repeat;
 }
-
 .nav_item_link {
     position: relative;
 }
-
-#navitem_produk_submenu_part1:before, #navitem_produk_submenu_part1_ds:before {
+#navitem_produk_submenu_part1:before, 
+#navitem_produk_submenu_part1_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part2:before, #navitem_produk_submenu_part2_ds:before {
+#navitem_produk_submenu_part2:before, 
+#navitem_produk_submenu_part2_ds:before {
     background-position-y: -1926px;
 }
-
-#navitem_produk_submenu_part3:before, #navitem_produk_submenu_part3_ds:before {
+#navitem_produk_submenu_part3:before, 
+#navitem_produk_submenu_part3_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part4:before, #navitem_produk_submenu_part4_ds:before {
+#navitem_produk_submenu_part4:before, 
+#navitem_produk_submenu_part4_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part5:before, #navitem_produk_submenu_part5_ds:before {
+#navitem_produk_submenu_part5:before, 
+#navitem_produk_submenu_part5_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part6:before, #navitem_produk_submenu_part6_ds:before {
+#navitem_produk_submenu_part6:before, 
+#navitem_produk_submenu_part6_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part7:before, #navitem_produk_submenu_part7_ds:before {
+#navitem_produk_submenu_part7:before, 
+#navitem_produk_submenu_part7_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part8:before, #navitem_produk_submenu_part8_ds:before {
+#navitem_produk_submenu_part8:before, 
+#navitem_produk_submenu_part8_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part9:before, #navitem_produk_submenu_part9_ds:before {
+#navitem_produk_submenu_part9:before, 
+#navitem_produk_submenu_part9_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part10:before, #navitem_produk_submenu_part10_ds:before {
+#navitem_produk_submenu_part10:before, 
+#navitem_produk_submenu_part10_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part11:before, #navitem_produk_submenu_part11_ds:before {
+#navitem_produk_submenu_part11:before, 
+#navitem_produk_submenu_part11_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part12:before, #navitem_produk_submenu_part12_ds:before {
+#navitem_produk_submenu_part12:before, 
+#navitem_produk_submenu_part12_ds:before {
     background-position-y: -1769px;
 }
-
-#navitem_produk_submenu_part13:before, #navitem_produk_submenu_part13_ds:before {
+#navitem_produk_submenu_part13:before, 
+#navitem_produk_submenu_part13_ds:before {
     background-position-y: -1769px;
 }
-
-.signin_wrapper {
+.signin_wrapper,
+.profile_wrapper {
     position: absolute;
     right: 55px;
     top: 0;
@@ -356,13 +327,13 @@ nav .active {
     padding: 0;
     z-index: 1;
 }
-
-.signin_wrapper .signin {
+.signin_wrapper .signin,
+.profile_wrapper .profile {
     margin-right: 0;
     padding: 0;
 }
-
-#navitem_sign_in_header {
+#navitem_sign_in_header,
+#navitem_profile_header {
     display: inline-block;
     padding: 0;
     width: 24px;
@@ -378,11 +349,9 @@ nav .active {
     position: initial;
     font-size: 0;
 }
-
 #navitem_sign_in_header:hover {
     background-image: url(../images/login-circle-orange.svg);
 }
-
 @media screen and (min-width: 1500px) {
     nav .pushy-content {
         max-width: 1120px;
@@ -396,19 +365,16 @@ nav .active {
         grid-gap: 3vw;
     }
 }
-
 @media screen and (max-width: 1280px) {
     nav>div>ul.all-menu-items {
         grid-gap: 20px;
     }
 }
-
 @media screen and (max-width: 1199px) {
     .signin_wrapper {
         right: 50px;
     }
 }
-
 @media screen and (min-width: 1024px) {
     #navitem_produk, 
     #navitem_solusi, 
@@ -423,7 +389,8 @@ nav .active {
     #navitem_layanan_menu:after, 
     #navitem_media_menu:after, 
     #navitem_portofolio_menu:after,
-    #navitem_signin_menu:after {
+    #navitem_signin_menu:after,
+    #navitem_profile_menu:after {
         display: block;
         position: absolute;
         width: 0;
@@ -440,7 +407,8 @@ nav .active {
     #navitem_layanan_menu.top_border:after, 
     #navitem_media_menu.top_border:after, 
     #navitem_portofolio_menu.top_border:after,
-    #navitem_signin_menu.top_border:after {
+    #navitem_signin_menu.top_border:after,
+    #navitem_profile_menu.top_border:after {
         width: 50%;
     }
 
@@ -449,7 +417,8 @@ nav .active {
     #navitem_layanan_menu:before, 
     #navitem_media_menu:before, 
     #navitem_portofolio_menu:before,
-    #navitem_signin_menu:before {
+    #navitem_signin_menu:before,
+    #navitem_profile_menu:before {
         display: block;
         position: absolute;
         width: 0;
@@ -466,7 +435,8 @@ nav .active {
     #navitem_layanan_menu.top_border:before, 
     #navitem_media_menu.top_border:before, 
     #navitem_portofolio_menu.top_border:before,
-    #navitem_signin_menu.top_border:before {
+    #navitem_signin_menu.top_border:before,
+    #navitem_profile_menu.top_border:before {
         width: 50%;
         left: 0;
     }
@@ -476,7 +446,8 @@ nav .active {
     #navitem_layanan_menu, 
     #navitem_media_menu, 
     #navitem_portofolio_menu,
-    #navitem_signin_menu {
+    #navitem_signin_menu,
+    #navitem_profile_menu {
         display: none;
         position: absolute;
         z-index: 1999;
@@ -493,7 +464,8 @@ nav .active {
         min-width: 312px;
     }
 
-    #navitem_signin_menu {
+    #navitem_signin_menu,
+    #navitem_profile_menu {
         right: 0;
         left: unset;
     }
@@ -503,7 +475,8 @@ nav .active {
     #navitem_layanan_menu .dropdown-content, 
     #navitem_media_menu .dropdown-content, 
     #navitem_portofolio_menu .dropdown-content,
-    #navitem_signin_menu .dropdown-content {
+    #navitem_signin_menu .dropdown-content,
+    #navitem_profile_menu .dropdown-content {
         list-style-type: none;
         margin: 0;
         display: block;
@@ -532,7 +505,8 @@ nav .active {
     #navitem_layanan_menu .dropdown-content>li, 
     #navitem_media_menu .dropdown-content>li, 
     #navitem_portofolio_menu .dropdown-content>li,
-    #navitem_signin_menu .dropdown-content>li {
+    #navitem_signin_menu .dropdown-content>li,
+    #navitem_profile_menu .dropdown-content>li {
         display: block;
         margin: 0;
         padding: 0;
@@ -544,7 +518,8 @@ nav .active {
     #navitem_layanan_menu .dropdown-content>li, 
     #navitem_media_menu .dropdown-content>li, 
     #navitem_portofolio_menu .dropdown-content>li,
-    #navitem_signin_menu .dropdown-content>li {
+    #navitem_signin_menu .dropdown-content>li,
+    #navitem_profile_menu .dropdown-content>li {
         display: table-cell;
         padding: 32px 0;
     }
@@ -742,18 +717,17 @@ nav .active {
         width: 80%;
     }
 
-    .sign_in_menu_item {
+    .sign_in_menu_item,
+    .profile_menu_item {
         display: none !important;
     }
 }
-
 @media screen and (max-width: 1023px) {
     nav .pushy-content {
         margin: 0 auto;
         max-width: 864px;
     }
 }
-
 #navitem_produk, 
 #navitem_solusi, 
 #navitem_layanan, 
@@ -768,7 +742,6 @@ nav .active {
     font-weight: 600;
     vertical-align: middle;
 }
-
 #navitem_produk:hover,
 #navitem_solusi:hover,
 #navitem_layanan:hover,
@@ -776,7 +749,6 @@ nav .active {
 #navitem_portofolio:hover {
     border-color: #FF6F3D
 }
-
 #navitem_produk.active,
 #navitem_solusi.active,
 #navitem_layanan.active,
@@ -785,7 +757,6 @@ nav .active {
     border-color: #FF6F3D;
     color: #FF6F3D
 }
-
 #navitem_produk.active:hover,
 #navitem_solusi.active:hover,
 #navitem_layanan.active:hover,
@@ -797,7 +768,6 @@ nav .active {
     -o-transition: none;
     transition: none
 }
-
 #navitem_produk_menu, 
 #navitem_solusi_menu, 
 #navitem_layanan_menu, 

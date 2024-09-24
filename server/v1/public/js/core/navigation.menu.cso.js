@@ -553,6 +553,22 @@ $(function() {
             $("#navitem_sign_in_header").removeClass("active");
         }
     });
+
+    $.dropdownToggle({
+        dropdownID: "navitem_profile_menu",
+        switcherSelector: "#navitem_profile_header",
+        simpleToggle: true,
+        showFunction: function(switcherObj, dropdownItem) {
+            if (dropdownItem.is(":hidden")) {
+                switcherObj.addClass("active");
+            } else {
+                switcherObj.removeClass("active");
+            }
+        },
+        hideFunction: function() {
+            $("#navitem_profile_header").removeClass("active");
+        }
+    });
     
     NavigationMenuManager.bindEvents();
 
