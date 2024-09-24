@@ -97,14 +97,6 @@ export async function Login(req, res) {
             data: [user_data],
             message: "Anda berhasil logged in.",
         });
-
-        // return user info except password
-        // const { password, ...user_data } = user._doc;
-        // res.status(200).json({
-        //     status: "sukses",
-        //     data: [user_data],
-        //     message: "Anda berhasil logged in.",
-        // });
     } catch (error) {
         res.status(500).json({
             status: "gagal",

@@ -6,9 +6,10 @@ import { Verify, VerifyRole } from "../middleware/verify.js";
 
 const restRouter = new Router();
 
-restRouter.get('/', Verify, async (_req, res) => {
+restRouter.get('/', Verify, async (req, res) => {
     res.status(200).json({
         status: "success",
+        data: req.user,
         message: "API is working properly",
     });
 });
