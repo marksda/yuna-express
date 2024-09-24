@@ -1,120 +1,138 @@
 header: .narrowheader
-    div.logo.push: a(href="/")
-    div.ham_menu.push.menu-btn.pushy-link
-        span
-        span
-        span
-    nav.pushy.pushy-left
-        div.pushy-content
-            ul.all-menu-items
-                li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                  a.menuitem#navitem_produk produk
-                  div#navitem_produk_menu(style="display: none;")
-                    ul.dropdown-content.akkordeon
-                      li
-                        div#navitem_produk_akuntansi.dropdown-item
-                          | Akuntansi
-                          p.produk_info Kelolah keuangan bisnis secara mudah, cepat dan akurat
-                        div#navitem_produk_medis.dropdown-item
-                          | Medis 
-                          p.produk_info Kelolah data medis dan biaya layanan secara terintegritas
-                        div#navitem_produk_kantor.dropdown-item
-                          | Admin kantor
-                          p.produk_info Permudah surat menyurat dan kelolah dokumen
-                        div#navitem_produk_messageapi.dropdown-item
-                          | MessageAPI
-                          p.produk_info API pertukaran pesan whatsapp dan telegram
-                      li
-                        div.produk-sub-submenu#navitem_produk_akuntansi_submenu(style="display: flex;")
-                          div 
-                            div#navitem_produk_akuntansi_mobile Akuntansi
-                            a.dropdown-item.mobile_no_link#produk_akuntansi(href="/akuntansi") Fitur 
-                            a.nav_item_link#navitem_produk_submenu_part1(href="") Kustomisasi akun buku besar, jurnal dan formulir
-                            a.nav_item_link#navitem_produk_submenu_part2(href="") Sistem pengendalian intern
-                            a.nav_item_link#navitem_produk_submenu_part3(href="") Sistem penjualan kredit
-                            a.nav_item_link#navitem_produk_submenu_part4(href="") Sistem akuntansi piutang 
-                            a.nav_item_link#navitem_produk_submenu_part5(href="") Sistem akuntansi pembelian 
-                            a.nav_item_link#navitem_produk_submenu_part7(href="") Sistem akuntansi utang 
-                            a.nav_item_link#navitem_produk_submenu_part8(href="") Sistem akuntansi penggajian 
-                            a.nav_item_link#navitem_produk_submenu_part9(href="") Sistem akuntansi biaya
-                            a.nav_item_link#navitem_produk_submenu_part10(href="") Sistem akuntansi penerimaan kas
-                            a.nav_item_link#navitem_produk_submenu_part11(href="") Sistem akuntansi penggeluaran kas 
-                            a.nav_item_link#navitem_produk_submenu_part12(href="") Sistem akuntansi persediaan 
-                            a.nav_item_link#navitem_produk_submenu_part13(href="") Sistem akuntansi aktiva tetap
-                          div.produk-sub-submenu#navitem_produk_akuntansi_sub(style="display: block;")
-                            a#navitem_produk_aplikasi_akutansi.dropdown-item.mobile_no_link(href="") aplikasi
-                            a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan dagang (toko mainan, toko kelontong, rumah makan, resto, dll)
-                            a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan jasa(travel, penginapan, transportasi, dll)
-                            a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan produksi(pabrik garmen, plastik, furnitur, dll)
-                        div.produk-sub-submenu#navitem_produk_medis_submenu(style="display: flex;")
-                          div 
-                            div#navitem_produk_medis_mobile Medis
-                            a.dropdown-item.mobile_no_link#produk_medis(href="/medis") Fitur
-                            a.nav_item_link#navitem_medis_submenu_part1(href="") Registrasi pasien
-                            a.nav_item_link#navitem_medis_submenu_part3(href="") ASKEP
-                            a.nav_item_link#navitem_medis_submenu_part4(href="") Penunjang medis farmasi
-                            a.nav_item_link#navitem_medis_submenu_part5(href="") Penunjang medis laborat 
-                            a.nav_item_link#navitem_medis_submenu_part6(href="") Penunjang medis radiologi
-                        div.produk-sub-submenu#navitem_produk_kantor_submenu(style="display: flex;")
-                        div.produk-sub-submenu#navitem_produk_messageapi_submenu(style="display: flex;")
-                      li.last
-                li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                  a.menuitem#navitem_solusi solusi
-                  div#navitem_solusi_menu(style="display: none;")
-                    ul.dropdown-content.akkordeon
-                      li.pushy-link
-                        a.dropdown-item.mobile_no_link.active#navitem_fb_perangkatlunak perangkat lunak
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Finance
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Sales
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Websites
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Supply Chain
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Human Resources
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Marketing
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Services
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Productivity
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Healtcare
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Education
-                        a.dropdown-item.active#navitem_fb_kustomisperangkatlunak E-governance
-                      li.pushy-link.perangkatkeras
-                        a.dropdown-item.mobile_no_link.active#navitem_fb_perangkatkeras perangkat keras
-                        a.dropdown-item.active#navitem_fb_network Network
-                        a.dropdown-item.active#navitem_fb_storage Storage
-                        a.dropdown-item.active#navitem_fb_server Server
-                        a.dropdown-item.active#navitem_fb_server Iot
-                      li.last
-                        div 
-                          div
-                            a#navitem_fb_kontak(href="").dropdown-item Hubungi bagian penjualan
-                            a#navitem_fb_request(href="").dropdown-item Permintaan demontrasi
-                li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                  a.menuitem#navitem_layanan layanan
-                  div#navitem_layanan_menu(style="display: none;")
-                    ul.dropdown-content.akkordeon
-                      li.pushy-link
-                        a.dropdown-item.active#navitem_fb_sofware_development Konsultasi dan pembuatan perangkat lunak
-                        a.dropdown-item.active#navitem_fb_konsul konsultasi dan implementasi infrastruktur IT
-                        a.dropdown-item.active#navitem_fb_iot konsultasi dan implementasi solusi embed dan Iot
-                li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                  a.menuitem#navitem_media berbagi media
-                li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
-                  a.menuitem#navitem_portofolio portofolio
-                li.pushy-submenu.sign_in_menu_item.pushy-submenu-closed
-                  a.menuitem#navitem_sign_in_mob_header Izin Akses
-                  div#navitem_signin_mob_menu
-                    ul.dropdown-content
-                      li.pushy-link
-                        a.dropdown-item#navitem_signin_mob_masuk(href="/masuk") Masuk 
-                        a.dropdown-item#navitem_signin_mob_daftar(href="/daftar") Daftar    
-            div.signin_wrapper
-                div.pushy-submenu.signin.pushy-submenu-closed(style="display: inline-block;")
-                    a.menuitem#navitem_sign_in_header login                    
-                    div#navitem_signin_menu.top_border
-                        ul.dropdown-content.akkordeon
-                            li.pushy-link
-                                a#navitem_sign_in.dropdown-item.active Izin akses
-                                div 
-                                  if isAuthenticated == false
-                                    a.dropdown-item#navitem_sign_in_masuk(href="/masuk") Masuk 
-                                    a.dropdown-item#navitem_sign_in_daftar(href="/daftar") Daftar 
-                                  else
-                                    a.dropdown-item#navitem_sign_in_masuk(href="/keluar") keluar 
+  div.logo.push: a(href="/")
+  div.ham_menu.push.menu-btn.pushy-link
+    span
+    span
+    span
+  nav.pushy.pushy-left
+    div.pushy-content
+      ul.all-menu-items
+        li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+          a.menuitem#navitem_produk produk
+          div#navitem_produk_menu(style="display: none;")
+            ul.dropdown-content.akkordeon
+              li
+                div#navitem_produk_akuntansi.dropdown-item
+                  | Akuntansi
+                  p.produk_info Kelolah keuangan bisnis secara mudah, cepat dan akurat
+                div#navitem_produk_medis.dropdown-item
+                  | Medis 
+                  p.produk_info Kelolah data medis dan biaya layanan secara terintegritas
+                div#navitem_produk_kantor.dropdown-item
+                  | Admin kantor
+                  p.produk_info Permudah surat menyurat dan kelolah dokumen
+                div#navitem_produk_messageapi.dropdown-item
+                  | MessageAPI
+                  p.produk_info API pertukaran pesan whatsapp dan telegram
+              li
+                div.produk-sub-submenu#navitem_produk_akuntansi_submenu(style="display: flex;")
+                  div 
+                    div#navitem_produk_akuntansi_mobile Akuntansi
+                      a.dropdown-item.mobile_no_link#produk_akuntansi(href="/akuntansi") Fitur 
+                      a.nav_item_link#navitem_produk_submenu_part1(href="") Kustomisasi akun buku besar, jurnal dan formulir
+                      a.nav_item_link#navitem_produk_submenu_part2(href="") Sistem pengendalian intern
+                      a.nav_item_link#navitem_produk_submenu_part3(href="") Sistem penjualan kredit
+                      a.nav_item_link#navitem_produk_submenu_part4(href="") Sistem akuntansi piutang 
+                      a.nav_item_link#navitem_produk_submenu_part5(href="") Sistem akuntansi pembelian 
+                      a.nav_item_link#navitem_produk_submenu_part7(href="") Sistem akuntansi utang 
+                      a.nav_item_link#navitem_produk_submenu_part8(href="") Sistem akuntansi penggajian 
+                      a.nav_item_link#navitem_produk_submenu_part9(href="") Sistem akuntansi biaya
+                      a.nav_item_link#navitem_produk_submenu_part10(href="") Sistem akuntansi penerimaan kas
+                      a.nav_item_link#navitem_produk_submenu_part11(href="") Sistem akuntansi penggeluaran kas 
+                      a.nav_item_link#navitem_produk_submenu_part12(href="") Sistem akuntansi persediaan 
+                      a.nav_item_link#navitem_produk_submenu_part13(href="") Sistem akuntansi aktiva tetap
+                    div.produk-sub-submenu#navitem_produk_akuntansi_sub(style="display: block;")
+                      a#navitem_produk_aplikasi_akutansi.dropdown-item.mobile_no_link(href="") aplikasi
+                    a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan dagang (toko mainan, toko kelontong, rumah makan, resto, dll)
+                    a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan jasa(travel, penginapan, transportasi, dll)
+                    a#navitem_produk_submenu_pos.nav_item_link(href="") Akuntansi perusahaan produksi(pabrik garmen, plastik, furnitur, dll)
+                div.produk-sub-submenu#navitem_produk_medis_submenu(style="display: flex;")
+                  div 
+                    div#navitem_produk_medis_mobile Medis
+                    a.dropdown-item.mobile_no_link#produk_medis(href="/medis") Fitur
+                    a.nav_item_link#navitem_medis_submenu_part1(href="") Registrasi pasien
+                    a.nav_item_link#navitem_medis_submenu_part3(href="") ASKEP
+                    a.nav_item_link#navitem_medis_submenu_part4(href="") Penunjang medis farmasi
+                    a.nav_item_link#navitem_medis_submenu_part5(href="") Penunjang medis laborat 
+                    a.nav_item_link#navitem_medis_submenu_part6(href="") Penunjang medis radiologi
+                div.produk-sub-submenu#navitem_produk_kantor_submenu(style="display: flex;")
+                div.produk-sub-submenu#navitem_produk_messageapi_submenu(style="display: flex;")
+              li.last
+        li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+          a.menuitem#navitem_solusi solusi
+          div#navitem_solusi_menu(style="display: none;")
+            ul.dropdown-content.akkordeon
+              li.pushy-link
+                a.dropdown-item.mobile_no_link.active#navitem_fb_perangkatlunak perangkat lunak
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Finance
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Sales
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Websites
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Supply Chain
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Human Resources
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Marketing
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Services
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Productivity
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Healtcare
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak Education
+                a.dropdown-item.active#navitem_fb_kustomisperangkatlunak E-governance
+              li.pushy-link.perangkatkeras
+                a.dropdown-item.mobile_no_link.active#navitem_fb_perangkatkeras perangkat keras
+                a.dropdown-item.active#navitem_fb_network Network
+                a.dropdown-item.active#navitem_fb_storage Storage
+                a.dropdown-item.active#navitem_fb_server Server
+                a.dropdown-item.active#navitem_fb_server Iot
+              li.last
+                div 
+                  div
+                    a#navitem_fb_kontak(href="").dropdown-item Hubungi bagian penjualan
+                    a#navitem_fb_request(href="").dropdown-item Permintaan demontrasi
+        li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+          a.menuitem#navitem_layanan layanan
+          div#navitem_layanan_menu(style="display: none;")
+            ul.dropdown-content.akkordeon
+              li.pushy-link
+                a.dropdown-item.active#navitem_fb_sofware_development Konsultasi dan pembuatan perangkat lunak
+                a.dropdown-item.active#navitem_fb_konsul konsultasi dan implementasi infrastruktur IT
+                a.dropdown-item.active#navitem_fb_iot konsultasi dan implementasi solusi embed dan Iot
+        li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+          a.menuitem#navitem_media berbagi media
+        li.pushy-submenu.pushy-submenu-closed(style="display: inline-block;")
+          a.menuitem#navitem_portofolio portofolio
+        if isAuthenticated == false
+          li.pushy-submenu.sign_in_menu_item.pushy-submenu-closed
+            a.menuitem#navitem_sign_in_mob_header Izin Akses
+            div#navitem_signin_mob_menu
+              ul.dropdown-content
+                li.pushy-link
+                  a.dropdown-item#navitem_signin_mob_masuk(href="/masuk") Masuk 
+                  a.dropdown-item#navitem_signin_mob_daftar(href="/daftar") Daftar  
+        else
+          li.pushy-submenu.profile_menu_item.pushy-submenu-closed
+            a.menuitem#navitem_profile_mob_header Izin Akses
+            div#navitem_profile_mob_menu
+              ul.dropdown-content
+                li.pushy-link
+                  a.dropdown-item#navitem_profile_mob_masuk(href="/masuk") Masuk 
+                  a.dropdown-item#navitem_profile_mob_daftar(href="/daftar") Daftar
+    if isAuthenticated == false
+      div.signin_wrapper
+        div.pushy-submenu.signin.pushy-submenu-closed(style="display: inline-block;")
+          a.menuitem#navitem_sign_in_header login                    
+          div#navitem_signin_menu.top_border
+            ul.dropdown-content.akkordeon
+              li.pushy-link
+                a#navitem_sign_in.dropdown-item.active Izin akses
+                div 
+                  a.dropdown-item#navitem_sign_in_masuk(href="/masuk") Masuk 
+                  a.dropdown-item#navitem_sign_in_daftar(href="/daftar") Daftar 
+    else 
+      div.profile_wrapper
+        div.pushy-submenu.profile.pushy-submenu-closed(style="display: inline-block;")
+          a.menuitem#navitem_profile_header profile
+          div#navitem_profile_menu.top_border
+            ul.dropdown-content.akkordeon
+              li.pushy-link
+                a#navitem_profile.dropdown-item.active Izin akses
+                div
+                  a.dropdown-item#navitem_profile_beranda(href="/user") berandaku
+                  a.dropdown-item#navitem_profile_keluar(href="/keluar") keluar
