@@ -16,3 +16,13 @@ export async function Masuk(req, res) {
     }    
     res.end();
 }
+
+export async function Keluar(req, res) {
+    if(req.user) {
+        
+    }
+    else {
+        res.redirect('/');
+        res.end();
+    }    
+}

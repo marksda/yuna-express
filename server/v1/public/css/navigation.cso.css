@@ -45,10 +45,12 @@ div.dropdown-item:before {
 #navitem_signin_mob_daftar:before {
     background-image: url(../images/address-book.svg);
 }
-#navitem_profile_beranda:before {
+#navitem_profile_beranda:before,
+#navitem_profile_mob_beranda:before {
     background-image: url(../images/applications-tiles.svg);
 }
-#navitem_profile_keluar:before {
+#navitem_profile_keluar:before,
+#navitem_profile_mob_keluar:before {
     background-image: url(../images/sign-out.svg);
 }
 #produk_akuntansi:after, 
@@ -371,7 +373,8 @@ nav .active {
     }
 }
 @media screen and (max-width: 1199px) {
-    .signin_wrapper {
+    .signin_wrapper,
+    .profile_wrapper {
         right: 50px;
     }
 }
@@ -733,7 +736,8 @@ nav .active {
 #navitem_layanan, 
 #navitem_media, 
 #navitem_portofolio,
-#navitem_sign_in_mob_header {
+#navitem_sign_in_mob_header,
+#navitem_profile_mob_header {
     color: #444444;
     text-decoration: none;
     font-size: 12px;

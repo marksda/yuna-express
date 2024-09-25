@@ -112,8 +112,8 @@ header: .narrowheader
             div#navitem_profile_mob_menu
               ul.dropdown-content
                 li.pushy-link
-                  a.dropdown-item#navitem_profile_mob_masuk(href="/user") Berandaku 
-                  a.dropdown-item#navitem_profile_mob_daftar(href="/keluar") Keluar
+                  a.dropdown-item#navitem_profile_mob_beranda(href="/berandaku") Berandaku 
+                  a.dropdown-item#navitem_profile_mob_keluar(href="/keluar") Keluar
     if isAuthenticated == false
       div.signin_wrapper
         div.pushy-submenu.signin.pushy-submenu-closed(style="display: inline-block;")
@@ -134,5 +134,5 @@ header: .narrowheader
               li.pushy-link
                 a#navitem_profile.dropdown-item.active Profile
                 div
-                  a.dropdown-item#navitem_profile_beranda(href="/user") Berandaku
+                  a.dropdown-item#navitem_profile_beranda(href="/berandaku") Berandaku
                   a.dropdown-item#navitem_profile_keluar(href="/keluar") Keluar

@@ -177,6 +177,9 @@ function displayModalPanel(panelID, params) {
 }
 
 function loginCallback(profile) {}
+function logout() {
+    Poster.PostSignout(email, password, docspace, _onComplete);
+}
 
 var TeamLabPortal = {
     IsEnterKey: function(keyCode) {

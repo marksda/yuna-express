@@ -143,6 +143,18 @@
         });
     };
 
+    // this.PostSignOut = function(onComplete) {
+    //     $.ajax({
+    //         type: "POST",
+    //         url: "/api/v1/auth/logout",
+    //         success: function(response) {
+    //             if (typeof (onComplete) == 'function') {
+    //                 onComplete(response);
+    //             }
+    //         }
+    //     });
+    // };
+
     this.PostSigninBySocial = function(profile) {
         if (profile.IsFailed === true && typeof (profile.AuthorizationError) === "string") {
             $("#divSigninError").text(profile.AuthorizationError).show();

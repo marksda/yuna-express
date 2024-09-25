@@ -93,7 +93,8 @@
         border-bottom: 1px solid #F2F2F2;
     }
 
-    .pushy-submenu-open #navitem_sign_in_mob_header {
+    .pushy-submenu-open #navitem_sign_in_mob_header,
+    .pushy-submenu-open #navitem_profile_mob_header {
         background-color: unset;
         border-color: #F2F2F2;
         color: #FF6F3D;

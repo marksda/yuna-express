@@ -10,5 +10,6 @@ const viewRouter = new Router();
 
 viewRouter.get('/', Verify, Index);
 viewRouter.get('/masuk', Verify, Masuk);
+viewRouter.get('/keluar', Verify, Keluar);
 
 export {viewRouter};
