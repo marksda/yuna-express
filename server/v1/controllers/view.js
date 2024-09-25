@@ -1,3 +1,5 @@
+import { LogoutService } from "../services/auth-service";
+
 export async function Index(req, res) {
     res.render('index.pug', { title: 'CSO', isAuthenticated: req.user ? true:false});
     res.end();
@@ -18,11 +20,14 @@ export async function Masuk(req, res) {
 }
 
 export async function Keluar(req, res) {
-    if(req.user) {
-        
+    const authHeader = req.headers["cookie"];
+
+    if(authHeader) {        
+        const cookie = authHeader.split('=')[1]; // If there is, split the cookie string to get the actual jwt token
+        const accessToken = cookie.split(';')[0];
+        await LogoutService(accessToken);
     }
-    else {
-        res.redirect('/');
-        res.end();
-    }    
+        
+    res.redirect('/');
+    res.end();
 }

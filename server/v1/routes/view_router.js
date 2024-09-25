@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Index, Masuk } from "../controllers/view.js";
+import { Index, Keluar, Masuk } from "../controllers/view.js";
 import { Verify } from "../middleware/verify.js";
 
 const viewRouter = new Router();

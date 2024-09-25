@@ -2,6 +2,7 @@ import User from "../models/User.js";
 import Blacklist from "../models/Blacklist.js";
 import jwt from "jsonwebtoken";
 import { SECRET_ACCESS_TOKEN } from '../config/index.js';
+import { BlacklistServices } from "../services/utils-services.js";
 
 export async function Verify(req, res, next) {      
     let accessToken = null;
@@ -63,7 +64,8 @@ export async function Verify(req, res, next) {
             let cookie = authHeader.split("=")[1]; // If there is, split the cookie string to get the actual jwt
             accessToken = cookie.split(';')[0];
 
-            checkIfBlacklisted = await Blacklist.findOne({ token: accessToken }); // Check if that token is blacklisted
+            // checkIfBlacklisted = await Blacklist.findOne({ token: accessToken }); // Check if that token is blacklisted
+            checkIfBlacklisted = await BlacklistServices(accessToken);
 
             // if true, send an unathorized message, asking for a re-authentication.
             if (checkIfBlacklisted) {
