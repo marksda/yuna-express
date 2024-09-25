@@ -174,21 +174,26 @@ body#defaultpage .dp-first-screen .dp-top-block h1 {
     body#defaultpage article {
         background-position: 42% -800px;
     }
-
     body#defaultpage .dp-first-screen .dp-top-block {
         min-height: 595px;
     }
-
     body#defaultpage .dp-first-screen .dp-top-block h1 {
         font-size: 30px;
         letter-spacing: -0.02em;
     }
-
     body#defaultpage .dp-first-screen .dp-top-block h1 {
         padding-top: 48px;
     }
-
     body#defaultpage .dp-d-btns {
         padding: 32px 0;
+    }
+    body#defaultpage .dp-d-btns .button.orange-button {
+        margin-bottom: 0;
+    }
+    body#defaultpage .dp-d-btns .button {
+        font-size: 11px;
+        margin-bottom: 16px;
+        padding: 16px;
+        width: 90vw;
     }
 }

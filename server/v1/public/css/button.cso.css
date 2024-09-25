@@ -30,6 +30,8 @@
         padding: 16px 26px;
     }
 
+    a.button,
+    a.button:visited
     .button:hover, 
     .button:active, 
     .button:visited {
