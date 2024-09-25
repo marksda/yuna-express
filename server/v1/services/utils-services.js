@@ -1,4 +1,4 @@
-import Blacklist from "../models/Blacklist";
+import Blacklist from "../models/Blacklist.js";
 
 export async function BlacklistServices(accessToken) {
     try {

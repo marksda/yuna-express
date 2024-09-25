@@ -1,5 +1,5 @@
-import Blacklist from "../models/Blacklist";
-import { BlacklistServices } from "./utils-services";
+import Blacklist from "../models/Blacklist.js";
+import { BlacklistServices } from "./utils-services.js";
 
 export async function LogoutService(accessToken) {
     try {
