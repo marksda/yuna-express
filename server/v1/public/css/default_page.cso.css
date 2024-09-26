@@ -1,37 +1,24 @@
 body#defaultpage {
     color: #333333;
 }
-
 body#defaultpage .mainpart {
     padding-bottom: 0;
 }
-
 body#defaultpage article {
     background-image: url(/static/images/mainpage/bg.svg);
     background-repeat: no-repeat;
     background-position: 58% -900px
 }
-
 body#defaultpage header {
     background: transparent;
     border-bottom-color: transparent;
 }
-
-/* body#defaultpage a:hover {
-    color: #FF6F3D;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s
-} */
-
 body#defaultpage .dp-first-screen {
     background-image: url(../images/mainpage/dp-main-pic.png);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 1280px auto;
 }
-
 body#defaultpage .dp-first-screen .dp-top-block {
     box-sizing: border-box;
     margin: 0 auto;
@@ -39,24 +26,20 @@ body#defaultpage .dp-first-screen .dp-top-block {
     text-align: center;
     width: 1200px;
 }
-
 body#defaultpage article h1, body#defaultpage article h2, body#defaultpage article h3, body#defaultpage article h4, body#defaultpage article h5, body#defaultpage article h6 {
     font-weight: 700;
     margin: 0 auto;
     text-align: center;
     max-width: 90vw;
 }
-
 body#defaultpage .dp-first-screen .dp-top-block h1 {
     font-size: 64px;
     letter-spacing: -0.03em;
     line-height: 1.2em;
 }
-
 body#defaultpage .orangetext {
     color: #FF6F3D;
 }
-
 body#defaultpage .dp-d-btns {
     display: -webkit-box;
     display: -webkit-flex;
@@ -72,7 +55,6 @@ body#defaultpage .dp-d-btns {
     gap: 16px;
     padding: 40px 0 96px;
 }
-
 body#defaultpage .dp-d-btns .button {
     border-radius: 3px;
     -moz-border-radius: 3px;
@@ -85,25 +67,64 @@ body#defaultpage .dp-d-btns .button {
     line-height: 16px;
     padding: 20px;
 }
-
 body#defaultpage .dp-d-btns .button.orange-button {
     background: #FF6F3D;
     min-width: 136px;
 }
-
 body#defaultpage .dp-d-btns .button.orange-button:hover {
     background: #FF865C;
 }
-
 body#defaultpage .dp-d-btns .button.gray-button {
     background: #444444;
     min-width: 174px;
 }
-
 body#defaultpage .dp-d-btns .button.gray-button:hover {
     background: #666666;
 }
-
+body#defaultpage .dp-main {
+    margin: 0 auto;
+    padding: 60px 0 0;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m {
+    margin: 0px auto;
+    padding: 112px 0;
+    position: relative;
+    width: 1680px;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
+    padding: 200px 280px 220px 952px;
+    width: 448px;
+}
+body#defaultpage article h2 {
+    line-height: 1.33em;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside h2 {
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 1.33em;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside h2 {
+    text-align: left;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside .m-deskripsi {
+    padding: 32px 0;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside .m-deskripsi p{
+    text-align: justify;
+}
+.sb_text {    
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+}
+@media screen and (max-width: 1440px) {
+    body#defaultpage .dp-main .dp-m-bg .dp-m {
+        width: 1024px;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
+        padding: 200px 32px 220px 53%;
+    }
+}
 @media screen and (min-width: 1024px) {
     body#defaultpage #navitem_produk, 
     body#defaultpage #navitem_solusi, 
@@ -112,64 +133,72 @@ body#defaultpage .dp-d-btns .button.gray-button:hover {
     body#defaultpage #navitem_portofolio {
         border-bottom-color: transparent;
     }
-
     body#defaultpage article {
         background-position: 53% -780px;
     }
 }
-
 @media screen and (max-width: 1200px) {
     body#defaultpage .dp-first-screen .dp-top-block {
         width: 90vw;
     }
 }
-
 @media screen and (max-width: 1024px) {
     body#defaultpage .dp-first-screen {
         background-size: 100vw;
         background-position-y: 110%;
     }
-
     body#defaultpage .dp-first-screen .dp-top-block {
         min-height: 860px;
     }
+    body#defaultpage .dp-main .dp-m-bg .dp-m {
+        width: 100%;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
+        padding: 0 48px;
+        width: 80vw;
+    }
 }
-
 @media screen and (max-width: 768px) {
     body#defaultpage article {
         background-position: 55% -700px;
     }
-
     body#defaultpage .dp-first-screen {
         background-position-y: 90%;
     }
-
     body#defaultpage .dp-first-screen .dp-top-block {
         min-height: 720px;
     }
-
     body#defaultpage .dp-first-screen .dp-top-block h1 {
         font-size: 48px;
     }
-
     body#defaultpage .dp-d-btns {
         padding: 40px 0 56px;
     }
+    body#defaultpage .dp-main {
+        padding: 56px 0 0;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m {
+        padding: 88px 0;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
+        padding: 0 40px;
+        width: calc(100% - 80px);
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside h2 {
+        font-size: 36px;
+    }
 }
-
 body#defaultpage .dp-first-screen .dp-top-block h1 {
     margin: 0 auto;
     padding-top: 72px;
     width: 948px
 }
-
 @media screen and (max-width: 1200px) {    
     body#defaultpage .dp-first-screen .dp-top-block h1, 
     body#defaultpage .dp-first-screen .dp-top-block h3 {
         width: 90vw;
     }
 }
-
 @media screen and (max-width: 592px) {
     body#defaultpage article {
         background-position: 42% -800px;
@@ -195,5 +224,18 @@ body#defaultpage .dp-first-screen .dp-top-block h1 {
         margin-bottom: 16px;
         padding: 16px;
         width: 90vw;
+    }
+    body#defaultpage .dp-main {
+        padding-top: 48px;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m {
+        padding: 8px 0 0;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
+        padding: 0 24px;
+        width: calc(100% - 48px);
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside h2 {
+        font-size: 24px;
     }
 }

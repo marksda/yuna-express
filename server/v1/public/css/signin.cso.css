@@ -140,9 +140,21 @@
     width: 100%;
     margin-top: 20px;
 }
+@media screen and (max-width: 768px) {
+    #signinpage h3 {
+        font-size: 22px;
+    }
+}
 @media screen and (max-width: 592px) {
     #signinpage .SignInPanel {
         margin-bottom: 48px;
         width: 90vw;
+    }
+    #signinpage h3 {
+        font-size: 20px;
+        padding-top: 48px;
+    }
+    #signinpage article .dataItem {
+        margin-bottom: 24px;
     }
 }
