@@ -18,6 +18,7 @@ body#defaultpage .dp-first-screen {
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: 1280px auto;
+    background-position-y: 80%;
 }
 body#defaultpage .dp-first-screen .dp-top-block {
     box-sizing: border-box;
@@ -162,7 +163,7 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img.main {
 @media screen and (max-width: 1024px) {
     body#defaultpage .dp-first-screen {
         background-size: 100vw;
-        background-position-y: 110%;
+        background-position-y: 100%;
     }
     body#defaultpage .dp-first-screen .dp-top-block {
         min-height: 860px;
