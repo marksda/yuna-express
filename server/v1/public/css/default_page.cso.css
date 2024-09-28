@@ -117,12 +117,29 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside .m-deskripsi p{
     line-height: 24px;
     color: #666666;
 }
+body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 860px;
+    left: -280px;
+    top: 90px;
+    width: 1200px;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img.main {
+    background-image: url(../images/mainpage/dp-mp.png?ver=191.1);
+}
 @media screen and (max-width: 1440px) {
     body#defaultpage .dp-main .dp-m-bg .dp-m {
         width: 1024px;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
         padding: 200px 32px 220px 53%;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
+        left: -680px;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -140,7 +157,7 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside .m-deskripsi p{
 @media screen and (max-width: 1200px) {
     body#defaultpage .dp-first-screen .dp-top-block {
         width: 90vw;
-    }
+    }   
 }
 @media screen and (max-width: 1024px) {
     body#defaultpage .dp-first-screen {
@@ -156,6 +173,15 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside .m-deskripsi p{
     body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
         padding: 0 48px;
         width: 80vw;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
+        background-size: 688px auto;
+        height: 470px;
+        margin: 0 auto;
+        left: unset;
+        position: initial;
+        text-align: center;
+        width: 688px;
     }
 }
 @media screen and (max-width: 768px) {
@@ -186,6 +212,12 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside .m-deskripsi p{
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside h2 {
         font-size: 36px;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
+        background-size: 592px auto;
+        background-position: center;
+        height: 400px;
+        width: 90vw;
     }
 }
 body#defaultpage .dp-first-screen .dp-top-block h1 {
@@ -237,5 +269,14 @@ body#defaultpage .dp-first-screen .dp-top-block h1 {
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside h2 {
         font-size: 24px;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
+        background-size: contain;
+        height: 70vw;
+    }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
+    body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img.main {
+        background-image: url(../images/mainpage/dp-mp@2x.png);
     }
 }
