@@ -130,14 +130,20 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
     width: 1200px;
 }
 body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img.main {
-    background-image: url(../images/mainpage/dp-mp.png?ver=191.1);
+    background-image: url(../images/mainpage/dp-mp@2x.png);
+}
+body#defaultpage .dp-main .dp-m-bg.grey {
+    background-color: #F9F9F9;
+} 
+body#defaultpage .dp-main .dp-m-bg .dp-m.right .dp-m-inside {
+    padding: 120px 952px 120px 280px;
 }
 @media screen and (max-width: 1440px) {
     body#defaultpage .dp-main .dp-m-bg .dp-m {
         width: 1024px;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
-        padding: 200px 32px 220px 53%;
+        padding: 150px 32px 220px 53%;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
         left: -680px;
@@ -190,7 +196,7 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img.main {
         background-position: 55% -700px;
     }
     body#defaultpage .dp-first-screen {
-        background-position-y: 90%;
+        background-position-y: 80%;
     }
     body#defaultpage .dp-first-screen .dp-top-block {
         min-height: 720px;
@@ -259,7 +265,7 @@ body#defaultpage .dp-first-screen .dp-top-block h1 {
         width: 90vw;
     }
     body#defaultpage .dp-main {
-        padding-top: 48px;
+        padding-top: 18px;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m {
         padding: 8px 0 0;
