@@ -93,7 +93,7 @@ body#defaultpage .dp-main .dp-m-bg .dp-m {
     width: 1680px;
 }
 body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
-    padding: 200px 280px 220px 952px;
+    padding: 148px 280px 128px 952px;
     width: 448px;
 }
 body#defaultpage article h2 {
@@ -130,7 +130,7 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
     width: 1200px;
 }
 body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img.main {
-    background-image: url(../images/mainpage/dp-mp@2x.png);
+    background-image: url(../images/mainpage/dp-mp-portofolio.webp);
 }
 body#defaultpage .dp-main .dp-m-bg.grey {
     background-color: #F9F9F9;
@@ -138,15 +138,44 @@ body#defaultpage .dp-main .dp-m-bg.grey {
 body#defaultpage .dp-main .dp-m-bg .dp-m.right .dp-m-inside {
     padding: 120px 952px 120px 280px;
 }
+body#defaultpage .dp-main .dp-m-bg.grey .dp-m.right .dp-m-inside {
+    padding-top: 120px;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img {
+    background-repeat: no-repeat;
+    background-size: 1200px auto;
+    content: "";
+    display: block;
+    position: absolute;
+    height: 600px;
+    left: -280px;
+    top: 90px;
+    width: 1200px;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.right {
+    left: 46%;
+}
+body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
+    background-image: url(../images/mainpage/dp-mp-layanan.webp);
+}
 @media screen and (max-width: 1440px) {
     body#defaultpage .dp-main .dp-m-bg .dp-m {
         width: 1024px;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
-        padding: 150px 32px 220px 53%;
+        padding: 150px 32px 128px 53%;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
         left: -680px;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m.right .dp-m-inside {
+        padding: 200px 53% 90px 32px;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img {
+        left: -680px;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.right {
+        left: 46%;
     }
 }
 @media screen and (min-width: 1024px) {
@@ -182,6 +211,18 @@ body#defaultpage .dp-main .dp-m-bg .dp-m.right .dp-m-inside {
         width: 80vw;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img {
+        background-size: 688px auto;
+        height: 470px;
+        margin: 0 auto;
+        left: unset;
+        position: initial;
+        text-align: center;
+        width: 688px;
+    }
+    body#defaultpage .dp-main .dp-m-bg.grey .dp-m.right .dp-m-inside {
+        padding-top: 0;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img {
         background-size: 688px auto;
         height: 470px;
         margin: 0 auto;
@@ -226,6 +267,16 @@ body#defaultpage .dp-main .dp-m-bg .dp-m.right .dp-m-inside {
         height: 400px;
         width: 90vw;
     }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img {
+        background-size: 592px auto;
+        background-position: center;
+        height: 400px;
+        width: 90vw;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
+        background-size: 600px auto;
+    }
+    
 }
 body#defaultpage .dp-first-screen .dp-top-block h1 {
     margin: 0 auto;
@@ -268,7 +319,7 @@ body#defaultpage .dp-first-screen .dp-top-block h1 {
         padding-top: 18px;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m {
-        padding: 8px 0 0;
+        padding: 48px 0 0;
     }
     body#defaultpage .dp-main .dp-m-bg .dp-m .dp-m-inside {
         padding: 0 24px;
@@ -281,9 +332,20 @@ body#defaultpage .dp-first-screen .dp-top-block h1 {
         background-size: contain;
         height: 70vw;
     }
+    body#defaultpage .dp-main .dp-m-bg .dp-m.right .dp-m-inside {
+        padding: 0 24px;
+        width: calc(100% - 48px);
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img {
+        background-size: contain;
+        height: 70vw;
+    }
+    body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
+        background-size: contain;
+    }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 120dpi) {
     body#defaultpage .dp-main .dp-m-bg .dp-m .spd-img.main {
-        background-image: url(../images/mainpage/dp-mp@2x.png);
+        background-image: url(../images/mainpage/dp-mp-portofolio.webp);
     }
 }
