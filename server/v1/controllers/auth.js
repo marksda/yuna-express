@@ -64,7 +64,7 @@ export async function Login(req, res) {
             return res.status(401).json({
                 status: "gagal",
                 data: [],
-                message: "Email atau password tidak valid. Coba lagi dengan memasukkan kredential yang benar."
+                message: "Akun tidak dikenali. Email atau password tidak valid."
             });
         }
         // if user exists

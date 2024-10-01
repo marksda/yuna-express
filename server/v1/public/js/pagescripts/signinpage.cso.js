@@ -39,7 +39,15 @@ var _onComplete = function(response) {
         window.location.replace("/");
     }
     else {
-
+        $("#divSigninProgress").hide();
+        $signIn.removeClass("disabled");
+        var errors = new Array();
+        errors.push({
+            error: 'LoginWithAccountNotFound',
+            message: response.message
+        });
+        _printErrors(errors);
+        return;
     }
     // if (response.status != '') {
     //     $("#divSigninProgress").hide();
@@ -152,7 +160,7 @@ function SignIn() {
     }
     $signIn.addClass("disabled");
     $("#divSigninProgress").show();
-    PageTrack('singin');
+    // PageTrack('signin');
     var email = $.trim($emailInput.val());
     var password = $.trim(passwordInput.val());
     _clearErrors();
@@ -175,8 +183,8 @@ function SignIn() {
     // var bcrypt = dcodeIO.bcrypt;
     // var salt = bcrypt.genSaltSync(10);
     // var passwordHash = bcrypt.hashSync(password, salt);    
-    var docspace = $("body").data("bodyid") === "docspace-signin";
-    Poster.PostSignin(email, password, docspace, _onComplete);
+    // var docspace = $("body").data("bodyid") === "docspace-signin";
+    Poster.PostSignin(email, password, _onComplete);
 }
 function DisplayPortalChooseController(p) {
     var portals = $.parseJSON(p)

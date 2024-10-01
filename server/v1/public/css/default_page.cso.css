@@ -158,6 +158,55 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.right {
 body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
     background-image: url(../images/mainpage/dp-mp-layanan.webp);
 }
+.working_process {
+    /* background: linear-gradient(180deg, #F8F9F9 43.75%, rgba(248, 249, 249, 0) 100%), #FFFFFF; */
+    background-image: url(../images/mainpage/bg-wp.png);
+    padding: 112px 0;
+}
+.working_process_wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+.working_process h2 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.33em;
+    padding-bottom: 72px;
+    text-align: center;
+}
+.working_process .process_blocks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+}
+.working_process .p_block {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    color: #666666;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    text-align: center;
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    /* cursor: pointer; */
+}
+.working_process .p_block .pb_img {
+    padding-bottom: 85.23%;
+    /* background-position: center; */
+    /* background-repeat: no-repeat; */
+    /* background-size: 88%; */
+    background-color: #F3F4F4;
+    border-radius: 6px;
+}
 @media screen and (max-width: 1440px) {
     body#defaultpage .dp-main .dp-m-bg .dp-m {
         width: 1024px;
@@ -276,7 +325,14 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
     body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
         background-size: 600px auto;
     }
-    
+    .working_process h2 {
+        font-size: 24px;
+        line-height: 32px;
+        padding-bottom: 32px;
+    }
+    .working_process {
+        padding: 48px 0;
+    }
 }
 body#defaultpage .dp-first-screen .dp-top-block h1 {
     margin: 0 auto;

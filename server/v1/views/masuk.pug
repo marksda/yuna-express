@@ -39,21 +39,20 @@ html(xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US" prefix="
       }
     include includes/css.pug
     link(rel="stylesheet", href="/static/css/signin.cso.css")    
-    script. 
-      function PageTrack(key) {
-        try {
-          if(window.dataLayer) {
-            window.dataLayer.push({'event': key});
-          }
-          if(window.ga) {
-            window.ga('www.send', 'pageview', key);
-            window.ga('testTracker.send', 'pageview', key);
-          }
-        }
-        catch(err) {
-
-        }
-      }
+    //- script. 
+    //-   function PageTrack(key) {
+    //-     try {
+    //-       if(window.dataLayer) {
+    //-         window.dataLayer.push({'event': key});
+    //-       }
+    //-       if(window.ga) {
+    //-         window.ga('www.send', 'pageview', key);
+    //-         window.ga('testTracker.send', 'pageview', key);
+    //-       }
+    //-     }
+    //-     catch(err) {
+    //-     }
+    //-   }
   body#signinpage
     include includes/gtm-noscript.pug
     div.BaseSide.Com2

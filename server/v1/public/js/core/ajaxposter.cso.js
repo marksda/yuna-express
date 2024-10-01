@@ -127,17 +127,21 @@
         }
     };
 
-    this.PostSignin = function(oEM, oPVh, docspace, onComplete) {
+    this.PostSignin = function(_email, _pwd, _onComplete) {
         $.ajax({
             type: "POST",
             url: "/api/v1/auth/login",
-            data: JSON.stringify({ email: oEM, password: oPVh }),
+            data: JSON.stringify({ email: _email, password: _pwd }),
             contentType: "application/json; charset=utf-8",
             dataType: "json",
-            // data: "type=signin&email=" + encodeURIComponent(oEM) + "&passwordHash=" + encodeURIComponent(oPVh) + "&docspace=" + docspace,
             success: function(response) {
-                if (typeof (onComplete) == 'function') {
-                    onComplete(response);
+                if (typeof (_onComplete) == 'function') {
+                    _onComplete(response);
+                }
+            },
+            error: function(error) {
+                if (typeof (_onComplete) == 'function') {
+                    _onComplete(error.responseJSON);
                 }
             }
         });
