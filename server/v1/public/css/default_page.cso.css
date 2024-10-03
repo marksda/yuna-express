@@ -201,10 +201,11 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
 }
 .working_process .p_block .pb_img {
     padding-bottom: 85.23%;
-    /* background-position: center; */
-    /* background-repeat: no-repeat; */
-    /* background-size: 88%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
     background-color: #F3F4F4;
+    border: 1px solid #FF6F3D;
     border-radius: 6px;
 }
 .p_block .process_number {
@@ -220,12 +221,36 @@ body#defaultpage .dp-main .dp-m-bg .dp-m .doc-img.layanan {
     font-weight: 700;
     border-radius: 50px;
     display: inline-block;
-    background-color: #222222;
+    background-color: #FF6F3D;
     -webkit-transition: all 300ms ease;
     -moz-transition: all 300ms ease;
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+}
+.p_block .process_deskripsi {
+    position: absolute;
+    left: 0px;
+    top: 200px;
+    width: 336px;
+    z-index: 1;
+    color: #2d2d2d;
+    font-size: 24px;
+    line-height: 70px;
+    font-weight: 700;
+    display: inline-block;
+}
+.process_deskripsi h3 {
+    margin: 0px auto;
+}
+.working_process .p_block .pb_kebutuhan {
+    background-image: url(../images/svg/account-manage-personal.svg);
+}
+.working_process .p_block .pb_analisa {
+    background-image: url(../images/svg/branding.svg);
+}
+.working_process .p_block .pb_solusi {
+    background-image: url(../images/svg/communication-letter-mail.svg);
 }
 @media screen and (max-width: 1440px) {
     body#defaultpage .dp-main .dp-m-bg .dp-m {
