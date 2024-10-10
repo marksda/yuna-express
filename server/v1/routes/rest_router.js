@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { check } from "express-validator";
 import Validate from "../middleware/validate.js";
-import { Login, Logout, Register } from "../controllers/auth.js";
+import { Login, Logout, Register, Token } from "../controllers/auth.js";
 import { Verify, VerifyRole } from "../middleware/verify.js";
 
 const restRouter = new Router();
@@ -57,6 +57,17 @@ restRouter.post('/auth/login',
 );
 
 restRouter.get('/auth/logout', Logout);
+
+restRouter.post('/token',
+    check("email")
+        .isEmail()
+        .withMessage("Masukkan alamat email yang sesuai aturan penulisan email"),
+    check("password")
+        .not()
+        .isEmpty(),
+    Validate,
+    Token
+);
 
 export {restRouter};
 // module.exports = restRouter ;

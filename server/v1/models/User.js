@@ -54,13 +54,13 @@ UserSchema.pre("save", function (next) {
     });
 });
 
-UserSchema.methods.generateAccessJWT = function () {
+UserSchema.methods.generateAccessJWT = function (expiredTime) {
     let payload = {
       id: this._id,
     };
     
     return jwt.sign(payload, SECRET_ACCESS_TOKEN, {
-      expiresIn: '20m',
+      expiresIn: expiredTime,
     });
 };
 

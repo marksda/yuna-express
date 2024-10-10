@@ -89,7 +89,7 @@ export async function Login(req, res) {
             sameSite: "None",
         };
 
-        const token = user.generateAccessJWT(); // generate session token for user
+        const token = user.generateAccessJWT('20m'); // generate session token for user
         res.cookie("SessionID", token, options); // set the token to response header, so that the client sends it back on each subsequent request
         const { password, ...user_data } = user._doc;
         res.status(200).json({
@@ -138,4 +138,57 @@ export async function Logout(req, res) {
     }
 
     res.end();
+}
+
+/**
+ * @route POST /api/v1/token
+ * @desc get token base credential
+ * @access Public
+ */
+export async function Token(req, res) {
+    const { email } = req.body;
+    try {
+        const user = await User.findOne({ email }).select("+password");        
+        if(!user) {
+            return res.status(401).json({
+                status: "gagal",
+                data: [],
+                message: "Akun tidak dikenali. Email atau password tidak valid."
+            });
+        }
+        const isPasswordValid = await bcrypt.compare(
+            `${req.body.password}`,
+            user.password
+        );
+        if (!isPasswordValid) {
+            return res.status(401).json({
+                status: "gagal",
+                data: [],
+                message: "Email atau password tidak valid. Coba lagi dengan memasukkan kredential yang benar."
+            });
+        }
+        if (!isPasswordValid) {
+            return res.status(401).json({
+                status: "gagal",
+                data: [],
+                message: "Email atau password tidak valid. Coba lagi dengan memasukkan kredential yang benar."
+            });
+        }
+        const token = user.generateAccessJWT('30d');
+        const { _id, first_name, last_name, } = user._doc;
+        res.status(200).json({
+            id: _id,
+            nama: `${first_name} ${last_name}`,
+            office: null,
+            token: token,
+            refresh_token: null
+        });
+    } catch (error) {
+        res.status(500).json({
+            status: "gagal",
+            code: 500,
+            data: [],
+            message: "server mengalami kegagalan internal"
+        });
+    }
 }
