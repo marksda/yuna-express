@@ -167,13 +167,6 @@ export async function Token(req, res) {
                 message: "Email atau password tidak valid. Coba lagi dengan memasukkan kredential yang benar."
             });
         }
-        if (!isPasswordValid) {
-            return res.status(401).json({
-                status: "gagal",
-                data: [],
-                message: "Email atau password tidak valid. Coba lagi dengan memasukkan kredential yang benar."
-            });
-        }
         const token = user.generateAccessJWT('30d');
         const { _id, first_name, last_name, } = user._doc;
         res.status(200).json({

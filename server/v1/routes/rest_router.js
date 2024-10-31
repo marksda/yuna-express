@@ -69,5 +69,9 @@ restRouter.post('/token',
     Token
 );
 
+restRouter.get('/item', Item);
+
+restRouter.post('/item', Item);
+
 export {restRouter};
 // module.exports = restRouter ;
