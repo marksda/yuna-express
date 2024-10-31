@@ -9,7 +9,7 @@ export async function AddItem(req, res) {
             title
         });
 
-        const existingItem = await User.findOne({kode});
+        const existingItem = await Item.findOne({kode});
         if(existingItem) {
             return res.status(400).json({
                 status: "gagal",
@@ -17,11 +17,12 @@ export async function AddItem(req, res) {
                 message: "Duplikasi: Item sudah ada."
             });
         }
-        const savedItem = await newItem.save();  // save new user into database
-        const { ...item_data } = savedItem._doc;
+        await newItem.save();
+        // const savedItem = await newItem.save();  // save new user into database
+        // const { kode, title } = savedItem._doc;
         res.status(200).json({
             status: "sukses",
-            data: [item_data],
+            data: [{kode, title}],
             message: "Item berhasil ditambahkan.",
         });
     } catch (error) {

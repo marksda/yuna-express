@@ -70,9 +70,24 @@ restRouter.post('/token',
     Token
 );
 
-restRouter.get('/item', Item);
+// restRouter.get('/item', Item);
 
-restRouter.post('/item', AddItem);
+restRouter.post('/item', 
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("title")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddItem
+);
 
 export {restRouter};
 // module.exports = restRouter ;
