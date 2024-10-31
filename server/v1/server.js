@@ -18,6 +18,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
+
 // static file
 app.use('/static', express.static(path.join(__dirname, 'public')));
 // rest router
@@ -28,6 +29,11 @@ app.use("/", viewRouter);
 //load view engine
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+//set query parser
+app.set('query parser', function(str) {
+    return qs.parse(str);
+});
 
 
 mongoose.Promise = global.Promise;

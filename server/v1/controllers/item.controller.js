@@ -34,3 +34,29 @@ export async function AddItem(req, res) {
         });
     }
 }
+
+export async function GetItem(req, res) {
+    // let pageNumber = req.query.filter.pageNumber;
+    // let pageSize = req.query.filter.pageSize;
+    // let filters = req.query.filter.filters;
+    // let sortOrders = req.query.filter.sortOrders;
+    // const query = Item.find({ [filters[0].fieldName]: filters[0].value });
+
+    const query = Item.find({});
+    query.select('kode title');
+
+    const items = await query.exec();
+    if(!items) {
+        return res.status(401).json({
+            status: "gagal",
+            data: [],
+            message: "Data tidak ditemukan."
+        });
+    }
+
+    res.status(200).json({
+        status: "sukses",
+        data: items,
+        message: "Data berhasil ditemukan.",
+    });
+}
