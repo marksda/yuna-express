@@ -3,6 +3,7 @@ import { check } from "express-validator";
 import Validate from "../middleware/validate.js";
 import { Login, Logout, Register, Token } from "../controllers/auth.js";
 import { Verify, VerifyRole } from "../middleware/verify.js";
+import { AddItem } from "../controllers/item.controller.js";
 
 const restRouter = new Router();
 
@@ -71,7 +72,7 @@ restRouter.post('/token',
 
 restRouter.get('/item', Item);
 
-restRouter.post('/item', Item);
+restRouter.post('/item', AddItem);
 
 export {restRouter};
 // module.exports = restRouter ;
