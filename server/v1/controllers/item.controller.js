@@ -46,6 +46,7 @@ export async function GetItem(req, res) {
     query.select('kode title');
 
     const items = await query.exec();
+    
     if(!items) {
         return res.status(401).json({
             status: "gagal",
@@ -53,6 +54,11 @@ export async function GetItem(req, res) {
             message: "Data tidak ditemukan."
         });
     }
+
+    // const items = await Item
+    //             .find({})
+    //             .select('kode title')
+    //             .exec();
 
     res.status(200).json({
         status: "sukses",
