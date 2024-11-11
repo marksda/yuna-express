@@ -70,7 +70,7 @@ restRouter.post('/token',
     Token
 );
 
-restRouter.get('/item', GetItem);
+restRouter.get('/item', Verify, GetItem);
 
 restRouter.post('/item', 
     check("kode")

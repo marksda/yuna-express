@@ -13,25 +13,23 @@ export async function Verify(req, res, next) {
 
     if(isBrowser == false) {
         authHeader = req.headers["authorization"];
+        if(authHeader == undefined) {
+            return res.status(401).json({
+                status: "failed",
+                message: "You are not authorized to view this page.",
+            });
+        }
         isBrowser = authHeader ? false:true;
     }
 
     if(!isBrowser) {   //client non browser
         try {
-            // authHeader = req.headers["authorization"];
-
-            // if(authHeader == undefined) {
-            //     return res.sendStatus(401);
-            // }
-
             accessToken = authHeader.split(" ")[1];
             checkIfBlacklisted = await Blacklist.findOne({ token: accessToken }); // Check if that token is blacklisted
 
             // if true, send an unathorized message, asking for a re-authentication.
             if (checkIfBlacklisted) {
-                return res
-                    .status(401)
-                    .json({ message: "This session has expired. Please login" });
+                return res.status(401).json({ message: "This session has expired. Please login" });
             }  
 
             // if token has not been blacklisted, verify with jwt to see if it has been tampered with or not.
@@ -39,9 +37,7 @@ export async function Verify(req, res, next) {
             jwt.verify(accessToken, SECRET_ACCESS_TOKEN, async (err, decoded) => {
                 if (err) {
                     // if token has been altered or has expired, return an unauthorized error
-                    return res
-                        .status(401)
-                        .json({ message: "This session has expired. Please login" });
+                    return res.status(401).json({ message: "This session has expired. Please login" });
                 }
 
                 const { id } = decoded; // get user id from the decoded token
@@ -69,14 +65,18 @@ export async function Verify(req, res, next) {
 
             // if true, send an unathorized message, asking for a re-authentication.
             if (checkIfBlacklisted) {
-                next();
+                return res
+                    .status(401)
+                    .json({ message: "This session has expired. Please login" });
             }  
 
             // if token has not been blacklisted, verify with jwt to see if it has been tampered with or not.
             // that's like checking the integrity of the accessToken
             jwt.verify(accessToken, SECRET_ACCESS_TOKEN, async (err, decoded) => {
                 if (err) {
-                    next();
+                    return res
+                        .status(401)
+                        .json({ message: "This session has expired. Please login" });
                 }
 
                 const { id } = decoded; // get user id from the decoded token
@@ -86,7 +86,12 @@ export async function Verify(req, res, next) {
                 next();
             }); 
         } catch (error) {
-            next();
+            res.status(500).json({
+                status: "error",
+                code: 500,
+                data: [],
+                message: "Internal Server Error",
+            });
         }
     }
 }
