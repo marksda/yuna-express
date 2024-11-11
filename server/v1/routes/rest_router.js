@@ -72,7 +72,8 @@ restRouter.post('/token',
 
 restRouter.get('/item', Verify, GetItem);
 
-restRouter.post('/item', 
+restRouter.post('/item',     
+    Verify,
     check("kode")
         .not()
         .isEmpty()
