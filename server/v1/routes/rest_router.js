@@ -4,6 +4,8 @@ import Validate from "../middleware/validate.js";
 import { Login, Logout, Register, Token } from "../controllers/auth.js";
 import { Verify, VerifyRole } from "../middleware/verify.js";
 import { AddItem, GetItem } from "../controllers/item.controller.js";
+import { AddPropinsi, GetPropinsi } from "../controllers/propinsi.controller.js";
+import { AddKabupaten, GetKabupaten } from "../controllers/kabupaten.controller.js";
 
 const restRouter = new Router();
 
@@ -88,6 +90,52 @@ restRouter.post('/item',
         .escape(),
     Validate,
     AddItem
+);
+
+restRouter.get('/propinsi', Verify, GetPropinsi);
+
+restRouter.post('/propinsi',     
+    Verify,
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddPropinsi
+);
+
+restRouter.get('/kabupaten', Verify, GetKabupaten);
+
+restRouter.post('/kabupaten',     
+    Verify,
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("propinsi")
+        .not()
+        .isEmpty()
+        .withMessage("Kode propinsi harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddKabupaten
 );
 
 export {restRouter};
