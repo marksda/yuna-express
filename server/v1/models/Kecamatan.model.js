@@ -13,12 +13,12 @@ const KecamatanSchema = new mongoose.Schema(
             max: 225,
         },
         propinsi: {
-            type: mongoose.Types.ObjectId, 
+            type: String, 
             index: true,
             ref: "Propinsi"
         },
         kabupaten: {
-            type: mongoose.Types.ObjectId, 
+            type: String, 
             index: true,
             ref: "Kabupaten"
         }

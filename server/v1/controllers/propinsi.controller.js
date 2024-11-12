@@ -1,3 +1,4 @@
+import escapeStringRegexp from "escape-string-regexp";
 import Propinsi from "../models/Propinsi.model.js";
 
 export async function AddPropinsi(req, res) {
@@ -43,10 +44,23 @@ export async function GetPropinsi(req, res) {
     // let sortOrders = req.query.filter.sortOrders;
     // const query = Propinsi.find({ [filters[0].fieldName]: filters[0].value });
 
-    const query = Propinsi.find({});
-    query.select('kode nama');
+    // let filter = {};
 
-    const items = await query.exec();
+    const $regex = RegExp(escapeStringRegexp('jawa ti'), 'i');
+    let filter = {
+        nama: {
+            $regex
+        }
+        // $and: [
+        //     {kode: '1101020'},
+        //     {propinsi:'6731733405e5826b4e416a89'}
+        // ]
+    };
+
+    const items = await Propinsi
+                    .find(filter)
+                    .select('kode nama')
+                    .exec();
     
     if(!items) {
         return res.status(401).json({

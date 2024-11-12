@@ -44,12 +44,19 @@ export async function GetKabupaten(req, res) {
     // let sortOrders = req.query.filter.sortOrders;
     // const query = Kabupaten.find({ [filters[0].fieldName]: filters[0].value });
 
-    const query = Kabupaten.find({});
-    // const query = Kabupaten.find({}).populate("propinsi");
-    query.select('kode nama propinsi');
+    let filter = {};
 
-    const items = await query
-                    // .where('propinsi').equals('6731733405e5826b4e416a8a')
+    // let filter = {
+    //     $and: [
+    //         {kode: '1101020'},
+    //         {propinsi:'6731733405e5826b4e416a89'}
+    //     ]
+    // };
+
+    const items = await Kabupaten
+                    .find(filter)
+                    .select('kode nama propinsi')
+                    .populate('propinsi')
                     .exec();
     
     if(!items) {
@@ -59,12 +66,7 @@ export async function GetKabupaten(req, res) {
             message: "Data tidak ditemukan."
         });
     }
-
-    // const items = await Kabupaten
-    //             .find({})
-    //             .select('kode title')
-    //             .exec();
-
+    
     res.status(200).json({
         status: "sukses",
         data: items,

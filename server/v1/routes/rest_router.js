@@ -6,6 +6,7 @@ import { Verify, VerifyRole } from "../middleware/verify.js";
 import { AddItem, GetItem } from "../controllers/item.controller.js";
 import { AddPropinsi, GetPropinsi } from "../controllers/propinsi.controller.js";
 import { AddKabupaten, GetKabupaten } from "../controllers/kabupaten.controller.js";
+import { AddKecamatan, GetKecamatan } from "../controllers/kecamatan.controller.js";
 
 const restRouter = new Router();
 
@@ -136,6 +137,38 @@ restRouter.post('/kabupaten',
         .escape(),
     Validate,
     AddKabupaten
+);
+
+restRouter.get('/kecamatan', Verify, GetKecamatan);
+
+restRouter.post('/kecamatan',     
+    Verify,
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("propinsi")
+        .not()
+        .isEmpty()
+        .withMessage("Kode propinsi harus diisi")
+        .trim()
+        .escape(),
+    check("kabupaten")
+        .not()
+        .isEmpty()
+        .withMessage("Kode kabupaten harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddKecamatan
 );
 
 export {restRouter};

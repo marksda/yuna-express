@@ -43,14 +43,21 @@ export async function GetKecamatan(req, res) {
     // let pageSize = req.query.filter.pageSize;
     // let filters = req.query.filter.filters;
     // let sortOrders = req.query.filter.sortOrders;
-    // const query = Kecamatan.find({ [filters[0].fieldName]: filters[0].value });
+    // const query = Kecamatan.find({ [filters[0].fieldName]: filters[0].value });    
 
-    const query = Kecamatan.find({});
-    // const query = Kecamatan.find({}).populate("propinsi kabupaten");
-    query.select('kode nama propinsi kabupaten');
+    let filter = {};
 
-    const items = await query
-                    // .where('kabupaten').equals('6731733405e5826b4e416a8a')
+    // let filter = {
+    //     $and: [
+    //         {kode: '1101020'},
+    //         {propinsi:'6731733405e5826b4e416a89'}
+    //     ]
+    // };
+
+    const items = await Kecamatan
+                    .find(filter)
+                    .select('kode nama propinsi kabupaten')
+                    .populate('propinsi kabupaten')
                     .exec();
     
     if(!items) {
@@ -60,11 +67,6 @@ export async function GetKecamatan(req, res) {
             message: "Data tidak ditemukan."
         });
     }
-
-    // const items = await Kecamatan
-    //             .find({})
-    //             .select('kode title')
-    //             .exec();
 
     res.status(200).json({
         status: "sukses",
