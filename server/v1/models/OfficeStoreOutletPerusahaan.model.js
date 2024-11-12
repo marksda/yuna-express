@@ -4,8 +4,7 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
     {
         title: {
             type: String,
-            required: "keterangan is required",
-            unique: true,
+            required: "keterangan is required"
         },
         alamat: {
             propinsi: {
