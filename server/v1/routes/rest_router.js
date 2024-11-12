@@ -10,6 +10,8 @@ import { AddKecamatan, GetKecamatan } from "../controllers/kecamatan.controller.
 import { AddModelPerizinan, GetModelPerizinan } from "../controllers/model-perizinan.controller.js";
 import { AddDesa, GetDesa } from "../controllers/desa.controller.js";
 import { AddSkalaUsaha, GetSkalaUsaha } from "../controllers/skala-usaha.controller.js";
+import { AddKategoriPelakuUsaha, GetKategoriPelakuUsaha } from "../controllers/kategori-pelaku-usaha.controller.js";
+import { AddPelakuUsaha, GetPelakuUsaha } from "../controllers/pelaku-usaha.controller.js";
 
 const restRouter = new Router();
 
@@ -236,6 +238,12 @@ restRouter.get('/skala_usaha', Verify, GetSkalaUsaha);
 
 restRouter.post('/skala_usaha',     
     Verify,
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
     check("nama")
         .not()
         .isEmpty()
@@ -250,6 +258,64 @@ restRouter.post('/skala_usaha',
         .escape(),
     Validate,
     AddSkalaUsaha
+);
+
+restRouter.get('/kategori_pelaku_usaha', Verify, GetKategoriPelakuUsaha);
+
+restRouter.post('/kategori_pelaku_usaha',     
+    Verify,
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("nama harus diisi")
+        .trim()
+        .escape(),
+    check("skala_usaha")
+        .not()
+        .isEmpty()
+        .withMessage("skala usaha harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddKategoriPelakuUsaha
+);
+
+restRouter.get('/pelaku_usaha', Verify, GetPelakuUsaha);
+
+restRouter.post('/pelaku_usaha',     
+    Verify,
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("nama harus diisi")
+        .trim()
+        .escape(),
+    check("singkatan")
+        .not()
+        .isEmpty()
+        .withMessage("singkatan harus diisi")
+        .trim()
+        .escape(),
+    check("kategori_pelaku_usaha")
+        .not()
+        .isEmpty()
+        .withMessage("singkatan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddPelakuUsaha
 );
 
 export {restRouter};

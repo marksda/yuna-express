@@ -1,31 +1,31 @@
-import SkalaUsaha from "../models/SkalaUsaha.model.js";
+import KategoriPelakuUsaha from "../models/KategoriPelakuUsaha.model.js";
 
-export async function AddSkalaUsaha(req, res) {
-    const { kode, nama, singkatan } = req.body;
+export async function AddKategoriPelakuUsaha(req, res) {
+    const { kode, nama, skala_usaha } = req.body;
 
     try {
-        const newSkalaUsaha = new SkalaUsaha({
+        const newKategoriPelakuUsaha = new KategoriPelakuUsaha({
             kode,
             nama,
-            singkatan
+            skala_usaha
         });
 
-        const existingSkalaUsaha = await SkalaUsaha.findOne({kode});
+        const existingKategoriPelakuUsaha = await KategoriPelakuUsaha.findOne({kode});
         
-        if(existingSkalaUsaha) {
+        if(existingKategoriPelakuUsaha) {
             return res.status(400).json({
                 status: "gagal",
                 data: [],
-                message: "Duplikasi: SkalaUsaha sudah ada."
+                message: "Duplikasi: KategoriPelakuUsaha sudah ada."
             });
         }
 
-        await newSkalaUsaha.save();
+        await newKategoriPelakuUsaha.save();
         
         res.status(200).json({
             status: "sukses",
-            data: [{nama, singkatan}],
-            message: "SkalaUsaha berhasil ditambahkan.",
+            data: [{kode, nama, skala_usaha}],
+            message: "KategoriPelakuUsaha berhasil ditambahkan.",
         });
     } catch (error) {
         res.status(500).json({
@@ -37,12 +37,12 @@ export async function AddSkalaUsaha(req, res) {
     }
 }
 
-export async function GetSkalaUsaha(req, res) {
+export async function GetKategoriPelakuUsaha(req, res) {
     // let pageNumber = req.query.filter.pageNumber;
     // let pageSize = req.query.filter.pageSize;
     // let filters = req.query.filter.filters;
     // let sortOrders = req.query.filter.sortOrders;
-    // const query = SkalaUsaha.find({ [filters[0].fieldName]: filters[0].value });
+    // const query = KategoriPelakuUsaha.find({ [filters[0].fieldName]: filters[0].value });
 
     let filter = {};
 
@@ -53,9 +53,9 @@ export async function GetSkalaUsaha(req, res) {
     //     ]
     // };
 
-    const items = await SkalaUsaha
+    const items = await KategoriPelakuUsaha
                     .find(filter)
-                    .select('kode nama singkatan')
+                    .select('kode nama skala_usaha')
                     .exec();
     
     if(!items) {

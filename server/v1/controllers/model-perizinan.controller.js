@@ -9,7 +9,7 @@ export async function AddModelPerizinan(req, res) {
             singkatan
         });
 
-        // const existingModelPerizinan = await ModelPerizinan.find({nama});
+        // const existingModelPerizinan = await ModelPerizinan.findOne({nama});
         
         // if(existingModelPerizinan) {
         //     return res.status(400).json({

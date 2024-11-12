@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const SkalaUsahaSchema = new mongoose.Schema(
+const PelakuUsahaSchema = new mongoose.Schema(
     {
         kode: {
             type: String,
@@ -14,11 +14,16 @@ const SkalaUsahaSchema = new mongoose.Schema(
         },
         singkatan: {
             type: String,
-            required: "Singkatan is required",
-            max: 225,
+            required: "Nama is required",
+            max: 25,
+        },
+        kategori_pelaku_usaha: {
+            type: String, 
+            index: true,
+            ref: "KategoriPelakuUsha"
         }
     },
     { timestamps: true }
 );
 
-export default mongoose.model("SkalaUsaha", SkalaUsahaSchema);
+export default mongoose.model("PelakuUsaha", PelakuUsahaSchema);

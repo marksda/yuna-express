@@ -22,6 +22,11 @@ const PerusahaanSchema = new mongoose.Schema(
             index: true,
             ref: "SkalaUsaha"
         },
+        pelaku_usaha: {
+            type: String, 
+            index: true,
+            ref: "PelakuUsaha"
+        },
     },
     { timestamps: true }
 );

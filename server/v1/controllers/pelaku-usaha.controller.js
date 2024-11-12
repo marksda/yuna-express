@@ -1,31 +1,32 @@
-import SkalaUsaha from "../models/SkalaUsaha.model.js";
+import PelakuUsaha from "../models/PelakuUsaha.model.js";
 
-export async function AddSkalaUsaha(req, res) {
-    const { kode, nama, singkatan } = req.body;
+export async function AddPelakuUsaha(req, res) {
+    const { kode, nama, singkatan, kategori_pelaku_usaha } = req.body;
 
     try {
-        const newSkalaUsaha = new SkalaUsaha({
+        const newPelakuUsaha = new PelakuUsaha({
             kode,
             nama,
-            singkatan
+            singkatan,
+            kategori_pelaku_usaha
         });
 
-        const existingSkalaUsaha = await SkalaUsaha.findOne({kode});
+        const existingPelakuUsaha = await PelakuUsaha.findOne({kode});
         
-        if(existingSkalaUsaha) {
+        if(existingPelakuUsaha) {
             return res.status(400).json({
                 status: "gagal",
                 data: [],
-                message: "Duplikasi: SkalaUsaha sudah ada."
+                message: "Duplikasi: PelakuUsaha sudah ada."
             });
         }
 
-        await newSkalaUsaha.save();
+        await newPelakuUsaha.save();
         
         res.status(200).json({
             status: "sukses",
-            data: [{nama, singkatan}],
-            message: "SkalaUsaha berhasil ditambahkan.",
+            data: [{kode, nama, singkatan, kategori_pelaku_usaha}],
+            message: "PelakuUsaha berhasil ditambahkan.",
         });
     } catch (error) {
         res.status(500).json({
@@ -37,12 +38,12 @@ export async function AddSkalaUsaha(req, res) {
     }
 }
 
-export async function GetSkalaUsaha(req, res) {
+export async function GetPelakuUsaha(req, res) {
     // let pageNumber = req.query.filter.pageNumber;
     // let pageSize = req.query.filter.pageSize;
     // let filters = req.query.filter.filters;
     // let sortOrders = req.query.filter.sortOrders;
-    // const query = SkalaUsaha.find({ [filters[0].fieldName]: filters[0].value });
+    // const query = PelakuUsaha.find({ [filters[0].fieldName]: filters[0].value });
 
     let filter = {};
 
@@ -53,9 +54,9 @@ export async function GetSkalaUsaha(req, res) {
     //     ]
     // };
 
-    const items = await SkalaUsaha
+    const items = await PelakuUsaha
                     .find(filter)
-                    .select('kode nama singkatan')
+                    .select('kode nama sinkatan kategori_pelaku_usaha')
                     .exec();
     
     if(!items) {
