@@ -42,7 +42,6 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
             email: {
                 type: String,
                 required: "Your email is required",
-                unique: true,
                 lowercase: true,
                 trim: true,
             },
@@ -50,7 +49,8 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
                 type: String
             },
             person: {
-                type: String
+                type: String,
+                ref: "Person"
             }
         },
         perusahan_id: {

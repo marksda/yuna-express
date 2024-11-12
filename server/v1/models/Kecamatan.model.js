@@ -14,7 +14,6 @@ const KecamatanSchema = new mongoose.Schema(
         },
         propinsi: {
             type: String, 
-            index: true,
             ref: "Propinsi"
         },
         kabupaten: {

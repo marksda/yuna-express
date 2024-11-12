@@ -13,7 +13,7 @@ const KabupatenSchema = new mongoose.Schema(
             max: 225,
         },
         propinsi: {
-            type: string, 
+            type: String, 
             index: true,
             ref: "Propinsi"
         }

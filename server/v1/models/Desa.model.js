@@ -14,12 +14,10 @@ const DesaSchema = new mongoose.Schema(
         },
         propinsi: {
             type: String, 
-            index: true,
             ref: "Propinsi"
         },
         kabupaten: {
             type: String, 
-            index: true,
             ref: "Kabupaten"
         },
         kecamatan: {
