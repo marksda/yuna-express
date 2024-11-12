@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const KabupatenSchema = new mongoose.Schema(
+const KecamatanSchema = new mongoose.Schema(
     {
         kode: {
             type: String,
@@ -16,9 +16,14 @@ const KabupatenSchema = new mongoose.Schema(
             type: mongoose.Types.ObjectId, 
             index: true,
             ref: "Propinsi"
+        },
+        kabupaten: {
+            type: mongoose.Types.ObjectId, 
+            index: true,
+            ref: "Kabupaten"
         }
     },
     { timestamps: true }
 );
 
-export default mongoose.model("Kabupaten", KabupatenSchema);
+export default mongoose.model("Kecamatan", KecamatanSchema);
