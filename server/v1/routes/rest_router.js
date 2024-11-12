@@ -7,6 +7,7 @@ import { AddItem, GetItem } from "../controllers/item.controller.js";
 import { AddPropinsi, GetPropinsi } from "../controllers/propinsi.controller.js";
 import { AddKabupaten, GetKabupaten } from "../controllers/kabupaten.controller.js";
 import { AddKecamatan, GetKecamatan } from "../controllers/kecamatan.controller.js";
+import { AddModelPerizinan, GetModelPerizinan } from "../controllers/model-perizinan.controller.js";
 
 const restRouter = new Router();
 
@@ -106,7 +107,7 @@ restRouter.post('/propinsi',
     check("nama")
         .not()
         .isEmpty()
-        .withMessage("kode harus diisi")
+        .withMessage("nama harus diisi")
         .trim()
         .escape(),
     Validate,
@@ -126,13 +127,13 @@ restRouter.post('/kabupaten',
     check("nama")
         .not()
         .isEmpty()
-        .withMessage("kode harus diisi")
+        .withMessage("nama harus diisi")
         .trim()
         .escape(),
     check("propinsi")
         .not()
         .isEmpty()
-        .withMessage("Kode propinsi harus diisi")
+        .withMessage("propinsi harus diisi")
         .trim()
         .escape(),
     Validate,
@@ -152,23 +153,81 @@ restRouter.post('/kecamatan',
     check("nama")
         .not()
         .isEmpty()
-        .withMessage("kode harus diisi")
+        .withMessage("nama harus diisi")
         .trim()
         .escape(),
     check("propinsi")
         .not()
         .isEmpty()
-        .withMessage("Kode propinsi harus diisi")
+        .withMessage("propinsi propinsi harus diisi")
         .trim()
         .escape(),
     check("kabupaten")
         .not()
         .isEmpty()
-        .withMessage("Kode kabupaten harus diisi")
+        .withMessage("kabupaten harus diisi")
         .trim()
         .escape(),
     Validate,
     AddKecamatan
+);
+
+restRouter.get('/desa', Verify, GetDesa);
+
+restRouter.post('/desa',     
+    Verify,
+    check("kode")
+        .not()
+        .isEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("nama harus diisi")
+        .trim()
+        .escape(),
+    check("propinsi")
+        .not()
+        .isEmpty()
+        .withMessage("propinsi harus diisi")
+        .trim()
+        .escape(),
+    check("kabupaten")
+        .not()
+        .isEmpty()
+        .withMessage("kabupaten harus diisi")
+        .trim()
+        .escape(),
+    check("kecamatan")
+        .not()
+        .isEmpty()
+        .withMessage("kecamatan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddKecamatan
+);
+
+restRouter.get('/model_perizinan', Verify, GetModelPerizinan);
+
+restRouter.post('/model_perizinan',     
+    Verify,
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("nama harus diisi")
+        .trim()
+        .escape(),
+    check("singkatan")
+        .not()
+        .isEmpty()
+        .withMessage("singkatan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddModelPerizinan
 );
 
 export {restRouter};
