@@ -1,7 +1,7 @@
 import ModelPerizinan from "../models/ModelPerizinan.model.js";
 
 export async function AddModelPerizinan(req, res) {
-    const { kode, singkatan } = req.body;
+    const { nama, singkatan } = req.body;
 
     try {
         const newModelPerizinan = new ModelPerizinan({
@@ -9,21 +9,21 @@ export async function AddModelPerizinan(req, res) {
             singkatan
         });
 
-        const existingModelPerizinan = await ModelPerizinan.findOne({kode});
+        // const existingModelPerizinan = await ModelPerizinan.find({nama});
         
-        if(existingModelPerizinan) {
-            return res.status(400).json({
-                status: "gagal",
-                data: [],
-                message: "Duplikasi: ModelPerizinan sudah ada."
-            });
-        }
+        // if(existingModelPerizinan) {
+        //     return res.status(400).json({
+        //         status: "gagal",
+        //         data: [],
+        //         message: "Duplikasi: ModelPerizinan sudah ada."
+        //     });
+        // }
 
         await newModelPerizinan.save();
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama}],
+            data: [{nama, singkatan}],
             message: "ModelPerizinan berhasil ditambahkan.",
         });
     } catch (error) {
