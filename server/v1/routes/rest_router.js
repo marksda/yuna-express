@@ -9,6 +9,7 @@ import { AddKabupaten, GetKabupaten } from "../controllers/kabupaten.controller.
 import { AddKecamatan, GetKecamatan } from "../controllers/kecamatan.controller.js";
 import { AddModelPerizinan, GetModelPerizinan } from "../controllers/model-perizinan.controller.js";
 import { AddDesa, GetDesa } from "../controllers/desa.controller.js";
+import { AddSkalaUsaha, GetSkalaUsaha } from "../controllers/skala-usaha.controller.js";
 
 const restRouter = new Router();
 
@@ -229,6 +230,26 @@ restRouter.post('/model_perizinan',
         .escape(),
     Validate,
     AddModelPerizinan
+);
+
+restRouter.get('/skala_usaha', Verify, GetSkalaUsaha);
+
+restRouter.post('/skala_usaha',     
+    Verify,
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("nama harus diisi")
+        .trim()
+        .escape(),
+    check("singkatan")
+        .not()
+        .isEmpty()
+        .withMessage("singkatan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddSkalaUsaha
 );
 
 export {restRouter};
