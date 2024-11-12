@@ -26,7 +26,7 @@ const PerusahaanSchema = new mongoose.Schema(
             type: String, 
             index: true,
             ref: "PelakuUsaha"
-        },
+        }
     },
     { timestamps: true }
 );
