@@ -24,7 +24,7 @@ export async function AddKabupaten(req, res) {
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama}],
+            data: [{kode, nama, propinsi}],
             message: "Kabupaten berhasil ditambahkan.",
         });
     } catch (error) {

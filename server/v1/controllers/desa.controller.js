@@ -26,7 +26,7 @@ export async function AddDesa(req, res) {
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama}],
+            data: [{kode, nama, propinsi, kabupaten, kecamatan}],
             message: "Desa berhasil ditambahkan.",
         });
     } catch (error) {
