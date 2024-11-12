@@ -8,6 +8,7 @@ import { AddPropinsi, GetPropinsi } from "../controllers/propinsi.controller.js"
 import { AddKabupaten, GetKabupaten } from "../controllers/kabupaten.controller.js";
 import { AddKecamatan, GetKecamatan } from "../controllers/kecamatan.controller.js";
 import { AddModelPerizinan, GetModelPerizinan } from "../controllers/model-perizinan.controller.js";
+import { AddDesa, GetDesa } from "../controllers/desa.controller.js";
 
 const restRouter = new Router();
 
@@ -207,7 +208,7 @@ restRouter.post('/desa',
         .trim()
         .escape(),
     Validate,
-    AddKecamatan
+    AddDesa
 );
 
 restRouter.get('/model_perizinan', Verify, GetModelPerizinan);
