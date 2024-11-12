@@ -26,6 +26,10 @@ const PerusahaanSchema = new mongoose.Schema(
             type: String, 
             index: true,
             ref: "PelakuUsaha"
+        },
+        main_office: {
+            type: String,
+            ref: "OfficeStoreOutletPerusahaan"
         }
     },
     { timestamps: true }

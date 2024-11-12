@@ -10,31 +10,52 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
         alamat: {
             propinsi: {
                 type: string, 
+                required: "Title is required",
                 ref: "Propinsi"
             },
             kabupaten: {
                 type: string, 
+                required: "Title is required",
                 ref: "Kabupaten"
             },
-            kabupaten: {
+            kecamatan: {
                 type: string, 
+                required: "Title is required",
                 ref: "Kabupaten"
             },
+            desa: {
+                type: string,
+                required: "Title is required", 
+                ref: "Desa"
+            },
+            detail: {
+                type: String,
+                required: "Title is required",
+                max: 225,
+            }
         },
-        model_perizinan: {
-            type: String, 
-            index: true,
-            ref: "ModelPerizinan"
+        kontak: {
+            telepon: {
+                type: String,
+                required: "telepon is required"
+            },
+            email: {
+                type: String,
+                required: "Your email is required",
+                unique: true,
+                lowercase: true,
+                trim: true,
+            },
+            fax: {
+                type: String
+            },
+            person: {
+                type: String
+            }
         },
-        skala_usaha: {
-            type: String, 
-            index: true,
-            ref: "SkalaUsaha"
-        },
-        pelaku_usaha: {
-            type: String, 
-            index: true,
-            ref: "PelakuUsaha"
+        perusahan_id: {
+            type: String,
+            required: "Id perusahaan is required"
         }
     },
     { timestamps: true }
