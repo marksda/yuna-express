@@ -16,7 +16,7 @@ const PropinsiSchema = new mongoose.Schema(
     { 
         autoCreate: false,
         autoIndex: false,
-        timestamps: true 
+        timestamps: true
     }
 );
 
