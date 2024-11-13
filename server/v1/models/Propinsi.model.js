@@ -13,7 +13,11 @@ const PropinsiSchema = new mongoose.Schema(
             max: 225,
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("Propinsi", PropinsiSchema);

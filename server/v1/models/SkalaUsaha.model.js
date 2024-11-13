@@ -18,7 +18,11 @@ const SkalaUsahaSchema = new mongoose.Schema(
             max: 225,
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("SkalaUsaha", SkalaUsahaSchema);

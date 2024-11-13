@@ -22,7 +22,11 @@ const KecamatanSchema = new mongoose.Schema(
             ref: "Kabupaten"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("Kecamatan", KecamatanSchema);

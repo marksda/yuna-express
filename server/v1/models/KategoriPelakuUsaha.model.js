@@ -13,12 +13,15 @@ const KategoriPelakuUsahaSchema = new mongoose.Schema(
             max: 225,
         },
         skala_usaha: {
-            type: String, 
-            index: true,
+            type: String,
             ref: "SkalaUsaha"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("KategoriPelakuUsaha", KategoriPelakuUsahaSchema);

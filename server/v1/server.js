@@ -38,7 +38,7 @@ app.set('query parser', function(str) {
 
 mongoose.Promise = global.Promise;
 mongoose.set("strictQuery", false);
-mongoose.connect(URIDB)
+mongoose.connect(URIDB, { autoIndex: false })
     .then(
     () => console.log("Connected to database")
     )

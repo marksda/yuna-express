@@ -23,7 +23,11 @@ const PelakuUsahaSchema = new mongoose.Schema(
             ref: "KategoriPelakuUsha"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("PelakuUsaha", PelakuUsahaSchema);

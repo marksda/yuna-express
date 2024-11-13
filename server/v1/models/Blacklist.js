@@ -8,7 +8,11 @@ const BlacklistSchema = new mongoose.Schema(
             ref: "User"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("blacklist", BlacklistSchema);

@@ -18,7 +18,11 @@ const KabupatenSchema = new mongoose.Schema(
             ref: "Propinsi"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("Kabupaten", KabupatenSchema);

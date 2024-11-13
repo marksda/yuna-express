@@ -26,7 +26,11 @@ const DesaSchema = new mongoose.Schema(
             ref: "Kecamatan"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("Desa", DesaSchema);

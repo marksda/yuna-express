@@ -13,7 +13,11 @@ const ModelPerizinanSchema = new mongoose.Schema(
             max: 225,
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: false,
+        autoIndex: false,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("ModelPerizinan", ModelPerizinanSchema);

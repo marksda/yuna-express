@@ -29,7 +29,11 @@ const PerusahaanSchema = new mongoose.Schema(
             ref: "OfficeStoreOutletPerusahaan"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: true,
+        autoIndex: true,
+        timestamps: true 
+    }
 );
 
 export default mongoose.model("Perusahaan", PerusahaanSchema);
