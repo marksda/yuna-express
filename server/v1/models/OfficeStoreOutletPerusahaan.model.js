@@ -57,7 +57,11 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
             required: "Id perusahaan is required"
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: true,
+        autoIndex: true,
+        timestamps: true
+    }
 );
 
 export default mongoose.model("OfficeStoreOutletPerusahaan", OfficeStoreOutletPerusahaanSchema);

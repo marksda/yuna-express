@@ -14,7 +14,7 @@ const PersonSchema = new mongoose.Schema(
             required: "Tanggal lahir is required",
         },
         jenis_kelamin: {
-            type: String,
+            type: mongoose.ObjectId,
             ref: "JenisKelamin"
         },
         agama: {
@@ -65,7 +65,11 @@ const PersonSchema = new mongoose.Schema(
             default: false
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: true,
+        autoIndex: true,
+        timestamps: true
+    }
 );
 
 export default mongoose.model("Person", PersonSchema);
