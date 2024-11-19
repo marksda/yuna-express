@@ -1,30 +1,17 @@
 import mongoose from "mongoose";
 
-const TandaPengenalSchema = new mongoose.Schema(
-    {
-        jenis_pengenal: {
-            type: String,
-            ref: "JenisTandaPengenal"
-        },
-        nomor: {
-            type: String,
-            required: "Title is required",
-            max: 225,
-        }
-    }
-);
-const TandaPengenal = mongoose.model("TandaPengenal", TandaPengenalSchema);
 
 const PersonSchema = new mongoose.Schema(
     {
-        tanda_pengenal: [TandaPengenal],
+        tanda_pengenal: [{type: mongoose.isObjectIdOrHexString, ref: "TandaPengenal"}],
         nama: {
             type: String,
             required: "Title is required",
             max: 225,
         },
         tanggal_lahir: {
-            type: Date
+            type: Date,
+            required: "Tanggal lahir is required",
         },
         jenis_kelamin: {
             type: String,

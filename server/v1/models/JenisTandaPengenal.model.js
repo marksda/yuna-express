@@ -8,7 +8,11 @@ const JenisTandaPengenalSchema = new mongoose.Schema(
             max: 225,
         }
     },
-    { timestamps: true }
+    { 
+        autoCreate: true,
+        autoIndex: true,
+        timestamps: true
+    }
 );
 
 export default mongoose.model("JenisTandaPengenal", JenisTandaPengenalSchema);
