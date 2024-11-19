@@ -15,6 +15,8 @@ import { AddPelakuUsaha, GetPelakuUsaha } from "../controllers/pelaku-usaha.cont
 import { AddJenisKelamin, GetJenisKelamin } from "../controllers/jenis_kelamin.controller.js";
 import { AddAgama, GetAgama } from "../controllers/agama.controller.js";
 import { AddJenisTandaPengenal, GetJenisTandaPengenal } from "../controllers/jenis_tanda_pengenal.controller.js";
+import { AddPerson } from "../controllers/person.controller.js";
+import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda_pengenal.controller.js";
 
 const restRouter = new Router();
 
@@ -363,5 +365,32 @@ restRouter.post('/jenis_tanda_pengenal',
     AddJenisTandaPengenal
 );
 
+restRouter.get('/tanda_pengenal', Verify, GetTandaPengenal);
+
+restRouter.post('/tanda_pengenal',     
+    Verify,
+    check("keterangan")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddTandaPengenal
+);
+
+restRouter.get('/person', Verify, GetJenisTandaPengenal);
+
+restRouter.post('/person',     
+    Verify,
+    check("keterangan")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddPerson
+);
 export {restRouter};
 // module.exports = restRouter ;

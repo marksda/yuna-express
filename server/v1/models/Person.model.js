@@ -57,7 +57,6 @@ const PersonSchema = new mongoose.Schema(
             email: {
                 type: String,
                 required: "Your email is required",
-                lowercase: true,
                 trim: true,
             }
         },
