@@ -2,15 +2,15 @@ import mongoose from "mongoose";
 
 const JenisTandaPengenalSchema = new mongoose.Schema(
     {
-        nama: {
+        keterangan: {
             type: String,
             required: "Nama is required",
             max: 225,
         }
     },
     { 
-        autoCreate: true,
-        autoIndex: true,
+        autoCreate: false,
+        autoIndex: false,
         timestamps: true
     }
 );

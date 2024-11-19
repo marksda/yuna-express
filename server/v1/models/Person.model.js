@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 
 const PersonSchema = new mongoose.Schema(
     {
-        tanda_pengenal: [{type: mongoose.isObjectIdOrHexString, ref: "TandaPengenal"}],
+        tanda_pengenal: [{type: mongoose.ObjectId, ref: "TandaPengenal"}],
         nama: {
             type: String,
             required: "Title is required",
@@ -18,33 +18,34 @@ const PersonSchema = new mongoose.Schema(
             ref: "JenisKelamin"
         },
         agama: {
-            type: String,
+            type: mongoose.ObjectId,
+            required: "Agama is required",
             ref: "Agama"
         },
         alamat: {
             propinsi: {
-                type: string, 
-                required: "Title is required",
+                type: mongoose.ObjectId, 
+                required: "Propinsi is required",
                 ref: "Propinsi"
             },
             kabupaten: {
-                type: string, 
-                required: "Title is required",
+                type: mongoose.ObjectId, 
+                required: "Kabupaten is required",
                 ref: "Kabupaten"
             },
             kecamatan: {
-                type: string, 
-                required: "Title is required",
+                type: mongoose.ObjectId, 
+                required: "Kecamatan is required",
                 ref: "Kabupaten"
             },
             desa: {
-                type: string,
-                required: "Title is required", 
+                type: mongoose.ObjectId,
+                required: "Desa is required", 
                 ref: "Desa"
             },
             detail: {
                 type: String,
-                required: "Title is required",
+                required: "Detail is required",
                 max: 225,
             }
         },

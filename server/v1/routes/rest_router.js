@@ -14,6 +14,7 @@ import { AddKategoriPelakuUsaha, GetKategoriPelakuUsaha } from "../controllers/k
 import { AddPelakuUsaha, GetPelakuUsaha } from "../controllers/pelaku-usaha.controller.js";
 import { AddJenisKelamin, GetJenisKelamin } from "../controllers/jenis_kelamin.controller.js";
 import { AddAgama, GetAgama } from "../controllers/agama.controller.js";
+import { AddJenisTandaPengenal, GetJenisTandaPengenal } from "../controllers/jenis_tanda_pengenal.controller.js";
 
 const restRouter = new Router();
 
@@ -346,6 +347,20 @@ restRouter.post('/agama',
         .escape(),
     Validate,
     AddAgama
+);
+
+restRouter.get('/jenis_tanda_pengenal', Verify, GetJenisTandaPengenal);
+
+restRouter.post('/jenis_tanda_pengenal',     
+    Verify,
+    check("keterangan")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddJenisTandaPengenal
 );
 
 export {restRouter};

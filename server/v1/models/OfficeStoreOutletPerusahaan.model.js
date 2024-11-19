@@ -2,58 +2,55 @@ import mongoose from "mongoose";
 
 const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
     {
-        title: {
+        keterangan: {
             type: String,
             required: "keterangan is required"
         },
         alamat: {
             propinsi: {
-                type: string, 
-                required: "Title is required",
+                type: mongoose.ObjectId, 
+                required: "Propinsi is required",
                 ref: "Propinsi"
             },
             kabupaten: {
-                type: string, 
-                required: "Title is required",
+                type: mongoose.ObjectId, 
+                required: "Kabupaten is required",
                 ref: "Kabupaten"
             },
             kecamatan: {
-                type: string, 
-                required: "Title is required",
+                type: mongoose.ObjectId, 
+                required: "Kecamatan is required",
                 ref: "Kabupaten"
             },
             desa: {
-                type: string,
-                required: "Title is required", 
+                type: mongoose.ObjectId,
+                required: "Desa is required", 
                 ref: "Desa"
             },
             detail: {
                 type: String,
-                required: "Title is required",
+                required: "Detail alamat is required",
                 max: 225,
             }
         },
         kontak: {
             telepon: {
-                type: String,
-                required: "telepon is required"
+                type: String
             },
             email: {
                 type: String,
-                required: "Your email is required",
-                lowercase: true,
-                trim: true,
+                trim: true
             },
             fax: {
                 type: String
             },
             person: {
-                type: String,
+                type: mongoose.ObjectId,
                 ref: "Person"
             }
         },
         perusahan_id: {
-            type: String,
+            type: mongoose.ObjectId,
             required: "Id perusahaan is required"
         }
     },

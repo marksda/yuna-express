@@ -24,10 +24,10 @@ const PerusahaanSchema = new mongoose.Schema(
             type: String, 
             ref: "PelakuUsaha"
         },
-        main_office: {
-            type: String,
+        alamat: [{
+            type: mongoose.ObjectId,
             ref: "OfficeStoreOutletPerusahaan"
-        }
+        }]
     },
     { 
         autoCreate: true,
