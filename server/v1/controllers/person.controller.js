@@ -10,7 +10,7 @@ export async function AddPerson(req, res) {
         //create tanda pengenal
         const newTandaPengenal = new TandaPengenal({...tanda_pengenal});
 
-        const existingTandaPengenal = await Person.findOne({...tanda_pengenal});
+        const existingTandaPengenal = await TandaPengenal.findOne({...tanda_pengenal});
         
         if(existingTandaPengenal) {
             return res.status(400).json({
@@ -20,11 +20,11 @@ export async function AddPerson(req, res) {
             });
         }
 
-
-
+        const [_id, ...data] = await newTandaPengenal.save();
        
         const newPerson = new Person({
-            tanda_pengenal, nama, tanggal_lahir,
+            tanda_pengenal: _id, 
+            nama, tanggal_lahir,
             jenis_kelamin, agama, alamat, kontak
         });
 

@@ -383,10 +383,10 @@ restRouter.get('/person', Verify, GetJenisTandaPengenal);
 
 restRouter.post('/person',     
     Verify,
-    check("keterangan")
+    check("nama")
         .not()
         .isEmpty()
-        .withMessage("keterangan harus diisi")
+        .withMessage("nama harus diisi")
         .trim()
         .escape(),
     Validate,
