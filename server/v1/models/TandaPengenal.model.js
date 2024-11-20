@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-import { Index } from "../controllers/view";
 
 const TandaPengenalSchema = new mongoose.Schema(
     {
@@ -16,8 +15,8 @@ const TandaPengenalSchema = new mongoose.Schema(
         }
     },
     { 
-        autoCreate: true,
-        autoIndex: true,
+        autoCreate: false,
+        autoIndex: false,
         timestamps: true
     }
 );
