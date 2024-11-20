@@ -8,7 +8,7 @@ export async function AddPerson(req, res) {
 
     try { 
         //create tanda pengenal
-        const newTandaPengenal = new TandaPengenal({...tanda_pengenal});
+        let newTandaPengenal = new TandaPengenal({...tanda_pengenal});
 
         const existingTandaPengenal = await TandaPengenal.findOne({...tanda_pengenal});
         
@@ -20,10 +20,10 @@ export async function AddPerson(req, res) {
             });
         }
 
-        const [_id, ...data] = await newTandaPengenal.save();
+        newTandaPengenal = await newTandaPengenal.save();
        
-        const newPerson = new Orang({
-            tanda_pengenal: _id, 
+        let newPerson = new Orang({
+            tanda_pengenal: newTandaPengenal._id, 
             nama, tanggal_lahir,
             jenis_kelamin, agama, alamat, kontak
         });
@@ -38,11 +38,11 @@ export async function AddPerson(req, res) {
             });
         }
 
-        await newPerson.save();
+        newPerson = await newPerson.save();
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama, propinsi}],
+            data: newPerson,
             message: "Person berhasil ditambahkan.",
         });
     } catch (error) {
@@ -73,8 +73,39 @@ export async function GetPerson(req, res) {
 
     const items = await Orang
                     .find(filter)
-                    .select('kode nama propinsi')
-                    .populate('propinsi')
+                    .populate({
+                        path: 'alamat.propinsi',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'alamat.kabupaten',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'alamat.kecamatan',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'alamat.desa',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'tanda_pengenal',
+                        select: 'jenis_tanda_pengenal number',
+                        populate: {
+                            path: 'jenis_tanda_pengenal',
+                            select: 'keterangan'
+                        }
+                    })
+                    .populate({
+                        path: 'jenis_kelamin',
+                        select: 'keterangan'
+                    })
+                    .populate({
+                        path: 'agama',
+                        select: 'keterangan'
+                    })
+                    .select('nama tanggal_lahir jenis_kelamin tanda_pengenal alamat kontak status_verifikasi')
                     .exec();
     
     if(!items) {

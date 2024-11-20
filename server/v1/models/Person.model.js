@@ -36,7 +36,7 @@ const PersonSchema = new mongoose.Schema(
             kecamatan: {
                 type: mongoose.ObjectId, 
                 required: "Kecamatan is required",
-                ref: "Kabupaten"
+                ref: "Kecamatan"
             },
             desa: {
                 type: mongoose.ObjectId,

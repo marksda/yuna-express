@@ -15,7 +15,7 @@ import { AddPelakuUsaha, GetPelakuUsaha } from "../controllers/pelaku-usaha.cont
 import { AddJenisKelamin, GetJenisKelamin } from "../controllers/jenis_kelamin.controller.js";
 import { AddAgama, GetAgama } from "../controllers/agama.controller.js";
 import { AddJenisTandaPengenal, GetJenisTandaPengenal } from "../controllers/jenis_tanda_pengenal.controller.js";
-import { AddPerson } from "../controllers/person.controller.js";
+import { AddPerson, GetPerson } from "../controllers/person.controller.js";
 import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda_pengenal.controller.js";
 
 const restRouter = new Router();
@@ -379,7 +379,7 @@ restRouter.post('/tanda_pengenal',
     AddTandaPengenal
 );
 
-restRouter.get('/person', Verify, GetJenisTandaPengenal);
+restRouter.get('/person', Verify, GetPerson);
 
 restRouter.post('/person',     
     Verify,
