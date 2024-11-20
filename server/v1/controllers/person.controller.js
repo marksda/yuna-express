@@ -1,4 +1,4 @@
-import Person from "../models/Person.model.js";
+import Orang from "../models/Person.model.js";
 import TandaPengenal from "../models/TandaPengenal.model.js";
 
 export async function AddPerson(req, res) {
@@ -22,13 +22,13 @@ export async function AddPerson(req, res) {
 
         const [_id, ...data] = await newTandaPengenal.save();
        
-        const newPerson = new Person({
+        const newPerson = new Orang({
             tanda_pengenal: _id, 
             nama, tanggal_lahir,
             jenis_kelamin, agama, alamat, kontak
         });
 
-        const existingPerson = await Person.findOne({kode});
+        const existingPerson = await Orang.findOne({nama});
         
         if(existingPerson) {
             return res.status(400).json({
@@ -71,7 +71,7 @@ export async function GetPerson(req, res) {
     //     ]
     // };
 
-    const items = await Person
+    const items = await Orang
                     .find(filter)
                     .select('kode nama propinsi')
                     .populate('propinsi')

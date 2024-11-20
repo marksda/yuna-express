@@ -66,10 +66,10 @@ const PersonSchema = new mongoose.Schema(
         }
     },
     { 
-        autoCreate: true,
-        autoIndex: true,
+        autoCreate: false,
+        autoIndex: false,
         timestamps: true
     }
 );
 
-export default mongoose.model("Person", PersonSchema);
+export default mongoose.model("Orang", PersonSchema);
