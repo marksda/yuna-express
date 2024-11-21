@@ -1,10 +1,14 @@
 import mongoose from "mongoose";
 
-const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
+const TempatUsahaSchema = new mongoose.Schema(
     {
         keterangan: {
             type: String,
             required: "keterangan is required"
+        },
+        jenis_tempat_usaha: {
+            type: mongoose.ObjectId,
+            ref: "JenisTempatUsaha"
         },
         alamat: {
             propinsi: {
@@ -31,6 +35,14 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
                 type: String,
                 required: "Detail alamat is required",
                 max: 225,
+            },
+            titik_kordinat: {
+                latitude: {
+                    type: number
+                },
+                longitude: {
+                    type: number
+                }
             }
         },
         kontak: {
@@ -51,7 +63,8 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
         },
         perusahan_id: {
             type: mongoose.ObjectId,
-            required: "Id perusahaan is required"
+            required: "Id perusahaan is required",
+            ref: "Perusahaan"
         }
     },
     { 
@@ -61,4 +74,4 @@ const OfficeStoreOutletPerusahaanSchema = new mongoose.Schema(
     }
 );
 
-export default mongoose.model("OfficeStoreOutletPerusahaan", OfficeStoreOutletPerusahaanSchema);
+export default mongoose.model("OfficeStoreOutletPerusahaan", TempatUsahaSchema);

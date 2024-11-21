@@ -24,9 +24,9 @@ const PerusahaanSchema = new mongoose.Schema(
             type: String, 
             ref: "PelakuUsaha"
         },
-        alamat: [{
+        tempat_usaha: [{
             type: mongoose.ObjectId,
-            ref: "OfficeStoreOutletPerusahaan"
+            ref: "TempatUsaha"
         }]
     },
     { 

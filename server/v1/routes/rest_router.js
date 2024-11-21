@@ -12,11 +12,11 @@ import { AddDesa, GetDesa } from "../controllers/desa.controller.js";
 import { AddSkalaUsaha, GetSkalaUsaha } from "../controllers/skala-usaha.controller.js";
 import { AddKategoriPelakuUsaha, GetKategoriPelakuUsaha } from "../controllers/kategori-pelaku-usaha.controller.js";
 import { AddPelakuUsaha, GetPelakuUsaha } from "../controllers/pelaku-usaha.controller.js";
-import { AddJenisKelamin, GetJenisKelamin } from "../controllers/jenis_kelamin.controller.js";
+import { AddJenisKelamin, GetJenisKelamin } from "../controllers/jenis-kelamin.controller.js";
 import { AddAgama, GetAgama } from "../controllers/agama.controller.js";
-import { AddJenisTandaPengenal, GetJenisTandaPengenal } from "../controllers/jenis_tanda_pengenal.controller.js";
+import { AddJenisTandaPengenal, GetJenisTandaPengenal } from "../controllers/jenis-tanda-pengenal.controller.js";
 import { AddPerson, GetPerson } from "../controllers/person.controller.js";
-import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda_pengenal.controller.js";
+import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda-pengenal.controller.js";
 
 const restRouter = new Router();
 
@@ -392,5 +392,20 @@ restRouter.post('/person',
     Validate,
     AddPerson
 );
+
+restRouter.get('/jenis_tempat_usaha', Verify, GetAgama);
+
+restRouter.post('/jenis_tempat_usaha',     
+    Verify,
+    check("keterangan")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddAgama
+);
+
 export {restRouter};
 // module.exports = restRouter ;
