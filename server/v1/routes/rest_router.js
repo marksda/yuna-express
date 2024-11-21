@@ -17,6 +17,7 @@ import { AddAgama, GetAgama } from "../controllers/agama.controller.js";
 import { AddJenisTandaPengenal, GetJenisTandaPengenal } from "../controllers/jenis-tanda-pengenal.controller.js";
 import { AddPerson, GetPerson } from "../controllers/person.controller.js";
 import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda-pengenal.controller.js";
+import { AddJenisTempatUsaha, GetJenisTempatUsaha } from "../controllers/jenis-tempat-usaha.controller.js";
 
 const restRouter = new Router();
 
@@ -393,7 +394,7 @@ restRouter.post('/person',
     AddPerson
 );
 
-restRouter.get('/jenis_tempat_usaha', Verify, GetAgama);
+restRouter.get('/jenis_tempat_usaha', Verify, GetJenisTempatUsaha);
 
 restRouter.post('/jenis_tempat_usaha',     
     Verify,
@@ -404,7 +405,7 @@ restRouter.post('/jenis_tempat_usaha',
         .trim()
         .escape(),
     Validate,
-    AddAgama
+    AddJenisTempatUsaha
 );
 
 export {restRouter};
