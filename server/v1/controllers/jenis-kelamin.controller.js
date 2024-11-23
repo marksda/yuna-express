@@ -18,11 +18,11 @@ export async function AddJenisKelamin(req, res) {
             });
         }
 
-        await newJenisKelamin.save();
+        const savedJenisKelamin = await newJenisKelamin.save();
         
         res.status(200).json({
             status: "sukses",
-            data: [{keterangan}],
+            data: {_id: savedJenisKelamin._id, keterangan},
             message: "JenisKelamin berhasil ditambahkan.",
         });
     } catch (error) {

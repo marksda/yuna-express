@@ -4,7 +4,7 @@ export async function AddJenisTandaPengenal(req, res) {
     const { keterangan } = req.body;
 
     try {
-        const newJenisTandaPengenal = new JenisTandaPengenal({
+        let newJenisTandaPengenal = new JenisTandaPengenal({
             keterangan
         });
 
@@ -18,11 +18,11 @@ export async function AddJenisTandaPengenal(req, res) {
             });
         }
 
-        await newJenisTandaPengenal.save();
+        newJenisTandaPengenal = await newJenisTandaPengenal.save();
         
         res.status(200).json({
             status: "sukses",
-            data: [{keterangan}],
+            data: newJenisTandaPengenal,
             message: "JenisTandaPengenal berhasil ditambahkan.",
         });
     } catch (error) {

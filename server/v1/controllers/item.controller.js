@@ -17,12 +17,12 @@ export async function AddItem(req, res) {
                 message: "Duplikasi: Item sudah ada."
             });
         }
-        await newItem.save();
+        const savedItem = await newItem.save();
         // const savedItem = await newItem.save();  // save new user into database
         // const { kode, title } = savedItem._doc;
         res.status(200).json({
             status: "sukses",
-            data: [{kode, title}],
+            data: {_id: savedItem._id, kode, title},
             message: "Item berhasil ditambahkan.",
         });
     } catch (error) {
@@ -42,10 +42,19 @@ export async function GetItem(req, res) {
     // let sortOrders = req.query.filter.sortOrders;
     // const query = Item.find({ [filters[0].fieldName]: filters[0].value });
 
-    const query = Item.find({});
-    query.select('kode title');
+    let filter = {};
 
-    const items = await query.exec();
+    // let filter = {
+    //     $and: [
+    //         {kode: '1101020'},
+    //         {propinsi:'6731733405e5826b4e416a89'}
+    //     ]
+    // };
+
+    const items = await Item
+                    .find(filter)
+                    .select('kode title')
+                    .exec();
     
     if(!items) {
         return res.status(401).json({
@@ -53,12 +62,7 @@ export async function GetItem(req, res) {
             data: [],
             message: "Data tidak ditemukan."
         });
-    }
-
-    // const items = await Item
-    //             .find({})
-    //             .select('kode title')
-    //             .exec();
+    }    
 
     res.status(200).json({
         status: "sukses",

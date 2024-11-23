@@ -22,11 +22,12 @@ export async function AddDesa(req, res) {
             });
         }
 
-        await newDesa.save();
+        const savedDesa = await newDesa.save();
+        // const {_id, createdAt, updatedAt, __v, ...hasil} = savedDesa._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama, propinsi, kabupaten, kecamatan}],
+            data: {_id: savedDesa._id, kode, nama, propinsi, kabupaten, kecamatan},
             message: "Desa berhasil ditambahkan.",
         });
     } catch (error) {
@@ -58,7 +59,6 @@ export async function GetDesa(req, res) {
     const items = await Desa
                     .find(filter)
                     .select('kode nama propinsi kabupaten kecamatan')
-                    // .populate('propinsi kabupaten kecamatan')
                     .exec();
     
     if(!items) {

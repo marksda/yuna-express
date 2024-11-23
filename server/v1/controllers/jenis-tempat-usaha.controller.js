@@ -4,7 +4,7 @@ export async function AddJenisTempatUsaha(req, res) {
     const { keterangan } = req.body;
 
     try {
-        const newJenisTempatUsaha = new JenisTempatUsaha({
+        let newJenisTempatUsaha = new JenisTempatUsaha({
             keterangan
         });
 
@@ -18,11 +18,11 @@ export async function AddJenisTempatUsaha(req, res) {
             });
         }
 
-        await newJenisTempatUsaha.save();
+        newJenisTempatUsaha = await newJenisTempatUsaha.save();
         
         res.status(200).json({
             status: "sukses",
-            data: [{keterangan}],
+            data: newJenisTempatUsaha,
             message: "Jenis tempat usaha berhasil ditambahkan.",
         });
     } catch (error) {

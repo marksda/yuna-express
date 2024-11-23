@@ -8,8 +8,8 @@ const JenisTempatUsahaSchema = new mongoose.Schema(
         }
     },
     { 
-        autoCreate: true,
-        autoIndex: true,
+        autoCreate: false,
+        autoIndex: false,
         timestamps: true
     }
 );

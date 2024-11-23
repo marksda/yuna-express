@@ -8,6 +8,7 @@ const TempatUsahaSchema = new mongoose.Schema(
         },
         jenis_tempat_usaha: {
             type: mongoose.ObjectId,
+            required: "Jenis tempat usaha is required",
             ref: "JenisTempatUsaha"
         },
         alamat: {
@@ -74,4 +75,4 @@ const TempatUsahaSchema = new mongoose.Schema(
     }
 );
 
-export default mongoose.model("OfficeStoreOutletPerusahaan", TempatUsahaSchema);
+export default mongoose.model("TempatUsaha", TempatUsahaSchema);
