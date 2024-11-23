@@ -38,10 +38,10 @@ const TempatUsahaSchema = new mongoose.Schema(
             },
             titik_kordinat: {
                 latitude: {
-                    type: number
+                    type: Number
                 },
                 longitude: {
-                    type: number
+                    type: Number
                 }
             }
         },
@@ -61,7 +61,7 @@ const TempatUsahaSchema = new mongoose.Schema(
                 ref: "Person"
             }
         },
-        perusahan_id: {
+        id_perusahan: {
             type: mongoose.ObjectId,
             required: "Id perusahaan is required",
             ref: "Perusahaan"
