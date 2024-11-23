@@ -21,11 +21,12 @@ export async function AddPelakuUsaha(req, res) {
             });
         }
 
-        await newPelakuUsaha.save();
+        const savedPelakuUsaha = await newPelakuUsaha.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedPelakuUsaha._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama, singkatan, kategori_pelaku_usaha}],
+            data: hasil,
             message: "PelakuUsaha berhasil ditambahkan.",
         });
     } catch (error) {

@@ -19,11 +19,11 @@ export async function AddAgama(req, res) {
         }
 
         const savedAgama = await newAgama.save();
-        // const { _id, ...hasil } = savedAgama._doc;
+        const {createdAt, updatedAt, __v, ...hasil} = savedAgama._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: {_id: savedAgama._id, keterangan},
+            data: hasil,
             message: "Agama berhasil ditambahkan.",
         });
     } catch (error) {

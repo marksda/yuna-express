@@ -18,11 +18,12 @@ export async function AddJenisTempatUsaha(req, res) {
             });
         }
 
-        newJenisTempatUsaha = await newJenisTempatUsaha.save();
+        const savedJenisTempatUsaha = await newJenisTempatUsaha.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedJenisTempatUsaha._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: newJenisTempatUsaha,
+            data: hasil,
             message: "Jenis tempat usaha berhasil ditambahkan.",
         });
     } catch (error) {

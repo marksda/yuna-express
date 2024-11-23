@@ -19,10 +19,11 @@ export async function AddJenisKelamin(req, res) {
         }
 
         const savedJenisKelamin = await newJenisKelamin.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedJenisKelamin._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: {_id: savedJenisKelamin._id, keterangan},
+            data: hasil,
             message: "JenisKelamin berhasil ditambahkan.",
         });
     } catch (error) {

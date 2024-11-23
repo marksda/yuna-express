@@ -18,11 +18,12 @@ export async function AddTandaPengenal(req, res) {
             });
         }
 
-        await newTandaPengenal.save();
+        const savedTandaPengenal = await newTandaPengenal.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedTandaPengenal._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{keterangan}],
+            data: hasil,
             message: "TandaPengenal berhasil ditambahkan.",
         });
     } catch (error) {

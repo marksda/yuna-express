@@ -59,7 +59,7 @@ const TempatUsahaSchema = new mongoose.Schema(
             },
             person: {
                 type: mongoose.ObjectId,
-                ref: "Person"
+                ref: "Orang"
             }
         },
         id_perusahan: {
@@ -69,8 +69,8 @@ const TempatUsahaSchema = new mongoose.Schema(
         }
     },
     { 
-        autoCreate: true,
-        autoIndex: true,
+        autoCreate: false,
+        autoIndex: false,
         timestamps: true
     }
 );

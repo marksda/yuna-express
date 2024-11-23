@@ -9,21 +9,22 @@ export async function AddModelPerizinan(req, res) {
             singkatan
         });
 
-        // const existingModelPerizinan = await ModelPerizinan.findOne({nama});
+        const existingModelPerizinan = await ModelPerizinan.findOne({nama});
         
-        // if(existingModelPerizinan) {
-        //     return res.status(400).json({
-        //         status: "gagal",
-        //         data: [],
-        //         message: "Duplikasi: ModelPerizinan sudah ada."
-        //     });
-        // }
+        if(existingModelPerizinan) {
+            return res.status(400).json({
+                status: "gagal",
+                data: [],
+                message: "Duplikasi: ModelPerizinan sudah ada."
+            });
+        }
 
-        await newModelPerizinan.save();
+        const savedModelPerizinan = await newModelPerizinan.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedModelPerizinan._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{nama, singkatan}],
+            data: hasil,
             message: "ModelPerizinan berhasil ditambahkan.",
         });
     } catch (error) {

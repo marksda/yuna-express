@@ -20,11 +20,12 @@ export async function AddPropinsi(req, res) {
             });
         }
 
-        await newPropinsi.save();
+        const savedPropinsi = await newPropinsi.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedPropinsi._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama}],
+            data: hasil,
             message: "Propinsi berhasil ditambahkan.",
         });
     } catch (error) {

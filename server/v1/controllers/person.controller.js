@@ -8,9 +8,15 @@ export async function AddPerson(req, res) {
 
     try { 
         //create tanda pengenal
-        let newTandaPengenal = new TandaPengenal({...tanda_pengenal});
+        const newTandaPengenal = new TandaPengenal({
+            jenis_tanda_pengenal: tanda_pengenal.jenis_tanda_pengenal,
+            number: tanda_pengenal.number
+        });
 
-        const existingTandaPengenal = await TandaPengenal.findOne({...tanda_pengenal});
+        const existingTandaPengenal = await TandaPengenal.findOne({
+            jenis_tanda_pengenal: tanda_pengenal.jenis_tanda_pengenal,
+            number: tanda_pengenal.number
+        });       
         
         if(existingTandaPengenal) {
             return res.status(400).json({
@@ -20,17 +26,9 @@ export async function AddPerson(req, res) {
             });
         }
 
-        newTandaPengenal = await newTandaPengenal.save();
-       
-        let newPerson = new Orang({
-            tanda_pengenal: newTandaPengenal._id, 
-            nama, tanggal_lahir,
-            jenis_kelamin, agama, alamat, kontak
-        });
-
         const existingPerson = await Orang.findOne({nama});
-        
-        if(existingPerson) {
+
+        if(existingTandaPengenal && existingPerson) {
             return res.status(400).json({
                 status: "gagal",
                 data: [],
@@ -38,11 +36,20 @@ export async function AddPerson(req, res) {
             });
         }
 
-        newPerson = await newPerson.save();
+        const savedTandaPengenal = await newTandaPengenal.save();
+       
+        const newPerson = new Orang({
+            tanda_pengenal: savedTandaPengenal._id, 
+            nama, tanggal_lahir,
+            jenis_kelamin, agama, alamat, kontak
+        });
+
+        const savedPerson = await newPerson.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedPerson._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: newPerson,
+            data: hasil,
             message: "Person berhasil ditambahkan.",
         });
     } catch (error) {

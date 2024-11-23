@@ -8,21 +8,22 @@ export async function AddTempatUsaha(req, res) {
             keterangan, jenis_tempat_usaha, alamat, kontak, id_perusahan
         });
 
-        // const existingTempatUsaha = await TempatUsaha.findOne({keterangan});
+        const existingTempatUsaha = await TempatUsaha.findOne({keterangan, id_perusahan});
         
-        // if(existingTempatUsaha) {
-        //     return res.status(400).json({
-        //         status: "gagal",
-        //         data: [],
-        //         message: "Duplikasi: TempatUsaha sudah ada."
-        //     });
-        // }
+        if(existingTempatUsaha) {
+            return res.status(400).json({
+                status: "gagal",
+                data: [],
+                message: "Duplikasi: TempatUsaha sudah ada."
+            });
+        }
 
-        await newTempatUsaha.save();
+        const savedTempatUsaha = await newTempatUsaha.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedTempatUsaha._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{keterangan}],
+            data: hasil,
             message: "Tempat usaha berhasil ditambahkan.",
         });
     } catch (error) {
@@ -40,7 +41,31 @@ export async function GetTempatUsaha(req, res) {
 
     const items = await TempatUsaha
                     .find(filter)
-                    .select('keterangan')
+                    .populate({
+                        path: 'jenis_tempat_usaha',
+                        select: 'keterangan'
+                    })
+                    .populate({
+                        path: 'alamat.propinsi',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'alamat.kabupaten',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'alamat.kecamatan',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'alamat.desa',
+                        select: 'nama'
+                    })
+                    .populate({
+                        path: 'kontak.person',
+                        select: 'nama kontak'
+                    })
+                    .select('keterangan jenis_tempat_usaha alamat kontak')
                     .exec();
     
     if(!items) {

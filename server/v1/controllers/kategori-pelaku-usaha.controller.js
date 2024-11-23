@@ -20,11 +20,12 @@ export async function AddKategoriPelakuUsaha(req, res) {
             });
         }
 
-        await newKategoriPelakuUsaha.save();
+        const savedKategoriPelakuUsaha = await newKategoriPelakuUsaha.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedKategoriPelakuUsaha._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama, skala_usaha}],
+            data: hasil,
             message: "KategoriPelakuUsaha berhasil ditambahkan.",
         });
     } catch (error) {

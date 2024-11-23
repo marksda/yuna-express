@@ -18,11 +18,11 @@ export async function AddItem(req, res) {
             });
         }
         const savedItem = await newItem.save();
-        // const savedItem = await newItem.save();  // save new user into database
-        // const { kode, title } = savedItem._doc;
+        const {createdAt, updatedAt, __v, ...hasil}  = savedItem._doc;
+        
         res.status(200).json({
             status: "sukses",
-            data: {_id: savedItem._id, kode, title},
+            data: hasil,
             message: "Item berhasil ditambahkan.",
         });
     } catch (error) {

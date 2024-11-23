@@ -18,11 +18,12 @@ export async function AddJenisTandaPengenal(req, res) {
             });
         }
 
-        newJenisTandaPengenal = await newJenisTandaPengenal.save();
+        const savedJenisTandaPengenal = await newJenisTandaPengenal.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedJenisTandaPengenal._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: newJenisTandaPengenal,
+            data: hasil,
             message: "JenisTandaPengenal berhasil ditambahkan.",
         });
     } catch (error) {

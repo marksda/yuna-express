@@ -21,11 +21,12 @@ export async function AddKecamatan(req, res) {
             });
         }
 
-        await newKecamatan.save();
+        const savedKecamatan = await newKecamatan.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedKecamatan._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama, propinsi, kabupaten}],
+            data: hasil,
             message: "Kecamatan berhasil ditambahkan.",
         });
     } catch (error) {

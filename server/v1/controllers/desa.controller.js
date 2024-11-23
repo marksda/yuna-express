@@ -23,11 +23,11 @@ export async function AddDesa(req, res) {
         }
 
         const savedDesa = await newDesa.save();
-        // const {_id, createdAt, updatedAt, __v, ...hasil} = savedDesa._doc;
+        const {createdAt, updatedAt, __v, ...hasil} = savedDesa._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: {_id: savedDesa._id, kode, nama, propinsi, kabupaten, kecamatan},
+            data: hasil,
             message: "Desa berhasil ditambahkan.",
         });
     } catch (error) {

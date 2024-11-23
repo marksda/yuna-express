@@ -18,6 +18,7 @@ import { AddJenisTandaPengenal, GetJenisTandaPengenal } from "../controllers/jen
 import { AddPerson, GetPerson } from "../controllers/person.controller.js";
 import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda-pengenal.controller.js";
 import { AddJenisTempatUsaha, GetJenisTempatUsaha } from "../controllers/jenis-tempat-usaha.controller.js";
+import { AddTempatUsaha, GetTempatUsaha } from "../controllers/tempat-usaha.controller.js";
 
 const restRouter = new Router();
 
@@ -406,6 +407,32 @@ restRouter.post('/jenis_tempat_usaha',
         .escape(),
     Validate,
     AddJenisTempatUsaha
+);
+
+restRouter.get('/tempat_usaha', Verify, GetTempatUsaha);
+
+restRouter.post('/tempat_usaha',     
+    Verify,
+    check("keterangan")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    check("jenis_tempat_usaha")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    check("id_perusahan")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddTempatUsaha
 );
 
 export {restRouter};

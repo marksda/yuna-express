@@ -20,11 +20,12 @@ export async function AddSkalaUsaha(req, res) {
             });
         }
 
-        await newSkalaUsaha.save();
+        const savedSkalaUsaha = await newSkalaUsaha.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedSkalaUsaha._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{nama, singkatan}],
+            data: hasil,
             message: "SkalaUsaha berhasil ditambahkan.",
         });
     } catch (error) {

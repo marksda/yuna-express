@@ -20,11 +20,12 @@ export async function AddKabupaten(req, res) {
             });
         }
 
-        await newKabupaten.save();
+        const savedKabupaten = await newKabupaten.save();
+        const {createdAt, updatedAt, __v, ...hasil} = savedKabupaten._doc;
         
         res.status(200).json({
             status: "sukses",
-            data: [{kode, nama, propinsi}],
+            data: hasil,
             message: "Kabupaten berhasil ditambahkan.",
         });
     } catch (error) {
