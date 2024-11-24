@@ -8,7 +8,7 @@ const viewRouter = new Router();
 //     res.render('index.pug', { title: 'CSO', pengumuman: true });
 // });
 
-viewRouter.get('/', Verify, Index);
+viewRouter.get('/', Verify, Indexa);
 viewRouter.get('/masuk', Verify, Masuk);
 viewRouter.get('/keluar', Verify, Keluar);
 
