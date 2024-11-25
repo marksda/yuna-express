@@ -70,7 +70,7 @@ const TempatUsahaSchema = new mongoose.Schema(
     },
     { 
         autoCreate: false,
-        autoIndex: true,
+        autoIndex: false,
         timestamps: true
     }
 );
