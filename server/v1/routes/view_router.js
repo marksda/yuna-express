@@ -8,8 +8,8 @@ const viewRouter = new Router();
 //     res.render('index.pug', { title: 'CSO', pengumuman: true });
 // });
 
-viewRouter.get('/', Verify, Index);
-viewRouter.get('/masuk', Verify, Masuk);
+viewRouter.get('/', Index);
+viewRouter.get('/masuk', Masuk);
 viewRouter.get('/keluar', Verify, Keluar);
 
 export {viewRouter};
