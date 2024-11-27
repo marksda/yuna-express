@@ -4,26 +4,35 @@ import jwt from "jsonwebtoken";
 import { SECRET_ACCESS_TOKEN } from '../config/index.js';
 import { BlacklistServices } from "../services/utils-services.js";
 
-export async function Verify(req, res, next) {      
+export async function Verify(req, res, next) {     
+    let userAgent =  req.headers["User-Agent"];
     let accessToken = null;
     let checkIfBlacklisted = null;
-    let isBrowser = false;
-    let authHeader = req.headers["cookie"]; // get the session cookie from request header
-    isBrowser = authHeader ? true:false;  
+    let isBrowser = userAgent ? true:false;
+    // let authHeader = req.headers["cookie"]; // get the session cookie from request header
+    // isBrowser = authHeader ? true:false;  
 
-    if(isBrowser == false) {
-        authHeader = req.headers["authorization"];
-        if(authHeader == undefined) {
-            return res.status(401).json({
-                status: "failed",
-                message: "You are not authorized to view this page.",
-            });
-        }
-        isBrowser = authHeader ? false:true;
-    }
+    // if(isBrowser == false) {
+    //     authHeader = req.headers["authorization"];
+    //     if(authHeader == undefined) {
+    //         return res.status(401).json({
+    //             status: "failed",
+    //             message: "You are not authorized to view this page.",
+    //         });
+    //     }
+    //     isBrowser = authHeader ? false:true;
+    // }
 
     if(!isBrowser) {   //client non browser
         try {
+            authHeader = req.headers["authorization"];
+            if(authHeader == undefined) {
+                return res.status(401).json({
+                    status: "failed",
+                    message: "You are not authorized to view this page.",
+                });
+            }
+
             accessToken = authHeader.split(" ")[1];
             checkIfBlacklisted = await Blacklist.findOne({ token: accessToken }); // Check if that token is blacklisted
 
@@ -57,6 +66,9 @@ export async function Verify(req, res, next) {
     }
     else {
         try {
+            // const cookie = req.headers["cookie"].split(';');
+
+
             let cookie = authHeader.split("=")[1]; // If there is, split the cookie string to get the actual jwt
             accessToken = cookie.split(';')[0];
 
