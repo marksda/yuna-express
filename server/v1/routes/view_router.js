@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Index, Keluar, Masuk } from "../controllers/view.js";
+import { Beranda, Index, Keluar, Masuk } from "../controllers/view.js";
 import { Verify } from "../middleware/verify.js";
 
 const viewRouter = new Router();
@@ -9,7 +9,8 @@ const viewRouter = new Router();
 // });
 
 viewRouter.get('/', Verify, Index);
-viewRouter.get('/masuk', Masuk);
+viewRouter.get('/beranda', Verify, Beranda);
+viewRouter.get('/masuk', Verify, Masuk);
 viewRouter.get('/keluar', Verify, Keluar);
 
 export {viewRouter};
