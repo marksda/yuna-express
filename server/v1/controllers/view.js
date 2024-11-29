@@ -7,11 +7,11 @@ export async function Index(req, res) {
 
 export async function Beranda(req, res) {
     if(req.statusVerify) {
-        res.render('beranda.pug', { title: 'CSO', isAuthenticated: req.statusVerify, user: req.statusVerify ? req.user:null});
+        res.render('beranda.pug', { title: 'My Beranda', isAuthenticated: req.statusVerify, user: req.statusVerify ? req.user:null});
         res.end();
     }
     else {
-        res.redirect('/beranda');
+        res.redirect('/masuk');
     }
 }
 
