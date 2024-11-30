@@ -107,7 +107,7 @@ export const accountingApi = createApi({
                     url: `/item?filter=${JSON.stringify(queryParams)}`,
                     method: 'GET',
                 }),
-                transformResponse: (response: { data: IItem[] }, meta, arg) => {
+                transformResponse: (response: { data: IItem[] }, _meta, _arg) => {
                     return response.data;
                 },
                 providesTags: ['Item']

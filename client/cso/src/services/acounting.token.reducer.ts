@@ -42,7 +42,7 @@ export const tokenSlice = createSlice({
             state.token = action.payload.token;
             state.refresh_token = action.payload.refresh_token;
         },
-        resetToken: (state, action: PayloadAction<null>) => {
+        resetToken: (state, _action: PayloadAction<null>) => {
             state.id = null;
             state.nama = null;
             state.office = null;
