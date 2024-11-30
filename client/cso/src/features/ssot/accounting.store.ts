@@ -2,6 +2,7 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit"
 import { persistStore, persistReducer } from "redux-persist"
 import tokenReducer from "../../services/acounting.token.reducer";
 import storage from "redux-persist/lib/storage"
+import { accountingApi } from "../../services/accounting.api";
 
 const persistConfig = {
     key: "root",
@@ -17,11 +18,11 @@ const persistedReducer = persistReducer(persistConfig, rootReducer);
 export const store = configureStore({
     reducer: {
         persisted: persistedReducer,
-        // [aerithApi.reducerPath]: aerithApi.reducer, 
+        [accountingApi.reducerPath]: accountingApi.reducer, 
     },
     devTools: process.env.NODE_ENV !== 'production',
     middleware: (getDefaultMiddleware) => getDefaultMiddleware({serializableCheck: false,})
-                                        // .concat(aerithApi.middleware)
+                                        .concat(accountingApi.middleware)
 });
 
 export const persistor = persistStore(store)
