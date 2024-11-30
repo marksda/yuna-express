@@ -2,8 +2,6 @@ import { ICredential } from "@/features/entities/accounting/credential";
 import { IToken } from "@/features/entities/accounting/token";
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit/react";
 import { TokenAPI } from "./accounting.api";
-// import { TokenAPI } from "./inventaris-asset-api-rtkquery-service";
-// import { ICredential } from "../features/entities/inventaris-asset/credential";
 
 
 export const fetchToken = createAsyncThunk(
