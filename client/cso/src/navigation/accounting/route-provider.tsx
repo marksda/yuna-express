@@ -1,3 +1,4 @@
+import { HomeScene } from "@/scenes/accounting/home.scene";
 import { FC } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router"
 
@@ -8,8 +9,15 @@ interface IAccountingRouteProvider {
 const AccountingRouteProvider: FC<IAccountingRouteProvider> = ({mainPath}) => {
     const router = createBrowserRouter([
         {
-            path: `/${mainPath}`,
-            element: (<AkutansiApp />),
+            path: '/',
+            // path: `/${mainPath}`,
+            element: (<HomeScene />),
+            // children: [
+            //     {
+            //         path: "jurnal",
+            //         element: (<div style={{color: 'black'}}>Tes laporan</div>),
+            //     },
+            // ]
         },
     ])
 
