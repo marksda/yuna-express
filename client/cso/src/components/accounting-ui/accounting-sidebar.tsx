@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { Book, Home, Notebook, NotebookTabs, LayoutList } from "lucide-react"
+import { Book, Notebook, NotebookTabs, LayoutList } from "lucide-react"
 import { 
     Sidebar,
     SidebarContent,
