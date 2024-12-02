@@ -35,7 +35,7 @@ const items = [
     {
         id: "akun",
         nama: "Kode rekening",
-        link: "/beranda/accounting/akun",
+        link: "/beranda/accounting/rekening_akuntansi",
         icon: <LayoutList size={24}/>
     },
 ]
