@@ -10,6 +10,7 @@ import {
     SidebarMenuButton,
     SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { Link } from "react-router"
 
 // menu items
 const items = [
@@ -51,10 +52,10 @@ export const AccountingSidebar: FC = () => {
                                 (item) => (
                                     <SidebarMenuItem key={item.id}>
                                         <SidebarMenuButton asChild>
-                                            <a href={item.link}>
+                                            <Link to={item.link}>
                                                 {item.icon}
                                                 <span>{item.nama}</span>
-                                            </a>
+                                            </Link>
                                         </SidebarMenuButton>
                                     </SidebarMenuItem>                                    
                                 )
