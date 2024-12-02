@@ -1,23 +1,23 @@
 import { HomeScene } from "@/scenes/accounting/home.scene";
+import { JurnalScene } from "@/scenes/accounting/jurnal.scene";
 import { FC } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router"
 
-interface IAccountingRouteProvider {
-    mainPath: string;
-}
+// interface IAccountingRouteProvider {
+//     mainPath: string;
+// }
 
-const AccountingRouteProvider: FC<IAccountingRouteProvider> = ({mainPath}) => {
+const AccountingRouteProvider: FC = () => {
     const router = createBrowserRouter([
         {
-            path: '/',
-            // path: `/${mainPath}`,
+            path: '/beranda',
             element: (<HomeScene />),
-            // children: [
-            //     {
-            //         path: "jurnal",
-            //         element: (<div style={{color: 'black'}}>Tes laporan</div>),
-            //     },
-            // ]
+            children: [
+                {
+                    path: "/beranda/accounting/jurnal",
+                    element: (<JurnalScene />),
+                },
+            ]
         },
     ])
 

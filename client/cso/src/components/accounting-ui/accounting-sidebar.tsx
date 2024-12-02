@@ -16,7 +16,7 @@ const items = [
     {
         id: "jurnal",
         nama: "Jurnal",
-        link: "/home/pembukuan/jurnal",
+        link: "/beranda/accounting/jurnal",
         icon: <NotebookTabs size={24}/>
     },
     {
