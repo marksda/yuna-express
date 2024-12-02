@@ -23,19 +23,19 @@ const items = [
     {
         id: "buku_besar",
         nama: "Buku besar",
-        link: "/home/pembukuan/buku_besar",
+        link: "/beranda/accounting/buku_besar",
         icon: <Book size={24}/>
     },
     {
         id: "buku_pembantu",
         nama: "Buku pembantu",
-        link: "/home/pembukuan/buku_pembantu",
+        link: "/beranda/accounting/buku_pembantu",
         icon: <Notebook size={24}/>
     },
     {
         id: "akun",
         nama: "Kode rekening",
-        link: "/home/pembukuan/akun",
+        link: "/beranda/accounting/akun",
         icon: <LayoutList size={24}/>
     },
 ]
