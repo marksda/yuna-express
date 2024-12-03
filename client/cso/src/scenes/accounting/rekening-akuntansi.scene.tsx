@@ -10,6 +10,16 @@ export const RekeningAkuntansiScene: FC = () => {
             _id: '1213',
             nama: 'Nominal',
             keterangan: 'bla bla bla'
+        },
+        {
+            _id: '1212',
+            nama: 'Nominal 1',
+            keterangan: 'bla bla bla'
+        },
+        {
+            _id: '1216',
+            nama: 'Nominal 2',
+            keterangan: 'bla bla bla'
         }
     ]
     return (
