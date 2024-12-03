@@ -5,7 +5,7 @@ import { FC } from "react";
 
 export const RekeningAkuntansiMenuBar: FC = () => {
     return (
-        <Menubar className="rounded-none border-none">
+        <Menubar>
             <MenubarMenu>
                 <SidebarTrigger/>
                 <label className="pr-8 font-semibold">Kode rekening</label>

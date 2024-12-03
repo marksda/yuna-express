@@ -5,13 +5,17 @@ import { RekeningAkuntansiMenuBar } from "@/navigation/accounting/rekening-akuta
 import { FC } from "react";
 
 export const RekeningAkuntansiScene: FC = () => {
-    const data: IJenisRekeningAkuntansi[] = []
+    const data: IJenisRekeningAkuntansi[] = [
+        {
+            _id: '1213',
+            nama: 'Nominal',
+            keterangan: 'bla bla bla'
+        }
+    ]
     return (
         <>
             <RekeningAkuntansiMenuBar />
-            <div className="container mx-auto p-2">
-                <DataTable columns={JenisRekeningAkuntansiColumns} data={data} />
-            </div>
+            <DataTable columns={JenisRekeningAkuntansiColumns} data={data} />
         </>
     )
 }
