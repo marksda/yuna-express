@@ -19,6 +19,7 @@ import { AddPerson, GetPerson } from "../controllers/person.controller.js";
 import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda-pengenal.controller.js";
 import { AddJenisTempatUsaha, GetJenisTempatUsaha } from "../controllers/jenis-tempat-usaha.controller.js";
 import { AddTempatUsaha, GetTempatUsaha } from "../controllers/tempat-usaha.controller.js";
+import { AddJenisRekeningAkuntansi, GetJenisRekeningAkuntansi } from "../controllers/jenis-rekening-akuntansi.controller.js";
 
 const restRouter = new Router();
 
@@ -435,5 +436,24 @@ restRouter.post('/tempat_usaha',
     AddTempatUsaha
 );
 
+restRouter.get('/jenis_rekening_akuntansi', GetJenisRekeningAkuntansi);
+
+restRouter.post('/jenis_rekening_akuntansi',     
+    Verify,
+    check("nama")
+        .not()
+        .isEmpty()
+        .withMessage("nama harus diisi")
+        .trim()
+        .escape(),
+    check("keterangan")
+        .not()
+        .isEmpty()
+        .withMessage("keterangan harus diisi")
+        .trim()
+        .escape(),
+    Validate,
+    AddJenisRekeningAkuntansi
+);
 export {restRouter};
 // module.exports = restRouter ;

@@ -1,14 +1,14 @@
 import JenisRekeningAkuntansi from "../models/JenisRekeningAkuntansi.model.js";
 
 export async function AddJenisRekeningAkuntansi(req, res) {
-    const { keterangan } = req.body;
+    const { nama, keterangan } = req.body;
 
     try {
         const newJenisRekeningAkuntansi = new JenisRekeningAkuntansi({
-            keterangan
+            nama, keterangan
         });
 
-        const existingJenisRekeningAkuntansi = await JenisRekeningAkuntansi.findOne({keterangan});
+        const existingJenisRekeningAkuntansi = await JenisRekeningAkuntansi.findOne({nama});
         
         if(existingJenisRekeningAkuntansi) {
             return res.status(400).json({
@@ -41,7 +41,7 @@ export async function GetJenisRekeningAkuntansi(req, res) {
 
     const items = await JenisRekeningAkuntansi
                     .find(filter)
-                    .select('keterangan')
+                    .select('nama keterangan')
                     .exec();
     
     if(!items) {

@@ -4,13 +4,8 @@ import { RootState } from "@/features/ssot/accounting.store";
 import { BaseQueryFn, FetchArgs, FetchBaseQueryError, createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
 import { Mutex } from "async-mutex"
 import { resetToken, setToken } from "./acounting.token.reducer";
-import { IItem } from "@/features/entities/accounting/item";
 import { IQueryParamFilters } from "@/features/entities/query-param-filters";
-// import { ICredential } from "../features/entities/inventaris-asset/credential";
-// import { IToken } from "../features/entities/inventaris-asset/token";
-// import { resetToken, setToken } from "./inventaris-asset-redux-token-slice.service";
-// import { IItem } from "../features/entities/inventaris-asset/item";
-// import { IQueryParamFilters } from "../features/entities/query-param-filters";
+import { IJenisRekeningAkuntansi } from "@/features/entities/accounting/jenis-rekening-akuntansi";
 
 const urlApiSia: string = 'http://localhost/api/v1';
 
@@ -89,48 +84,33 @@ export const baseQueryWithReauth: BaseQueryFn<string|FetchArgs, unknown, FetchBa
 };
 
 export const accountingApi = createApi({
-    reducerPath: 'aerithApi',
+    reducerPath: 'accountingApi',
     baseQuery: baseQueryWithReauth,
-    tagTypes: ['Item','Kosong'],
+    tagTypes: ['JenisRekeningAkuntansi','Kosong'],
     endpoints: builder => {
         return {
-            saveItem: builder.mutation<IItem, Partial<IItem>>({
+            saveJenisRekeningAkuntansi: builder.mutation<IJenisRekeningAkuntansi, Partial<IJenisRekeningAkuntansi>>({
                 query: (body) => ({
-                    url: '/item',
+                    url: '/jenis_rekening_akuntansi',
                     method: 'POST',
                     body,
                 }),
-                invalidatesTags: (result) => result ? ['Item']:['Kosong']
+                invalidatesTags: (result) => result ? ['JenisRekeningAkuntansi']:['Kosong']
             }),
-            getDaftarItem: builder.query<IItem[], IQueryParamFilters>({
+            getDaftarJenisRekeningAkuntansi: builder.query<IJenisRekeningAkuntansi[], IQueryParamFilters>({
                 query: (queryParams) => ({
-                    url: `/item?filter=${JSON.stringify(queryParams)}`,
+                    url: `/jenis_rekening_akuntansi?filter=${JSON.stringify(queryParams)}`,
                     method: 'GET',
                 }),
-                transformResponse: (response: { data: IItem[] }, _meta, _arg) => {
+                transformResponse: (response: { data: IJenisRekeningAkuntansi[] }, _meta, _arg) => {
                     return response.data;
                 },
-                providesTags: ['Item']
-            }),
-            updateItem: builder.mutation<IItem, {idLama: string; itemBaru: Partial<IItem>;}>({
-                query: ({idLama, itemBaru}) => ({
-                    url: `/item/${idLama}`,
-                    method: 'PUT',
-                    body: itemBaru,
-                }),
-                invalidatesTags: (result) => result? ['Item']:['Kosong']
-            }),
-            deleteItem: builder.mutation<Partial<IItem>, {idItem: string}>({
-                query: ({idItem}) => ({                  
-                    url: `/item/${idItem}`,
-                    method: 'DELETE',            
-                }),
-                invalidatesTags: (result) => result? ['Item']:['Kosong']
+                providesTags: ['JenisRekeningAkuntansi']
             }),
         }
     }
 });
 
 export const {
-    useSaveItemMutation, useGetDaftarItemQuery, useUpdateItemMutation, useDeleteItemMutation
+    useSaveJenisRekeningAkuntansiMutation, useGetDaftarJenisRekeningAkuntansiQuery
 } = accountingApi;
