@@ -20,6 +20,7 @@ import { AddTandaPengenal, GetTandaPengenal } from "../controllers/tanda-pengena
 import { AddJenisTempatUsaha, GetJenisTempatUsaha } from "../controllers/jenis-tempat-usaha.controller.js";
 import { AddTempatUsaha, GetTempatUsaha } from "../controllers/tempat-usaha.controller.js";
 import { AddJenisRekeningAkuntansi, GetJenisRekeningAkuntansi } from "../controllers/jenis-rekening-akuntansi.controller.js";
+import { AddRekeningAkuntansi, GetRekeningAkuntansi } from "../controllers/rekening-akuntansi.controller.js";
 
 const restRouter = new Router();
 
@@ -436,7 +437,7 @@ restRouter.post('/tempat_usaha',
     AddTempatUsaha
 );
 
-restRouter.get('/jenis_rekening_akuntansi', GetJenisRekeningAkuntansi);
+restRouter.get('/jenis_rekening_akuntansi', Verify, GetJenisRekeningAkuntansi);
 
 restRouter.post('/jenis_rekening_akuntansi',     
     Verify,
@@ -454,6 +455,40 @@ restRouter.post('/jenis_rekening_akuntansi',
         .escape(),
     Validate,
     AddJenisRekeningAkuntansi
+);
+
+restRouter.get('/rekening_akuntansi', Verify, GetRekeningAkuntansi);
+
+restRouter.post('/rekening_akuntansi',     
+    Verify,
+    check("kode")
+        .notEmpty()
+        .withMessage("kode harus diisi")
+        .trim()
+        .escape(),
+    check("nama")
+        .notEmpty()
+        .withMessage("nama harus diisi")
+        .trim()
+        .escape(),
+    check("header")
+        .notEmpty()
+        .withMessage("header harus diisi")
+        .isBoolean()
+        .withMessage("header berjenis boolean"),
+    check("level")
+        .notEmpty()
+        .withMessage("Level harus diisi")
+        .isNumeric()
+        .withMessage("Level berjenis bilangan"),
+    check("jenis_rekening_akuntansi")
+        .notEmpty()
+        .withMessage("Level harus diisi"),
+    check("perusahaan")
+        .notEmpty()
+        .withMessage("Level harus diisi"),
+    Validate,
+    AddRekeningAkuntansi
 );
 export {restRouter};
 // module.exports = restRouter ;
