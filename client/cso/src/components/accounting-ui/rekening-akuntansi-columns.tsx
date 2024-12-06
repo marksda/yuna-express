@@ -6,12 +6,12 @@ import { IRekeningAkuntansi } from "@/features/entities/accounting/rekening-akun
 
 export const RekeningAkuntansiColumns: ColumnDef<IRekeningAkuntansi>[] = [
     {
-        accessorKey: "nama",
-        header: "Nama",
+        accessorKey: "kode",
+        header: "Kode",
     },
     {
-        accessorKey: "keterangan",
-        header: "Keterangan",
+        accessorKey: "nama",
+        header: "Nama",
     },
     {
         id: "actions",

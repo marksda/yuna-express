@@ -457,7 +457,7 @@ restRouter.post('/jenis_rekening_akuntansi',
     AddJenisRekeningAkuntansi
 );
 
-restRouter.get('/rekening_akuntansi', Verify, GetRekeningAkuntansi);
+restRouter.get('/rekening_akuntansi', GetRekeningAkuntansi);
 
 restRouter.post('/rekening_akuntansi',     
     Verify,
