@@ -6,6 +6,7 @@ import { Mutex } from "async-mutex"
 import { resetToken, setToken } from "./acounting.token.reducer";
 import { IQueryParamFilters } from "@/features/entities/query-param-filters";
 import { IJenisRekeningAkuntansi } from "@/features/entities/accounting/jenis-rekening-akuntansi";
+import { IRekeningAkuntansi } from "@/features/entities/accounting/rekening-akuntansi";
 
 const urlApiSia: string = 'http://localhost/api/v1';
 
@@ -86,7 +87,7 @@ export const baseQueryWithReauth: BaseQueryFn<string|FetchArgs, unknown, FetchBa
 export const accountingApi = createApi({
     reducerPath: 'accountingApi',
     baseQuery: baseQueryWithReauth,
-    tagTypes: ['JenisRekeningAkuntansi','Kosong'],
+    tagTypes: ['JenisRekeningAkuntansi', 'RekeningAkuntansi','Kosong'],
     endpoints: builder => {
         return {
             saveJenisRekeningAkuntansi: builder.mutation<IJenisRekeningAkuntansi, Partial<IJenisRekeningAkuntansi>>({
@@ -107,10 +108,29 @@ export const accountingApi = createApi({
                 },
                 providesTags: ['JenisRekeningAkuntansi']
             }),
+            saveRekeningAkuntansi: builder.mutation<IRekeningAkuntansi, Partial<IRekeningAkuntansi>>({
+                query: (body) => ({
+                    url: '/rekening_akuntansi',
+                    method: 'POST',
+                    body,
+                }),
+                invalidatesTags: (result) => result ? ['RekeningAkuntansi']:['Kosong']
+            }),
+            getDaftarRekeningAkuntansi: builder.query<IRekeningAkuntansi[], IQueryParamFilters>({
+                query: (queryParams) => ({
+                    url: `/rekening_akuntansi?filter=${JSON.stringify(queryParams)}`,
+                    method: 'GET',
+                }),
+                transformResponse: (response: { data: IRekeningAkuntansi[] }, _meta, _arg) => {
+                    return response.data;
+                },
+                providesTags: ['RekeningAkuntansi']
+            }),
         }
     }
 });
 
 export const {
-    useSaveJenisRekeningAkuntansiMutation, useGetDaftarJenisRekeningAkuntansiQuery
+    useSaveJenisRekeningAkuntansiMutation, useGetDaftarJenisRekeningAkuntansiQuery,
+    useSaveRekeningAkuntansiMutation, useGetDaftarRekeningAkuntansiQuery,
 } = accountingApi;

@@ -1,7 +1,7 @@
 import { DataTable } from "@/components/accounting-ui/data-table";
-import { JenisRekeningAkuntansiColumns } from "@/components/accounting-ui/jenis-rekening-akuntansi-columns";
+import { RekeningAkuntansiColumns } from "@/components/accounting-ui/rekening-akuntansi-columns";
 import { RekeningAkuntansiMenuBar } from "@/navigation/accounting/rekening-akutansi.menu";
-import { useGetDaftarJenisRekeningAkuntansiQuery } from "@/services/accounting.api";
+import { useGetDaftarRekeningAkuntansiQuery } from "@/services/accounting.api";
 import { FC } from "react";
 
 export const RekeningAkuntansiScene: FC = () => {
@@ -22,7 +22,7 @@ export const RekeningAkuntansiScene: FC = () => {
     //         keterangan: 'bla bla bla'
     //     }
     // ]
-    const {data} = useGetDaftarJenisRekeningAkuntansiQuery({
+    const {data} = useGetDaftarRekeningAkuntansiQuery({
         pageNumber: 1,
         pageSize: 25,
         filters: [],
@@ -37,7 +37,7 @@ export const RekeningAkuntansiScene: FC = () => {
     return (
         <>
             <RekeningAkuntansiMenuBar />
-            <DataTable columns={JenisRekeningAkuntansiColumns} data={data == undefined? []:data} />
+            <DataTable columns={RekeningAkuntansiColumns} data={data == undefined? []:data} />
         </>
     )
 }

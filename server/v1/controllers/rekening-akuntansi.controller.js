@@ -1,10 +1,13 @@
+import Perusahaan from "../models/Perusahaan.model.js";
 import RekeningAkuntansi from "../models/RekeningAkuntansi.model.js";
 
 export async function AddRekeningAkuntansi(req, res) {
-    const { kode, nama, header, level, jenis_rekening_akuntansi, perusahaan, id_parent } = req.body;
+    const { kode, nama, header, level, jenis_rekening_akuntansi, perusahaan, parent_rekening_akuntansi } = req.body;
 
     try { 
-        const existingRekeningAkuntansi = await RekeningAkuntansi.findOne({kode});
+        const existingPerusahaan = await Perusahaan.findOne({npwp: perusahaan.npwp});
+        
+        const existingRekeningAkuntansi = await RekeningAkuntansi.findOne({kode, id_perusahaan: existingPerusahaan._id});
         
         if(existingRekeningAkuntansi) {
             return res.status(400).json({
