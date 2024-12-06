@@ -22,7 +22,7 @@ const RekeningAkuntansiSchema = new mongoose.Schema(
             type: String, 
             required: "Id jenis rekening akuntansi is required"
         },
-        id_perusahan: {
+        id_perusahaan: {
             type: String,
             required: "Id perusahaan is required"
         },

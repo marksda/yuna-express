@@ -1,10 +1,9 @@
 import RekeningAkuntansi from "../models/RekeningAkuntansi.model.js";
 
 export async function AddRekeningAkuntansi(req, res) {
-    const { kode, nama, header, level, jenis_rekening_akuntansi, perusahaan, urutan, id_parent } = req.body;
+    const { kode, nama, header, level, jenis_rekening_akuntansi, perusahaan, id_parent } = req.body;
 
-    try {   
-
+    try { 
         const existingRekeningAkuntansi = await RekeningAkuntansi.findOne({kode});
         
         if(existingRekeningAkuntansi) {
@@ -16,11 +15,20 @@ export async function AddRekeningAkuntansi(req, res) {
         }
 
         //generate urutan
-        // const urutan = generateUrutan(id_parent)
+        const urutan = await generateUrutan(id_parent, level);
+
+        if(urutan == null) {
+            return res.status(400).json({
+                status: "gagal",
+                data: [],
+                message: "Urutan: Gagal mengenerate urutan rekening akuntansi."
+            });
+        }
 
         const newRekeningAkuntansi = new RekeningAkuntansi({
-            kode, nama, header, level, id_jns_rek_akun: jenis_rekening_akuntansi._id,
-            id_perusahaan: perusahaan._id, urutan
+            kode, nama, header, level, 
+            id_jns_rek_akun: jenis_rekening_akuntansi._id,
+            id_perusahaan: perusahaan._id, urutan, id_parent
         });
 
         const savedRekeningAkuntansi = await newRekeningAkuntansi.save();
@@ -62,4 +70,52 @@ export async function GetRekeningAkuntansi(req, res) {
         data: items,
         message: "Data berhasil ditemukan.",
     });
+}
+
+export async function generateUrutan(id_parent, level) {
+    let urutan = null;
+    let rknAkutansiLastSibling = null;
+    let spltUrutan = null;
+
+    if(id_parent == null) {
+        rknAkutansiLastSibling = await RekeningAkuntansi
+                                .findOne({level})
+                                .sort({urutan: -1})
+                                .select('urutan')
+                                .exec();
+        if(rknAkutansiLastSibling) {
+            spltUrutan = rknAkutansiLastSibling.urutan.split("-");
+            urutan = Number.parseInt(spltUrutan[spltUrutan.length - 1]) + 1;
+            spltUrutan[spltUrutan.length - 1] = urutan.toString();
+            urutan = spltUrutan.join("-");
+        }
+        else {
+            urutan = "1";
+        }
+    }
+    else {
+        const parentRknAkuntansi = await RekeningAkuntansi.findById(id_parent);
+        if(parentRknAkuntansi) {
+            rknAkutansiLastSibling = await RekeningAkuntansi
+                                            .findOne({id_parent, level})
+                                            .sort({urutan: -1})
+                                            .select('urutan')
+                                            .exec();
+
+            if(rknAkutansiLastSibling) {
+                spltUrutan = rknAkutansiLastSibling.urutan.split("-");
+                urutan = Number.parseInt(spltUrutan[spltUrutan.length - 1]) + 1;
+                spltUrutan[spltUrutan.length - 1] = urutan.toString();
+                urutan = spltUrutan.join("-"); 
+            }
+            else {
+                urutan = parentRknAkuntansi.urutan + "-1";
+            }
+        }
+        else {
+            urutan = null;
+        }
+    }
+
+    return urutan;
 }
