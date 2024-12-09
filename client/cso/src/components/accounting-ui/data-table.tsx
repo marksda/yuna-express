@@ -11,7 +11,7 @@ interface IDataTableProps<TData, TValue> {
 export function DataTable<TData, TValue>({columns, data}: IDataTableProps<TData, TValue>) {
     const [pagination, setPagination] = useState<PaginationState>({
         pageIndex: 0,
-        pageSize: 2,
+        pageSize: 25,
     })
 
     const table = useReactTable({

@@ -57,6 +57,7 @@ export async function GetRekeningAkuntansi(req, res) {
 
     const items = await RekeningAkuntansi
                     .find(filter)
+                    .sort({urutan: 1})
                     .select('kode nama header level id_jns_rek_akun id_perusahaan urutan id_parent')
                     .exec();
     
