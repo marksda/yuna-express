@@ -1,17 +1,21 @@
-import { ColumnDef, flexRender, getCoreRowModel, getPaginationRowModel, PaginationState, useReactTable } from "@tanstack/react-table"
+import { ColumnDef, flexRender, getCoreRowModel, PaginationState, useReactTable } from "@tanstack/react-table"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 interface IDataTableProps<TData, TValue> {
     columns: ColumnDef<TData, TValue>[]
-    data: TData[]
+    data: TData[],
+    pageNumber: number
+    pageSize: number
+    setPageNumber: (pageNumber: number) => void
+    setPageSize: (pageSize: number) => void
 }
 
-export function DataTable<TData, TValue>({columns, data}: IDataTableProps<TData, TValue>) {
+export function DataTable<TData, TValue>({columns, data, pageNumber, pageSize, setPageNumber}: IDataTableProps<TData, TValue>) {
     const [pagination, setPagination] = useState<PaginationState>({
-        pageIndex: 0,
-        pageSize: 2,
+        pageIndex: pageNumber,
+        pageSize: pageSize,
     })
 
     const table = useReactTable({
@@ -19,7 +23,6 @@ export function DataTable<TData, TValue>({columns, data}: IDataTableProps<TData,
         columns,
         rowCount: 100,
         getCoreRowModel: getCoreRowModel(),
-        // getPaginationRowModel: getPaginationRowModel(),
         manualPagination: true,
         onPaginationChange: setPagination,
         state: {
@@ -79,7 +82,10 @@ export function DataTable<TData, TValue>({columns, data}: IDataTableProps<TData,
                 <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => table.previousPage()}
+                    onClick={() => {
+                        table.previousPage()
+                        setPageNumber(table.getState().pagination.pageIndex - 1)
+                    }}
                     disabled={!table.getCanPreviousPage()}
                 >
                     Previous
@@ -87,7 +93,10 @@ export function DataTable<TData, TValue>({columns, data}: IDataTableProps<TData,
                 <Button
                     variant="outline"
                     size="sm"
-                    onClick={() => table.nextPage()}
+                    onClick={() => {
+                        table.nextPage()
+                        setPageNumber(table.getState().pagination.pageIndex + 1)
+                    }}
                     disabled={!table.getCanNextPage()}
                 >
                     Next

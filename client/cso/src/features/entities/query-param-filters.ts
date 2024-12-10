@@ -2,8 +2,8 @@ import { IFilter } from "./filter";
 import { ISortOrder } from "./sort-order";
 
 export interface IQueryParamFilters {
-    pageNumber: number|null;
-    pageSize: number|null;
+    pageNumber: number;
+    pageSize: number;
     filters: IFilter[]|null;
     sortOrders: ISortOrder[]|null;
 };
