@@ -53,11 +53,24 @@ export async function AddRekeningAkuntansi(req, res) {
 }
 
 export async function GetRekeningAkuntansi(req, res) {
-    let filter = {};
+    const qParam = JSON.parse(req.query.filter);
+    let filtering = {};
+    let sorting = {};
+
+    for(let i of qParam.filters) {
+        filtering[i.fieldName] = i.value
+    }
+
+    for(let i of qParam.sortOrders) {
+        sorting[i.fieldName] = i.value == 'ASC' ? 1:-1
+    }
+
 
     const items = await RekeningAkuntansi
-                    .find(filter)
-                    .sort({urutan: 1})
+                    .find(filtering)
+                    .skip(qParam.pageNumber * qParam.pageSize)
+                    .limit(qParam.pageSize)
+                    .sort(sorting)
                     .select('kode nama header level id_jns_rek_akun id_perusahaan urutan id_parent')
                     .exec();
     

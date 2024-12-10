@@ -1,8 +1,9 @@
 import { DataTable } from "@/components/accounting-ui/data-table";
 import { RekeningAkuntansiColumns } from "@/components/accounting-ui/rekening-akuntansi-columns";
+import { IQueryParamFilters } from "@/features/entities/query-param-filters";
 import { RekeningAkuntansiMenuBar } from "@/navigation/accounting/rekening-akutansi.menu";
 import { useGetDaftarRekeningAkuntansiQuery } from "@/services/accounting.api";
-import { FC } from "react";
+import { FC, useState } from "react";
 
 export const RekeningAkuntansiScene: FC = () => {
     // const data: IJenisRekeningAkuntansi[] = [
@@ -22,17 +23,20 @@ export const RekeningAkuntansiScene: FC = () => {
     //         keterangan: 'bla bla bla'
     //     }
     // ]
-    const {data} = useGetDaftarRekeningAkuntansiQuery({
-        pageNumber: 1,
-        pageSize: 25,
-        filters: [],
-        sortOrders: [
-          {
-            fieldName: 'id',
-            value: 'ASC'
-          },
-        ],
+
+    const [filter, setFilter] = useState<IQueryParamFilters>({
+      pageNumber: 0,
+      pageSize: 2,
+      filters: [],
+      sortOrders: [
+        {
+          fieldName: 'urutan',
+          value: 'ASC'
+        },
+      ],
     })
+
+    const {data} = useGetDaftarRekeningAkuntansiQuery(filter)
 
     return (
         <>

@@ -17,8 +17,10 @@ export function DataTable<TData, TValue>({columns, data}: IDataTableProps<TData,
     const table = useReactTable({
         data,
         columns,
+        rowCount: 100,
         getCoreRowModel: getCoreRowModel(),
-        getPaginationRowModel: getPaginationRowModel(),
+        // getPaginationRowModel: getPaginationRowModel(),
+        manualPagination: true,
         onPaginationChange: setPagination,
         state: {
             pagination,
