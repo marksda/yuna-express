@@ -1,7 +1,6 @@
 import { DataTable } from "@/components/accounting-ui/data-table"
 import { RekeningAkuntansiColumns } from "@/components/accounting-ui/rekening-akuntansi-columns"
 import { IQueryParamFilters } from "@/features/entities/query-param-filters";
-import { RekeningAkuntansiMenuBar } from "@/navigation/accounting/rekening-akutansi.menu"
 import { useGetDaftarRekeningAkuntansiQuery } from "@/services/accounting.api"
 import { FC, useState } from "react"
 import _ from "lodash"
