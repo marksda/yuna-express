@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 
 interface IDataTableProps<TData, TValue> {
+    title ?: string
     columns: ColumnDef<TData, TValue>[]
     data: TData[],
     pageNumber: number
@@ -34,7 +35,6 @@ export function DataTable<TData, TValue>({columns, data, isPagination, pageNumbe
     return (
         <div>
             <div className="rounded-md border m-2">
-                Title
                 <Table>
                     <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (
