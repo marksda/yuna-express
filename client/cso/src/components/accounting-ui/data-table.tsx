@@ -10,9 +10,10 @@ interface IDataTableProps<TData, TValue> {
     pageSize: number
     setPageNumber: (pageNumber: number) => void
     setPageSize: (pageSize: number) => void
+    isPagination: boolean
 }
 
-export function DataTable<TData, TValue>({columns, data, pageNumber, pageSize, setPageNumber}: IDataTableProps<TData, TValue>) {
+export function DataTable<TData, TValue>({columns, data, isPagination, pageNumber, pageSize, setPageNumber}: IDataTableProps<TData, TValue>) {
     const [pagination, setPagination] = useState<PaginationState>({
         pageIndex: pageNumber,
         pageSize: pageSize,
@@ -33,6 +34,7 @@ export function DataTable<TData, TValue>({columns, data, pageNumber, pageSize, s
     return (
         <div>
             <div className="rounded-md border m-2">
+                Title
                 <Table>
                     <TableHeader>
                     {table.getHeaderGroups().map((headerGroup) => (
@@ -78,6 +80,7 @@ export function DataTable<TData, TValue>({columns, data, pageNumber, pageSize, s
                     </TableBody>
                 </Table>
             </div>
+            {isPagination ?
             <div className="flex items-center justify-end space-x-2 py-2 m-2">
                 <Button
                     variant="outline"
@@ -102,6 +105,7 @@ export function DataTable<TData, TValue>({columns, data, pageNumber, pageSize, s
                     Next
                 </Button>
             </div>
+            :null}
         </div>
     )
 }

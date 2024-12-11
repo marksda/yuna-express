@@ -43,6 +43,7 @@ export const RekeningAkuntansiScene: FC = () => {
         pageSize={filter.pageSize}
         setPageNumber={setPageNumber} 
         setPageSize={setPageSize}
+        isPagination={true}
       />
     </>
   )
