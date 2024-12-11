@@ -38,14 +38,14 @@ export const RekeningAkuntansiScene: FC = () => {
 
   return (
     <>      
-      <div className="flex px-2 pt-2 justify-between">
+      <div className="flex px-2 justify-between border-b">
         <div className="flex items-center">
           <SidebarTrigger />
-          <h3 className="font-semibold">Kode rekening</h3>
+          <h3 className="font-semibold">Rekening akuntansi</h3>
         </div>        
         <Dialog modal={false}>
           <DialogTrigger asChild>
-            <Button size="sm">
+            <Button size="sm" className="my-1">
               <Plus />New
             </Button>  
           </DialogTrigger>

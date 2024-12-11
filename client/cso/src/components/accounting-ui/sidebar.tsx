@@ -34,7 +34,7 @@ const items = [
     },
     {
         id: "akun",
-        nama: "Kode rekening",
+        nama: "Rekening akuntansi",
         link: "/beranda/accounting/rekening_akuntansi",
         icon: <LayoutList size={24}/>
     },
