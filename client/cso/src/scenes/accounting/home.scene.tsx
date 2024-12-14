@@ -1,4 +1,4 @@
-import { AccountingSidebar } from "@/components/accounting-ui/sidebar"
+import { AccountingSidebar } from "@/components/accounting-ui/sidebar-accounting"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { FC } from "react"
 import { Outlet } from "react-router"
