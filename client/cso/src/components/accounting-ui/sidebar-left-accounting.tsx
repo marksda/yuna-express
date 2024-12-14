@@ -40,9 +40,9 @@ const items = [
     },
 ]
 
-export const AccountingSidebar: FC = () => {
+export const AccountingLeftSidebar: FC = () => {
     return (
-        <Sidebar side="left" collapsible="icon">
+        <Sidebar collapsible="icon" side="left">
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel>Pembukuan</SidebarGroupLabel>

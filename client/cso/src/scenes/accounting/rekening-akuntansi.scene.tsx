@@ -45,7 +45,7 @@ export const RekeningAkuntansiScene: FC = () => {
           <SidebarTrigger />
           <Separator orientation="vertical" className="mr-2 h-4" />
           <h3 className="font-semibold">Rekening akuntansi</h3>
-        </div>
+        </div>        
         <div className="flex items-center gap-2">
           <Drawer modal={true} direction="right">
             <DrawerTrigger asChild>
