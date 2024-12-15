@@ -6,15 +6,14 @@ import { FC, useState } from "react"
 import _ from "lodash"
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react"
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Form, FormField, FormItem } from "@/components/ui/form";
 
 export const RekeningAkuntansiScene: FC = () => {
+  const [openFormulir, setOpenFormulir] = useState<boolean>(false);
   const [filter, setFilter] = useState<IQueryParamFilters>({
     pageNumber: 0,
     pageSize: 25,
@@ -50,6 +49,17 @@ export const RekeningAkuntansiScene: FC = () => {
           <h3 className="font-semibold">Rekening akuntansi</h3>
         </div>        
         <div className="flex items-center gap-2">
+          <Button 
+            size="sm" 
+            className="my-1"
+            onClick={() => {
+              setOpenFormulir((prev) => {
+                return !prev
+              })
+            }}
+          >
+              <Plus/>New
+          </Button>
           <Drawer modal={true} direction="right">
             <DrawerTrigger asChild>
               <Button size="sm" className="my-1">
@@ -64,79 +74,33 @@ export const RekeningAkuntansiScene: FC = () => {
                 </DrawerHeader>
               </div>
             </DrawerContent>
-          </Drawer>
-          <Dialog modal={false}>
-            <DialogTrigger asChild>
-              <Button size="sm" className="my-1">
-                <Plus />New
-              </Button>  
-            </DialogTrigger>
-            <DialogContent className="sm:max-w-[425px]">
-              <DialogHeader>
-                <DialogTitle>Edit profile</DialogTitle>
-                <DialogDescription>
-                  Make changes to your profile here. Click save when you're done.
-                </DialogDescription>
-              </DialogHeader>
-            </DialogContent>
-          </Dialog>   
-          <Popover>
-            <PopoverTrigger>
-              <Button size="sm" className="my-1">
-                <Plus/>Popover New
-              </Button>  
-            </PopoverTrigger>  
-            <PopoverContent className="w-80">
-              <div className="grid gap-4">
-                <div className="space-y-2">
-                  <h4 className="font-medium leading-none">Dimensions</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Set the dimensions for the layer.
-                  </p>
-                </div>
-                <div className="grid gap-2">
-                  <div className="grid grid-cols-3 items-center gap-4">
-                    <Label htmlFor="width">Width</Label>
-                    <Input
-                      id="width"
-                      defaultValue="100%"
-                      className="col-span-2 h-8"
-                    />
-                  </div>
-                  <div className="grid grid-cols-3 items-center gap-4">
-                    <Label htmlFor="maxWidth">Max. width</Label>
-                    <Input
-                      id="maxWidth"
-                      defaultValue="300px"
-                      className="col-span-2 h-8"
-                    />
-                  </div>
-                  <div className="grid grid-cols-3 items-center gap-4">
-                    <Label htmlFor="height">Height</Label>
-                    <Input
-                      id="height"
-                      defaultValue="25px"
-                      className="col-span-2 h-8"
-                    />
-                  </div>
-                  <div className="grid grid-cols-3 items-center gap-4">
-                    <Label htmlFor="maxHeight">Max. height</Label>
-                    <Input
-                      id="maxHeight"
-                      defaultValue="none"
-                      className="col-span-2 h-8"
-                    />
-                  </div>
-                </div>
-              </div>
-            </PopoverContent>
-          </Popover>     
+          </Drawer>     
         </div>        
       </header>
       <div className="md:flex">
-        <div className="invisible w-0 h-0 md:visible md:w-1/3">
-          <label>asdada</label>
-        </div>
+        {openFormulir ? (
+          <div className="invisible w-0 h-0 md:visible md:w-1/3">
+            <Card className="m-2">
+              <CardHeader>
+                <CardTitle>Formulir rekening akuntansi</CardTitle>
+                <CardDescription>Penambahan rekening akutansi baru ke sistem.</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <Form>
+                  <FormField 
+                    control={}
+                    name=""
+                    render={() => (
+                      <FormItem>
+                        
+                      </FormItem>
+                    )}
+                  />
+                </Form>
+              </CardContent>
+            </Card>
+          </div>):null
+        }
         <div className="grow">
           <DataTable
             columns={RekeningAkuntansiColumns} 
