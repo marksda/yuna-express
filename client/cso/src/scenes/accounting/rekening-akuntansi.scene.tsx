@@ -17,7 +17,7 @@ import { Input } from "@/components/ui/input";
 export const RekeningAkuntansiScene: FC = () => {
   const [filter, setFilter] = useState<IQueryParamFilters>({
     pageNumber: 0,
-    pageSize: 2,
+    pageSize: 25,
     filters: [],
     sortOrders: [
       {
