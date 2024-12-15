@@ -10,6 +10,9 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { SidebarInset, SidebarTrigger } from "@/components/ui/sidebar";
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import { Separator } from "@/components/ui/separator";
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Label } from "@/components/ui/label";
+import { Input } from "@/components/ui/input";
 
 export const RekeningAkuntansiScene: FC = () => {
   const [filter, setFilter] = useState<IQueryParamFilters>({
@@ -50,7 +53,7 @@ export const RekeningAkuntansiScene: FC = () => {
           <Drawer modal={true} direction="right">
             <DrawerTrigger asChild>
               <Button size="sm" className="my-1">
-                <Plus />Drawer New
+                <Plus/>Drawer New
               </Button>
             </DrawerTrigger>
             <DrawerContent>
@@ -76,19 +79,77 @@ export const RekeningAkuntansiScene: FC = () => {
                 </DialogDescription>
               </DialogHeader>
             </DialogContent>
-          </Dialog>        
-        </div>
+          </Dialog>   
+          <Popover>
+            <PopoverTrigger>
+              <Button size="sm" className="my-1">
+                <Plus/>Popover New
+              </Button>  
+            </PopoverTrigger>  
+            <PopoverContent className="w-80">
+              <div className="grid gap-4">
+                <div className="space-y-2">
+                  <h4 className="font-medium leading-none">Dimensions</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Set the dimensions for the layer.
+                  </p>
+                </div>
+                <div className="grid gap-2">
+                  <div className="grid grid-cols-3 items-center gap-4">
+                    <Label htmlFor="width">Width</Label>
+                    <Input
+                      id="width"
+                      defaultValue="100%"
+                      className="col-span-2 h-8"
+                    />
+                  </div>
+                  <div className="grid grid-cols-3 items-center gap-4">
+                    <Label htmlFor="maxWidth">Max. width</Label>
+                    <Input
+                      id="maxWidth"
+                      defaultValue="300px"
+                      className="col-span-2 h-8"
+                    />
+                  </div>
+                  <div className="grid grid-cols-3 items-center gap-4">
+                    <Label htmlFor="height">Height</Label>
+                    <Input
+                      id="height"
+                      defaultValue="25px"
+                      className="col-span-2 h-8"
+                    />
+                  </div>
+                  <div className="grid grid-cols-3 items-center gap-4">
+                    <Label htmlFor="maxHeight">Max. height</Label>
+                    <Input
+                      id="maxHeight"
+                      defaultValue="none"
+                      className="col-span-2 h-8"
+                    />
+                  </div>
+                </div>
+              </div>
+            </PopoverContent>
+          </Popover>     
+        </div>        
       </header>
-      <DataTable 
-        columns={RekeningAkuntansiColumns} 
-        data={data == undefined? []:data} 
-        pageNumber={filter.pageNumber}
-        pageSize={filter.pageSize}
-        setPageNumber={setPageNumber} 
-        setPageSize={setPageSize}
-        isPagination={true}
-        title="Data kode rekening"
-      />
+      <div className="md:flex">
+        <div className="invisible w-0 h-0 md:visible md:w-1/3">
+          <label>asdada</label>
+        </div>
+        <div className="grow">
+          <DataTable
+            columns={RekeningAkuntansiColumns} 
+            data={data == undefined? []:data} 
+            pageNumber={filter.pageNumber}
+            pageSize={filter.pageSize}
+            setPageNumber={setPageNumber} 
+            setPageSize={setPageSize}
+            isPagination={true}
+            title="Data kode rekening"
+          />      
+        </div>
+      </div>
     </SidebarInset>
   )
 }

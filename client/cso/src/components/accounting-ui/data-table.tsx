@@ -33,7 +33,7 @@ export function DataTable<TData, TValue>({columns, data, isPagination, pageNumbe
     })
 
     return (
-        <div>
+        <>
             <div className="rounded-md border m-2">
                 <Table>
                     <TableHeader>
@@ -81,7 +81,7 @@ export function DataTable<TData, TValue>({columns, data, isPagination, pageNumbe
                 </Table>
             </div>
             {isPagination ?
-            <div className="flex items-center justify-end space-x-2 py-2 m-2">
+            <div className="flex items-center justify-end space-x-2 pt-2 m-2">
                 <Button
                     variant="outline"
                     size="sm"
@@ -106,6 +106,6 @@ export function DataTable<TData, TValue>({columns, data, isPagination, pageNumbe
                 </Button>
             </div>
             :null}
-        </div>
+        </>
     )
 }
