@@ -1,4 +1,5 @@
 export interface IPropinsi {
-    id: string|null;
-    nama: string|null
+    _id: string|null;
+    kode: string;
+    nama: string;
 };

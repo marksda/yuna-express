@@ -5,15 +5,15 @@ import { IPropinsi } from "../propinsi";
 
 
 export interface IPerusahaan {
-    id: string|null;
+    _id: string|null;
     nama: string|null;
     npwp: string|null;
-    propinsi: Partial<IPropinsi> | null;
-    kabupaten: Partial<IKabupaten> | null;
-    kecamatan: Partial<IKecamatan> | null;
-    desa: Partial<IDesa> | null;
+    propinsi: {_id: string} & Omit<Partial<IPropinsi>, "_id">;
+    kabupaten: {_id: string} & Omit<Partial<IKabupaten>, "_id">;
+    kecamatan: {_id: string} & Omit<Partial<IKecamatan>, "_id">;
+    desa: {_id: string} & Omit<Partial<IDesa>, "_id">;
     detail_alamat: string|null;
-    telepone: string|null;
-    email: string|null;
+    telepone: string;
+    email: string;
     tanggal_registrasi: string|null;
 };

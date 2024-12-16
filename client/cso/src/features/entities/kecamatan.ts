@@ -1,5 +1,5 @@
 export interface IKecamatan {
-    id: string|null;
+    _id: string|null;
     nama: string|null;
     kabupaten: string|null;
 };

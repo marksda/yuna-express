@@ -1,5 +1,6 @@
 export interface IKabupaten {
-    id: string|null;
-    nama: string|null;
-    propinsi: string|null;
+    _id: string|null;
+    kode: string;
+    nama: string;
+    propinsi: string;
 };
