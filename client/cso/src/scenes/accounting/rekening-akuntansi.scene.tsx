@@ -11,8 +11,15 @@ import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle, Dr
 import { Separator } from "@/components/ui/separator";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormField, FormItem } from "@/components/ui/form";
+import { IRekeningAkuntansi } from "@/features/entities/accounting/rekening-akuntansi";
+import { useForm } from "react-hook-form";
+import { RekeningAkuntansiSchema } from "@/features/schema-resolver/zod-schema";
+import { zodResolver } from "@hookform/resolvers/zod";
 
-export const RekeningAkuntansiScene: FC = () => {
+interface IFormulirRekeningAkuntansiUIProps {
+  dataLama ?: IRekeningAkuntansi;
+}
+export const RekeningAkuntansiScene: FC<IFormulirRekeningAkuntansiUIProps> = ({dataLama}) => {
   const [openFormulir, setOpenFormulir] = useState<boolean>(false);
   const [filter, setFilter] = useState<IQueryParamFilters>({
     pageNumber: 0,
@@ -37,6 +44,11 @@ export const RekeningAkuntansiScene: FC = () => {
     tmpFilter.pageSize = pageSize
     setFilter(tmpFilter);
   }
+
+  const form = useForm<IRekeningAkuntansi>({
+    defaultValues:  dataLama != undefined ? _.cloneDeep(dataLama):{kode:'', nama: '', header: false, level: 1, jenis_rekening_akuntansi: {_id: ''}, perusahaan: {_id: ''}, urutan: '', parent_rekening_akuntansi: null},
+    resolver: zodResolver(RekeningAkuntansiSchema),
+  });
 
   const {data} = useGetDaftarRekeningAkuntansiQuery(filter)
 
@@ -86,10 +98,10 @@ export const RekeningAkuntansiScene: FC = () => {
                 <CardDescription>Penambahan rekening akutansi baru ke sistem.</CardDescription>
               </CardHeader>
               <CardContent>
-                <Form>
+                <Form {...form}>
                   <FormField 
-                    control={}
-                    name=""
+                    control={form.control}
+                    name="kode"
                     render={() => (
                       <FormItem>
                         

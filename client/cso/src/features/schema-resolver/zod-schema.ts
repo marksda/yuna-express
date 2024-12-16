@@ -78,5 +78,5 @@ const baseRekeningAkuntansiSchema = object({
 })
 
 export const RekeningAkuntansiSchema = baseRekeningAkuntansiSchema.extend({
-    parent: baseRekeningAkuntansiSchema.required({_id: true}).nullable()
+    parent_rekening_akuntansi: baseRekeningAkuntansiSchema.required({_id: true}).nullable()
 })
